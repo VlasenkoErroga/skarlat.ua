@@ -1,2 +1,17 @@
 This new project for TM "Skarlat" - Online lighting shop. 
 It's project wich neded rewrite and remove unused style | HTML | javascript | jQuery.
+
+Pages wich remained rewrite:
+    - [ ]  letter_order;
+    - [ ]  letter_success-reg;
+    - [ ]  cooperation;
+    - [ ]  adoute_us;
+    - [ ]  clien_cabinet;
+    - [ ]  compare;
+    - [ ]  contact;
+    - [ ]  delivery;
+    - [ ]  detail_page-product;
+    - [ ]  garanted;
+    - [ ]  order;
+    - [ ]  question;
+    - [ ]  rewrite js file and minimized it;
