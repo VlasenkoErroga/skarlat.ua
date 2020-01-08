@@ -1,0 +1,44 @@
+<% var data = {
+                title: "Каталог товаров | Skalat.ua",
+                author: "vlasenko$",
+                titlePage: "Результат поиска: 'Запрос'"
+
+}; %>
+    <%= _.template(require('./../includes/_header.html').default)(data) %>
+    <!-- MAIN START -->
+    <main>
+        <%= _.template(require('./../includes/_progres.html').default)(data) %>
+        <%= _.template(require('./../includes/_breadcrumbs.html').default)(data) %>
+        <%= _.template(require('./../includes/_title-page.html').default)(data) %>
+        <%= _.template(require('./../includes/_way.html').default)(data) %>
+        <section class="product-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="search-not-found">
+                            <h1><%=data.titlePage%></h1>
+                            <hr />
+                            <p>К сожалению по вашему запросу "запрос" ничего не найдено :(</p>
+                            <p>Предлагаем Вам посетить один из разделов и просмотреть предложения :)</p>
+                            
+                            <div class="d-flex align-items-center justify-content-around">
+                            <a href="javascript:void(0)">"АКЦИИ И СПЕЦ ПРЕДЛОЖЕНИЯ"</a> 
+                            <a href="javascript:void(0)">"ПОСЛЕДНИЙ ПОСЕЩЯЕМЫЙ РАЗДЕЛ"</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+        <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+        <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+        <%= _.template(require('./../includes/_subscribe.html').default)(data) %>
+        <%= _.template(require('./../includes/_seo-section.html').default)(data) %>
+    </main>
+    <!-- MAIN END -->
+<%= _.template(require('./../includes/_menu.html').default)(data) %>
+<%= _.template(require('./../includes/_basket.html').default)(data) %>
+<%= _.template(require('./../includes/_subscribe.html').default)(data) %>
+<%= _.template(require('./../includes/_form-enter.html').default)(data) %>
+<%= _.template(require('./../includes/_footer.html').default)(data) %> 

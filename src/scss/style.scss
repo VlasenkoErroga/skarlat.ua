@@ -1,0 +1,66 @@
+/*Fonts*/
+@import './includes/fonts';
+
+/*include diferent libr*/
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap-reboot";
+@import 'owl.carousel/src/scss/owl.carousel';
+@import 'ion-rangeslider/css/ion.rangeSlider.min';
+
+/*include base style and file cofiguration*/
+@import './includes/variables';
+@import './includes/typography';
+@import './includes/mixins';
+@import './includes/animation';
+
+
+/*this style need distructurisation*/
+// @import './includes/old';
+//@import './includes/new';
+
+/*include module*/
+@import './includes/global';
+
+@import './includes/header/header';
+@import './includes/header/burger_menu';
+@import './includes/header/cat_btn-hover';
+@import './includes/header/category-menu';
+@import './includes/header/info-page';
+@import './includes/header/languages';
+@import './includes/header/marker';
+@import './includes/header/search';
+@import './includes/header/use';
+
+
+
+
+@import './includes/modul/jumbotron';
+@import './includes/modul/basket';
+@import './includes/modul/enter';
+@import './includes/modul/subscribe';
+@import './includes/modul/modal';
+@import './includes/modul/marker';
+@import './includes/modul/addProductCompareModal';
+@import './includes/modul/owl';
+@import './includes/modul/product-lines';
+@import './includes/modul/main-slider';
+@import './includes/footer/footer';
+@import './includes/modul/vidget';
+@import './includes/modul/copyright';
+@import './includes/modul/up';
+@import './includes/modul/mob-menu';
+@import './includes/modul/other';
+@import './includes/modul/seo';
+@import './includes/modul/btn';
+@import './includes/modul/products__item';
+@import './includes/modul/breadcrumbs';
+@import './includes/modul/way';
+@import './includes/modul/pagination';
+@import './includes/modul/sort-cat';
+@import './includes/modul/download-cat';
+@import './includes/modul/filter';
+@import './includes/modul/check-box';
+@import './includes/modul/subcategory';
+@import './includes/modul/thanks-page';
+@import './includes/modul/order';
+@import './includes/modul/progress';

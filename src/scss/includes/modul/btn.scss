@@ -1,0 +1,393 @@
+.btn {
+    &-color {
+        background: $blue;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 5px 20px;
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &-fb,
+    &-g {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 150px;
+
+        & svg {
+            fill: #fff;
+            width: 20px;
+            max-height: 18px;
+            margin-right: 5px;
+        }
+
+    }
+
+    &-mob {
+        width: 50px;
+        height: 50px;
+        padding: 4px;
+        appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        background: rgba(181, 181, 181, 0.2);
+        border-radius: 5px;
+
+        &-block {
+            display: flex;
+            flex-flow: row wrap;
+            width: auto;
+        }
+
+        &-catalog {
+            width: 30px;
+            height: 30px;
+
+            @media(max-width:1480px) {
+                height: auto;
+            }
+        }
+    }
+
+    &-icon {
+        padding: 4px;
+        top: 5px;
+        right: 5px;
+        width: 40px;
+        fill: #fff;
+    }
+
+    &_buy {
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        background: #004d75;
+        color: #fff;
+        text-transform: uppercase;
+        -webkit-box-shadow: 0 0 10px -5px #000000;
+        box-shadow: 0 0 10px -5px #000000;
+
+        @media (max-width:768px) {
+            height: 50px;
+            font-size: 20px;
+        }
+
+        &-catalog {
+            max-height: 35px;
+            font-size: 20px;
+            box-shadow: none;
+            transition: all 0.2s ease-in-out;
+            background: none;
+
+            &:hover {
+                & .btn-icon {
+                    fill: #004d75;
+                }
+            }
+
+            & span {
+                font-size: 20px;
+                font-size: 0;
+                transition: all 0.5s ease-in-out;
+                text-transform: initial;
+            }
+
+            & .btn-icon {
+                @media(min-width:1470px) {
+                    padding-right: 0;
+                }
+            }
+
+        }
+
+        & .btn-icon {
+            width: 35px;
+            height: 35px;
+            fill: rgb(139, 139, 139);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &_balance {
+        &--active .balance,
+        &--active .btn-icon-detail .balance,
+        &:hover .balance,
+        &:hover .btn-icon-detail .balance {
+            fill: #004d75;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &_favorite {
+        &--active,
+        &:hover {
+            & .btn-icon-detail .heart,
+            &.heart {
+                fill: #c03a2b;
+                transition: all 0.3s ease-in-out;
+
+                &-dash {
+                    fill: #ed7161;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    &_balance,
+    &_favorite {
+        &-catalog {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    &-detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        padding: 2px 40px 2px 2px;
+        border-radius: 4px;
+        background: transparent;
+        height: 40px;
+        display: flex;
+        position: relative;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: #004d75;
+        border: none;
+        max-width: 150px;
+        text-transform: uppercase;
+        @media (max-width:768px) {
+            font-size: 0;
+            width: 50px;
+            height: 50px;
+            padding: 2px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &-icon {
+            position: absolute;
+            right: 7px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            fill: rgb(139, 139, 139);
+            transition: all 0.3s ease-in-out;
+
+            @media (max-width:768px) {
+                width: 40px;
+                transform: none;
+                position: static;
+            }
+        }
+    }
+
+
+    &-filter {
+        &-send {
+            width: calc(100% - 8px);
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            border: none;
+            height: 40px;
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+
+    &-search {
+        width: 50px;
+        height: 50px;
+        padding: 2px;
+        display: flex;
+        border-radius: 0 4px 4px 0;
+        border: none;
+        position: absolute;
+        right: -5px;
+        padding: 10px;
+        top: 5px;
+        border-left: 1px solid #51595d;
+        background: none;
+
+        &:hover {
+            svg {
+                fill: #fff;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        & svg {
+            width: 100%;
+            fill: #004d75;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &-set {
+        &-products {
+            background: #004d75;
+            color: #fff;
+            text-transform: uppercase;
+
+            @media(min-width:992px) and (max-width:1200px) {
+                font-size: 14px;
+                padding: 5px;
+            }
+        }
+    }
+
+    &-basket {
+        &-block {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+
+            @media (max-width:440px) {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        & button {
+            &:first-child {
+                margin-right: 2rem;
+                color: #004f75;
+                position: relative;
+                margin-bottom: -4px;
+                font-size: -4px;
+                outline: none;
+                @media (max-width:440px) {
+                    margin-bottom: 15px;
+                }
+
+                @media(max-width:466px) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &-right {
+        float: right;
+        margin-bottom: 40px;
+    }
+
+    &-group {
+        &-basket {
+            &-quantity {
+                max-width: 140px;
+                padding: 0 10px 10px;
+                height: 35px;
+            }
+        }
+    }
+
+    &-link {
+        &-order {
+            width: 100%;
+
+            &-item {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                font-weight: 400;
+                font-size: 19px;
+                color: rgb(81, 89, 93);
+
+                & .currency {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &-next {
+        &-buy {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    &-vidget {
+
+        &--wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row nowrap;
+            background: #fff;
+            padding: 2px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            overflow: hidden;
+
+            &:before {
+                content: 'Связаться со Skarlat';
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: #004f75;
+                color: #FFF;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                z-index: 2;
+                font-size: 8px;
+                text-transform: uppercase;
+            }
+
+            &:hover {
+                padding: 0;
+            }
+        }
+
+        &-skarlat {
+            position: fixed;
+            right: 90px;
+            bottom: 50px;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row nowrap;
+
+            &:hover {
+
+                & .btn-vidget--wrapper {
+                    background: #004f75;
+
+                    &:before {
+                        display: flex;
+                    }
+                }
+
+            }
+
+            @media(max-width:992px) {
+                display: none;
+            }
+        }
+    }
+
+}

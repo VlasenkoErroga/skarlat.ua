@@ -1,0 +1,75 @@
+.filter {
+    &-cat {
+        &-mob {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: #004f75;
+            color: #fff;
+            width: 140px;
+            font-size: 15px;
+            margin: 10px 2px;
+
+            & svg {
+                width: 25px;
+                height: 25px;
+                margin-left: 10px;
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.adress-block {
+    height: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 50px;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+        color: #51595d;
+        margin-right: 15px;
+        font-size: 18px;
+
+        &:hover {
+            color: #004d75;
+        }
+    }
+
+    &-icon {
+        width: 15px;
+        fill: red;
+    }
+}
+
+.wrapper {
+    &-button {
+        &-lk {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    &-main {
+        &-block {
+            padding: 10px 0 0 10px;
+
+            @media (max-width: 1200px) and (min-width: 992px){
+                padding: 0;
+                padding-top: 15px;
+            }
+        }
+    }
+}
+
+.p-lg-none {
+@media (max-width:1199px) {
+        padding: 0 !important;
+    }
+}

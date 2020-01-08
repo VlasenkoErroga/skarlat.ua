@@ -1,0 +1,118 @@
+.owl {
+    &-carousel {
+        & .owl-nav {
+            & button {
+                height: 50px;
+                width: 30px;
+                transition: all 0.3s ease-in-out;
+
+                &.owl-prev {
+                    left: -2px;
+                    border-radius: 0 5px 5px 0;
+
+                    &:before {
+                        left: 30%;
+                        top: 0;
+                        -webkit-transform: skew(145deg, 0deg);
+                        -ms-transform: skew(145deg, 0deg);
+                        transform: skew(145deg, 0deg);
+                    }
+
+                    &:after {
+                        left: 30%;
+                        top: 50%;
+                        -webkit-transform: skew(-145deg, 0deg);
+                        -ms-transform: skew(-145deg, 0deg);
+                        transform: skew(-145deg, 0deg);
+                    }
+                }
+
+                &.owl-next {
+                    right: -2px;
+                    border-radius: 5px 0 0 5px;
+
+                    &:before {
+                        right: 30%;
+                        top: 0;
+                        -webkit-transform: skew(35deg, 0deg);
+                        -ms-transform: skew(35deg, 0deg);
+                        transform: skew(35deg, 0deg);
+                    }
+
+                    &:after {
+                        right: 30%;
+                        top: 50%;
+                        -webkit-transform: skew(-35deg, 0deg);
+                        -ms-transform: skew(-35deg, 0deg);
+                        transform: skew(-35deg, 0deg);
+                    }
+                }
+
+
+                &.owl-next, &.owl-prev {
+                    position: absolute;
+                    background: rgba(255, 255, 255, .7);
+                    padding: 10px;
+                    top: 50%;
+
+                    &:after,
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        height: 30%;
+                        border-radius: 3px;
+                        width: 2px;
+                        background-color: #6f706f;
+                    }
+
+                    &:before {
+                        top: 20%;
+                    }
+
+                    &:hover {
+                        background: #fff;
+                        height: 50px;
+                        width: 30px;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    & span{
+                        display: none !important;
+                    }
+                
+                }
+
+            }
+        }
+
+        & .owl-item {
+            overflow: initial;
+        }
+    }
+
+    &-prev, &-next{
+        &.disabled {
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        outline: none;
+        background-clip: padding-box;
+        background-color: #bfbfbf;
+        margin: 0 5px;
+
+        &.active {
+            background-color: #004d75;
+        }
+    }
+
+    &-dots {
+        text-align: center;
+        margin-top: 5px;
+    }
+}

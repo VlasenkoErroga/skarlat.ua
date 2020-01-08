@@ -1,0 +1,99 @@
+<% var data = {
+                title: "Каталог товаров | Skalat.ua",
+                author: "vlasenko$",
+                titlePage: "Спасибо за ваш заказ!"
+}; %>
+    <%= _.template(require('./../includes/_header-simple.html').default)(data) %>
+    <!-- MAIN START -->
+    <main>
+        <%= _.template(require('./../includes/_progres.html').default)(data) %>
+        <section class="thanks-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
+                        <div class="thanks-page__wrapper">
+                            <h1 class="thanks-page__title"><%=data.titlePage%></h1>
+                            <h4 class="thanks-page__subtitle">Номер Вашего заказа
+                                <strong>№32484351</strong>
+                            </h4>
+                            <div class="thanks-page__order-detail">
+                                <div class="thanks-page__order_item">
+                                    <div class="thanks-page__order_img">
+                                        <div class="thanks-page__order_img-wrapper">
+                                            <img
+                                                class="lazy"
+                                                src="img/18.jpg"
+                                                data-src="img/18.jpg"
+                                                data-srcset="img/18.jpg 1x, img/18.jpg 2x"
+                                                srcset="img/18.jpg 1x, img/18.jpg 2x"></div>
+                                        </div>
+                                        <div class="thanks-page__order-description">
+                                            <p class="thanks-page__order_title-cat">Точечный светильник</p>
+                                            <a href="javascript:void(0)" class="thanks-page__order_title">Skarlat PC0005-32Q SQ 5W 6000K</a>
+                                            <div class="thanks-page__order-price-new">3960
+                                                <div class="thanks-page__order-price-new_currency">грн</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thanks-page__order_item">
+                                        <div class="thanks-page__order_img">
+                                            <div class="thanks-page__order_img-wrapper">
+                                                <img
+                                                    class="lazy"
+                                                    src="img/18.jpg"
+                                                    data-src="img/18.jpg"
+                                                    data-srcset="img/18.jpg 1x, img/18.jpg 2x"
+                                                    srcset="img/18.jpg 1x, img/18.jpg 2x"></div>
+                                            </div>
+                                            <div class="thanks-page__order-description">
+                                                <p class="thanks-page__order_title-cat">Точечный светильник</p>
+                                                <a href="javascript:void(0)" class="thanks-page__order_title">Skarlat PC0005-32Q SQ 5W 6000K</a>
+                                                <div class="thanks-page__order-price-new">3960
+                                                    <div class="thanks-page__order-price-new_currency">грн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="thanks-page__order-data">
+                                        <li class="thanks-page__order-data_item">
+                                            Вы успешно оформили заказ на номер<strong class="ml-2">+38(000) 000 00 00</strong>
+                                        </li>
+
+                                        <li class="thanks-page__order-data_item thanks-page__order-data_item-price">
+                                            Итого к оплате —
+                                            <div class="thanks-page__order-data_item-price_new">3960
+                                                <div class="thanks-page__order-data_item-price_new-currency">грн</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="thanks-page__order-data_item thanks-page__order-data_item-lk">
+                                            Статус вашего заказа вы можете отслеживать в
+                                            <a href="javascript:void(0)">
+                                                личном кабинетe</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="thanks-page__order-btn-by">
+                                        <a class="next-buy" href="javascript:void(0)">Продолжить покупки</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+        <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+        <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+        <%= _.template(require('./../includes/_subscribe.html').default)(data) %>
+        <%= _.template(require('./../includes/_seo-section.html').default)(data) %>
+    </main>
+    <!-- MAIN END -->
+    <%= _.template(require('./../includes/_menu.html').default)(data) %>
+    <%= _.template(require('./../includes/_basket.html').default)(data) %>
+    <%= _.template(require('./../includes/_subscribe.html').default)(data) %>
+    <%= _.template(require('./../includes/_form-enter.html').default)(data) %>
+    <%= _.template(require('./../includes/_footer.html').default)(data) %>

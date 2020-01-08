@@ -1,0 +1,49 @@
+.marker{
+    &-block {
+    position: absolute;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 2px 5px;
+        background: rgba(181, 181, 181, 0.2);
+        font-size: 0;
+        transition: all .3s ease-in-out;
+
+        &--action {
+            background: red;
+            color: #fff;
+        }
+
+        &--gift {
+            background: rgb(4, 165, 177);
+            color: #fff;
+        }
+
+        &--sale {
+            background: rgb(252, 164, 2);
+            color: #fff;
+        }
+
+        &:hover{
+            font-size: 12px;
+            transition: all .3s ease-in-out;
+        }
+
+        &-icon {
+            max-width: 20px;
+            max-height: 20px;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & svg {
+            fill: #fff;
+            width: 20px;
+        }
+    }
+    }
+}

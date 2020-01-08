@@ -1,0 +1,33 @@
+.copyright {
+    color: #eff2f3;
+    padding: 20px;
+    border: none;
+    position: relative;
+
+    @media(max-width:768px) {
+        font-size: 10px;
+    }
+
+    & a {
+        margin-right: 10px;
+        margin-left: 10px;
+        color: #eff2f3;
+    }
+
+    & svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 30px;
+        fill: rgb(238, 56, 64);
+    }
+
+    &:before {
+        content: "";
+        height: 1px;
+        width: 90%;
+        background: #eff2f3;
+        position: absolute;
+        top: 0;
+        left: 5%;
+    }
+}

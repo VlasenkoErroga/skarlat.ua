@@ -1,0 +1,35 @@
+<% var data = {
+  title: "skarlat.ua | Main page",
+  author: "vlasenko$",
+  titlePage: "Точечные светильники"
+}; %>
+<%= _.template(require('./../includes/_header.html').default)(data) %>
+<!-- MAIN START -->
+<main>
+    <section class="main-cat-slider">
+        <div class="container p-lg-none">
+            <div class="row main-section-cat no-gutters">
+                <div class="col-xl-2 d-none d-xl-flex">
+                    <%= _.template(require('./../includes/_category-menu-nav.html').default)(data) %>
+                </div>
+                <div class="col-xl-10 col-12">
+                    <div class="wrapper-main-block">
+                        <%= _.template(require('./../includes/_jumbotron.html').default)(data) %>
+                        <%= _.template(require('./../includes/_main-slider.html').default)(data) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+    <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+    <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+    <%= _.template(require('./../includes/_subscribe-section.html').default)(data) %>
+    <%= _.template(require('./../includes/_seo-section.html').default)(data) %>
+</main>
+      <!-- MAIN END -->
+<%= _.template(require('./../includes/_menu.html').default)(data) %>
+<%= _.template(require('./../includes/_basket.html').default)(data) %>
+<%= _.template(require('./../includes/_subscribe.html').default)(data) %>
+<%= _.template(require('./../includes/_form-enter.html').default)(data) %>
+<%= _.template(require('./../includes/_footer.html').default)(data) %> 

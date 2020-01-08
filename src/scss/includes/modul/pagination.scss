@@ -1,0 +1,129 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.page {
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: #004d75;
+        height: 100%;
+        &:hover {
+            background: #fff;
+        }
+    }
+
+    &-icon {
+        position: relative;
+        width: 10px;
+        height: 30px;
+    }
+
+    &-arrow {
+
+        &-next,
+        &-prev {
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px 20px 5px 5px;
+            align-items: center;
+            min-width: 36px;
+        }
+
+        &-prev {
+            &:before {
+                content: '';
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                background: url("../img/arrow-prev.svg") 10% center no-repeat;
+                background-size: 6px;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:hover{
+                background:$blue;
+                &:before {
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    background: url("../img/arrow-prev--w.svg") 10% center no-repeat;
+                    background-size: 6px;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        &-next {
+            justify-content: flex-start;
+            padding-left: 20px;
+            padding-right: 5px;
+
+            &:before {
+                content: '';
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                background: url("../img/arrow-next.svg") 90% center no-repeat;
+                background-size: 6px;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:hover{
+                background:$blue;
+                &:before {
+                    height: 100%;
+                width: 100%;
+                position: absolute;
+                background: url("../img/arrow-next--w.svg") 90% center no-repeat;
+                background-size: 6px;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 36px;
+        overflow: hidden;
+        border-radius: 4px;
+        margin: 2px;
+        color: #004d75;
+        background: #fff;
+        border: 1px solid #d8d8d8;
+
+        &.disabled {
+            background: transparent;
+            pointer-events: none;
+        }
+
+        &.active .page-link {
+            background: #004d75;
+            color: #fff;
+            z-index: 1;
+        }
+
+        &:hover .page-link {
+            background: $blue;
+            color: #fff;
+        }
+    }
+}

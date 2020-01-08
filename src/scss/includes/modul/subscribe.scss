@@ -1,0 +1,137 @@
+#subscribeBtn {
+    background: #004d75;
+    color: #fff;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.subscribe{
+
+    text-align: center;
+    padding: 34px 0;
+
+    @media (min-width: 992px) {
+        padding: 20px 0;  
+        padding: 20px 0;
+    }
+    @media (min-width: 768px) {
+        text-align: center;
+    }
+
+    & form {
+        display: inline-block;
+        vertical-align: middle;
+
+        & input[type='email'] {
+            color: #666565;
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-size: 14px;
+            font-style: italic;
+            border: 1px solid #9a9a9a;
+            padding: 0 12px;
+            height: 100%;
+            outline: none;
+            width: 165px;
+            float: left;
+
+            @media (min-width: 1500px) {
+                width: 270px;
+                }
+            }
+
+            @media (min-width: 768px) {
+                padding: 0 6px;
+                width: 120px;
+            }
+
+        & input[type="submit"] {
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            background-color: #004d75;
+            outline: none;
+            border: none;
+            padding: 0 33px;
+            height: 100%;
+            float: left;
+
+            @media (min-width: 768px) {
+                padding: 0 24px;
+            }
+        }
+
+        & input[type="submit"]:hover {
+            background-color: #016396;
+        }
+    }
+
+    &-btn {
+        background: #004d75;
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+    }
+
+    &-input {
+        width: 100%;
+        padding: 10px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    &-form{
+        & input{
+        border-radius: 4px;
+        border: 1px solid #d8d8d8;
+        }
+    }
+
+    & .label {
+
+        font-weight: 400;
+        font-size: 20px;
+        margin-right: 30px;
+
+        @media (max-width: 992px) {
+            display: inline-block;
+            vertical-align: middle;
+            color: #000;
+            font-size: 16px;
+            margin-right: 42px;
+            padding-left: 9%;
+            width: 42%;
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 17px;
+            margin-right: 0;
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 17px;
+        }
+    }
+}
+
+
+.btn-subscribe-form {
+    background: #004d75;
+    color: #fff;
+    font: 400 14px 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-right: 7%;
+}
+
+.btn-subscribe-form:hover {
+    color: rgb(221, 221, 221);
+}
+
+.btn-subscribe-form-break {
+    background: none;
+    color: #51595d;
+    font-weight: 600;
+}

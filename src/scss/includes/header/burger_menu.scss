@@ -1,0 +1,42 @@
+.burger_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    span {
+        display: flex;
+        height: 2px;
+        width: 30px;
+        border-radius: 2px;
+        background: #fff;
+        overflow: hidden;
+
+        &::after,
+        &::before {
+            content: '';
+            height: 2px;
+            width: 100%;
+            max-width: 30px;
+            border-radius: 2px;
+            background: #fff;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            top: 34%;
+        }
+
+        &::before {
+            bottom: 34%;
+        }
+    }
+
+    @media (max-width:768px) {
+        padding: 0;
+        display: flex;
+    }
+
+}

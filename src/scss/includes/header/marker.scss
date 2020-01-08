@@ -1,0 +1,28 @@
+.marker{
+
+    &-block{
+
+        &-counter {
+            color: #fff;
+            font-weight: 700;
+            font-size: 10px;
+        }
+
+        &-header{
+            &.marker-block-mob-menu {
+                position: absolute;
+                left: 30px;
+                top: 5%;
+                background: #d8d8d8;
+                border-radius: 3px;
+                padding: 1px 4px;
+
+                & .marker-block-counter {
+                    font-size: 8px;
+                    color: #004d75;
+                }
+            }
+        }
+    }
+
+}
