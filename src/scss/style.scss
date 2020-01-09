@@ -13,14 +13,8 @@
 @import './includes/mixins';
 @import './includes/animation';
 
-
-/*this style need distructurisation*/
-// @import './includes/old';
-//@import './includes/new';
-
 /*include module*/
 @import './includes/global';
-
 @import './includes/header/header';
 @import './includes/header/burger_menu';
 @import './includes/header/cat_btn-hover';
@@ -64,3 +58,4 @@
 @import './includes/modul/thanks-page';
 @import './includes/modul/order';
 @import './includes/modul/progress';
+@import './includes/modul/autocomplete';

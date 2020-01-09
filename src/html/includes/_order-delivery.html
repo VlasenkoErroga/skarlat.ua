@@ -1,0 +1,207 @@
+<!-- ORDER BLOCK DELIVERY INFO START -->
+<div class="order-block order-block__delivery">
+    <div class="order-block__title">
+        <h3>Доставка</h3>
+    </div>
+
+    <form action="">
+        <div class="accordion" id="delivery-acardion">
+            <div class="order-block__delivery-item">
+                <label for="selectCity" class="order-block__delivery-autocomplete-label">Ваш город</label>
+                <div class="select-city form-group">
+                    <input
+                        type="text"
+                        class='order-block__delivery-autocomplete'
+                        id='autocompleteCity'></div>
+                    <div class="order-block__delivery-way-group">
+                        <a href="javascript:void(0)" class="order-block__delivery-way">Киев</a>
+                        <a href="javascript:void(0)" class="order-block__delivery-way">Одесса</a>
+                        <a href="javascript:void(0)" class="order-block__delivery-way">Харьков</a>
+                        <a href="javascript:void(0)" class="order-block__delivery-way">Днепр</a>
+                        <a href="javascript:void(0)" class="order-block__delivery-way">Львов</a>
+                    </div>
+                </div>
+
+                <div class="order-block__delivery-item">
+
+                    <div class="order-block__delivery-item-header">
+                        <input
+                            class="checkbox"
+                            type="radio"
+                            name="dylivery-method"
+                            id="order-block__delivery-item-np"
+                            data-toggle="collapse"
+                            data-target="#order-block__delivery-item-np-description"
+                            aria-expanded="true"
+                            aria-controls="order-block__delivery-item-np-description">
+                            <label for="order-block__delivery-item-np">
+                                Доставка в отделение, Новая Почта
+                            </label>
+                        </div>
+                        <div
+                            class="collapse order-block__delivery-item-description"
+                            id="order-block__delivery-item-np-description"
+                            data-parent="#delivery-acardion">
+                            <div class="form-group">
+                                <label for="selectCity">Выберите отделение</label>
+                                <select class="form-control" id="selectPost">
+                                    <option>Отделение №1</option>
+                                    <option>Отделение №2</option>
+                                    <option>Отделение №3</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <small>
+                                Стоимость доставки в отделение по тарифам перевозчика Новая Почта. Срок доставки
+                                - 1-3 дня.
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="order-block__delivery-item">
+                        <div class="order-block__delivery-item-header">
+                            <input
+                                class="checkbox"
+                                type="radio"
+                                name="dylivery-method"
+                                id="order-block__delivery-item-np-cur"
+                                data-toggle="collapse"
+                                data-target="#order-block__delivery-item-np-cur-description"
+                                aria-expanded="true"
+                                aria-controls="order-block__delivery-item-np-cur-description"
+                                disabled="disabled">
+                                <label for="order-block__delivery-item-np-cur">
+                                    Адресная доставка, Новая Почта
+                                </label>
+                            </div>
+
+                            <div
+                                id="order-block__delivery-item-np-cur-description"
+                                class="collapse order-block__delivery-item-description"
+                                data-parent="#delivery-acardion">
+
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="delivery-street"
+                                        placeholder="Введите улицу"></div>
+                                    <div class="form-group-row">
+                                        <div class="form-group w-50 mr-2">
+                                            <input type="text" class="form-control" id="delivery-hous" placeholder="№ дома"></div>
+                                            <div class="form-group w-50 ">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="delivery-room"
+                                                    placeholder="№ квартиры"></div>
+                                            </div>
+                                            <small>
+                                                Стоимость адресной доставки по тарифам перевозчика Новая Почта. Курьер доставит
+                                                Вашу посылку в течении 1-3 дней.
+
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-block__delivery-item">
+                                        <div class="order-block__delivery-item-header">
+                                            <input
+                                                class="checkbox"
+                                                type="radio"
+                                                name="dylivery-method"
+                                                id="order-block__delivery-item-skarlat-cur"
+                                                data-toggle="collapse"
+                                                data-target="#order-block__delivery-item-skarlat-cur-description"
+                                                aria-expanded="true"
+                                                aria-controls="order-block__delivery-item-skarlat-cur-description">
+                                                <label for="order-block__delivery-item-skarlat-cur">
+                                                    Курьер Skarlat
+                                                </label>
+                                            </div>
+
+                                            <div
+                                                id="order-block__delivery-item-skarlat-cur-description"
+                                                class="collapse"
+                                                data-parent="#delivery-acardion">
+
+                                                <div class="form-group">
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="delivery-street-skar"
+                                                        placeholder="Введите улицу"></div>
+                                                    <div class="form-group-row">
+                                                        <div class="form-group w-50 mr-1">
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="delivery-hous-skar"
+                                                                placeholder="№ дома"></div>
+                                                            <div class="form-group w-50 ml-1">
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="delivery-room-skar"
+                                                                    placeholder="№ квартиры"></div>
+
+                                                            </div>
+                                                            <small>
+                                                                Курьер Skarlat доставит Вашу посылку в течении 1-2 дней. Стоимость доставки - 50
+                                                                грн.
+                                                            </small>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="order-block__delivery-item">
+                                                        <div class="order-block__delivery-item-header">
+                                                            <input
+                                                                class="checkbox"
+                                                                type="radio"
+                                                                name="dylivery-method"
+                                                                id="order-block__delivery-item-skarlat-fast"
+                                                                data-toggle="collapse"
+                                                                data-target="#order-block__delivery-item-skarlat-fast-description"
+                                                                aria-expanded="true"
+                                                                aria-controls="order-block__delivery-item-skarlat-fast-description">
+                                                                <label class="form-check-label" for="order-block__delivery-item-skarlat-fast">
+                                                                    Адресная доставка за 3 часа
+                                                                </label>
+                                                            </div>
+
+                                                            <div
+                                                                id="order-block__delivery-item-skarlat-fast-description"
+                                                                class="collapse"
+                                                                data-parent="#delivery-acardion">
+
+                                                                <div class="form-group">
+                                                                    <input
+                                                                        type="text"
+                                                                        class="form-control"
+                                                                        id="delivery-street-fast"
+                                                                        placeholder="Введите улицу"></div>
+                                                                    <div class="form-group-row">
+                                                                        <div class="form-group w-50 mr-2">
+                                                                            <input
+                                                                                type="text"
+                                                                                class="form-control"
+                                                                                id="delivery-hous-fast"
+                                                                                placeholder="№ дома"></div>
+                                                                            <div class="form-group w-50">
+                                                                                <input
+                                                                                    type="text"
+                                                                                    class="form-control"
+                                                                                    id="delivery-room-fast"
+                                                                                    placeholder="№ квартиры"></div>
+                                                                            </div>
+                                                                            <small>
+                                                                                Курьер доставит Вашу посылку в течении 3-х часов. Стоимость доставки - 150 грн.
+                                                                            </small>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <!-- ORDER BLOCK DELIVERY INFO END -->

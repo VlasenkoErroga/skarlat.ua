@@ -73,3 +73,13 @@
         padding: 0 !important;
     }
 }
+
+.form-group{
+    max-width:440px;
+    &-row{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    }
+}
+
