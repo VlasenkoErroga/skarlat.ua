@@ -6,7 +6,7 @@ function hoverCatalog(item) {
 
     for (let i of item) {
         i.addEventListener('mouseenter', function () {
-            shadowblock.style.zIndex = "1";
+            shadowblock.style.zIndex = "3";
             document
                 .body
                 .append(shadowblock)
