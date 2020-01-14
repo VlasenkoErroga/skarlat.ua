@@ -11,76 +11,15 @@ import './Component/_lazy';
 import './Component/_autocomplete';
 import './Component/_jumbotron-basket';
 import './Component/_scroll-compare';
-import './Component/_filter-hide';
 import './Component/_hover-catalog';
+import './Component/_filter-hide';
+import './Component/_slider-jquery';
+import './Component/_other';
 
 
 
 const btnShowFilter = document.getElementById('btnFilter');
-const mobFilte = document.getElementById('mobileFilter');
-const closeFilter = document.getElementById('closeFilter');
 const choiceBtn = document.getElementById('choice-btn');
-
-
-
-//modal filter
-
-function ToggleFilter() {
-    if (btnShowFilter) {
-        btnShowFilter.addEventListener('click', function () {
-            mobFilte
-                .classList
-                .add('show');
-            mobFilte
-                .classList
-                .remove('d-none');
-        });
-    }
-    if (closeFilter) {
-        closeFilter.addEventListener('click', function () {
-            mobFilte
-                .classList
-                .remove('show');
-            if (document.innerWidth > 500) {
-                setTimeout(function remClass() {
-                    mobFilte
-                        .classList
-                        .add('d-none')
-                }, 500)
-            } else {
-                mobFilte
-                    .classList
-                    .add('d-none');
-            }
-
-        })
-        mobFilte.addEventListener('click', function (e) {
-            if (!e.target.closest('#FilterForm')) {
-                mobFilte
-                    .classList
-                    .remove('show');
-                setTimeout(function remClass() {
-                    mobFilte
-                        .classList
-                        .add('d-none')
-                }, 400)
-            }
-        })
-        choiceBtn.addEventListener('click', function (e) {
-            mobFilte
-                .classList
-                .remove('show');
-            setTimeout(function remClass() {
-                mobFilte
-                    .classList
-                    .add('d-none')
-            }, 400)
-        })
-
-    }
-
-}
-ToggleFilter();
 
 
 //pills lk
@@ -188,18 +127,7 @@ window.addEventListener('hashchange', function (event) {
             }
         }
     }
-    if (document.getElementsByClassName('mob-menu').length > 0) {
-        document
-            .getElementsByClassName('mob-menu')[0]
-            .classList
-            .remove('mob-menu--active');
-    }
-    if (document.getElementsByClassName('modal-backdrop', 'fade', 'show').length > 0) {
-        document
-            .body
-            .lastElementChild
-            .remove();
-    }
+
 });
 
 //hidden filter

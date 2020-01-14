@@ -134,6 +134,13 @@
             }
 
         }
+
+        &__pay{
+
+            & textarea{
+                margin-bottom: 20px;
+            }
+        }
     }
 
     &-column-title {

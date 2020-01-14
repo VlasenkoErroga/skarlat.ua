@@ -1,5 +1,6 @@
 let countries = [
     "Afghanistan",
+    "Киев",
     "Albania",
     "Algeria",
     "Andorra",
@@ -330,14 +331,14 @@ function autocomplete(inp, arr) {
     }
 
     function preCity() {
-        let item = document.getElementsByClassName('order-block__deliver-way');
-
+        let item = document.getElementsByClassName('order-block__delivery-way');
+    
         for (let i = 0; i < item.length; i++) {
             item[i].addEventListener('click', function (e) {
                 inp.value = e.target.innerText;
-            })
+            });
         }
-
+    
     }
     preCity();
 
@@ -350,3 +351,5 @@ function autocomplete(inp, arr) {
 if (document.getElementById("autocompleteCity")) {
     autocomplete(document.getElementById("autocompleteCity"), countries);
 }
+
+

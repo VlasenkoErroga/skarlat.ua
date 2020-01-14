@@ -1,0 +1,27 @@
+<% var data = {
+                title: "Кабинет пользователя | Skalat.ua",
+                author: "vlasenko$",
+                titlePage: "Добро пожаловать"
+}; %>
+    <%= _.template(require('./../includes/_header.html').default)(data) %>
+    <!-- MAIN START -->
+    <main>
+        <%= _.template(require('./../includes/_progres.html').default)(data) %>
+
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-xl-2 col-lg-3 col-md-12 ">
+                    <%= _.template(require('./../includes/LK/_nav.html').default)(data) %>
+                </div>
+                <div class="col-xl-10 col-lg-9 col-md-12">
+                    <%= _.template(require('./../includes/LK/_nav-content.html').default)(data) %>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- MAIN END -->
+<%= _.template(require('./../includes/_menu.html').default)(data) %>
+<%= _.template(require('./../includes/_basket.html').default)(data) %>
+<%= _.template(require('./../includes/_subscribe.html').default)(data) %>
+<%= _.template(require('./../includes/_form-enter.html').default)(data) %>
+<%= _.template(require('./../includes/_footer.html').default)(data) %> 
