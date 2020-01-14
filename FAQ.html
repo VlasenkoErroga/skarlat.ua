@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <title>Как это работает | Skalat.ua</title>
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <section class="header-wrapper">
+        <!-- TOP LINE START -->
+        <div class="header-bg-top d-none d-lg-flex">
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <a href="/" class="header-logo d-none d-lg-flex ">
+                  <svg xmlns="http://www.w3.org/2000/svg" id="logo" viewbox="0 0 332 54.1">
+                    <path
+                      class="header-logo__path-1"
+                      d="M12 11.1c-.4-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2c.8-.4 1.7-.5 2.5-.3s1.5.7 2 1.5l11.9 20.7c.4.6.6 1.4.6 2.1 0 .7-.1 1.3-.4 1.9l-12.2 20c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4l9.7-15.9H3.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1H21l-9-15.7z"
+                    />
+                    <path
+                      class="header-logo__path-2"
+                      fill="#10587E"
+                      d="M29.1 40.7c-.5-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2 1.7-.5 2.5-.3 1.5.7 2 1.5l6.8 11.7c.5.8.5 1.7.3 2.5s-.7 1.5-1.5 2-1.7.5-2.5.3-1.5-.7-2-1.5l-6.8-11.7zm6.8-32.8c.5-.8 1.2-1.4 2-1.6.8-.2 1.6-.1 2.4.3l.1.1c.8.5 1.3 1.2 1.5 2 .2.8.1 1.7-.3 2.5L35.4 22c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3h-.1c-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4v-.1l6.2-10.8zm.7 25.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1h13.8c.9 0 1.7.4 2.3 1 .6.6 1 1.4 1 2.3 0 .9-.4 1.7-1 2.3-.6.6-1.4 1-2.3 1H36.6z"
+                    />
+                    <path
+                      class="header-logo__path-3"
+                      fill-rule="evenodd"
+                      d="M83.8 16.3h11.1v-6c-3.5 0-10.4-.4-13.4.2-5.3 1.1-9.4 5.6-9.4 11.5 0 5.8 5 11.6 10.9 11.6h8.9c3 0 5.4 2.7 5.4 5.7 0 2.7-1.9 5-4.4 5.6-3 .7-16.4.1-20.4.1v5.8h19.9c6.4 0 11.6-5.2 11.7-11.6.1-5-3.9-11.6-9.2-11.6H83.7c-3.2.1-5.7-2.3-5.7-5.6 0-3.4 2.6-5.5 5.8-5.7zm235.2-5h-6.1V0H306v32.9c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.1 0-.3-.1-.4V17.5h6.1v-6.2zm-25 33.5c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2H294v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-41.3 16.5V10.2H231v22.7c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.2 0-.3-.1-.4zm-32.1-4.2v22.7h-6.9V28.7c1.2-12.5 11-18.5 22.7-18.5h3.2v6H221c-7.3 0-13.8 4.9-15.2 12.1.1.2.1.3 0 .4zm-19.3 16.1c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2h-5.9v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-43.2 16.3c9.6 2.6 11.7 9.1 11.7 18.4h6.8c0-11.1-1.7-20.5-14.7-23.9l11.8-16.9h-8.4l-11 16.1H117V10.2h-7.2v40.7h7.2V32.6c2 0 10.2-.3 11.5.1z"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="col-md-9 col-lg-9  justify-content-center d-flex">
+                <div class="header-adress-block">
+                  <a href="tel:+380443336965" class="header-adress-block__phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10" class="header-adress-block__icon">
+                      <path
+                        d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
+                      />
+                    </svg>
+                    044 333 69 65</a
+                  >
+                  <a href="tel:+380683127757" class="header-adress-block__phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10" class="header-adress-block__icon">
+                      <path
+                        d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
+                      />
+                    </svg>
+                    068 312 77 57</a
+                  >
+                </div>
+
+                <ul class="info-page-block">
+                  <li class="info-page__item ">
+                    <a href="javascript:void(0)">Гарантии</a>
+                  </li>
+                  <li class="info-page__item ">
+                    <a href="javascript:void(0)">Медиа</a>
+                  </li>
+                  <li class="info-page__item">
+                    <a href="javascript:void(0)">Оплата и доставка</a>
+                  </li>
+                  <li class="info-page__item ">
+                    <a href="javascript:void(0)">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-1">
+                <ul class="languages-block">
+                  <li class="languages__item languages__item--active">
+                    <a href="javascript:void(0)">Ru</a>
+                  </li>
+                  <li class="languages__item">
+                    <a href="javascript:void(0)">Ua</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TOP LINE END -->
+        <!-- DOWN LINE START -->
+        <div class="header-bg-bottom">
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-1 col-xl-2 cat_btn-hover">
+                <a class="burger_menu d-xl-none" href="javascript:void(0)">
+                  <span></span>
+                </a>
+
+                <a href="javascript:void(0)" class="cat_btn d-none d-xl-flex ">
+                  <svg viewbox="0 0 10 10">
+                    <path
+                      d="M3.5 0H1.2C.5 0 0 .5 0 1.2v2.3c0 .6.5 1.2 1.2 1.2h2.3c.6 0 1.2-.5 1.2-1.2V1.2C4.6.5 4.1 0 3.5 0zm.3 3.5c0 .2-.2.4-.4.4H1.2c-.2 0-.4-.2-.4-.4V1.2c0-.2.2-.4.4-.4h2.3c.2 0 .4.2.4.4v2.3zM8.8 0H6.6c-.7 0-1.2.5-1.2 1.2v2.3c0 .6.5 1.2 1.2 1.2h2.3c.6 0 1.2-.5 1.2-1.2V1.2C10 .5 9.5 0 8.8 0zm.4 3.4c0 .2-.2.4-.4.4H6.6c-.2 0-.4-.2-.4-.4V1.2c0-.2.2-.4.4-.4h2.3c.1 0 .3.2.3.4v2.2zM3.5 5.4H1.2C.5 5.4 0 5.9 0 6.5v2.3C0 9.5.5 10 1.2 10h2.3c.6 0 1.2-.5 1.2-1.2V6.5c-.1-.6-.6-1.1-1.2-1.1zm.3 3.4c0 .2-.2.4-.4.4H1.2C1 9.2.8 9 .8 8.8V6.5c0-.2.2-.4.4-.4h2.3c.2 0 .4.2.4.4v2.3zM8.8 5.4H6.6c-.6 0-1.2.5-1.2 1.2v2.3c0 .6.5 1.2 1.2 1.2h2.3c.6-.1 1.1-.6 1.1-1.3V6.6c0-.7-.5-1.2-1.2-1.2zm.4 3.4c0 .2-.2.4-.4.4H6.6c-.3 0-.4-.2-.4-.4V6.6c0-.2.2-.4.4-.4h2.3c.2 0 .4.2.4.4v2.2z"
+                    />
+                  </svg>
+                  Каталог
+                </a>
+
+                <div class="category-menu-nav--hov-wrapper">
+                  <nav class="category-menu-nav w-100">
+                    <ul class="category-menu">
+                      <li class="category-menu__item">
+                        <a href="/catalog_category.html">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M.4 5L0 6.9v.2s.1.1.2.1h.6v.4c0 .7.5 1.2 1.2 1.2s1.2-.5 1.2-1.2v-.3c0-.3.3-.6.6-.6H4c.2 0 .4 0 .5.1-.2.2-.3.5-.3.7 0 .4.2.7.6.8v1.5c0 .1 0 .2.2.2 0 0 .1-.1.1-.2V8.3c.3-.1.6-.4.6-.8 0-.3-.1-.5-.3-.7.2-.1.3-.1.5-.1h.3c.3 0 .6.3.6.6v.2c0 .7.5 1.2 1.2 1.2.3 0 .6-.1.8-.3.2-.3.3-.6.3-.9v-.4h.6c.1 0 .1 0 .2-.1 0 0 .1-.1 0-.2L9.5 5c0-.1-.1-.2-.2-.2h-.8s-.1.1-.1.2L8 6.9c-.1.1 0 .1 0 .2 0 0 .1.1.2.1h.6v.4c0 .2-.1.4-.2.6-.2 0-.4.1-.6.1-.5 0-.8-.3-.8-.8v-.2c0-.3-.2-.6-.5-.8.1-.1.1-.2.1-.3V6h.6c.1 0 .1 0 .2-.1v-.2l-.4-2c0-.1-.1-.2-.2-.2h-.8c-.1.1-.1.2-.2.3l-.4 2V6h.8v.2c0 .1-.1.2-.2.2h-.3c-.3 0-.5.1-.7.2V4.4c.2-.1.4-.3.4-.6s-.2-.4-.5-.5v-1c.3-.1.6-.4.6-.7.5 0 1-.4 1-1V.2c0-.1-.1-.2-.2-.2H3.4c-.1 0-.2.1-.2.2v.4c0 .5.4 1 1 1 0 .4.2.7.6.7v1c-.3.1-.4.3-.4.5s.2.5.4.6v2.2c-.3-.2-.5-.2-.8-.2h-.3c-.1 0-.2-.1-.2-.2V6h.6c.1 0 .1 0 .2-.1 0 0 .1-.1 0-.2l-.4-2c0-.1-.1-.2-.2-.2h-.8c-.1 0-.2.1-.2.2l-.4 2v.2c.1.1.2.1.2.1h.6v.2c0 .1 0 .2.1.3-.3.2-.5.5-.5.8v.2c0 .4-.3.8-.8.8s-.7-.3-.7-.8v-.4h.6c.1 0 .1 0 .2-.1 0 0 .1-.1 0-.2L1.5 5c0-.1-.1-.2-.2-.2H.6c-.1 0-.2.1-.2.2z"
+                            />
+                          </svg>
+                          Люстры
+                          <svg viewbox="0 0 6 9">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+
+                        <ul class="category-menu-second">
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Люстры с абажуром</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Люстры подвесы</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Потолочные люстры</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                            <ul class="category-menu-third">
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Люстры с абажуром</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Люстры подвесы</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Потолочные люстры</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Люстры со свечами</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Хрустальные люстры</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Люстры со свечами</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Хрустальные люстры</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="category-menu__item">
+                        <a href="/catalog_product.html">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M5.9 3.5l-.3-1.2c0-.1-.1-.1-.2-.1h-.2V.5c0-.1-.1-.2-.2-.2s-.2.1-.2.2v1.6h-.2c-.1 0-.2 0-.2.1l-.3 1.3C1.8 3.9 0 6 0 8.4c0 .1.1.2.2.2h3.6c.1.6.6 1 1.2 1s1.1-.5 1.2-1h3.6c.1 0 .2-.1.2-.2C10 6 8.2 3.9 5.9 3.5zm3 4c-.2 0-.4-.2-.4-.4 0-.4-.4-1-.9-1.5-.5-.4-1.1-.7-1.6-.7-.2 0-.4-.2-.4-.4s.2-.4.4-.4c.6 0 1.4.4 2.1 1 .7.6 1.1 1.4 1.1 2 0 .3-.1.4-.3.4z"
+                            /></svg
+                          >Светильники</a
+                        >
+                        <svg viewbox="0 0 6 9">
+                          <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                        </svg>
+                      </li>
+                      <li class="category-menu__item">
+                        <a href="javascript:void(0)">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M5.1 7.4c.3.5.9.8 1.6.8 1 0 1.9-.8 1.9-1.9v-.1h1.2c.1 0 .2 0 .2-.1v-.2l-.7-2.1c0-.1-.1-.2-.2-.2H7.6c-.1 0-.2.1-.2.2l-.7 2.1v.2c.1.1.1.1.2.1h1.2v.1c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4v-4h2.1c.1 0 .2-.1.2-.2s-.1-.2-.2-.2H2.7c-.2-.1-.3 0-.3.1s.1.2.2.2h2.1v4.1c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4v-.1h1.2c.1 0 .1 0 .2-.1s.1-.1 0-.2l-.6-2.1c0-.1-.1-.2-.2-.2H.9c-.1 0-.2.1-.2.2L0 5.9v.2c0 .1.1.1.2.1h1.2v.1c0 1.1.8 1.9 1.9 1.9.6 0 1.2-.3 1.6-.8l.1-.1.1.1z"
+                            /></svg
+                          >Светильники для ванной</a
+                        >
+                        <svg viewbox="0 0 6 9">
+                          <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                        </svg>
+                      </li>
+                      <li class="category-menu__item">
+                        <a href="javascript:void(0)">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M0 0v.7c0 .1.1.2.2.2h.9c.1 0 .2.1.2.2v3.3h-.1c-.1-.1-.2 0-.2.1v.4C.2 5.2-.2 6 .1 6.8c.3.8 1.1 1.2 1.9 1 .8-.3 1.2-1.1.9-1.9-.1-.5-.5-.8-.9-1v-.4c0-.1-.1-.2-.2-.2h-.1V1.1c0-.1.1-.2.2-.2h2.7c.1 0 .2.1.2.2v5.4h-.1c-.1 0-.2.1-.2.2v.4c-.8.3-1.2 1.1-.9 1.9.3.8 1.1 1.2 1.9.9.8-.3 1.2-1.1.9-1.9-.1-.4-.5-.8-.9-.9v-.4c0-.1-.1-.2-.2-.2h-.1V1.1c0-.1.1-.2.2-.2h2.7c.1 0 .2.1.2.2v2.3h-.1c-.1-.1-.2 0-.2.1v.4c-.8.3-1.2 1.2-.9 1.9.3.8 1.1 1.2 1.9 1 .8-.3 1.2-1.1.9-1.9-.1-.5-.5-.8-.9-1v-.4c0-.1-.1-.2-.1-.2h-.2V1.1c0-.1.1-.2.2-.2h.7c.2 0 .4 0 .4-.2V.4 0H0zm2 6.3c0-.1.1-.2.1-.2.1 0 .2.1.2.2 0 .4-.4.8-.8.8-.1.1-.2 0-.2-.1s.1-.2.2-.2c.3 0 .5-.2.5-.5zm3.5 2.2c0-.1.1-.2.1-.2.1 0 .2.1.2.2 0 .5-.3.8-.8.8-.1 0-.2-.1-.2-.2 0 0 .1-.1.2-.1.3 0 .5-.2.5-.5zM9 5.3c0-.1.1-.2.2-.2s.2.1.2.2c0 .4-.4.8-.8.8-.2.1-.3 0-.3-.1s.1-.2.2-.2c.3 0 .5-.2.5-.5z"
+                            />
+                          </svg>
+                          Детские светильники</a
+                        >
+                        <svg viewbox="0 0 6 9">
+                          <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                        </svg>
+                      </li>
+                      <li class="category-menu__item">
+                        <a href="javascript:void(0)">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M2.1 5.2C2.1 5.1 2 5 2 5H.2c-.1 0-.2.1-.2.2s.1.1.2.1H2l.1-.1zM3.1 8L1.9 9.2c-.1.1-.1.2 0 .2l.1.1s.1 0 .1-.1l1.2-1.2c.1-.1.1-.2 0-.2-.1-.1-.2-.1-.2 0zM2.4 6.7c0-.1-.1-.1-.2-.1l-1.7.7c-.1 0-.1.1-.1.2s.1.1.2.1h.1l1.7-.7v-.2z"
+                            />
+                            <path
+                              d="M9.8.5H.2C.1.5 0 .5 0 .6v1c0 .1.1.2.2.2h4.4v2.1l-.6.2c-1 .3-1.5 1.4-1.2 2.3.3.8 1 1.3 1.8 1.3.2 0 .4 0 .6-.1L6.9 7l.6-.2.5-.1c1-.3 1.5-1.3 1.2-2.3-.2-.5-.5-.8-.8-1V1.8h1.5c.1 0 .2-.1.2-.2v-1C10 .5 9.9.5 9.8.5zM4.5 7.2c-.7 0-1.4-.6-1.4-1.4 0-.7.6-1.4 1.4-1.4s1.4.6 1.4 1.4c0 .8-.6 1.4-1.4 1.4zm2.5-4l-1 .3V1.8h1v1.4z"
+                            />
+                          </svg>
+                          Уличные светильники</a
+                        >
+                        <svg viewbox="0 0 6 9">
+                          <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                        </svg>
+                      </li>
+                      <li class="category-menu__item">
+                        <a href="javascript:void(0)">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M.6 1.8l.1-.1C1.2.9 2.1.5 3 .6c.2-.3.5-.5.9-.6.3-.1.7 0 1 .2.3.2.5.5.6.9L8.2 3c.2 0 .4 0 .5.1.1.1.3.3.3.5s0 .4-.1.6c0 .1-.1.1-.2.2l-.5 4.2c.5.3.9.7 1.1 1.2l.1.2H4.7l.1-.2c.1-.3.3-.6.5-.8v-.2c0-.3.3-.6.6-.6.2 0 .3.1.4.2.2-.1.5-.1.7-.1h.3l.5-4c-.2-.1-.3-.4-.3-.7L5.2 2c.4.9.3 1.8-.2 2.6l-.1.1-1.3-.9c-.2.2-.5.3-.7.3-.5 0-.9-.4-.9-.9v-.4l-1.4-1z"
+                            />
+                          </svg>
+                          Настольные лампы</a
+                        >
+                        <svg viewbox="0 0 6 9">
+                          <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                        </svg>
+                      </li>
+                      <li class="category-menu__item">
+                        <a href="javascript:void(0)">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M9.9 7.5h-.5V2.8c0-.9-.7-1.6-1.6-1.6H3.9c-.5 0-.9.4-.9.9 0 0 0 .1.1.1h5.2c.2 0 .4.2.4.4v5H7.4v-.3c0-.1-.1-.1-.1-.1h-.4c-.1 0-.1.1-.1.1v.2h-.9c-.1 0-.1.1-.1.1v.7c0 .1.1.1.1.1h4c.1.1.1.1.1 0v-.7c0-.1 0-.2-.1-.2zM2.7 5.7c-.2-.2-.5-.2-.7 0l-1.9 2c-.2.2-.2.5 0 .7l1 .9c.2.2.5.2.7 0l1.9-2c.2-.2.2-.5 0-.7l-1-.9zm-.7.7c0-.1 0-.1 0 0l.4.3v.1L2 6.4zm-.4 1.2c.1-.1.1-.1.2 0l.1.1v.1h-.1l-.2-.1v-.1zm0 .5c-.1.1-.1.1-.2 0L1.3 8v-.1h.1l.2.1v.1zm-.4-.8c.1-.1.1-.1.2 0l.1.1v.1h-.1l-.1-.1-.1-.1zm-.2.3c.1-.1.1-.1.2 0l.1.1v.1h-.1L1 7.7c-.1 0-.1-.1 0-.1zm-.1.5c-.1.1-.1.1-.2 0V8v-.1h.1l.1.1c.1 0 .1 0 0 .1zm.4.3c-.1.1-.1.1-.2 0L1 8.3v-.1h.1l.1.1c.1 0 .1.1.1.1zm.4.3c-.1.1-.1.1-.2 0h-.1v-.1h.1l.1.1c.1-.1.1 0 .1 0zm.3-.3c-.1.1-.1.1-.2 0h-.1v-.1H2v.1zm.3-.3c-.1.1-.1.1-.2 0H2V8h.2c.1 0 .1.1.1.1zm0-1l-.2.3v-.1l.2-.2c0-.1 0-.1 0 0 .1 0 .1 0 0 0zm.3-.1c0 .1-.1.1-.2 0s-.1-.2 0-.2c.1-.1.2-.1.2 0 .1 0 .1.1 0 .2zm.1-.4l.3-.3h.1v.1l-.4.2c.1.1 0 .1 0 0 0 .1 0 .1 0 0 0 .1 0 .1 0 0zm.4.8c-.1 0-.1 0 0 0l-.4-.3V7h.1l.3.4c0-.1 0 0 0 0zM3.3 5c-.1 0-.2.1-.2.2s.1.2.2.2c.4 0 .7.3.7.7 0 .1.1.2.2.2s.2-.1.2-.2C4.3 5.5 3.8 5 3.3 5z"
+                            />
+                            <path
+                              d="M3.4 4.2c-.1 0-.2.1-.2.2s.1.2.2.2c.8 0 1.5.6 1.5 1.4H5c.1 0 .2 0 .2-.1 0-1-.8-1.7-1.8-1.7z"
+                            />
+                            <path
+                              d="M6.1 5.7c0-1.3-1.1-2.4-2.5-2.4-.1 0-.2.1-.2.2s.1.2.2.2c1.2 0 2.1.9 2.1 2.1 0 .1.1.2.2.2.1-.2.2-.2.2-.3z"
+                            />
+                          </svg>
+                          Умные светильники</a
+                        >
+                        <svg viewbox="0 0 6 9">
+                          <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                        </svg>
+                      </li>
+                      <li class="category-menu__item">
+                        <a href="javascript:void(0)">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M6.8 3.7c.2 0 .2-.1.2-.1L6.1.2C6 .2 6 .1 5.9.1H4.1v.1l-1 3.4c0 .1 0 .2.1.2H4V5s0 .1.1.1.2-.1.2-.2V3.7h.4v4.7c-.2.1-.1.3-.1.5H4c-.2 0-.4.2-.4.4v.1h-.2c-.1 0-.2.1-.2.2s.1.2.2.2h3.3c.1 0 .2-.1.2-.2s-.1-.2-.2-.2h-.2v-.1c0-.2-.2-.4-.4-.4h-.6c0-.2 0-.4-.1-.4V3.7h1.4z"
+                            />
+                          </svg>
+                          Торшеры</a
+                        >
+                        <svg viewbox="0 0 6 9">
+                          <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                        </svg>
+                        <ul class="category-menu-second">
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Люстры с абажуром</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Люстры подвесы</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Потолочные люстры</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                            <ul class="category-menu-third">
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Люстры с абажуром</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Люстры подвесы</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Потолочные люстры</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Люстры со свечами</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Хрустальные люстры</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Люстры со свечами</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Хрустальные люстры</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="category-menu__item">
+                        <a href="javascript:void(0)">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M7.6 2.3c0-.1-.1-.2-.1-.4 0-.1-.1-.2-.2-.3 0-.1-.1-.2-.2-.2 0-.1-.1-.2-.2-.3-.1-.1-.2-.1-.3-.2-.1-.1-.1-.2-.3-.2C6.2.6 6.1.6 6 .5c-.1 0-.2-.1-.2-.1h-.1V.3L5.6.2C5.4.1 5.2 0 5 0c-.2 0-.4.1-.5.3-.1 0-.1.1-.1.1s-.1 0-.1.1H4c-.1.1-.2.1-.3.2-.1 0-.2.1-.3.2-.1.1-.2.1-.3.2-.1.1-.2.2-.2.3-.1 0-.2.1-.2.2-.1.1-.1.2-.2.3s-.1.3-.1.4c0 .1-.1.2-.1.4v.4c0 .1.1.3.1.6s.1.5.1.7c.1.5.2.9.2 1.3.1.4.1.6.1.7v.1c0 .1 0 .2.1.3 0 .1.1.2.1.3.1.1.1.2.2.3.1.1.1.2.2.3 0 0 0 .1.1.1 0 .1.1.2.1.2v.5c0 .1 0 .2.1.2 0 .2.1.3.2.3.1.1.2.2.3.2v.1c0 .2.1.4.3.5.1.1.3.2.5.2s.4-.1.5-.2c.2-.1.2-.3.3-.5v-.1c.2 0 .2-.1.3-.2.1 0 .2-.1.2-.2s.1-.1.1-.2V8.3v-.2s.1-.1.1-.2c0 0 0-.1.1-.1.1-.1.1-.2.2-.3.1-.1.1-.2.1-.3.1-.1.1-.3.1-.4v-.4c0-.1 0-.3.1-.7.1-.4.2-.8.2-1.3 0-.2.1-.4.1-.7.1-.3.1-.5.1-.6v-.4c.2-.2.1-.3.1-.4zM4.3 8c-.1 0-.1 0-.1-.1s.1-.1.1-.1h.2c.1 0 .1.1.1.1 0 .1 0 .1-.1.1h-.2zm1 1.5c-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1-.1-.1-.1-.2-.1-.2h.8s0 .1-.1.2zm-.5-1.6c0-.1.1-.1.1-.1h.2c.1 0 .1.1.1.1 0 .1 0 .1-.1.1h-.2s-.1 0-.1-.1zm.9.1h-.2c-.1 0-.1 0-.1-.1s.1-.1.2-.1h.2c.1 0 .1.1.1.1-.1.1-.1.1-.2.1zm1-4.5c-.1.1-.1.2-.1.3 0 0 0 .1-.1.1 0 .2-.2.7-.4.7s-.3-.1-.4-.3l-.1-.7v.1c-.1.5-.2.8-.4 1v1.6c0 .1-.1.2-.2.2s-.2-.1-.2-.2V4.7c-.1-.2-.2-.5-.4-1v-.1l-.1.7s0 .1-.1.1c0 .1-.1.2-.2.2-.3 0-.5-.6-.6-.9 0-.1-.1-.2-.1-.2 0-.1 0-.2.1-.3.1-.1.2 0 .2.1s.2.6.2.6l.2-.8c.1-.3.2-.4.3-.4.1.1.2.2.2.4v.1c.2.1.5 1.1.5 1.1s.2-.5.2-.6c.1-.2.1-.4.1-.5v-.1c.1-.2.1-.3.2-.4.2 0 .3.1.3.4l.3.9c.1-.2.1-.3.1-.4 0-.1.1-.2.1-.2 0-.1.2-.2.2-.1.2 0 .2.1.2.2z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                          Комплектующие</a
+                        >
+                        <svg viewbox="0 0 6 9">
+                          <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                        </svg>
+                        <ul class="category-menu-second">
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Люстры с абажуром</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Люстры подвесы</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Потолочные люстры</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                            <ul class="category-menu-third">
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Люстры с абажуром</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Люстры подвесы</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Потолочные люстры</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Люстры со свечами</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                              <li class="category-menu-third__item">
+                                <a href="javascript:void(0)">Хрустальные люстры</a>
+                                <svg viewbox="0 0 6 9">
+                                  <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                                </svg>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Люстры со свечами</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                          <li class="category-menu-second__item">
+                            <a href="javascript:void(0)">Хрустальные люстры</a>
+                            <svg viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="category-menu__item">
+                        <a href="javascript:void(0)">
+                          <svg viewbox="0 0 10 10" class="category-menu__item-icon">
+                            <path
+                              d="M3.5 0H1.2C.5 0 0 .5 0 1.2v2.3c0 .6.5 1.2 1.2 1.2h2.3c.6 0 1.2-.5 1.2-1.2V1.2C4.6.5 4.1 0 3.5 0zm.3 3.5c0 .2-.2.4-.4.4H1.2c-.2 0-.4-.2-.4-.4V1.2c0-.2.2-.4.4-.4h2.3c.2 0 .4.2.4.4v2.3zM8.8 0H6.6c-.7 0-1.2.5-1.2 1.2v2.3c0 .6.5 1.2 1.2 1.2h2.3c.6 0 1.2-.5 1.2-1.2V1.2C10 .5 9.5 0 8.8 0zm.4 3.4c0 .2-.2.4-.4.4H6.6c-.2 0-.4-.2-.4-.4V1.2c0-.2.2-.4.4-.4h2.3c.1 0 .3.2.3.4v2.2zM3.5 5.4H1.2C.5 5.4 0 5.9 0 6.5v2.3C0 9.5.5 10 1.2 10h2.3c.6 0 1.2-.5 1.2-1.2V6.5c-.1-.6-.6-1.1-1.2-1.1zm.3 3.4c0 .2-.2.4-.4.4H1.2C1 9.2.8 9 .8 8.8V6.5c0-.2.2-.4.4-.4h2.3c.2 0 .4.2.4.4v2.3zM8.8 5.4H6.6c-.6 0-1.2.5-1.2 1.2v2.3c0 .6.5 1.2 1.2 1.2h2.3c.6-.1 1.1-.6 1.1-1.3V6.6c0-.7-.5-1.2-1.2-1.2zm.4 3.4c0 .2-.2.4-.4.4H6.6c-.3 0-.4-.2-.4-.4V6.6c0-.2.2-.4.4-.4h2.3c.2 0 .4.2.4.4v2.2z"
+                            />
+                          </svg>
+                          Все категории</a
+                        >
+                        <svg viewbox="0 0 6 9">
+                          <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                        </svg>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-lg-7 col-md-8 col-10">
+                <div class="search-block">
+                  <form action="#" class="search-form">
+                    <input type="search" class="search-place" placeholder="Поиск" />
+                    <button type="button" class="search-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50">
+                        <path
+                          d="M37.5 18.7C37.5 8.4 29.1 0 18.8 0 8.4 0 0 8.4 0 18.7s8.4 18.7 18.8 18.7c10.3.1 18.7-8.3 18.7-18.7zM18.8 32.8c-7.8 0-14.1-6.3-14.1-14.1s6.3-14 14.1-14S32.9 11 32.9 18.8s-6.4 14-14.1 14zM48.6 42L37.2 30.5c-1.7 2.7-4 4.9-6.6 6.6L42 48.6c1.8 1.8 4.8 1.8 6.6 0 1.9-1.8 1.9-4.8 0-6.6z"
+                        />
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-3 col-1">
+                <div class="use-block-wrapper">
+                  <div class="use__item user d-none d-lg-flex">
+                    <div class="wrapper-button-lk" id="enterModalButton">
+                      <svg
+                        image-rendering="optimizeQuality"
+                        shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision"
+                        viewbox="0 0 10 10"
+                      >
+                        <path
+                          d="M5.7 9.3c-.2 0-.3.2-.3.4s.1.3.3.3h1.7c.2 0 .3-.1.3-.3 0-.2-.1-.4-.3-.4H5.7zm3.4-2.8H5.7c-.2 0-.3.2-.3.4s.1.3.3.3h3.4c.2 0 .3-.2.3-.3 0-.3-.1-.4-.3-.4zm.3 1.7c0-.2-.1-.4-.3-.4H5.7c-.2.1-.3.2-.3.4s.1.3.3.3h3.4c.2.1.3-.1.3-.3zM7.7 2.9C7.7 1.3 6.4 0 5 0 3.5 0 2.3 1.3 2.3 2.9c0 1 .5 1.8 1.2 2.4-.7.2-1.3.6-1.8 1.1C.8 7.3.3 8.6.3 9.9H1c0-2.3 1.8-4.2 4-4.2 1.4 0 2.7-1.3 2.7-2.8zM5 4.9c-1.1 0-2-.9-2-2S3.9.8 5 .8s2 .9 2 2.1-1 2-2 2z"
+                        />
+                      </svg>
+                      <span class="user-info">
+                        Здравствуйте,
+                        <a href="javascript:void(0)">Иван Иванович</a>
+                      </span>
+                    </div>
+                    <div class="use-block-wrapper-menu">
+                      <ul class="use-block-menu">
+                        <li class="use-block-menu__item">
+                          <a href="javascript:void(0)">
+                            Админка
+                            <svg class="use-block-menu__icon" viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="use-block-menu__item">
+                          <a href="javascript:void(0)">
+                            Профиль
+                            <svg class="use-block-menu__icon" viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="use-block-menu__item">
+                          <a href="javascript:void(0)">
+                            Доставка
+                            <svg class="use-block-menu__icon" viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="use-block-menu__item">
+                          <a href="javascript:void(0)">
+                            Заказы
+                            <svg class="use-block-menu__icon" viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="use-block-menu__item">
+                          <a href="javascript:void(0)">
+                            Избраное
+                            <svg class="use-block-menu__icon" viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="use-block-menu__item">
+                          <a href="javascript:void(0)">
+                            FAQ
+                            <svg class="use-block-menu__icon" viewbox="0 0 6 9">
+                              <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="use-block-menu__item">
+                          <a href="javascript:void(0)">
+                            Выход
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="use__item d-none d-md-flex">
+                    <a href="/compare.html" class="use__link">
+                      <div class="marker-block-header">
+                        <div class="marker-block-counter">15</div>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" baseprofile="tiny" version="1.2" viewbox="0 0 36 36">
+                        <path
+                          fill-rule="evenodd"
+                          d="M29.8 11.9l5.4-1.5c.6-.2.9-.8.8-1.3-.2-.6-.8-.9-1.3-.7l-6.8 1.9-8.8 2.5V1.1C19.1.5 18.6 0 18 0c-.6 0-1 .5-1 1.1v12.2l-9.4 2.6-6.8 1.9c-.6.1-.9.7-.8 1.2.1.5.6.8 1 .8h.3l4.2-1.1-5.4 9c-.1.1-.1.3-.1.5C0 32.5 3.5 36 7.8 36s7.9-3.5 7.9-7.9c0-.2 0-.4-.2-.6l-6.1-10L25.9 13l-5.4 9c-.1.2-.1.4-.1.6 0 4.3 3.5 7.9 7.8 7.9 2.1 0 4.1-.8 5.6-2.3 1.4-1.5 2.3-3.5 2.3-5.6 0-.2-.1-.4-.2-.6l-6.1-10.1zM12.7 27.1H2.9l4.9-8.2 4.9 8.2zm10.5-5.6l4.9-8.2 4.9 8.2h-9.8z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="use__item d-none d-md-flex">
+                    <a href="/favorite.html" class="use__link">
+                      <div class="marker-block-header">
+                        <div class="marker-block-counter">137</div>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50">
+                        <path
+                          class="heart"
+                          d="M24.85 10.126c2.018-4.783 6.628-8.125 11.99-8.125 7.223 0 12.425 6.179 13.079 13.543 0 0 .353 1.828-.424 5.119-1.058 4.482-3.545 8.464-6.898 11.503L24.85 48 7.402 32.165c-3.353-3.038-5.84-7.021-6.898-11.503-.777-3.291-.424-5.119-.424-5.119C.734 8.179 5.936 2 13.159 2c5.363 0 9.673 3.343 11.691 8.126z"
+                        />
+                        <path
+                          class="heart-dash"
+                          d="M6 18.078c-.553 0-1-.447-1-1 0-5.514 4.486-10 10-10 .553 0 1 .447 1 1s-.447 1-1 1c-4.411 0-8 3.589-8 8 0 .553-.447 1-1 1z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="use__item" id="basketModalButtonHeader">
+                    <a href="javascript:void(0)" class="use__link">
+                      <div class="marker-block-header">
+                        <div class="marker-block-counter">78</div>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" baseprofile="tiny" version="1.2" viewbox="0 0 35.6 36">
+                        <path
+                          fill-rule="evenodd"
+                          d="M34.8 6.8c-.7-.8-1.6-1.2-2.7-1.2H6.5l-.3-1.9C6 1.6 4.5 0 2.9 0H1.1C.5 0 0 .5 0 1.1s.5 1.1 1.1 1.1H3c.3-.1 1 .6 1.2 1.8l3 22.6c.2 1 .7 1.9 1.4 2.6.6.5 1.3.8 2.1 1-.3.5-.5 1.1-.5 1.8 0 2.1 1.8 3.9 3.9 3.9 2.1 0 3.9-1.8 3.9-3.9 0-.7-.2-1.3-.4-1.8H23c-.3.5-.4 1.1-.4 1.8 0 2.1 1.8 3.9 3.9 3.9s3.9-1.8 3.9-3.9c0-.7-.1-1.3-.4-1.8h2.8c.6 0 1.1-.5 1.1-1.1 0-.6-.5-1.1-1.1-1.1H11.4c-1 0-2-.9-2.1-1.9L9 24.7h20.8c1 0 2-.4 2.8-1.1.8-.7 1.3-1.7 1.4-2.6l1.5-11.3c.3-1.1-.1-2.1-.7-2.9zm-19 25.3c0 1-.8 1.8-1.8 1.8s-1.8-.8-1.8-1.8.8-1.8 1.8-1.8 1.8.8 1.8 1.8zm12.4 0c0 1-.8 1.8-1.8 1.8s-1.8-.8-1.8-1.8.8-1.8 1.8-1.8 1.8.8 1.8 1.8zm5-23.9c.2.3.4.7.3 1.2l-.7 4.7h-7.1l.4-6.4h6c.5.1.8.2 1.1.5zm-15 14.4l-.4-6.4h5.7l-.5 6.4h-4.8zm-.5-8.5l-.4-6.4H24l-.4 6.4h-5.9zm-2.6-6.3l.4 6.4H7.6l-.8-6.4h8.3zm-7.2 8.4h7.8l.4 6.4H8.8l-.9-6.4zm21.9 6.4h-4.7l.4-6.4h7.1l-.6 4.5c-.1 1-1.1 1.9-2.2 1.9z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- DOWN LINE END -->
+      </section>
+    </header>
+    <!-- HEADER END -->
+    <!-- MAIN START -->
+    <main>
+      <!-- PROGRESS LINE QUERY START -->
+      <div class="progress progress-querydb">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 25%;"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <!-- PROGRESS LINE QUERY END -->
+      <!-- BREADCRUMBS SECTION START -->
+      <section class="breadcrumb-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/">
+                      <svg viewbox="0 0 10 10">
+                        <path
+                          fill="#004d75"
+                          class="home"
+                          d="M9.9 5c.2-.2.2-.5 0-.7L5.4.4c-.2-.2-.5-.2-.7 0L.2 4.6c-.2.2-.3.5-.1.6l.1.1c.2.2.5.2.7.1l.3-.3v4.4c0 .3.2.5.5.5h1.7c.4 0 .6-.2.6-.5V6.4h2.2v3.1c0 .3.2.5.5.5h1.9c.2 0 .4-.2.4-.5V5.2l.2.2c.1.1.4 0 .5-.2l.2-.2z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#">Освещение</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="#">LED-светильники</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <a href="#">Точечные</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BREADCRUMBS SECTION END -->
+      <!-- TITLE PAGE START -->
+      <section class="title-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>Как это работает</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TITLE PAGE END -->
+
+      <!-- SUBSCRIBE SECTION START -->
+      <section class="subscribe">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <span class="label">Будьте первым, кто узнает о наших лучших предложениях!</span>
+              <button
+                type="button"
+                id="subscribeBtn"
+                class="subscribe-btn"
+                data-toggle="modal"
+                data-target="#subscribeModal"
+              >
+                Подписаться
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SUBSCRIBE SECTION END -->
+      <!-- SEO SECTION START -->
+      <div class="section seo d-none d-lg-flex">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="seo-body">
+                <p>
+                  Суперважный сеошный текст Lorem ipsum dolor sit amet. Error sit voluptatem accusantium doloremque.
+                  Amet, consectetur, adipisci velit, sed quia non recusandae laboriosam, nisi. Optio, cumque nihil
+                  impedit, quo minus. Id est laborum et quasi architecto beatae. Officia deserunt mollitia animi, id est
+                  eligendi optio, cumque nihil impedit. Voluptatum deleniti atque corrupti, quos dolores et quas
+                  molestias. Cum soluta nobis est et molestiae non provident, similique sunt in.
+                </p>
+                <p>
+                  Delectus, ut labore et accusamus et molestiae. Ipsum, quia dolor repellendus sequi nesciunt, neque
+                  porro. Veritatis et dolore magnam aliquam quaerat. Autem quibusdam et aut rerum necessitatibus saepe
+                  eveniet, ut aut perferendis doloribus. Delectus, ut labore et harum quidem rerum hic tenetur a
+                  sapiente. Labore et dolore magnam aliquam quaerat voluptatem accusantium doloremque laudantium, totam.
+                  Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi.
+                </p>
+                <p>
+                  Quod maxime placeat, facere possimus, omnis voluptas nulla vero eos et harum. Hic tenetur a sapiente
+                  delectus, ut labore. Consectetur, adipisci velit, sed quia consequuntur. Provident, similique sunt in
+                  ea commodi autem vel illum, qui in culpa. Voluptas sit, aspernatur aut officiis debitis aut odit. Modi
+                  tempora incidunt, ut et dolore magnam aliquam. Architecto beatae vitae dicta sunt, explicabo magni
+                  dolores.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SEO SECTION END -->
+    </main>
+    <!-- MAIN END -->
+    <!-- MOBILE MENU START -->
+    <div class="mob-menu ">
+      <!-- MOBILE MENU WRAPPER START -->
+      <div class="mob-menu--wrapper">
+        <!-- MOBILE MENU HEADER START -->
+        <div class="mob-menu-header">
+          <a href="javascript:void(0)" class="mob-menu-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" id="logo" viewBox="0 0 332 54.1">
+              <path
+                class="mob-menu-logo-path-1"
+                d="M12 11.1c-.4-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2c.8-.4 1.7-.5 2.5-.3s1.5.7 2 1.5l11.9 20.7c.4.6.6 1.4.6 2.1 0 .7-.1 1.3-.4 1.9l-12.2 20c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4l9.7-15.9H3.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1H21l-9-15.7z"
+              ></path>
+              <path
+                class="mob-menu-logo-path-2"
+                fill="#10587E"
+                d="M29.1 40.7c-.5-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2 1.7-.5 2.5-.3 1.5.7 2 1.5l6.8 11.7c.5.8.5 1.7.3 2.5s-.7 1.5-1.5 2-1.7.5-2.5.3-1.5-.7-2-1.5l-6.8-11.7zm6.8-32.8c.5-.8 1.2-1.4 2-1.6.8-.2 1.6-.1 2.4.3l.1.1c.8.5 1.3 1.2 1.5 2 .2.8.1 1.7-.3 2.5L35.4 22c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3h-.1c-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4v-.1l6.2-10.8zm.7 25.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1h13.8c.9 0 1.7.4 2.3 1 .6.6 1 1.4 1 2.3 0 .9-.4 1.7-1 2.3-.6.6-1.4 1-2.3 1H36.6z"
+              ></path>
+              <path
+                class="mob-menu-logo-path-3"
+                fill-rule="evenodd"
+                d="M83.8 16.3h11.1v-6c-3.5 0-10.4-.4-13.4.2-5.3 1.1-9.4 5.6-9.4 11.5 0 5.8 5 11.6 10.9 11.6h8.9c3 0 5.4 2.7 5.4 5.7 0 2.7-1.9 5-4.4 5.6-3 .7-16.4.1-20.4.1v5.8h19.9c6.4 0 11.6-5.2 11.7-11.6.1-5-3.9-11.6-9.2-11.6H83.7c-3.2.1-5.7-2.3-5.7-5.6 0-3.4 2.6-5.5 5.8-5.7zm235.2-5h-6.1V0H306v32.9c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.1 0-.3-.1-.4V17.5h6.1v-6.2zm-25 33.5c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2H294v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-41.3 16.5V10.2H231v22.7c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.2 0-.3-.1-.4zm-32.1-4.2v22.7h-6.9V28.7c1.2-12.5 11-18.5 22.7-18.5h3.2v6H221c-7.3 0-13.8 4.9-15.2 12.1.1.2.1.3 0 .4zm-19.3 16.1c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2h-5.9v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-43.2 16.3c9.6 2.6 11.7 9.1 11.7 18.4h6.8c0-11.1-1.7-20.5-14.7-23.9l11.8-16.9h-8.4l-11 16.1H117V10.2h-7.2v40.7h7.2V32.6c2 0 10.2-.3 11.5.1z"
+              ></path>
+            </svg>
+          </a>
+          <ul class="languages-block">
+            <li class="languages__item languages__item--active">
+              <a href="javascript:void(0)">Ru</a>
+            </li>
+            <li class="languages__item">
+              <a href="javascript:void(0)">Ua</a>
+            </li>
+          </ul>
+          <div class="mob-menu-header__button-wrapper">
+            <svg viewbox="0 0 10 10" class="mob-menu-icon mob-menu-icon--white">
+              <path
+                d="M7.9 2.9C7.9 1.3 6.6 0 5 0S2.1 1.3 2.1 2.9c0 1 .5 1.9 1.3 2.4-.7.2-1.4.6-1.9 1.2C.5 7.4 0 8.7 0 10h.8C.8 7.7 2.7 5.8 5 5.8c1.6 0 2.9-1.3 2.9-2.9zM5 5c-1.2 0-2.1-.9-2.1-2.1S3.8.8 5 .8s2.1.9 2.1 2.1S6.2 5 5 5zm5 2.2L8.2 9l-.6-.5.9-.9h-.6c-.9 0-1.7.8-1.7 1.7v.7h-.8v-.7c0-1.4 1.1-2.5 2.5-2.5h.6l-.9-.9.6-.6L10 7.2z"
+              />
+            </svg>
+            <button class="mob-menu-header__button">Вход</button>
+            <button class="mob-menu-header__button">Регистрация</button>
+            <button class="mob-menu-header__button-lk">
+              <div class="mob-menu-header__button-lk-icon"></div>
+            </button>
+          </div>
+        </div>
+        <!-- MOBILE MENU BODY START -->
+        <div class="mob-menu-body">
+          <nav>
+            <ul class="mob-nav-main">
+              <li>
+                <a href="javascript:void(0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.2.1l2.4 2.3L10 4.7c0 .1 0 .3-.1.4 0 .1-.1.1-.2.1H8.6v4.6c0 .1-.1.3-.2.3h-2c-.1 0-.2-.1-.2-.3V6.2H3.8v3.5c0 .1-.1.3-.2.3H1.7c-.1 0-.2-.1-.2-.3V5.2H.2c-.1 0-.2-.1-.2-.3 0-.1 0-.1.1-.2l2.4-2.3L4.9.1c0-.1.2-.1.3 0zm2 2.7L5 .6 2.8 2.8.9 4.7h.8c.1 0 .2.1.2.3v4.6h1.4V6c0-.1.1-.3.2-.3h2.8c.1 0 .2.1.2.3v3.5h1.4V4.9c0-.1.1-.3.2-.3h.8L7.2 2.8z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>Главная</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="mob-menu-catalog">
+                  <svg viewbox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M3.5 0H1.2C.5 0 0 .5 0 1.2v2.3c0 .6.5 1.2 1.2 1.2h2.3c.6 0 1.2-.5 1.2-1.2V1.2C4.6.5 4.1 0 3.5 0zm.3 3.5c0 .2-.2.4-.4.4H1.2c-.2 0-.4-.2-.4-.4V1.2c0-.2.2-.4.4-.4h2.3c.2 0 .4.2.4.4v2.3zM8.8 0H6.6c-.7 0-1.2.5-1.2 1.2v2.3c0 .6.5 1.2 1.2 1.2h2.3c.6 0 1.2-.5 1.2-1.2V1.2C10 .5 9.5 0 8.8 0zm.4 3.4c0 .2-.2.4-.4.4H6.6c-.2 0-.4-.2-.4-.4V1.2c0-.2.2-.4.4-.4h2.3c.1 0 .3.2.3.4v2.2zM3.5 5.4H1.2C.5 5.4 0 5.9 0 6.5v2.3C0 9.5.5 10 1.2 10h2.3c.6 0 1.2-.5 1.2-1.2V6.5c-.1-.6-.6-1.1-1.2-1.1zm.3 3.4c0 .2-.2.4-.4.4H1.2C1 9.2.8 9 .8 8.8V6.5c0-.2.2-.4.4-.4h2.3c.2 0 .4.2.4.4v2.3zM8.8 5.4H6.6c-.6 0-1.2.5-1.2 1.2v2.3c0 .6.5 1.2 1.2 1.2h2.3c.6-.1 1.1-.6 1.1-1.3V6.6c0-.7-.5-1.2-1.2-1.2zm.4 3.4c0 .2-.2.4-.4.4H6.6c-.3 0-.4-.2-.4-.4V6.6c0-.2.2-.4.4-.4h2.3c.2 0 .4.2.4.4v2.2z"
+                    />
+                  </svg>
+                  <span>Каталог</span>
+                  <svg viewbox="0 0 6 9" class="arrow">
+                    <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                  </svg>
+                </a>
+                <ul class="mob-nav-main-second">
+                  <li class="mob-menu-catalog-back">
+                    <a href="javascript:void(0)">
+                      <span>Назад</span>
+                      <svg viewbox="0 0 6 9" class="arrow">
+                        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/catalog_product.html">
+                      <span>Светильники</span>
+                      <svg viewbox="0 0 6 9" class="arrow">
+                        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/catalog_category.html">
+                      <span>Подкатегория2</span>
+                      <svg viewbox="0 0 6 9" class="arrow">
+                        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span>Подкатегория3</span>
+                      <svg viewbox="0 0 6 9" class="arrow">
+                        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span>Подкатегория4</span>
+                      <svg viewbox="0 0 6 9" class="arrow">
+                        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                      </svg>
+                    </a>
+                    <ul class="mob-nav-main-third">
+                      <li class="mob-menu-catalog-back">
+                        <a href="javascript:void(0)">
+                          <span>Назад</span>
+                          <svg viewbox="0 0 6 9" class="arrow">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>Подкатегория</span>
+                          <svg viewbox="0 0 6 9" class="arrow">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>Подкатегория</span>
+                          <svg viewbox="0 0 6 9" class="arrow">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>Подкатегория</span>
+                          <svg viewbox="0 0 6 9" class="arrow">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>Подкатегория</span>
+                          <svg viewbox="0 0 6 9" class="arrow">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>Подкатегория</span>
+                          <svg viewbox="0 0 6 9" class="arrow">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>Подкатегория</span>
+                          <svg viewbox="0 0 6 9" class="arrow">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>Подкатегория</span>
+                          <svg viewbox="0 0 6 9" class="arrow">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>Подкатегория</span>
+                          <svg viewbox="0 0 6 9" class="arrow">
+                            <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span>Подкатегория5</span>
+                      <svg viewbox="0 0 6 9" class="arrow">
+                        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span>Подкатегория6</span>
+                      <svg viewbox="0 0 6 9" class="arrow">
+                        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span>Подкатегория7</span>
+                      <svg viewbox="0 0 6 9" class="arrow">
+                        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span>Подкатегория</span>
+                      <svg viewbox="0 0 6 9" class="arrow">
+                        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg viewbox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M8.9 0H6.6c-.5 0-1.2.3-1.5.6L.3 5.4c-.2.2-.3.5-.3.7 0 .3.1.6.3.8l2.8 2.8c.2.2.5.3.8.3.3 0 .5-.1.8-.3L9.4 5c.4-.4.6-1 .6-1.6V1.1C10 .5 9.5 0 8.9 0zm.5 3.4c0 .4-.2.9-.5 1.1L4.2 9.3c-.1.1-.2.1-.3.1s-.3 0-.4-.1L.7 6.5c-.1-.1-.1-.2-.1-.4s.1-.2.2-.3l4.7-4.7c.2-.2.8-.5 1.1-.5h2.3c.3 0 .5.2.5.5v2.3z"
+                    />
+                    <path
+                      d="M2.7 6.5c-.1-.1-.1-.3.1-.5.2-.1.3-.1.4-.2.1-.1 0-.2 0-.3-.2-.1-.5.2-.6.3-.2.3-.4.7-.1 1 .5.5 1.1-.3 1.5 0 .1.2 0 .3-.1.5-.3.2-.5.1-.6.2-.1.1 0 .2 0 .3.1.1.5 0 .8-.2.3-.3.4-.7 0-1-.5-.7-1.1.1-1.4-.1zM5.8 5.5L4 4.6c-.1-.1-.2 0-.3.1-.1 0-.1.1-.1.2l1 1.8c.1.1.2 0 .3-.1.1.1.1 0 .1 0l-.3-.4.5-.5.4.2h.2c.1-.1.1-.3 0-.4zm-1.2.4L4.1 5l.9.5-.4.4zM6.7 4.4l-.5.6-1.3-1.3c-.1-.1-.2 0-.2.1-.1 0-.2.1-.1.2L6 5.4c.1.1.2 0 .2 0l.8-.7c.1-.1 0-.2 0-.2-.2-.1-.3-.1-.3-.1zM7.9 3.3l-.7.6-.4-.5.3-.3c.1-.1 0-.2 0-.2 0-.1-.1-.1-.2 0l-.3.3-.5-.4.6-.6c.1-.1 0-.2 0-.2-.1-.1-.2-.1-.2 0l-.8.7c-.1.1-.1.2 0 .2l1.4 1.5c.1.1.2 0 .2 0l.8-.8c.1-.1 0-.2 0-.2-.1-.2-.2-.2-.2-.1zM8.1 1.6c-.1 0-.2 0-.2.1-.1 0-.1.1-.1.2s0 .2.1.2.1.1.2.1.2 0 .2-.1c.1-.1.1-.2.1-.2 0-.1 0-.2-.1-.2 0-.1-.1-.1-.2-.1z"
+                    />
+                  </svg>
+                  <span>Акция</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-nav-user">
+              <li>
+                <a href="javascript:void(0)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    baseprofile="tiny"
+                    version="1.2"
+                    viewbox="0 0 35.6 36"
+                    class="mob-menu-icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M34.8 6.8c-.7-.8-1.6-1.2-2.7-1.2H6.5l-.3-1.9C6 1.6 4.5 0 2.9 0H1.1C.5 0 0 .5 0 1.1s.5 1.1 1.1 1.1H3c.3-.1 1 .6 1.2 1.8l3 22.6c.2 1 .7 1.9 1.4 2.6.6.5 1.3.8 2.1 1-.3.5-.5 1.1-.5 1.8 0 2.1 1.8 3.9 3.9 3.9 2.1 0 3.9-1.8 3.9-3.9 0-.7-.2-1.3-.4-1.8H23c-.3.5-.4 1.1-.4 1.8 0 2.1 1.8 3.9 3.9 3.9s3.9-1.8 3.9-3.9c0-.7-.1-1.3-.4-1.8h2.8c.6 0 1.1-.5 1.1-1.1 0-.6-.5-1.1-1.1-1.1H11.4c-1 0-2-.9-2.1-1.9L9 24.7h20.8c1 0 2-.4 2.8-1.1.8-.7 1.3-1.7 1.4-2.6l1.5-11.3c.3-1.1-.1-2.1-.7-2.9zm-19 25.3c0 1-.8 1.8-1.8 1.8s-1.8-.8-1.8-1.8.8-1.8 1.8-1.8 1.8.8 1.8 1.8zm12.4 0c0 1-.8 1.8-1.8 1.8s-1.8-.8-1.8-1.8.8-1.8 1.8-1.8 1.8.8 1.8 1.8zm5-23.9c.2.3.4.7.3 1.2l-.7 4.7h-7.1l.4-6.4h6c.5.1.8.2 1.1.5zm-15 14.4l-.4-6.4h5.7l-.5 6.4h-4.8zm-.5-8.5l-.4-6.4H24l-.4 6.4h-5.9zm-2.6-6.3l.4 6.4H7.6l-.8-6.4h8.3zm-7.2 8.4h7.8l.4 6.4H8.8l-.9-6.4zm21.9 6.4h-4.7l.4-6.4h7.1l-.6 4.5c-.1 1-1.1 1.9-2.2 1.9z"
+                    />
+                  </svg>
+                  <div class="marker-block-header marker-block-mob-menu">
+                    <div class="marker-block-counter">78</div>
+                  </div>
+
+                  <span>Корзина</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    baseprofile="tiny"
+                    version="1.2"
+                    viewbox="0 0 36 36"
+                    class="mob-menu-icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M29.8 11.9l5.4-1.5c.6-.2.9-.8.8-1.3-.2-.6-.8-.9-1.3-.7l-6.8 1.9-8.8 2.5V1.1C19.1.5 18.6 0 18 0c-.6 0-1 .5-1 1.1v12.2l-9.4 2.6-6.8 1.9c-.6.1-.9.7-.8 1.2.1.5.6.8 1 .8h.3l4.2-1.1-5.4 9c-.1.1-.1.3-.1.5C0 32.5 3.5 36 7.8 36s7.9-3.5 7.9-7.9c0-.2 0-.4-.2-.6l-6.1-10L25.9 13l-5.4 9c-.1.2-.1.4-.1.6 0 4.3 3.5 7.9 7.8 7.9 2.1 0 4.1-.8 5.6-2.3 1.4-1.5 2.3-3.5 2.3-5.6 0-.2-.1-.4-.2-.6l-6.1-10.1zM12.7 27.1H2.9l4.9-8.2 4.9 8.2zm10.5-5.6l4.9-8.2 4.9 8.2h-9.8z"
+                    />
+                  </svg>
+                  <div class="marker-block-header marker-block-mob-menu">
+                    <div class="marker-block-counter">78</div>
+                  </div>
+                  <span>Сравнение</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50" class="mob-menu-icon">
+                    <path
+                      class="heart"
+                      d="M24.85 10.126c2.018-4.783 6.628-8.125 11.99-8.125 7.223 0 12.425 6.179 13.079 13.543 0 0 .353 1.828-.424 5.119-1.058 4.482-3.545 8.464-6.898 11.503L24.85 48 7.402 32.165c-3.353-3.038-5.84-7.021-6.898-11.503-.777-3.291-.424-5.119-.424-5.119C.734 8.179 5.936 2 13.159 2c5.363 0 9.673 3.343 11.691 8.126z"
+                    />
+                    <path
+                      class="heart-dash"
+                      d="M6 18.078c-.553 0-1-.447-1-1 0-5.514 4.486-10 10-10 .553 0 1 .447 1 1s-.447 1-1 1c-4.411 0-8 3.589-8 8 0 .553-.447 1-1 1z"
+                    />
+                  </svg>
+                  <div class="marker-block-header marker-block-mob-menu">
+                    <div class="marker-block-counter">78</div>
+                  </div>
+                  <span>Избраное</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M6.5 5.2c.1 0 .3-.1.4-.4l.2-.8h.1s.1 0 .1-.1l.1-.4v-.1l-3-1.1s-.1 0-.1.1l-.1.5V3h.1l-.2.8c-.1.3 0 .4.1.6l.6.7v.2c-.3.1-.9.2-.9.3-.2 0-.4.1-.5.4l-.2.6h-.1s-.1 0-.1.1l-.1.3v.1l3 1.1s.1 0 .1-.1l.1-.4v-.1H6l.2-.6c.1-.3 0-.5-.1-.6l-.6-.8.1-.2c.2-.1.8-.2.9-.2zm-1.3.5l.7.8c0 .1.1.1.1.1v.2l-.3.7-2.2-.8.2-.6c.1-.2.2-.2.3-.2.1 0 .6-.1 1-.2v-.2l.1-.4V5l-.6-.8-.1-.1v-.2l.2-.7 2.2.8-.2.6c0 .2-.1.3-.2.3s-.6.1-1 .2l-.1.1-.1.4v.1z"
+                    />
+                    <path
+                      d="M7 8.7c-.1 0-.1.1-.2.1-.4.1-.7.2-1 .3H5.2c-1.6 0-3-1.1-3.5-2.6v-.1c-.2-.3-.3-.7-.3-1.1s.1-.9.2-1.3v-.1C2 2.7 3 1.8 4.2 1.5h.1c.3-.1.5-.1.8-.1v.4c0 .1.1.2.2.1l.8-.7c.1-.1.1-.2 0-.3L5.3.1c-.1-.1-.2 0-.2.1v.4C4 .6 2.9 1.1 2 2c-.1.1-.1.2-.2.3-.7.8-1 1.8-1 2.9V5.5c0 1 .3 1.9.9 2.6l.2.2c0 .1.1.2.1.2.7.7 1.5 1.1 2.4 1.3.2 0 .5.1.7.1.6 0 1.3-.1 1.9-.4.1 0 .2-.1.2-.1.3-.2.4-.4.3-.6s-.4-.2-.5-.1zM8.2 3.1c.1.1.2.2.3.2.1 0 .1 0 .2-.1.2-.1.2-.3.1-.5 0-.1-.1-.2-.2-.2-.1-.2-.3-.2-.4-.1-.2.1-.2.3-.1.5 0 .1.1.1.1.2zM8.7 4.1c0 .1 0 .2.1.2 0 .2.2.3.3.3h.1c.2-.1.3-.2.3-.4 0-.1 0-.2-.1-.3-.1-.2-.3-.4-.5-.3-.2.1-.3.3-.2.5zM8.4 7.8c-.1-.1-.4-.1-.5 0 0 .1-.1.1-.1.2-.1.1-.1.4 0 .5.1.1.2.1.3.1.1 0 .2 0 .2-.1s.1-.1.2-.2.1-.4-.1-.5zM9.2 5c-.2 0-.3.2-.3.4v.2c-.1.2.1.4.3.4.2 0 .3-.1.4-.3v-.3c0-.2-.2-.4-.4-.4zM9.1 6.5c-.2-.1-.4 0-.5.2 0 .1-.1.1-.1.2-.1.2 0 .4.2.5h.1c.1 0 .3-.1.3-.2.1-.1.1-.2.2-.2 0-.2-.1-.5-.2-.5zM7.9 2.1c.1-.2 0-.4-.1-.6-.1 0-.2-.1-.2-.1-.2-.1-.4-.1-.5.1-.1.2-.1.4.1.5.1.1.1.1.2.1.1.1.1.1.2.1s.2 0 .3-.1z"
+                    />
+                  </svg>
+                  <span>История покупок</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-nav-info">
+              <li>
+                <a href="/pay.html">
+                  <svg class="mob-menu-icon" viewbox="0 0 10 10">
+                    <path
+                      fill-rule="evenodd"
+                      d="M.8 1.3h8.5c.2 0 .4.1.5.2.1.2.2.4.2.6v5.8c0 .2-.1.4-.2.5-.2.2-.4.3-.6.3H.8c-.2 0-.4-.1-.5-.2-.2-.2-.3-.4-.3-.6V2.1c0-.2.1-.4.2-.5.2-.2.4-.3.6-.3zm1.6 3.8h-1c-.1 0-.2-.1-.3-.2-.1 0-.1-.2-.1-.3V3.1c0-.2 0-.3.1-.3.1-.1.2-.1.3-.1h2.2c.1 0 .2 0 .3.1.1 0 .2.1.2.3v1.6c0 .1 0 .2-.1.3-.1 0-.2.1-.4.1H2.4zm-.9-1.2H2v-.1h-.5v.1zm0 .5v.2H2v-.2h-.5zm1.6-.5h.5v-.1h-.5v.1zm0 .7h.5v-.2h-.5v.2zm.5-1.3v-.2H2.5v1.5h.2v-.9c0-.1.1-.2.1-.3.1-.1.2-.1.3-.1h.5zM2 3.1h-.5v.2H2v-.2zm5.6 2.4h.3c.3 0 .6.1.9.4.2.1.4.4.4.7 0 .4-.2.7-.4.9-.2.2-.5.4-.8.4h-.3c-.1 0-.2-.1-.3-.1-.1 0-.2.1-.3.1h-.3c-.3 0-.6-.1-.9-.4-.2-.2-.3-.5-.3-.9 0-.3.1-.7.4-.9.2-.2.5-.4.9-.4h.3c.1 0 .2.1.3.1 0 .1 0 .1.1.1zm-.1 1.4c0-.1.1-.2.1-.3s0-.2-.1-.3c0-.1-.1-.1-.1-.2 0 .1-.1.1-.1.2s-.1.2-.1.3 0 .2.1.3c0 .1.1.1.1.2 0 0 .1-.1.1-.2zm-1.2-.8c-.2.1-.2.3-.2.5s.1.4.2.5c.1.1.3.2.5.2h.1s-.1-.1-.1-.2c0-.2-.1-.3-.1-.5s0-.3.1-.4c0-.1.1-.2.2-.3h-.1c-.3 0-.5.1-.6.2zm1.5 1.3h.1c.2 0 .4-.1.5-.2.2-.2.3-.4.3-.6 0-.2-.1-.4-.2-.5-.2-.1-.3-.2-.5-.2h-.1c0 .1 0 .2.1.3v.9c-.1.1-.1.2-.2.3zM4.6 7c.1-.1.2-.1.2-.1.1 0 .2 0 .2.1h.1V7.3H5h-.1-.1-.1s0-.1-.1-.1V7c0 .1 0 .1 0 0zm-.8-.1h.3c.1 0 .1 0 .2.1 0 0 .1.1.1.2s0 .1-.1.2c0 0-.1.1-.2.1h-.3c-.1 0-.1 0-.2-.1 0 0-.1-.1-.1-.2s0-.1.1-.2.2-.1.2-.1zm-.8 0h.2c.1 0 .1 0 .2.1 0 0 .1.1.1.2s0 .1-.1.2c0 0-.1.1-.2.1H3c-.1 0-.1 0-.2-.1 0 0-.1-.1-.1-.2s0-.1.1-.2.2-.1.2-.1zm-1 0h.3c.1 0 .1 0 .2.1 0 0 .1.1.1.2s0 .1-.1.2c0 0-.1.1-.2.1H2c-.1 0-.1 0-.2-.1 0 0-.1-.1-.1-.2s0-.1.1-.2.2-.1.2-.1zm-.8 0h.2c.1 0 .1 0 .2.1 0 0 .1.1.1.2s0 .1-.1.2c0 0-.1.1-.2.1h-.2c-.1 0-.1 0-.2-.1v-.3s0-.1.1-.1c0-.1.1-.1.1-.1zm2.2-.8h1.5c.1 0 .1 0 .2.1 0 0 .1.1.1.2s0 .1-.1.2c0 0-.1.1-.2.1H3.4c-.1 0-.1 0-.2-.1 0 0-.1-.1-.1-.2s0-.1.1-.2c0-.1.1-.1.2-.1zm-2.2 0h1.5c.1 0 .1 0 .2.1 0 0 .1.1.1.2s0 .1-.1.2c0 0-.1.1-.2.1H1.2c-.1 0-.1 0-.2-.1v-.3c0-.1 0-.1.1-.2h.1zm8.2 2c0-.1.1-.1.1-.2V2.1c0-.1 0-.1-.1-.2-.1 0-.1-.1-.2-.1H.8c-.1 0-.1 0-.2.1 0 .1-.1.1-.1.2v5.8c0 .1 0 .1.1.2.1 0 .1.1.2.1h8.5s.1 0 .1-.1z"
+                    />
+                  </svg>
+                  <span>Оплата</span>
+                </a>
+              </li>
+              <li>
+                <a href="/delivery.html">
+                  <svg class="mob-menu-icon" viewbox="0 0 10 10">
+                    <path
+                      d="M3.5 6.6c.1-.2.2-.3.3-.4.1-.1.3-.1.4-.1.2 0 .3 0 .4.1l.3.3h2.2V2.9H3v.8c0 .1 0 .1-.1.1l-.1.1H1.6c-.1 0-.1 0-.1-.1l-.1-.1s0-.1.1-.1l.1-.1h.9v-.8c0-.1 0-.1.1-.1l.1-.1h4.6c.1 0 .1 0 .1.1l.1.1v.6h1c.2 0 .4 0 .6.1.2.1.3.2.4.3.2.1.3.3.4.5.1.2.1.4.1.6v1.9c0 .1 0 .1-.1.1l-.1.1h-.5c0 .2-.1.3-.3.4-.1.2-.3.3-.5.3s-.3-.1-.5-.2c-.1-.1-.2-.2-.2-.4H5c0 .2-.1.3-.3.4-.1.1-.3.2-.5.2s-.3-.1-.5-.2c-.1-.1-.2-.2-.2-.4h-.7c-.1 0-.1 0-.1-.1l-.1-.1v-.9h-1c-.1 0-.1 0-.1-.1l-.1-.1s0-.1.1-.1l.1-.1h1.1c.1 0 .1 0 .1.1l.1.1v.8h.6v.1zm.8-2.8c.1 0 .1 0 .2.1 0 .1.1.2.2.2.2.2.4.4.4.5 0 .1-.1.3-.4.5l-.3.3s-.1 0-.1.1h-.1-.1s-.1 0-.1-.1v-.2c0-.1 0-.1.1-.2l.2-.2h-4c-.1 0-.1 0-.2-.1 0 0-.1-.1-.1-.2s0-.1.1-.2c0 0 .1-.1.2-.1h3.9-.1c-.1 0-.1-.1-.1-.1 0-.1 0-.2.1-.2 0-.1.1-.1.2-.1zM4 7.1s.1.1.2.1.2 0 .2-.1c.1-.1.2-.2.2-.3 0-.1 0-.2-.1-.2-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.2.1-.1 0-.1.1-.1.2s0 .2.1.3zm-1.3 0c.1.1.2.1.2.1.1 0 .2 0 .3-.1 0-.1.1-.2.1-.3 0-.1 0-.2-.1-.2-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.2.1-.1 0-.1.1-.1.2s0 .2.1.3zm.9-.5h.4V4.8c0-.4-.1-.7-.3-.9-.1-.2-.4-.3-.7-.3h-1v3h.2c.1-.2.2-.3.3-.4.1-.1.3-.1.4-.1.2 0 .3 0 .4.1.2.1.3.2.3.4z"
+                    />
+                  </svg>
+                  <span>Доставка</span>
+                </a>
+              </li>
+              <li>
+                <a href="/about_us.html">
+                  <svg viewbox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M3.4 2H1.8c-.2 0-.3.1-.3.3 0 .1.1.3.3.3h1.6c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3zM3.4 3.1H1.8c-.2 0-.3.1-.3.3 0 .2.1.3.3.3h1.6c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3zM3.4 4.2H1.8c-.2 0-.3.1-.3.3 0 .2.1.3.3.3h1.6c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3zM3.4 5.3H1.8c-.2 0-.3.1-.3.3 0 .1.1.3.3.3h1.6c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3zM3.4 6.4H1.8c-.2 0-.3.1-.3.3 0 .2.1.3.3.3h1.6c.2 0 .3-.1.3-.3 0-.1-.1-.3-.3-.3zM4.4 2.5H6c.2 0 .3-.1.3-.3 0-.1-.1-.2-.3-.2H4.4c-.2 0-.3.1-.3.3 0 .1.1.2.3.2zM4.4 3.7H6c.2 0 .3-.1.3-.3 0-.1-.1-.3-.3-.3H4.4c-.2 0-.3.1-.3.3 0 .1.1.3.3.3zM5.4 4.5c0-.1-.1-.3-.3-.3h-.7c-.2 0-.3.1-.3.3 0 .2.1.3.3.3h.8c.1 0 .2-.2.2-.3zM8.1 6.6c-.1-.1-.3-.1-.4 0l-.7.9-.5-.3c-.1-.1-.3-.1-.4 0 0 .2 0 .3.1.4l.7.5H7c.1 0 .2 0 .2-.1l.9-1.1c.1-.1.1-.3 0-.3z"
+                    />
+                    <path
+                      d="M8.8 5.7c-.4-.4-.9-.6-1.4-.7V1.3C7.4.7 6.9.2 6.3.2H1.5C.9.2.4.7.4 1.3v6.4c0 .6.5 1.1 1.1 1.1h3.9c.4.5 1.1.8 1.8.8 1.3 0 2.3-1 2.3-2.3-.1-.6-.3-1.2-.7-1.6zm-7.9 2V1.3c0-.3.3-.6.6-.6h4.8c.3 0 .6.3.6.6V5c-1.2.2-2.1 1.1-2.1 2.3 0 .3.1.7.2 1H1.5c-.3 0-.6-.3-.6-.6zm6.2 1.4c-.6 0-1.1-.3-1.4-.7-.2-.3-.3-.7-.3-1.1 0-1 .8-1.7 1.8-1.7.5 0 .9.2 1.2.5.3.3.5.8.5 1.2 0 1-.8 1.8-1.8 1.8z"
+                    />
+                  </svg>
+                  <span>О компании</span>
+                </a>
+              </li>
+              <li>
+                <a href="/garanted.html">
+                  <svg viewbox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M9.3 2.7v-.3c0-.5-.5-1-1-1C7.1 1.3 6.2.9 5.5.2c-.2-.2-.6-.2-.9 0-.8.7-1.7 1.1-2.8 1.1-.6 0-1 .5-1 1v.3c0 1.2-.1 2.6.4 4 .3.8.7 1.4 1.2 2 .6.6 1.4 1 2.4 1.4h.4c1-.4 1.8-.8 2.4-1.4.6-.6 1-1.2 1.2-1.9.5-1.4.5-2.8.5-4zm-1 3.8c-.5 1.4-1.6 2.3-3.2 2.9H5c-1.7-.6-2.8-1.5-3.3-2.9-.4-1.3-.4-2.6-.4-3.8v-.3c0-.3.2-.5.4-.5.7 0 1.2-.2 1.8-.4.6-.2 1-.5 1.5-.9h.1c.4.4.8.7 1.4.9.5.3 1.1.4 1.7.4.2 0 .4.2.4.5v.3c.1 1.2.1 2.5-.3 3.8z"
+                    />
+                    <path
+                      d="M5 2.5C3.6 2.5 2.5 3.6 2.5 5S3.6 7.5 5 7.5 7.5 6.4 7.5 5 6.4 2.5 5 2.5zm0 4.4C3.9 6.9 3.1 6 3.1 5c0-1.1.8-1.9 1.9-1.9 1 0 1.9.8 1.9 1.9 0 1-.8 1.9-1.9 1.9z"
+                    />
+                    <path
+                      d="M5.7 4.2L4.6 5.4l-.4-.3c-.1-.1-.3-.1-.4 0-.1.1-.1.3 0 .4l.5.5c.1.1.1.1.2.1s.1 0 .2-.1l1.4-1.4c.1-.1.1-.3 0-.4-.1-.1-.3-.1-.4 0z"
+                    />
+                  </svg>
+                  <span>Гарантии</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg viewbox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M9.9 2.1h-.2L8 2.7c-.2.1-.4.2-.5.4v.1c-.3 0-.8-.2-1.4-.5-.8-.4-1.4-.2-2 .2-.3 0-.6 0-1 .1h-.6c0-.1 0-.2-.1-.3-.1-.2-.2-.3-.4-.4L.3 1.7H.1c-.1 0-.1.1-.1.2V6c0 .1.1.2.2.2h.6c.3 0 .5-.1.7-.3.1.1.2.2.3.2.2.2.5.4.6.5.8.7 1.7 1.4 1.9 1.5.1.1.4.2.7.2.1 0 .3 0 .5-.1.2.1.4.1.5 0 .2-.1.3-.2.4-.4.2 0 .3 0 .5-.1s.3-.2.3-.3c.2 0 .3 0 .5-.1.2-.2.3-.5.3-.7l.5-.3c.2.2.4.3.7.3h.6c.1 0 .2-.1.2-.2V2.3c0-.1-.1-.1-.1-.2zM1.2 5.6c-.1.1-.2.2-.4.2H.4V2.2l1.4.5c.1 0 .2.1.2.2v.3l-.8 2.4zm6.2 1.3s-.1.1-.2 0L6 5.7c-.1-.1-.2-.1-.3 0-.1.1-.1.2 0 .3l1.2 1.2c0 .1-.1.1-.1.2-.1.1-.3.1-.3 0l-1-1c-.1-.1-.2-.1-.3 0-.2 0-.2.1-.1.2 0 0 .6.7 1 1 0 .1-.1.2-.2.2h-.3l-1-1c-.1-.1-.2-.1-.3 0-.1 0-.1.1-.1.2.1.2.6.6.9.9H5c-.1 0-.4-.1-.5-.2-.1-.1-1.1-.7-1.9-1.4-.1-.1-.4-.3-.6-.5-.1-.1-.3-.2-.3-.3l.8-2.1c.2 0 .5 0 .7-.1h.5c-.3.3-.6.7-.6 1.1 0 .2.1.3.3.5.3.2 1 0 1.3-.3.2 0 .3-.1.5-.2.2.2.6.5.9.8.6.5 1.3 1.1 1.5 1.4 0 .1-.1.3-.2.3zm.4-.7c-.3-.4-.9-.8-1.5-1.3-.4-.4-.7-.7-1-.9 0-.1-.1-.1-.2 0-.2.1-.3.1-.5.2-.1 0-.1 0-.2.1-.2.2-.6.3-.8.2l-.1-.1c0-.2.2-.5.5-.8.7-.7 1.3-.9 1.9-.5.7.3 1.3.5 1.6.6v.1L8.3 6l-.5.2zm1.8 0h-.4c-.2 0-.4-.1-.4-.2l-.9-2.4v-.3c.1-.1.1-.2.2-.2l1.4-.5v3.6h.1z"
+                    />
+                  </svg>
+                  <span>Сотрудничество</span>
+                </a>
+              </li>
+              <li>
+                <a href="/contacts.html">
+                  <svg viewbox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M10 2.3c0-.3-.2-.6-.5-.6h-9c-.1 0-.3.1-.4.2 0 .1-.1.2-.1.4v5c0 .1.1.3.2.4.1.1.2.1.4.1h9c.3 0 .5-.2.5-.5l-.1-5zm-1.1 0L5 5 1.1 2.3h7.8zM6.7 5.5L9 7.3H1l2.3-1.8c.1-.1.1-.2 0-.4 0-.1-.2-.1-.3 0L.5 7V2.5l4.3 3H5l4.3-3v4.6L7 5.1c-.1-.1-.3-.1-.4 0-.1.1-.1.3.1.4z"
+                    />
+                  </svg>
+                  <span>Контакты</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-nav-lk">
+              <li class="mob-menu-catalog-back">
+                <a href="javascript:void(0)">
+                  <span>Назад</span>
+                  <svg viewbox="0 0 6 9" class="arrow">
+                    <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg viewBox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M10 2.3c0-.3-.2-.6-.5-.6h-9c-.1 0-.3.1-.4.2 0 .1-.1.2-.1.4v5c0 .1.1.3.2.4.1.1.2.1.4.1h9c.3 0 .5-.2.5-.5l-.1-5zm-1.1 0L5 5 1.1 2.3h7.8zM6.7 5.5L9 7.3H1l2.3-1.8c.1-.1.1-.2 0-.4 0-.1-.2-.1-.3 0L.5 7V2.5l4.3 3H5l4.3-3v4.6L7 5.1c-.1-.1-.3-.1-.4 0-.1.1-.1.3.1.4z"
+                    ></path>
+                  </svg>
+                  <span>Профиль</span>
+                </a>
+              </li>
+              <li>
+                <a href="/delivery.html">
+                  <svg class="mob-menu-icon" viewbox="0 0 10 10">
+                    <path
+                      d="M3.5 6.6c.1-.2.2-.3.3-.4.1-.1.3-.1.4-.1.2 0 .3 0 .4.1l.3.3h2.2V2.9H3v.8c0 .1 0 .1-.1.1l-.1.1H1.6c-.1 0-.1 0-.1-.1l-.1-.1s0-.1.1-.1l.1-.1h.9v-.8c0-.1 0-.1.1-.1l.1-.1h4.6c.1 0 .1 0 .1.1l.1.1v.6h1c.2 0 .4 0 .6.1.2.1.3.2.4.3.2.1.3.3.4.5.1.2.1.4.1.6v1.9c0 .1 0 .1-.1.1l-.1.1h-.5c0 .2-.1.3-.3.4-.1.2-.3.3-.5.3s-.3-.1-.5-.2c-.1-.1-.2-.2-.2-.4H5c0 .2-.1.3-.3.4-.1.1-.3.2-.5.2s-.3-.1-.5-.2c-.1-.1-.2-.2-.2-.4h-.7c-.1 0-.1 0-.1-.1l-.1-.1v-.9h-1c-.1 0-.1 0-.1-.1l-.1-.1s0-.1.1-.1l.1-.1h1.1c.1 0 .1 0 .1.1l.1.1v.8h.6v.1zm.8-2.8c.1 0 .1 0 .2.1 0 .1.1.2.2.2.2.2.4.4.4.5 0 .1-.1.3-.4.5l-.3.3s-.1 0-.1.1h-.1-.1s-.1 0-.1-.1v-.2c0-.1 0-.1.1-.2l.2-.2h-4c-.1 0-.1 0-.2-.1 0 0-.1-.1-.1-.2s0-.1.1-.2c0 0 .1-.1.2-.1h3.9-.1c-.1 0-.1-.1-.1-.1 0-.1 0-.2.1-.2 0-.1.1-.1.2-.1zM4 7.1s.1.1.2.1.2 0 .2-.1c.1-.1.2-.2.2-.3 0-.1 0-.2-.1-.2-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.2.1-.1 0-.1.1-.1.2s0 .2.1.3zm-1.3 0c.1.1.2.1.2.1.1 0 .2 0 .3-.1 0-.1.1-.2.1-.3 0-.1 0-.2-.1-.2-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.2.1-.1 0-.1.1-.1.2s0 .2.1.3zm.9-.5h.4V4.8c0-.4-.1-.7-.3-.9-.1-.2-.4-.3-.7-.3h-1v3h.2c.1-.2.2-.3.3-.4.1-.1.3-.1.4-.1.2 0 .3 0 .4.1.2.1.3.2.3.4z"
+                    />
+                  </svg>
+                  <span>Доставка</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    baseprofile="tiny"
+                    version="1.2"
+                    viewbox="0 0 35.6 36"
+                    class="mob-menu-icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M34.8 6.8c-.7-.8-1.6-1.2-2.7-1.2H6.5l-.3-1.9C6 1.6 4.5 0 2.9 0H1.1C.5 0 0 .5 0 1.1s.5 1.1 1.1 1.1H3c.3-.1 1 .6 1.2 1.8l3 22.6c.2 1 .7 1.9 1.4 2.6.6.5 1.3.8 2.1 1-.3.5-.5 1.1-.5 1.8 0 2.1 1.8 3.9 3.9 3.9 2.1 0 3.9-1.8 3.9-3.9 0-.7-.2-1.3-.4-1.8H23c-.3.5-.4 1.1-.4 1.8 0 2.1 1.8 3.9 3.9 3.9s3.9-1.8 3.9-3.9c0-.7-.1-1.3-.4-1.8h2.8c.6 0 1.1-.5 1.1-1.1 0-.6-.5-1.1-1.1-1.1H11.4c-1 0-2-.9-2.1-1.9L9 24.7h20.8c1 0 2-.4 2.8-1.1.8-.7 1.3-1.7 1.4-2.6l1.5-11.3c.3-1.1-.1-2.1-.7-2.9zm-19 25.3c0 1-.8 1.8-1.8 1.8s-1.8-.8-1.8-1.8.8-1.8 1.8-1.8 1.8.8 1.8 1.8zm12.4 0c0 1-.8 1.8-1.8 1.8s-1.8-.8-1.8-1.8.8-1.8 1.8-1.8 1.8.8 1.8 1.8zm5-23.9c.2.3.4.7.3 1.2l-.7 4.7h-7.1l.4-6.4h6c.5.1.8.2 1.1.5zm-15 14.4l-.4-6.4h5.7l-.5 6.4h-4.8zm-.5-8.5l-.4-6.4H24l-.4 6.4h-5.9zm-2.6-6.3l.4 6.4H7.6l-.8-6.4h8.3zm-7.2 8.4h7.8l.4 6.4H8.8l-.9-6.4zm21.9 6.4h-4.7l.4-6.4h7.1l-.6 4.5c-.1 1-1.1 1.9-2.2 1.9z"
+                    />
+                  </svg>
+                  <span>Заказы</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg viewBox="0 0 50 50" class="mob-menu-icon">
+                    <path
+                      class="heart"
+                      d="M24.85 10.126c2.018-4.783 6.628-8.125 11.99-8.125 7.223 0 12.425 6.179 13.079 13.543 0 0 .353 1.828-.424 5.119-1.058 4.482-3.545 8.464-6.898 11.503L24.85 48 7.402 32.165c-3.353-3.038-5.84-7.021-6.898-11.503-.777-3.291-.424-5.119-.424-5.119C.734 8.179 5.936 2 13.159 2c5.363 0 9.673 3.343 11.691 8.126z"
+                    ></path>
+                    <path
+                      class="heart-dash"
+                      d="M6 18.078c-.553 0-1-.447-1-1 0-5.514 4.486-10 10-10 .553 0 1 .447 1 1s-.447 1-1 1c-4.411 0-8 3.589-8 8 0 .553-.447 1-1 1z"
+                    ></path>
+                  </svg>
+                  <span>Избранное</span>
+                </a>
+              </li>
+              <li>
+                <a href="/FAQ.html">
+                  <svg viewBox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M7.7 2.8c0 .3-.2.5-.4.6-.1 0-.2.1-.2.2s-.1.2-.2.2-.2-.1-.2-.2c0-.3.2-.4.4-.6l.2-.2c0-.1-.1-.2-.2-.2s-.2.1-.2.2c-.1.1-.2.2-.4.2-.1 0-.2-.1-.2-.2 0-.4.3-.7.7-.7.4 0 .7.3.7.7zM6.9 4c-.1 0-.2.1-.2.3 0 .1.1.2.2.2s.2-.1.2-.2c.1-.2 0-.3-.2-.3zM2.1 5.7c-.1 0-.2.1-.2.3 0 .1.1.2.2.2s.2-.1.2-.2c.1-.2-.1-.3-.2-.3zm.8 0c-.1 0-.2.1-.2.3 0 .1.1.2.2.2s.2-.1.2-.2c.1-.2 0-.3-.2-.3zM10 1.9v2.7c0 .6-.5 1.2-1.2 1.2H5.5l-.1.1s-.1 0-.1.1l-.9.7c-.1.1-.2.1-.2 0-.1 0-.2-.1-.2-.2V4H1.5c-.4 0-.7.3-.7.7v2.7c0 .4.3.6.7.6H5c.1 0 .1 0 .2.1l.7.7V6.5c0-.1.1-.2.2-.2s.2.1.2.2v2.8c0 .1-.1.2-.1.2h-.1c-.1.1-.1 0-.2 0l-1.1-1H1.5C.8 8.5.3 8 .3 7.4V4.7c0-.7.5-1.2 1.2-1.2H4V1.9C4 1.3 4.5.7 5.2.7h3.7c.6 0 1.1.5 1.1 1.2zm-.5 0c0-.4-.3-.7-.7-.7H5.2c-.4 0-.7.3-.7.7V6l.5-.5.1-.1c.2-.2.3-.2.6-.2h3.2c.4 0 .7-.3.7-.7V1.9z"
+                    ></path>
+                  </svg>
+                  <span>FAQ</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <svg viewBox="0 0 10 10" class="mob-menu-icon">
+                    <path
+                      d="M.1 4.8c0 .1 0 .1 0 0 0 .1 0 .1 0 0 0 .1 0 .1 0 0 0 .1 0 .1 0 0-.1.1-.1.1-.1.2l1.4 1.4c0 .1.1.1.2.1s.1 0 .2-.1c.2.1.2-.1.1-.2L1 5.3h5.9c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3H1l.9-.9c.1-.1.1-.3 0-.4-.1-.1-.3-.1-.4 0L.1 4.8zm6.2-3.5C5.1 1.3 4 2 3.3 3c-.1.1 0 .3.1.4.1.1.3 0 .4-.1.6-.9 1.5-1.4 2.6-1.4 1.6 0 3 1.4 3 3.1S8 8.1 6.3 8.1c-1 0-2-.5-2.6-1.4 0-.1-.2-.1-.3 0-.1 0-.2.2-.1.4.7 1 1.8 1.6 3 1.6C8.4 8.7 10 7 10 5S8.4 1.3 6.3 1.3z"
+                    ></path>
+                  </svg>
+                  <span>Выход</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- MOBILE MENU BODY END -->
+        <!-- MOBILE MENU FOOTER START -->
+        <div class="mob-menu-footer">
+          <a href="tel:+380443336965">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10" class="mob-menu-icon-phone">
+              <path
+                d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
+              />
+            </svg>
+            <span>+38 044 333 69 65</span>
+          </a>
+        </div>
+        <!-- MOBILE MENU FOOTER END -->
+      </div>
+      <!-- MOBILE MENU WRAPPER END -->
+    </div>
+    <!-- MOBILE MENU END -->
+    <!-- MODAL BASKET START -->
+    <div
+      class="modal fade"
+      id="basketModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="basketModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-content modal-basket-content">
+            <div class="modal-basket-header">
+              <h5 id="basketModalTitle">Корзина</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g>
+                      <path
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div class="modal-body modal-body-basket">
+              <div class="basket-item">
+                <button type="button" class="basket-item__close close" aria-label="Close">
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="enable-background:new 0 0 10 10;"
+                      viewBox="0 0 10 10"
+                      x="0px"
+                      y="0px"
+                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                      xml:space="preserve"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                    >
+                      <path
+                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="basket-item__info">
+                  <div class="basket-item__info-wrapper-img">
+                    <img
+                      class="lazy"
+                      src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
+                      data-src="img/11.jpg"
+                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                    />
+                  </div>
+
+                  <div class="basket-item__info-wrapper">
+                    <a href="javascript:void(0)" class="basket-item__info_title">Lorem ipsum dolor sit amet.</a>
+                    <div class="basket-item__info_sku">
+                      Артикул:
+                      <span class="code"> 114.0254.795</span>
+                    </div>
+                    <div class="basket-item__info_price">
+                      <div class="basket-item__info_price-old">
+                        4060
+                        <div class="basket-item__info_price-old-currency">грн</div>
+                      </div>
+                      <div class="basket-item__info_price-new">
+                        3960
+                        <div class="basket-item__info_price-new-currency">грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-item__button">
+                  <div class="basket-item__total">
+                    123412
+                    <div class="basket-item__total-currency">грн</div>
+                  </div>
+                  <div class="btn-group basket-item__button-group-quantity" role="group">
+                    <button type="button" class="basket-item__button-minus">-</button>
+                    <input type="number" class="basket-item__button-quantity" value="1" />
+                    <button type="button" class="basket-item__button-add">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button type="button" class="basket-item__close close" aria-label="Close">
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="enable-background:new 0 0 10 10;"
+                      viewBox="0 0 10 10"
+                      x="0px"
+                      y="0px"
+                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                      xml:space="preserve"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                    >
+                      <path
+                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="basket-item__info">
+                  <div class="basket-item__info-wrapper-img">
+                    <img
+                      class="lazy"
+                      src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
+                      data-src="img/11.jpg"
+                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                    />
+                  </div>
+
+                  <div class="basket-item__info-wrapper">
+                    <a href="javascript:void(0)" class="basket-item__info_title">Lorem ipsum dolor sit amet.</a>
+                    <div class="basket-item__info_sku">
+                      Артикул:
+                      <span class="code"> 114.0254.795</span>
+                    </div>
+                    <div class="basket-item__info_price">
+                      <div class="basket-item__info_price-old">
+                        4060
+                        <div class="basket-item__info_price-old-currency">грн</div>
+                      </div>
+                      <div class="basket-item__info_price-new">
+                        3960
+                        <div class="basket-item__info_price-new-currency">грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-item__button">
+                  <div class="basket-item__total">
+                    123412
+                    <div class="basket-item__total-currency">грн</div>
+                  </div>
+                  <div class="btn-group basket-item__button-group-quantity" role="group">
+                    <button type="button" class="basket-item__button-minus">-</button>
+                    <input type="number" class="basket-item__button-quantity" value="1" />
+                    <button type="button" class="basket-item__button-add">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button type="button" class="basket-item__close close" aria-label="Close">
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="enable-background:new 0 0 10 10;"
+                      viewBox="0 0 10 10"
+                      x="0px"
+                      y="0px"
+                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                      xml:space="preserve"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                    >
+                      <path
+                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="basket-item__info">
+                  <div class="basket-item__info-wrapper-img">
+                    <img
+                      class="lazy"
+                      src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
+                      data-src="img/11.jpg"
+                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                    />
+                  </div>
+
+                  <div class="basket-item__info-wrapper">
+                    <a href="javascript:void(0)" class="basket-item__info_title">Lorem ipsum dolor sit amet.</a>
+                    <div class="basket-item__info_sku">
+                      Артикул:
+                      <span class="code"> 114.0254.795</span>
+                    </div>
+                    <div class="basket-item__info_price">
+                      <div class="basket-item__info_price-old">
+                        4060
+                        <div class="basket-item__info_price-old-currency">грн</div>
+                      </div>
+                      <div class="basket-item__info_price-new">
+                        3960
+                        <div class="basket-item__info_price-new-currency">грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-item__button">
+                  <div class="basket-item__total">
+                    123412
+                    <div class="basket-item__total-currency">грн</div>
+                  </div>
+                  <div class="btn-group basket-item__button-group-quantity" role="group">
+                    <button type="button" class="basket-item__button-minus">-</button>
+                    <input type="number" class="basket-item__button-quantity" value="1" />
+                    <button type="button" class="basket-item__button-add">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button type="button" class="basket-item__close close" aria-label="Close">
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="enable-background:new 0 0 10 10;"
+                      viewBox="0 0 10 10"
+                      x="0px"
+                      y="0px"
+                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                      xml:space="preserve"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                    >
+                      <path
+                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="basket-item__info">
+                  <div class="basket-item__info-wrapper-img">
+                    <img
+                      class="lazy"
+                      src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
+                      data-src="img/11.jpg"
+                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                    />
+                  </div>
+
+                  <div class="basket-item__info-wrapper">
+                    <a href="javascript:void(0)" class="basket-item__info_title">Lorem ipsum dolor sit amet.</a>
+                    <div class="basket-item__info_sku">
+                      Артикул:
+                      <span class="code"> 114.0254.795</span>
+                    </div>
+                    <div class="basket-item__info_price">
+                      <div class="basket-item__info_price-old">
+                        4060
+                        <div class="basket-item__info_price-old-currency">грн</div>
+                      </div>
+                      <div class="basket-item__info_price-new">
+                        3960
+                        <div class="basket-item__info_price-new-currency">грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-item__button">
+                  <div class="basket-item__total">
+                    123412
+                    <div class="basket-item__total-currency">грн</div>
+                  </div>
+                  <div class="btn-group basket-item__button-group-quantity" role="group">
+                    <button type="button" class="basket-item__button-minus">-</button>
+                    <input type="number" class="basket-item__button-quantity" value="1" />
+                    <button type="button" class="basket-item__button-add">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button type="button" class="basket-item__close close" aria-label="Close">
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="enable-background:new 0 0 10 10;"
+                      viewBox="0 0 10 10"
+                      x="0px"
+                      y="0px"
+                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                      xml:space="preserve"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                    >
+                      <path
+                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="basket-item__info">
+                  <div class="basket-item__info-wrapper-img">
+                    <img
+                      class="lazy"
+                      src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
+                      data-src="img/11.jpg"
+                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                    />
+                  </div>
+
+                  <div class="basket-item__info-wrapper">
+                    <a href="javascript:void(0)" class="basket-item__info_title">Lorem ipsum dolor sit amet.</a>
+                    <div class="basket-item__info_sku">
+                      Артикул:
+                      <span class="code"> 114.0254.795</span>
+                    </div>
+                    <div class="basket-item__info_price">
+                      <div class="basket-item__info_price-old">
+                        4060
+                        <div class="basket-item__info_price-old-currency">грн</div>
+                      </div>
+                      <div class="basket-item__info_price-new">
+                        3960
+                        <div class="basket-item__info_price-new-currency">грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-item__button">
+                  <div class="basket-item__total">
+                    123412
+                    <div class="basket-item__total-currency">грн</div>
+                  </div>
+                  <div class="btn-group basket-item__button-group-quantity" role="group">
+                    <button type="button" class="basket-item__button-minus">-</button>
+                    <input type="number" class="basket-item__button-quantity" value="1" />
+                    <button type="button" class="basket-item__button-add">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-item">
+                <button type="button" class="basket-item__close close" aria-label="Close">
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="enable-background:new 0 0 10 10;"
+                      viewBox="0 0 10 10"
+                      x="0px"
+                      y="0px"
+                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                      xml:space="preserve"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                    >
+                      <path
+                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="basket-item__info">
+                  <div class="basket-item__info-wrapper-img">
+                    <img
+                      class="lazy"
+                      src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
+                      data-src="img/11.jpg"
+                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                    />
+                  </div>
+
+                  <div class="basket-item__info-wrapper">
+                    <a href="javascript:void(0)" class="basket-item__info_title">Lorem ipsum dolor sit amet.</a>
+                    <div class="basket-item__info_sku">
+                      Артикул:
+                      <span class="code"> 114.0254.795</span>
+                    </div>
+                    <div class="basket-item__info_price">
+                      <div class="basket-item__info_price-old">
+                        4060
+                        <div class="basket-item__info_price-old-currency">грн</div>
+                      </div>
+                      <div class="basket-item__info_price-new">
+                        3960
+                        <div class="basket-item__info_price-new-currency">грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-item__button">
+                  <div class="basket-item__total">
+                    123412
+                    <div class="basket-item__total-currency">грн</div>
+                  </div>
+                  <div class="btn-group basket-item__button-group-quantity" role="group">
+                    <button type="button" class="basket-item__button-minus">-</button>
+                    <input type="number" class="basket-item__button-quantity" value="1" />
+                    <button type="button" class="basket-item__button-add">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer modal-footer-basket">
+              <div class="basket__btn_wrapper">
+                <button type="button" class="basket__btn-skip" data-dismiss="modal">Продолжить покупки</button>
+                <div class="basket__btn_wrapper-group">
+                  <div class="basket__btn_wrapper-group-total">
+                    <span class="basket__btn_wrapper-group-total-text">Итого:</span>
+                    <span class="basket__btn_wrapper-group-total-value">316846</span>
+                    <div class="basket__btn_wrapper-group-currency">грн</div>
+                  </div>
+                  <button class="basket__btn-accept" href="#" role="button" id="basketModalButton">
+                    Оформить заказ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL BASKET END -->
+    <!-- SUBSCRIBE SECTION START -->
+    <div
+      class="modal fade"
+      id="subscribeModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="subscribeModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-subscribe modal-dialog-centered" role="document">
+        <div class="modal-content modal-subscribe-content justify-content-center aline-items-center d-flex">
+          <div class="modal-subscribe-header">
+            <h5 id="subscribeModalTitle">Будьте первым, кто узнает о наших лучших предложениях!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 50 50"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g>
+                    <path
+                      d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="subscribe-form">
+              <input
+                type="email"
+                name="email_subscribe"
+                placeholder="Ваш email"
+                required="required"
+                aria-required="true"
+                data-msg-required="Поле не заполнено"
+                data-msg-email="Некорректный email"
+                class="subscribe-input"
+              />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-subscribe-form">Подписаться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SUBSCRIBE SECTION END -->
+    <!-- MODAL ENTER START -->
+    <div
+      class="modal fade "
+      id="enterModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="enterModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-content modal-enter-content">
+            <div class="modal-enter-header">
+              <ul class="nav nav-pills nav-pills-enter" id="pills-tab" role="tablist">
+                <li class="nav-enter-item">
+                  <a
+                    class="nav-enter-link"
+                    id="pills-registration-tab"
+                    data-toggle="pill"
+                    href="#pills-registration"
+                    role="tab"
+                    aria-controls="pills-registration"
+                    aria-selected="true"
+                    >Регистрация</a
+                  >
+                </li>
+                <li class="nav-enter-item ">
+                  <a
+                    class="nav-enter-link active"
+                    id="pills-enter-tab"
+                    data-toggle="pill"
+                    href="#pills-enter"
+                    role="tab"
+                    aria-controls="pills-enter"
+                    aria-selected="false"
+                    >Вход</a
+                  >
+                </li>
+              </ul>
+              <button type="button" class="close modal-enter-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g>
+                      <path
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div class="modal-body tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-enter" role="tabpanel" aria-labelledby="pills-enter-tab">
+                <form>
+                  <div class="form-block">
+                    <div class="form-group">
+                      <label for="InputEmail-modal">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="InputEmail-modal"
+                        aria-describedby="emailHelp"
+                        placeholder="Введите email"
+                      />
+                      <small id="emailHelp" class="form-text text-muted"
+                        >Мы никогда не передадим вашу электронную почту кому-либо еще.</small
+                      >
+                    </div>
+                    <div class="form-group">
+                      <label for="InputPassword-modal">Пароль</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="InputPassword-modal"
+                        placeholder="Введите пароль"
+                      />
+                    </div>
+
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="checkbox" id="rememberMeEnter" />
+                      <label class="form-check-label" for="rememberMeEnter">Запомнить меня</label>
+                    </div>
+                    <div class="form-group form-group-center">
+                      <button type="submit" class="btn btn-color">Войти</button>
+                    </div>
+                  </div>
+
+                  <div class="line m-4">или</div>
+
+                  <div class="form-block another-autr">
+                    <span class="mt-3 mb-3 d-flex">Войти как пользователь</span>
+                    <div class="form-group form-group-center">
+                      <button class="btn btn-fb btn-color">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          image-rendering="optimizeQuality"
+                          shape-rendering="geometricPrecision"
+                          text-rendering="geometricPrecision"
+                          viewbox="0 0 10 10"
+                        >
+                          <path
+                            d="M5.5 10.2V5.6h1.3L7 3.7H5.5V2.4c0-.5.3-.7.6-.7H7V.1C6.9 0 6.7 0 6.6 0h-.8c-.4 0-.8.1-1.1.4-.4.4-.6.8-.7 1.4V3.7H2.7v1.8H4v4.6h1.5z"
+                          />
+                        </svg>
+                        Facebook
+                      </button>
+                    </div>
+                    <div class="form-group form-group-center">
+                      <button class="btn btn-g btn-color">
+                        <svg baseProfile="tiny" version="1.2" viewBox="0 0 10 10">
+                          <path
+                            fill="#FBBB00"
+                            d="M2.2 6l-.3 1.3H.6C.2 6.7 0 5.9 0 5c0-.8.2-1.6.6-2.3l1.1.2.5 1.1c-.1.3-.2.7-.2 1 0 .4.1.7.2 1z"
+                          />
+                          <path
+                            fill="#518EF8"
+                            d="M9.9 4.1c.1.3.1.6.1.9 0 .4 0 .7-.1 1-.3 1.2-.9 2.2-1.8 2.9l-1.4-.1-.2-1.2c.6-.3 1-.9 1.3-1.5H5.1v-2H9.9z"
+                          />
+                          <path
+                            fill="#28B446"
+                            d="M8.1 8.9C7.3 9.6 6.2 10 5 10 3.1 10 1.4 8.9.6 7.4L2.2 6C2.6 7.2 3.7 8 5 8c.5 0 1.1-.1 1.5-.4l1.6 1.3z"
+                          />
+                          <path
+                            fill="#F14336"
+                            d="M8.2 1.2L6.6 2.5C6.1 2.2 5.6 2 5 2c-1.3 0-2.4.9-2.8 2L.6 2.7C1.4 1.1 3.1 0 5 0c1.2 0 2.3.4 3.2 1.2z"
+                          />
+                        </svg>
+                        Google
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade "
+                id="pills-registration"
+                role="tabpanel"
+                aria-labelledby="pills-registration-tab"
+              >
+                <form>
+                  <div class="form-group">
+                    <label for="InputName">Имя</label>
+                    <input type="text" class="form-control" id="InputName" placeholder="Введите имя" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="InputTel">Телефон</label>
+                    <input type="text" class="form-control" id="InputTel" placeholder="Введите имя" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="InputEmail">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="InputEmail"
+                      aria-describedby="emailHelp"
+                      placeholder="Введите email"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >Мы никогда не передадим вашу электронную почту кому-либо еще.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="InputPassword-modal-new">Пароль</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="InputPassword-modal-new"
+                      placeholder="Введите пароль"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="InputPassword-repeat">Подтвердите пароль</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="InputPassword-repeat"
+                      placeholder="Введите пароль"
+                    />
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="checkbox" id="rememberMeReg" />
+                    <label class="form-check-label" for="rememberMeReg">Запомнить меня</label>
+                  </div>
+                  <div class="form-group form-group-center">
+                    <button type="submit" class="btn btn-color">Зарегистрироваться</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL ENTER END -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 offset-xl-1 col-lg-3  d-lg-flex d-none">
+            <ul class="footer-nav ">
+              <li class="footer-nav__item footer-nav__item-head">
+                Информация
+              </li>
+              <li class="footer-nav__item">
+                <a href="/">Главная</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="/about_us.html">О нас</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="/garanted.html">Гарантии</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="/pay.html">Оплата</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="/delivery.html">Доставка</a>
+              </li>
+              <li class="footer-nav__item disable">
+                <a href="javascript:void(0)">Медиа</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="/contacts.html">Контакты</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="/catalog-category">Каталоги</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-3 d-lg-flex d-none">
+            <ul class="footer-nav">
+              <li class="footer-nav__item footer-nav__item-head">
+                Категории
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Светильники</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Люстры</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Светильники</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Светильники для ванной</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Детские светильники</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Улечные светильники</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Настольные лампы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Умные светильники</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Торшеры</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2  col-lg-3  d-lg-flex d-none">
+            <ul class="footer-nav ">
+              <li class="footer-nav__item footer-nav__item-head">
+                Предложение
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Aкции</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Горячие предложения</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="javascript:void(0)">Идеи интерьера</a>
+              </li>
+            </ul>
+          </div>
+          <div class="offset-xl-1 col-xl-3 col-lg-3 col ">
+            <div class="footer-logo">
+              <svg xmlns="http://www.w3.org/2000/svg" id="logo" viewbox="0 0 332 54.1">
+                <path
+                  class="footer-logo-path-1"
+                  d="M12 11.1c-.4-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2c.8-.4 1.7-.5 2.5-.3s1.5.7 2 1.5l11.9 20.7c.4.6.6 1.4.6 2.1 0 .7-.1 1.3-.4 1.9l-12.2 20c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4l9.7-15.9H3.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1H21l-9-15.7z"
+                />
+                <path
+                  class="footer-logo-path-2"
+                  fill="#10587E"
+                  d="M29.1 40.7c-.5-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2 1.7-.5 2.5-.3 1.5.7 2 1.5l6.8 11.7c.5.8.5 1.7.3 2.5s-.7 1.5-1.5 2-1.7.5-2.5.3-1.5-.7-2-1.5l-6.8-11.7zm6.8-32.8c.5-.8 1.2-1.4 2-1.6.8-.2 1.6-.1 2.4.3l.1.1c.8.5 1.3 1.2 1.5 2 .2.8.1 1.7-.3 2.5L35.4 22c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3h-.1c-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4v-.1l6.2-10.8zm.7 25.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1h13.8c.9 0 1.7.4 2.3 1 .6.6 1 1.4 1 2.3 0 .9-.4 1.7-1 2.3-.6.6-1.4 1-2.3 1H36.6z"
+                />
+                <path
+                  class="footer-logo-path-3"
+                  fill-rule="evenodd"
+                  d="M83.8 16.3h11.1v-6c-3.5 0-10.4-.4-13.4.2-5.3 1.1-9.4 5.6-9.4 11.5 0 5.8 5 11.6 10.9 11.6h8.9c3 0 5.4 2.7 5.4 5.7 0 2.7-1.9 5-4.4 5.6-3 .7-16.4.1-20.4.1v5.8h19.9c6.4 0 11.6-5.2 11.7-11.6.1-5-3.9-11.6-9.2-11.6H83.7c-3.2.1-5.7-2.3-5.7-5.6 0-3.4 2.6-5.5 5.8-5.7zm235.2-5h-6.1V0H306v32.9c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.1 0-.3-.1-.4V17.5h6.1v-6.2zm-25 33.5c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2H294v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-41.3 16.5V10.2H231v22.7c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.2 0-.3-.1-.4zm-32.1-4.2v22.7h-6.9V28.7c1.2-12.5 11-18.5 22.7-18.5h3.2v6H221c-7.3 0-13.8 4.9-15.2 12.1.1.2.1.3 0 .4zm-19.3 16.1c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2h-5.9v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-43.2 16.3c9.6 2.6 11.7 9.1 11.7 18.4h6.8c0-11.1-1.7-20.5-14.7-23.9l11.8-16.9h-8.4l-11 16.1H117V10.2h-7.2v40.7h7.2V32.6c2 0 10.2-.3 11.5.1z"
+                />
+              </svg>
+            </div>
+            <div class="footer-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
+                <path
+                  d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
+                />
+              </svg>
+              <a href="tel:+380443336965">0443336965</a>
+            </div>
+            <div class="footer-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
+                <path
+                  d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
+                />
+              </svg>
+              <a href="tel:+380683127757">0683127757</a>
+            </div>
+            <div class="footer-contact">
+              <svg viewbox="0 0 10 10">
+                <path
+                  d="M10 2.3c0-.3-.2-.6-.5-.6h-9c-.1 0-.3.1-.4.2 0 .1-.1.2-.1.4v5c0 .1.1.3.2.4.1.1.2.1.4.1h9c.3 0 .5-.2.5-.5l-.1-5zm-1.1 0L5 5 1.1 2.3h7.8zM6.7 5.5L9 7.3H1l2.3-1.8c.1-.1.1-.2 0-.4 0-.1-.2-.1-.3 0L.5 7V2.5l4.3 3H5l4.3-3v4.6L7 5.1c-.1-.1-.3-.1-.4 0-.1.1-.1.3.1.4z"
+                />
+              </svg>
+              <a href="mailto:shop@skarlat.ua">shop@skarlat.ua</a>
+            </div>
+
+            <div class="footer-social-block__wrapper">
+              <ul class="footer-social-block__list">
+                <li class="footer-social-block__item">
+                  <a href="https://www.facebook.com/skarlat.ua/" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M5.5 10.2V5.6h1.3L7 3.7H5.5V2.4c0-.5.3-.7.6-.7H7V.1C6.9 0 6.7 0 6.6 0h-.8c-.4 0-.8.1-1.1.4-.4.4-.6.8-.7 1.4V3.7H2.7v1.8H4v4.6h1.5z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-block__item">
+                  <a href="https://www.instagram.com/skarlat.ua/" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M6.8 10H3c-1.7 0-3-1.4-3-3V3.2c0-1.7 1.4-3 3-3h3.8c1.7 0 3 1.4 3 3V7c.1 1.6-1.3 3-3 3zm1.5-7.7c0 .4-.3.6-.6.6-.4 0-.7-.2-.7-.6s.3-.7.7-.7c.4 0 .6.3.6.7zM4.9 7.6c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm0-4.3c-1 0-1.7.8-1.7 1.7S4 6.8 4.9 6.8 6.7 6 6.7 5.1s-.8-1.8-1.8-1.8zM3 .9C1.7.9.7 1.9.7 3.2V7c0 1.3 1 2.3 2.3 2.3h3.8c1.3 0 2.3-1 2.3-2.3V3.2c0-1.3-1-2.3-2.3-2.3H3z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-block__item">
+                  <a href="tg://resolve?domain=SkarlatStore" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M3.9 6.3l-.1 2.4c.2 0 .3-.1.5-.2l1.1-1.1 2.3 1.7c.4.2.7.1.8-.4L10 1.6c.1-.6-.3-.9-.7-.7L.5 4.3c-.6.2-.6.6-.1.7l2.3.7L8 2.4c.2-.2.5-.1.3.1L3.9 6.3z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-block__item">
+                  <a href="viber://chat?number=+380683127757" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M9.5 2.4C9.3 1.5 8.3.5 7.3.3 5.8 0 4.2 0 2.7.3 1.8.5.7 1.5.5 2.4.2 3.7.2 5 .5 6.3c.2.9 1.2 1.9 2.1 2.1v1c0 .4.4.6.7.3l1-1.1H5c.8 0 1.5-.1 2.3-.2.9-.2 2-1.2 2.2-2.1.3-1.2.3-2.6 0-3.9zM6 4.2zm0 0zm0 0c-.1 0-.1-.1-.1-.1v-.2c0-.1-.1-.2-.2-.3l-.1-.1h-.2c-.1 0-.1-.1-.1-.2s.1-.1.1-.1c.4 0 .8.3.8.8v.1c-.1.1-.1.1-.2.1zM5 1.9zm.5.1zm0 0zm0 0zm-.4-.1zm-.1 0zm0 0zm.1 0h.1-.1zm.4.1zm0 0zm0 0zm0 0zm0 0zm0 0zm0 0H5.2c1.1 0 2.1.8 2.3 1.9 0 .2 0 .4.1.6 0 .1 0 .2-.1.2s-.1-.1-.1-.2V4c-.5-.9-1.1-1.6-2-1.7H5c-.1 0-.2 0-.2-.1s.1-.2.1-.2h.6zM5 1.9zm1 2.3zm.7 0s0 .1 0 0c0 .2-.2.2-.3.1v-.1c0-.2-.1-.5-.2-.7 0-.2-.2-.4-.4-.5-.2-.1-.3-.1-.5-.1h-.2c0-.1-.1-.1-.1-.2s.1-.1.1-.1c.3 0 .5.1.7.2.6.2.9.6.9 1.2v.2zm0 0zM5 1.9zm0 0zm0 0zM6.4 7c-.1 0-.2 0-.3-.1-.9-.4-1.7-.9-2.3-1.6-.4-.4-.7-.9-.9-1.4-.1-.2-.2-.4-.3-.7-.1-.2 0-.4.2-.6.1-.2.3-.3.5-.4.1-.1.3 0 .4.1.2.3.4.5.6.8.1.2.1.4-.1.5l-.1.1-.1.1c0 .1-.1.2 0 .2.2.6.6 1.1 1.2 1.4.1 0 .2.1.3.1.2 0 .3-.2.4-.4.1-.1.3-.1.4 0 .1.1.3.2.4.3.1.1.3.2.4.3.1.3.1.4.1.6-.2.2-.3.4-.6.6-.1 0-.2 0-.2.1zm0 0zm2.3-.8c-.2.6-.9 1.3-1.6 1.5-.8.1-1.6.2-2.4.2-.2.1-.8.8-.8.8l-.8.8c-.1.1-.2 0-.2 0V7.7v-.1c-.6-.1-1.4-.8-1.6-1.4-.2-1.2-.2-2.4 0-3.6.2-.6 1-1.3 1.6-1.5 1.4-.3 2.8-.3 4.3 0 .6.2 1.3.9 1.5 1.5.2 1.2.2 2.4 0 3.6z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-block__item">
+                  <a href="whatsapp://send?phone=+380683127757" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M0 10c.1-.2.1-.4.2-.6.2-.6.3-1.2.5-1.8v-.3C-.8 4.4.7.8 4 .1 6.9-.6 9.6 1.4 10 4c.5 2.8-1.3 5.4-4 5.8-1.1.2-2.1 0-3.1-.5h-.3C1.1 9.7.3 10 0 10zm6.3-2.6c-1 0-2.5-.8-3.6-2.7-.3-.7-.3-1.4.3-1.9.2-.2.4-.1.6-.1.1 0 .1.1.1.2.1.3.3.6.4 1 .1.1 0 .3-.3.5-.1.1-.1.2 0 .3.4.7 1 1.2 1.7 1.5.1 0 .2 0 .3-.1.4-.5.4-.6.6-.5 1 .5 1.1.5 1.1.6.1.9-.7 1.2-1.2 1.2zM1.2 8.9c.5-.1 1-.2 1.4-.4h.3c.9.5 1.8.7 2.8.5C8 8.6 9.5 6.5 9.2 4.3 8.8 2 6.6.4 4.3.9 1.5 1.4 0 4.5 1.4 7c.2.3.2.5.1.8-.2.3-.2.7-.3 1.1z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-block__item">
+                  <a href="javascript:void(0)" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M9.2 8.5c.2-.1.4-.3.5-.6.4-.9.4-4.5 0-5.4-.1-.4-.4-.6-.7-.8-.6-.2-5.9-.2-7.6 0-.3 0-.6.2-.8.5C0 2.9.1 6.8.4 7.8c.1.4.4.6.8.8.8.2 7.3.2 8-.1zM6.9 5l-3 1.7V3.4l3 1.6z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pulse btn-vidget-skarlat">
+            <div class="vidget-content">
+              <ul class="vidget-list">
+                <li class="vidget-item">
+                  <a href="https://www.facebook.com/skarlat.ua/" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M5.5 10.2V5.6h1.3L7 3.7H5.5V2.4c0-.5.3-.7.6-.7H7V.1C6.9 0 6.7 0 6.6 0h-.8c-.4 0-.8.1-1.1.4-.4.4-.6.8-.7 1.4V3.7H2.7v1.8H4v4.6h1.5z"
+                      />
+                    </svg>
+                    Facebook</a
+                  >
+                </li>
+                <li class="vidget-item">
+                  <a href="https://www.instagram.com/skarlat.ua/" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M6.8 10H3c-1.7 0-3-1.4-3-3V3.2c0-1.7 1.4-3 3-3h3.8c1.7 0 3 1.4 3 3V7c.1 1.6-1.3 3-3 3zm1.5-7.7c0 .4-.3.6-.6.6-.4 0-.7-.2-.7-.6s.3-.7.7-.7c.4 0 .6.3.6.7zM4.9 7.6c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm0-4.3c-1 0-1.7.8-1.7 1.7S4 6.8 4.9 6.8 6.7 6 6.7 5.1s-.8-1.8-1.8-1.8zM3 .9C1.7.9.7 1.9.7 3.2V7c0 1.3 1 2.3 2.3 2.3h3.8c1.3 0 2.3-1 2.3-2.3V3.2c0-1.3-1-2.3-2.3-2.3H3z"
+                      />
+                    </svg>
+                    Instagram</a
+                  >
+                </li>
+                <li class="vidget-item">
+                  <a href="tg://resolve?domain=SkarlatStore" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M3.9 6.3l-.1 2.4c.2 0 .3-.1.5-.2l1.1-1.1 2.3 1.7c.4.2.7.1.8-.4L10 1.6c.1-.6-.3-.9-.7-.7L.5 4.3c-.6.2-.6.6-.1.7l2.3.7L8 2.4c.2-.2.5-.1.3.1L3.9 6.3z"
+                      />
+                    </svg>
+                    Telegram</a
+                  >
+                </li>
+                <li class="vidget-item">
+                  <a href="viber://chat?number=+380683127757" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M9.5 2.4C9.3 1.5 8.3.5 7.3.3 5.8 0 4.2 0 2.7.3 1.8.5.7 1.5.5 2.4.2 3.7.2 5 .5 6.3c.2.9 1.2 1.9 2.1 2.1v1c0 .4.4.6.7.3l1-1.1H5c.8 0 1.5-.1 2.3-.2.9-.2 2-1.2 2.2-2.1.3-1.2.3-2.6 0-3.9zM6 4.2zm0 0zm0 0c-.1 0-.1-.1-.1-.1v-.2c0-.1-.1-.2-.2-.3l-.1-.1h-.2c-.1 0-.1-.1-.1-.2s.1-.1.1-.1c.4 0 .8.3.8.8v.1c-.1.1-.1.1-.2.1zM5 1.9zm.5.1zm0 0zm0 0zm-.4-.1zm-.1 0zm0 0zm.1 0h.1-.1zm.4.1zm0 0zm0 0zm0 0zm0 0zm0 0zm0 0H5.2c1.1 0 2.1.8 2.3 1.9 0 .2 0 .4.1.6 0 .1 0 .2-.1.2s-.1-.1-.1-.2V4c-.5-.9-1.1-1.6-2-1.7H5c-.1 0-.2 0-.2-.1s.1-.2.1-.2h.6zM5 1.9zm1 2.3zm.7 0s0 .1 0 0c0 .2-.2.2-.3.1v-.1c0-.2-.1-.5-.2-.7 0-.2-.2-.4-.4-.5-.2-.1-.3-.1-.5-.1h-.2c0-.1-.1-.1-.1-.2s.1-.1.1-.1c.3 0 .5.1.7.2.6.2.9.6.9 1.2v.2zm0 0zM5 1.9zm0 0zm0 0zM6.4 7c-.1 0-.2 0-.3-.1-.9-.4-1.7-.9-2.3-1.6-.4-.4-.7-.9-.9-1.4-.1-.2-.2-.4-.3-.7-.1-.2 0-.4.2-.6.1-.2.3-.3.5-.4.1-.1.3 0 .4.1.2.3.4.5.6.8.1.2.1.4-.1.5l-.1.1-.1.1c0 .1-.1.2 0 .2.2.6.6 1.1 1.2 1.4.1 0 .2.1.3.1.2 0 .3-.2.4-.4.1-.1.3-.1.4 0 .1.1.3.2.4.3.1.1.3.2.4.3.1.3.1.4.1.6-.2.2-.3.4-.6.6-.1 0-.2 0-.2.1zm0 0zm2.3-.8c-.2.6-.9 1.3-1.6 1.5-.8.1-1.6.2-2.4.2-.2.1-.8.8-.8.8l-.8.8c-.1.1-.2 0-.2 0V7.7v-.1c-.6-.1-1.4-.8-1.6-1.4-.2-1.2-.2-2.4 0-3.6.2-.6 1-1.3 1.6-1.5 1.4-.3 2.8-.3 4.3 0 .6.2 1.3.9 1.5 1.5.2 1.2.2 2.4 0 3.6z"
+                      />
+                    </svg>
+                    Viber</a
+                  >
+                </li>
+                <li class="vidget-item">
+                  <a href="whatsapp://send?phone=+380683127757" target="blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      image-rendering="optimizeQuality"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      viewbox="0 0 10 10"
+                    >
+                      <path
+                        d="M0 10c.1-.2.1-.4.2-.6.2-.6.3-1.2.5-1.8v-.3C-.8 4.4.7.8 4 .1 6.9-.6 9.6 1.4 10 4c.5 2.8-1.3 5.4-4 5.8-1.1.2-2.1 0-3.1-.5h-.3C1.1 9.7.3 10 0 10zm6.3-2.6c-1 0-2.5-.8-3.6-2.7-.3-.7-.3-1.4.3-1.9.2-.2.4-.1.6-.1.1 0 .1.1.1.2.1.3.3.6.4 1 .1.1 0 .3-.3.5-.1.1-.1.2 0 .3.4.7 1 1.2 1.7 1.5.1 0 .2 0 .3-.1.4-.5.4-.6.6-.5 1 .5 1.1.5 1.1.6.1.9-.7 1.2-1.2 1.2zM1.2 8.9c.5-.1 1-.2 1.4-.4h.3c.9.5 1.8.7 2.8.5C8 8.6 9.5 6.5 9.2 4.3 8.8 2 6.6.4 4.3.9 1.5 1.4 0 4.5 1.4 7c.2.3.2.5.1.8-.2.3-.2.7-.3 1.1z"
+                      />
+                    </svg>
+                    Whatsapp</a
+                  >
+                </li>
+                <li class="vidget-item">
+                  <a href="mailto:example.google.com">
+                    <svg viewbox="0 0 10 10">
+                      <path
+                        d="M10 2.3c0-.3-.2-.6-.5-.6h-9c-.1 0-.3.1-.4.2 0 .1-.1.2-.1.4v5c0 .1.1.3.2.4.1.1.2.1.4.1h9c.3 0 .5-.2.5-.5l-.1-5zm-1.1 0L5 5 1.1 2.3h7.8zM6.7 5.5L9 7.3H1l2.3-1.8c.1-.1.1-.2 0-.4 0-.1-.2-.1-.3 0L.5 7V2.5l4.3 3H5l4.3-3v4.6L7 5.1c-.1-.1-.3-.1-.4 0-.1.1-.1.3.1.4z"
+                      />
+                    </svg>
+                    Напишите нам</a
+                  >
+                </li>
+                <li class="vidget-item">
+                  <a href="javascript:void(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
+                      <path
+                        d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
+                      />
+                    </svg>
+                    Перезвонить мне</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="btn-vidget--wrapper">
+              <ul class="social-animation">
+                <li class="social-animation-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    image-rendering="optimizeQuality"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    viewbox="0 0 10 10"
+                  >
+                    <path
+                      d="M5.5 10.2V5.6h1.3L7 3.7H5.5V2.4c0-.5.3-.7.6-.7H7V.1C6.9 0 6.7 0 6.6 0h-.8c-.4 0-.8.1-1.1.4-.4.4-.6.8-.7 1.4V3.7H2.7v1.8H4v4.6h1.5z"
+                    />
+                  </svg>
+                </li>
+                <li class="social-animation-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    image-rendering="optimizeQuality"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    viewbox="0 0 10 10"
+                  >
+                    <path
+                      d="M6.8 10H3c-1.7 0-3-1.4-3-3V3.2c0-1.7 1.4-3 3-3h3.8c1.7 0 3 1.4 3 3V7c.1 1.6-1.3 3-3 3zm1.5-7.7c0 .4-.3.6-.6.6-.4 0-.7-.2-.7-.6s.3-.7.7-.7c.4 0 .6.3.6.7zM4.9 7.6c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm0-4.3c-1 0-1.7.8-1.7 1.7S4 6.8 4.9 6.8 6.7 6 6.7 5.1s-.8-1.8-1.8-1.8zM3 .9C1.7.9.7 1.9.7 3.2V7c0 1.3 1 2.3 2.3 2.3h3.8c1.3 0 2.3-1 2.3-2.3V3.2c0-1.3-1-2.3-2.3-2.3H3z"
+                    />
+                  </svg>
+                </li>
+                <li class="social-animation-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    image-rendering="optimizeQuality"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    viewbox="0 0 10 10"
+                  >
+                    <path
+                      d="M3.9 6.3l-.1 2.4c.2 0 .3-.1.5-.2l1.1-1.1 2.3 1.7c.4.2.7.1.8-.4L10 1.6c.1-.6-.3-.9-.7-.7L.5 4.3c-.6.2-.6.6-.1.7l2.3.7L8 2.4c.2-.2.5-.1.3.1L3.9 6.3z"
+                    />
+                  </svg>
+                </li>
+                <li class="social-animation-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    image-rendering="optimizeQuality"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    viewbox="0 0 10 10"
+                  >
+                    <path
+                      d="M9.5 2.4C9.3 1.5 8.3.5 7.3.3 5.8 0 4.2 0 2.7.3 1.8.5.7 1.5.5 2.4.2 3.7.2 5 .5 6.3c.2.9 1.2 1.9 2.1 2.1v1c0 .4.4.6.7.3l1-1.1H5c.8 0 1.5-.1 2.3-.2.9-.2 2-1.2 2.2-2.1.3-1.2.3-2.6 0-3.9zM6 4.2zm0 0zm0 0c-.1 0-.1-.1-.1-.1v-.2c0-.1-.1-.2-.2-.3l-.1-.1h-.2c-.1 0-.1-.1-.1-.2s.1-.1.1-.1c.4 0 .8.3.8.8v.1c-.1.1-.1.1-.2.1zM5 1.9zm.5.1zm0 0zm0 0zm-.4-.1zm-.1 0zm0 0zm.1 0h.1-.1zm.4.1zm0 0zm0 0zm0 0zm0 0zm0 0zm0 0H5.2c1.1 0 2.1.8 2.3 1.9 0 .2 0 .4.1.6 0 .1 0 .2-.1.2s-.1-.1-.1-.2V4c-.5-.9-1.1-1.6-2-1.7H5c-.1 0-.2 0-.2-.1s.1-.2.1-.2h.6zM5 1.9zm1 2.3zm.7 0s0 .1 0 0c0 .2-.2.2-.3.1v-.1c0-.2-.1-.5-.2-.7 0-.2-.2-.4-.4-.5-.2-.1-.3-.1-.5-.1h-.2c0-.1-.1-.1-.1-.2s.1-.1.1-.1c.3 0 .5.1.7.2.6.2.9.6.9 1.2v.2zm0 0zM5 1.9zm0 0zm0 0zM6.4 7c-.1 0-.2 0-.3-.1-.9-.4-1.7-.9-2.3-1.6-.4-.4-.7-.9-.9-1.4-.1-.2-.2-.4-.3-.7-.1-.2 0-.4.2-.6.1-.2.3-.3.5-.4.1-.1.3 0 .4.1.2.3.4.5.6.8.1.2.1.4-.1.5l-.1.1-.1.1c0 .1-.1.2 0 .2.2.6.6 1.1 1.2 1.4.1 0 .2.1.3.1.2 0 .3-.2.4-.4.1-.1.3-.1.4 0 .1.1.3.2.4.3.1.1.3.2.4.3.1.3.1.4.1.6-.2.2-.3.4-.6.6-.1 0-.2 0-.2.1zm0 0zm2.3-.8c-.2.6-.9 1.3-1.6 1.5-.8.1-1.6.2-2.4.2-.2.1-.8.8-.8.8l-.8.8c-.1.1-.2 0-.2 0V7.7v-.1c-.6-.1-1.4-.8-1.6-1.4-.2-1.2-.2-2.4 0-3.6.2-.6 1-1.3 1.6-1.5 1.4-.3 2.8-.3 4.3 0 .6.2 1.3.9 1.5 1.5.2 1.2.2 2.4 0 3.6z"
+                    />
+                  </svg>
+                </li>
+                <li class="social-animation-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    image-rendering="optimizeQuality"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    viewbox="0 0 10 10"
+                  >
+                    <path
+                      d="M0 10c.1-.2.1-.4.2-.6.2-.6.3-1.2.5-1.8v-.3C-.8 4.4.7.8 4 .1 6.9-.6 9.6 1.4 10 4c.5 2.8-1.3 5.4-4 5.8-1.1.2-2.1 0-3.1-.5h-.3C1.1 9.7.3 10 0 10zm6.3-2.6c-1 0-2.5-.8-3.6-2.7-.3-.7-.3-1.4.3-1.9.2-.2.4-.1.6-.1.1 0 .1.1.1.2.1.3.3.6.4 1 .1.1 0 .3-.3.5-.1.1-.1.2 0 .3.4.7 1 1.2 1.7 1.5.1 0 .2 0 .3-.1.4-.5.4-.6.6-.5 1 .5 1.1.5 1.1.6.1.9-.7 1.2-1.2 1.2zM1.2 8.9c.5-.1 1-.2 1.4-.4h.3c.9.5 1.8.7 2.8.5C8 8.6 9.5 6.5 9.2 4.3 8.8 2 6.6.4 4.3.9 1.5 1.4 0 4.5 1.4 7c.2.3.2.5.1.8-.2.3-.2.7-.3 1.1z"
+                    />
+                  </svg>
+                </li>
+                <li class="social-animation-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
+                    <path
+                      d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="btn-up" id="btn-up" hidden>
+            <a class="btn-up-icon"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col copyright d-flex justify-content-center aline-items-center">
+            Copyright © 1997-2019.
+            <a href="javascript:void(0)">skarlat.ua</a>
+            Все права защищены
+            <svg viewbox="0 0 10 10">
+              <path
+                d="M6.3 1.9C6.3.9 7.1 0 8.2 0c1 0 1.9.9 1.9 1.9 0 .3-.2.5-.5.5s-.7-.2-.7-.5c0-.4-.4-.8-.8-.8s-.8.4-.8.8c0 .3-.2.5-.5.5-.3.1-.5-.2-.5-.5zm-6 0C.3.9 1.1 0 2.2 0 3.2 0 4 .9 4 1.9c0 .3-.2.5-.5.5S3 2.2 3 1.9c0-.4-.4-.8-.8-.8s-.8.4-.8.8c0 .3-.2.5-.5.5s-.6-.2-.6-.5zM0 6.8c-.1-.3 0-.7.3-.9.1 0 .2-.1.2-.1.3 0 .5.2.6.4.7 1.5 2.2 2.5 3.9 2.5 1.7 0 3.1-.9 3.7-2.4.2-.3.6-.5.9-.4.3.1.5.5.3.9C9.1 8.7 7.2 10 5 10S.8 8.7 0 6.8z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>
