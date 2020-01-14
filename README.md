@@ -6,7 +6,7 @@ Pages wich remained rewrite:
     - [ ]\  letter_success-reg
     - [ ]\  cooperation
     - [ ]\  adoute_us
-    - [ ]\  clien_cabinet
+    - [x]\  clien_cabinet
     - [ ]\  compare
     - [ ]\  contact
     - [ ]\  delivery
