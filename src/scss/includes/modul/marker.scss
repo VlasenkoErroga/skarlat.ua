@@ -13,17 +13,17 @@
 
         &--action {
             background: red;
-            color: #fff;
+            color: $white;
         }
 
         &--gift {
             background: rgb(4, 165, 177);
-            color: #fff;
+            color: $white;
         }
 
         &--sale {
             background: rgb(252, 164, 2);
-            color: #fff;
+            color: $white;
         }
 
         &:hover{
@@ -41,7 +41,7 @@
         }
 
         & svg {
-            fill: #fff;
+            fill: $white;
             width: 20px;
         }
     }

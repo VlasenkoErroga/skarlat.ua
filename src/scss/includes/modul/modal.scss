@@ -4,7 +4,7 @@
         &-filter {
             margin: 0;
             width: 100%!important;
-            background: #fff;
+            background: $white;
         }
     }
 
@@ -55,6 +55,14 @@
             background: #d8d8d8;
         }
 
+        &-add{
+            &-compare{
+                @media(max-width:575px){
+                    justify-content: center;
+                }
+            }
+        }
+
         &-basket {
             flex-flow: column nowrap;
             box-shadow: rgba(0, 0, 0, 0.17) 0 0 8px;
@@ -63,18 +71,13 @@
                 content: none;
             }
         }
+
     }
 
     &-add {
         &-compare {
             &-header {
-                position: absolute;
-                top: 0;
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
-                width: 100%;
-                z-index: 11;
-                background: #fff;
-
+                @extend .modal-basket-header;
                 & .close {
                     position: absolute;
                     right: 0;
@@ -95,7 +98,7 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
             width: 100%;
             z-index: 11;
-            background: #fff;
+            background: $white;
 
             & .close {
                 position: absolute;
@@ -130,6 +133,13 @@
         &-add {
             &-compare {
                 overflow-y: auto;
+                @media(max-width: 768px){
+                    padding-top: 50px!important;
+                }
+
+               & .search-block{
+                margin-bottom: 20px;
+                }
             }
         }
     }

@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     position: relative;
-    color: #d8d8d8;
+    color:$border-color;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -13,13 +13,13 @@
     border-radius: 4px;
 
     &:hover {
-        color: #fff;
+        color: $white;
         cursor: pointer;
     }
 
     & svg {
         margin-right: 10px;
-        fill: #d8d8d8;
+        fill: $border-color;
         width: 22px;
         display: flex;
     }
@@ -28,7 +28,7 @@
         &:hover > .category-menu-nav--hov-wrapper {
             display: block;
             margin-top: 0;
-            background: #fff;
+            background: $white;
             border-radius: 4px;
     
             @media(min-width:992px) and (max-width:1199px) {

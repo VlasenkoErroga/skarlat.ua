@@ -4,7 +4,7 @@
         margin-bottom: 20px;
         & .container {
             border-radius: 4px;
-            background: #fff;
+            background: $white;
             box-shadow: 0 0 5px rgba(0,0,0, .17);
             padding: 0 5px;
         }
@@ -76,7 +76,7 @@
 
                 &,
                 &__close {
-                    color: #004f75;
+                    color: $blue;
                     border: none;
                     background: none;
                     -webkit-appearance: none;
@@ -114,14 +114,14 @@
             &-fixed {
                 position: sticky;
                 left: 0;
-                background: #fff;
+                background: $white;
                 border-right: 1px dashed #d8d8d8;
                 z-index: 2;
 
                 &.compare-table__col-main-item {
                     position: sticky;
                     left: 220px;
-                    background: #fff;
+                    background: $white;
 
                     @media(max-width:992px) {
                             position: initial;
@@ -139,7 +139,7 @@
                     & .compare-table-product-btn {
                         font-size: 18px;
                         line-height: 20px;
-                        color: #004f75;
+                        color: $blue;
                         font-weight: 400;
                         &__close {
                             border: none;
@@ -161,7 +161,7 @@
             & .compare-table__col-fixed {
                 &,
                 & .compare-table__col-main-item {
-                    background: #fff;
+                    background: $white;
                     border: none;
                 }
             }
@@ -178,18 +178,18 @@
 
         &__wrapper {
             &-up {
-                background: #fff;
+                background: $white;
                 position: sticky;
                 top: 56px;
                 z-index: 2;
 
                 & .compare-table__row {
                     padding-bottom: 10px;
-                    background: #fff;
+                    background: $white;
                 }
 
                 @media(min-width:992px) {
-                        background: #fff;
+                        background: $white;
                         position: sticky;
                         top: 0;
                 }
@@ -201,7 +201,7 @@
 
             &-down {
                 padding-top: 10px;
-                background-color: #fff;
+                background-color: $white;
                 position: relative;
                 z-index: 1;
             }
@@ -290,7 +290,7 @@
             &-fixed {
                 &-group {
                     position: sticky;
-                    color: #004f75;
+                    color: $blue;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 400;
                     left: 0;
@@ -312,10 +312,10 @@
             & .compare-table__row-group {
                 & .compare-table__row {
                     &:hover {
-                        background: #eff2f3;
+                        background: $lightgrey;
 
                         & .compare-table__col-fixed {
-                            background: #eff2f3;
+                            background: $lightgrey;
                         }
                     }
                 }
@@ -407,10 +407,10 @@
             padding: 5px 3px;
             outline: none;
             font-size: 14px;
-            color: #004f75;
+            color: $blue;
             font-weight: 500;
             position: relative;
-            color: #004f75;
+            color: $blue;
 
         }
     }
@@ -508,7 +508,7 @@
         width: 18px;
         height: 18px;
         background: none;
-        border: 1px solid #004f75;
+        border: 1px solid $blue;
         border-radius: 50%;
         left: 0;
         top: 50%;
@@ -517,7 +517,7 @@
 
     &::after {
         content: '+';
-        color: #004f75;
+        color: $blue;
         font-size: 16px;
         font-weight: 400;
         margin-right: 11px;

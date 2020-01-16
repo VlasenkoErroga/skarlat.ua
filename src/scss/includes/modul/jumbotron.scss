@@ -1,6 +1,6 @@
 .jumbotron {
     &-basket {
-        background: #fff;
+        background: $white;
         padding: 1px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
         border-radius: 4px;
@@ -106,8 +106,8 @@
             }
 
             & .btn-color {
-                background: #004d75;
-                color: #fff;
+                background: $blue;
+                color: $white;
                 text-transform: uppercase;
 
                 &:hover {
@@ -117,7 +117,7 @@
             }
 
             & .in-basket {
-                color: #004d75;
+                color: $blue;
                 margin-right: 5px;
                 transition: all 0.3s ease-in-out;
                 position: relative;
@@ -130,7 +130,7 @@
                         left: 0;
                         width: 100%;
                         bottom: 0;
-                        border-bottom: 1px #004d75 dashed;
+                        border-bottom: 1px $blue dashed;
                         transition: all 0.3s ease-in-out;
                     }
                 }
@@ -159,7 +159,7 @@
 
         &-title {
             a {
-                color: #004d75;
+                color: $blue;
             }
 
             & h3 {

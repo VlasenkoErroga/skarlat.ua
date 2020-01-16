@@ -1,65 +1,63 @@
-const theadCompare = document.getElementById('theadCompare');
-const compareScrollLeft = document.getElementById('compare-table__scroll-left');
-const compareScrollRight = document.getElementById('compare-table__scroll-right');
 
 function scrollCompare() {
+    const COMPARE_SCROLL_LEFT = document.getElementById('compare-table__scroll-left');
+    const COMPARE_SCROLL_RIGHT = document.getElementById('compare-table__scroll-right');
+    const COMPARE_TABLE_HEADER = document.getElementById('compare-table__header');
+    const COMPARE_TABLE_BODY = document.getElementById('compare-table__body');
+    const COMPARE_TABLE_CONTROLL = document.getElementById('compare-table__control');
+    
+    if (COMPARE_TABLE_HEADER && COMPARE_TABLE_CONTROLL && COMPARE_TABLE_BODY) {
+        COMPARE_TABLE_HEADER = COMPARE_TABLE_HEADER.children[0]
+        COMPARE_TABLE_CONTROLL = COMPARE_TABLE_CONTROLL.children[0];
+        COMPARE_TABLE_BODY= COMPARE_TABLE_BODY.children;
+        COMPARE_TABLE_HEADER.addEventListener('scroll', function (event) {
+            COMPARE_TABLE_CONTROLL.scrollLeft = COMPARE_TABLE_HEADER.scrollLeft;
 
-    let compareTableHeader = document.getElementById('compare-table__header');
-    let compareTableBody = document.getElementById('compare-table__body');
-    let compareTableControl = document.getElementById('compare-table__control')
-
-    if (compareTableHeader && compareTableControl && compareTableBody) {
-        compareTableHeader = compareTableHeader.children[0]
-        compareTableControl = compareTableControl.children[0];
-        compareTableBody = compareTableBody.children;
-        compareTableHeader.addEventListener('scroll', function (event) {
-            compareTableControl.scrollLeft = compareTableHeader.scrollLeft;
-
-            for (let i = 0; i < compareTableBody.length; i++) {
-                let item = compareTableBody[i].children
+            for (let i = 0; i < COMPARE_TABLE_BODY.length; i++) {
+                let item = COMPARE_TABLE_BODY[i].children
                 for (let j = 0; j < item.length; j++) {
 
-                    item[j].scrollLeft = compareTableHeader.scrollLeft;
+                    item[j].scrollLeft = COMPARE_TABLE_HEADER.scrollLeft;
                 }
             }
         });
 
-        compareTableControl.addEventListener('scroll', function (event) {
-            compareTableHeader.scrollLeft = compareTableControl.scrollLeft;
+        COMPARE_TABLE_CONTROLL.addEventListener('scroll', function (event) {
+            COMPARE_TABLE_HEADER.scrollLeft = COMPARE_TABLE_CONTROLL.scrollLeft;
 
             let item = '';
 
-            for (let i = 0; i < compareTableBody.length; i++) {
-                item = compareTableBody[i].children
+            for (let i = 0; i < COMPARE_TABLE_BODY.length; i++) {
+                item = COMPARE_TABLE_BODY[i].children
                 for (let j = 0; j < item.length; j++) {
 
-                    item[j].scrollLeft = compareTableControl.scrollLeft;
+                    item[j].scrollLeft = COMPARE_TABLE_CONTROLL.scrollLeft;
                 }
             }
 
         });
 
-        for (let i = 0; i < compareTableBody.length; i++) {
-            let item = compareTableBody[i].children;
+        for (let i = 0; i < COMPARE_TABLE_BODY.length; i++) {
+            let item = COMPARE_TABLE_BODY[i].children;
 
             for (let j = 0; j < item.length; j++) {
 
                 item[j].addEventListener('scroll', function (event) {
-                    compareTableHeader.scrollLeft = item[j].scrollLeft;
-                    compareTableControl.scrollLeft = item[j].scrollLeft;
+                    COMPARE_TABLE_HEADER.scrollLeft = item[j].scrollLeft;
+                    COMPARE_TABLE_CONTROLL.scrollLeft = item[j].scrollLeft;
                 });
 
             }
 
         }
 
-        compareScrollRight.addEventListener('click', function (event) {
-            compareTableHeader.scrollLeft += 100;
+        COMPARE_SCROLL_RIGHT.addEventListener('click', function (event) {
+            COMPARE_TABLE_HEADER.scrollLeft += 100;
 
         });
 
-        compareScrollLeft.addEventListener('click', function (event) {
-            compareTableHeader.scrollLeft -= 100;
+        COMPARE_SCROLL_LEFT.addEventListener('click', function (event) {
+            COMPARE_TABLE_HEADER.scrollLeft -= 100;
 
         });
     }

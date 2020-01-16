@@ -9,7 +9,7 @@
         height: 2px;
         width: 30px;
         border-radius: 2px;
-        background: #fff;
+        background: $white;
         overflow: hidden;
 
         &::after,
@@ -19,7 +19,7 @@
             width: 100%;
             max-width: 30px;
             border-radius: 2px;
-            background: #fff;
+            background: $white;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);

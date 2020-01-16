@@ -1,7 +1,5 @@
 function hidefilter() {
-    const filterFormGroupList = document.getElementsByClassName(
-        'filter__item-group'
-    );
+    const filterFormGroupList = document.getElementsByClassName('filter__item-group');
     const showAllFilterList = document.querySelectorAll('.filter-all--show');
 
     if (filterFormGroupList && showAllFilterList) {

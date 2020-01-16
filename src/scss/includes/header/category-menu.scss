@@ -6,17 +6,17 @@
         align-items: flex-start;
         font: 400 14px Roboto,sans-serif;
         padding: 14px 0 0;
-        background: #fff;
+        background: $white;
         z-index: 20;
         &-nav {
-            background: #fff;
+            background: $white;
             border-radius: 4px;
             box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
 
             &--hov {
                 &-wrapper {
                     display: none;
-                    background: #fff;
+                    background: $white;
                     position: absolute;
                     top: 100%;
                     left: 0;
@@ -70,14 +70,14 @@
             padding: 5px 10px;
             transition: all.3s ease-in-out;
             position: relative;
-            background: #fff;
+            background: $white;
             z-index: 20;
             margin: 0;
 
             &:hover > a,
             &:hover > a + svg {
-                fill: #004d75;
-                color: #004d75;
+                fill: $blue;
+                color: $blue;
             }
             & a svg.category-menu__item-icon {
                 width: 18px;
@@ -100,11 +100,11 @@
                 right: 10px;
                 top: 50%;
                 transform: translateY(-50%);
-                fill: #51595d;
+                fill: $grey;
             }
 
             a {
-                color: #51595d;
+                color: $grey;
                 display: flex;
                 width: 100%;
                 padding-left: 22px;

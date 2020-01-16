@@ -1,6 +1,6 @@
 #subscribeBtn {
     background: $blue;
-    color: #fff;
+    color: $white;
     padding: 6px;
     border: none;
     border-radius: 5px;
@@ -8,10 +8,9 @@
 }
 
 .subscribe{
-
     text-align: center;
     padding: 34px 0;
-   position: relative;
+    position: relative;
     &:after{
         content:'';
         position: absolute;
@@ -30,59 +29,50 @@
         text-align: center;
     }
 
-    & form {
-        display: inline-block;
-        vertical-align: middle;
+    &-main{
+        background:rgb(180, 180, 180);
+        padding-top: 20px;
+        padding-bottom: 20px;
 
-        & input[type='email'] {
-            color: #666565;
-            font-family: "Roboto", sans-serif;
-            font-weight: 100;
-            font-size: 14px;
-            font-style: italic;
-            border: 1px solid #9a9a9a;
-            padding: 0 12px;
-            height: 100%;
-            outline: none;
-            width: 165px;
-            float: left;
-
-            @media (min-width: 1500px) {
-                width: 270px;
-                }
+        & .form-group{
+            max-width: 100%;
+            & input, select{
+                background:$BGlightgrey;
+                opacity: .8;
             }
+        }
+        & .checkbox{
+            background:$BGlightgrey;
+            opacity: .6;
 
-            @media (min-width: 768px) {
-                padding: 0 6px;
-                width: 120px;
-            }
-
-        & input[type="submit"] {
-            color: #fff;
-            font-family: "Roboto", sans-serif;
-            font-size: 18px;
-            background-color: $blue;
-            outline: none;
-            border: none;
-            padding: 0 33px;
-            height: 100%;
-            float: left;
-
-            @media (min-width: 768px) {
-                padding: 0 24px;
+            &:checked{
+                opacity: 1;
             }
         }
 
-        & input[type="submit"]:hover {
-            background-color: #016396;
+        & form{
+            display: flex;
+            justify-content: start;
+            flex-flow: column nowrap;
         }
+
+        & h1,h2,h3,h4,h5,h6{
+            color:$red;
+            margin-bottom: 30px;
+        }
+        & h2{
+            font-size: 30px;
+        }
+        
     }
 
     &-btn {
+        @extend .btn;
         background: $blue;
         border-radius: 4px;
         border: none;
-        color: #fff;
+        color: $white;
+        height: 50px;
     }
 
     &-input {
@@ -98,6 +88,8 @@
         border: 1px solid #d8d8d8;
         }
     }
+
+
 
     & .label {
 
@@ -130,7 +122,7 @@
 
 .btn-subscribe-form {
     background: $blue;
-    color: #fff;
+    color: $white;
     font: 400 14px 'Roboto', sans-serif;
     text-transform: uppercase;
     margin-right: 7%;
@@ -142,6 +134,6 @@
 
 .btn-subscribe-form-break {
     background: none;
-    color: #51595d;
+    color: $grey;
     font-weight: 600;
 }

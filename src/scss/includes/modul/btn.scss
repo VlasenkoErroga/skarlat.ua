@@ -1,11 +1,11 @@
 .btn {
     &-color {
         background: $blue;
-        color: #fff;
+        color: $white;
         text-transform: uppercase;
         padding: 5px 20px;
         &:hover {
-            color: #fff;
+            color: $white;
         }
     }
 
@@ -18,7 +18,7 @@
         min-width: 150px;
 
         & svg {
-            fill: #fff;
+            fill: $white;
             width: 20px;
             max-height: 18px;
             margin-right: 5px;
@@ -57,7 +57,7 @@
         top: 5px;
         right: 5px;
         width: 40px;
-        fill: #fff;
+        fill: $white;
     }
 
     &_buy {
@@ -71,8 +71,8 @@
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-weight: 400;
         font-size: 16px;
-        background: #004d75;
-        color: #fff;
+        background: $blue;
+        color: $white;
         text-transform: uppercase;
         -webkit-box-shadow: 0 0 10px -5px #000000;
         box-shadow: 0 0 10px -5px #000000;
@@ -91,7 +91,7 @@
 
             &:hover {
                 & .btn-icon {
-                    fill: #004d75;
+                    fill: $blue;
                 }
             }
 
@@ -123,7 +123,7 @@
         &--active .btn-icon-detail .balance,
         &:hover .balance,
         &:hover .btn-icon-detail .balance {
-            fill: #004d75;
+            fill: $blue;
             transition: all 0.3s ease-in-out;
         }
     }
@@ -166,7 +166,7 @@
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 13px;
-        color: #004d75;
+        color: $blue;
         border: none;
         max-width: 150px;
         text-transform: uppercase;
@@ -220,27 +220,27 @@
         right: -5px;
         padding: 10px;
         top: 5px;
-        border-left: 1px solid #51595d;
+        border-left: 1px solid $grey;
         background: none;
 
         &:hover {
             svg {
-                fill: #fff;
+                fill: $white;
                 transition: all 0.3s ease-in-out;
             }
         }
 
         & svg {
             width: 100%;
-            fill: #004d75;
+            fill: $blue;
             transition: all 0.3s ease-in-out;
         }
     }
 
     &-set {
         &-products {
-            background: #004d75;
-            color: #fff;
+            background: $blue;
+            color: $white;
             text-transform: uppercase;
 
             @media(min-width:992px) and (max-width:1200px) {
@@ -268,7 +268,7 @@
         & button {
             &:first-child {
                 margin-right: 2rem;
-                color: #004f75;
+                color: $blue;
                 position: relative;
                 margin-bottom: -4px;
                 font-size: -4px;
@@ -333,7 +333,7 @@
             justify-content: center;
             align-items: center;
             flex-flow: row nowrap;
-            background: #fff;
+            background: $white;
             padding: 2px;
             border-radius: 50%;
             width: 50px;
@@ -346,8 +346,8 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 50%;
-                background: #004f75;
-                color: #FFF;
+                background: $blue;
+                color: $white;
                 display: none;
                 justify-content: center;
                 align-items: center;
@@ -375,7 +375,7 @@
             &:hover {
 
                 & .btn-vidget--wrapper {
-                    background: #004f75;
+                    background: $blue;
 
                     &:before {
                         display: flex;

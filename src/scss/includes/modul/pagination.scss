@@ -13,10 +13,10 @@
         justify-content: center;
         align-items: center;
         border: none;
-        color: #004d75;
+        color: $blue;
         height: 100%;
         &:hover {
-            background: #fff;
+            background: $white;
         }
     }
 
@@ -106,8 +106,8 @@
         overflow: hidden;
         border-radius: 4px;
         margin: 2px;
-        color: #004d75;
-        background: #fff;
+        color: $blue;
+        background: $white;
         border: 1px solid #d8d8d8;
 
         &.disabled {
@@ -116,14 +116,14 @@
         }
 
         &.active .page-link {
-            background: #004d75;
-            color: #fff;
+            background: $blue;
+            color: $white;
             z-index: 1;
         }
 
         &:hover .page-link {
             background: $blue;
-            color: #fff;
+            color: $white;
         }
     }
 }

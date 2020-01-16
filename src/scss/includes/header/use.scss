@@ -19,7 +19,7 @@
 
             & svg {
                 width: 30px;
-                fill: #fff;
+                fill: $white;
                 margin-right: 10px;
             }
 
@@ -29,7 +29,7 @@
                 font-size: 13px;
                 line-height: 12px;
                 width: 100%;
-                color: #fff;
+                color: $white;
               }
 
             & span {
@@ -38,10 +38,10 @@
                 font-size: 13px;
                 line-height: 12px;
                 width: 100%;
-                color: #fff;
+                color: $white;
 
                 & a {
-                    color: #fff;
+                    color: $white;
                 }
             }
         }
@@ -54,7 +54,7 @@
             align-items: center;
 
             & svg {
-                fill: #fff;
+                fill: $white;
                 padding: 1px;
                 width: 100%;
             }
@@ -64,7 +64,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: #004d75;
+                background: $blue;
                 padding: 1px 7px;
                 border-radius: 5px;
                 right: -10px;
@@ -73,7 +73,7 @@
 
             @media(min-width:768px) and (max-width:992px) {
                 & svg {
-                    fill: #fff;
+                    fill: $white;
                     width: auto;
                     height: 100%;
                     width: 35px;
@@ -87,7 +87,7 @@
                 }
 
                 & svg {
-                    fill: #fff;
+                    fill: $white;
                     width: 35px;
                     max-height: 50px;
                 }
@@ -120,7 +120,7 @@
         & svg {
             padding: 1px;
             width: 100%;
-            fill: #fff;
+            fill: $white;
             
             @media (max-width: 768px){
                 width: 35px;
@@ -135,7 +135,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #004d75;
+            background: $blue;
             padding: 1px 7px;
             border-radius: 5px;
             right: -10px;
@@ -196,13 +196,13 @@
                 &:hover {
                     background: rgb(236, 237, 238);
                     transition: all 0.3s ease-in-out;
-                    color: #004d75;
+                    color: $blue;
 
                     & a {
-                        color: #004d75;
+                        color: $blue;
 
                         &svg.use-block-menu__icon {
-                            fill: #004d75;
+                            fill: $blue;
                         }
                     }
                 }

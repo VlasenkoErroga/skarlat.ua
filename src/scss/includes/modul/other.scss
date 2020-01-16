@@ -5,8 +5,8 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            background: #004f75;
-            color: #fff;
+            background: $blue;
+            color: $white;
             width: 140px;
             font-size: 15px;
             margin: 10px 2px;
@@ -15,7 +15,7 @@
                 width: 25px;
                 height: 25px;
                 margin-left: 10px;
-                fill: #fff;
+                fill: $white;
             }
         }
     }
@@ -33,12 +33,12 @@
     align-items: center;
 
     & a {
-        color: #51595d;
+        color: $grey;
         margin-right: 15px;
         font-size: 18px;
 
         &:hover {
-            color: #004d75;
+            color: $blue;
         }
     }
 

@@ -11,13 +11,13 @@
         // }
 
         & svg {
-            fill: #004d75;
+            fill: $blue;
             width: 45px;
             height: 45px;
             margin-right: 20px;
 
             @media (max-width:768px) {
-                fill: #004d75;
+                fill: $blue;
                 width: 25px;
                 height: 25px;
                 margin-right: 20px;
@@ -67,7 +67,7 @@
                 border-radius: 5px;
                 display: flex;
                 width: 60%;
-                background: #004f75;
+                background: $blue;
                 height: 2px;
                 left: 20%;
             }

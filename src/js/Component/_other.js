@@ -104,3 +104,15 @@ function removeButronBasket(){
 }
 }
 removeButronBasket()
+
+
+function toggleSeo(item){
+    if(item){ item.addEventListener('click', function(){
+        this.remove();
+        document.getElementsByClassName('seo-content-prev')[0].classList.remove('seo-content-prev');
+    })
+
+}
+}
+
+toggleSeo(document.getElementById('seo-collapse-btn'))

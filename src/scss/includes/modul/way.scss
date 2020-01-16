@@ -36,7 +36,7 @@
 
         &-title  {
             transition: all 0.3s ease-in-out;
-            color: #004f75;
+            color: $blue;
         }
 
         &:hover {
@@ -45,7 +45,7 @@
 
             & .way-filter__item-title {
                 transition: all 0.3s ease-in-out;
-                color: #004f75;
+                color: $blue;
             }
         }
 
@@ -62,12 +62,12 @@
                 transition: all 0.3s ease-in-out;
 
                 & .way-filter__item-title {
-                    color: #fff !important;
+                    color: $white !important;
                 }
 
                 & .way-filter__item-icon{
                     transition: all 0.3s ease-in-out;
-                    color: #004f75;
+                    color: $blue;
                 }
             }
         }

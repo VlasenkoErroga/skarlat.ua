@@ -17,11 +17,6 @@ import './Component/_slider-jquery';
 import './Component/_other';
 
 
-
-const btnShowFilter = document.getElementById('btnFilter');
-const choiceBtn = document.getElementById('choice-btn');
-
-
 //pills lk
 
 function openPillsLK(event) {

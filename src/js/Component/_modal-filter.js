@@ -1,52 +1,55 @@
+const MOB_FILTER = document.getElementById('mobileFilter');
+const CLOSE_FILTER = document.getElementById('closeFilter');
+const BTN_SHOW_FILTER = document.getElementById('btnFilter');
+const BTN_CHOICE = document.getElementById('choice-btn');
+
 function ToggleFilter() {
-    const mobFilte = document.getElementById('mobileFilter');
-    const closeFilter = document.getElementById('closeFilter');
-    if (btnShowFilter) {
-        btnShowFilter.addEventListener('click', function () {
-            mobFilte
+    if (BTN_SHOW_FILTER) {
+        BTN_SHOW_FILTER.addEventListener('click', function () {
+            MOB_FILTER
                 .classList
                 .add('show');
-            mobFilte
+            MOB_FILTER
                 .classList
                 .remove('d-none');
         });
     }
-    if (closeFilter) {
-        closeFilter.addEventListener('click', function () {
-            mobFilte
+    if (CLOSE_FILTER) {
+        CLOSE_FILTER.addEventListener('click', function () {
+            MOB_FILTER
                 .classList
                 .remove('show');
             if (document.innerWidth > 500) {
                 setTimeout(function remClass() {
-                    mobFilte
+                    MOB_FILTER
                         .classList
                         .add('d-none')
                 }, 500)
             } else {
-                mobFilte
+                MOB_FILTER
                     .classList
                     .add('d-none');
             }
 
         })
-        mobFilte.addEventListener('click', function (e) {
+        MOB_FILTER.addEventListener('click', function (e) {
             if (!e.target.closest('#FilterForm')) {
-                mobFilte
+                MOB_FILTER
                     .classList
                     .remove('show');
                 setTimeout(function remClass() {
-                    mobFilte
+                    MOB_FILTER
                         .classList
                         .add('d-none')
                 }, 400)
             }
         })
-        choiceBtn.addEventListener('click', function (e) {
-            mobFilte
+        BTN_CHOICE.addEventListener('click', function (e) {
+            MOB_FILTER
                 .classList
                 .remove('show');
             setTimeout(function remClass() {
-                mobFilte
+                MOB_FILTER
                     .classList
                     .add('d-none')
             }, 400)

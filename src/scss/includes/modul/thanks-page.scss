@@ -59,7 +59,7 @@
                 width: 80px;
                 height: 80px;
                 margin-right: 20px;
-                background:#fff;
+                background:$white;
                 border-radius:4px;
                 box-shadow:rgba(0,0,0, .17) 0 0 8px;
 
@@ -128,7 +128,7 @@
                     &-lk{
                        & a {
                             margin-left: 5px;
-                            color: #004f75;
+                            color: $blue;
                             font-weight: 400;
                             position: relative;
                             cursor: pointer;
@@ -139,7 +139,7 @@
                                 content: '';
                                 display: flex;
                                 width: 100%;
-                                border-bottom: 1px dashed #004f75;
+                                border-bottom: 1px dashed $blue;
                               }
                           }
                     }
@@ -152,11 +152,11 @@
                     @extend .btn-color;
                     border-radius:4px;
                     background: $blue;
-                    color:#fff;
+                    color:$white;
 
 
                     & a{
-                        color:#fff;
+                        color:$white;
                     }
                 }
             }

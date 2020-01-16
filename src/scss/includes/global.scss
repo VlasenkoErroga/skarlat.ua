@@ -1,7 +1,7 @@
 body {
     overflow: auto;
     position: relative;
-    background: #fafafa;
+    background: $BGlightgrey;
     height: 100%;
 
     @media (max-width: 992px) {
@@ -18,7 +18,7 @@ main{
 
     &::selection {
         background: rgb(238, 56, 64);
-        color: #fff;
+        color: $white;
     }
 
     &:focus {
