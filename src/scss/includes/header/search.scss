@@ -23,7 +23,7 @@
             top: 30%;
             width: 1px;
             height: 40%;
-            background: #51595d;
+            background: $grey;
         }
     }
 
@@ -49,12 +49,12 @@
 
         & svg {
             width: 100%;
-            fill: #51595d;
+            fill: $grey;
             transition: all 0.3s ease-in-out;
         }
 
         &:hover svg {
-            fill: #004f75;
+            fill: $blue;
             transition: all 0.3s ease-in-out;
         }
     }

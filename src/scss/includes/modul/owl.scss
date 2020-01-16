@@ -70,7 +70,7 @@
                     }
 
                     &:hover {
-                        background: #fff;
+                        background: $white;
                         height: 50px;
                         width: 30px;
                         transition: all 0.3s ease-in-out;
@@ -107,7 +107,7 @@
         margin: 0 5px;
 
         &.active {
-            background-color: #004d75;
+            background-color: $blue;
         }
     }
 

@@ -37,7 +37,7 @@
 
         &__title {
             &-block {
-                color: #004d75;
+                color: $blue;
                 font: 400 14px "Roboto", sans-serif;
                 display: flex;
                 justify-content: flex-start;
@@ -46,7 +46,7 @@
 
                 &_label {
                     margin: 0;
-                    color: #004d75;
+                    color: $blue;
                     font: 400 14px "Roboto", sans-serif;
                     display: flex;
                     justify-content: center;

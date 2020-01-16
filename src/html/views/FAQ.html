@@ -9,14 +9,12 @@
   <%= _.template(require('./../includes/_progres.html').default)(data) %>
   <%= _.template(require('./../includes/_breadcrumbs.html').default)(data) %>
   <%= _.template(require('./../includes/_title-page.html').default)(data) %>
-  <%= _.template(require('./../includes/Information_page_component/_question-contant.html').default)(data) %>
   
-  <%= _.template(require('./../includes/_subscribe-section.html').default)(data) %>
-  <%= _.template(require('./../includes/_seo-section.html').default)(data) %>
+  <%= _.template(require('./../includes/_main-seo-section.html').default)(data) %>
+  <%= _.template(require('./../includes/_main-subscribe-section.html').default)(data) %>
 </main>
       <!-- MAIN END -->
 <%= _.template(require('./../includes/_menu.html').default)(data) %>
 <%= _.template(require('./../includes/_basket.html').default)(data) %>
-<%= _.template(require('./../includes/_subscribe.html').default)(data) %>
 <%= _.template(require('./../includes/_form-enter.html').default)(data) %>
 <%= _.template(require('./../includes/_footer.html').default)(data) %> 

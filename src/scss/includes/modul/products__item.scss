@@ -1,7 +1,7 @@
 .product {
     &-item {
         position: relative;
-        background: #fff;
+        background: $white;
         border: 2px solid transparent;
         height: 100%;
         border-right: 1px solid #d8d8d8;
@@ -65,7 +65,7 @@
             &-img {
                 height: 190px;
                 overflow: hidden;
-                background: #fff;
+                background: $white;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -218,7 +218,7 @@
                     &:hover {
                         & .btn-icon {
                             transition: all 0.3s ease-in-out;
-                            fill: #004d75;
+                            fill: $blue;
                         }
                     }
         
@@ -232,7 +232,7 @@
                     &--active{
                         & .btn-icon {
                             transition: all 0.3s ease-in-out;
-                            fill: #004d75;
+                            fill: $blue;
                         }
                     }
                 }
@@ -242,7 +242,7 @@
                     &--active .btn-icon-detail .balance,
                     &:hover .balance,
                     &:hover .btn-icon-detail .balance {
-                        fill: #004d75;
+                        fill: $blue;
                         transition: all 0.3s ease-in-out;
                     }
                 }
@@ -271,7 +271,7 @@
             display: none;
             left: 0;
             top: calc(100% - 10px);
-            background: #fff;
+            background: $white;
             transition: all 0.3s ease-in-out;
             border-bottom: 1px solid #d8d8d8;
             border-right: 1px solid #d8d8d8;
@@ -322,7 +322,7 @@
                     width: 6px;
                     height: 6px;
                     background: transparent;
-                    border: 2px solid #004f75;
+                    border: 2px solid $blue;
                     top: 7px;
                     left: 0;
                     display: flex;

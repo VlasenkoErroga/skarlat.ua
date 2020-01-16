@@ -36,7 +36,7 @@ margin: 0;
     font-size: 16px;
     font-weight: 700;
     width: 100%;
-    border-bottom: 2px solid #004d75;
+    border-bottom: 2px solid $blue;
 }
 
 .select-sort {
@@ -76,7 +76,7 @@ margin: 0;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #004d75;
+    color: $blue;
     height: 40px;
 }
 
@@ -279,7 +279,7 @@ button:hover > svg > .heart-dash {
 }
 
 button:hover > svg > .balance {
-    fill: #004d75;
+    fill: $blue;
     transition: all 0.3s ease-in-out;
 }
 
@@ -384,7 +384,7 @@ button.compare-cat-item, button.main-product-item, button.change-main-product-it
 
 .adress a,
 .phone a {
-    color: #fff;
+    color: $white;
     margin: 10px;
 }
 .phone a {
@@ -406,12 +406,12 @@ button.compare-cat-item, button.main-product-item, button.change-main-product-it
 }
 
 .exit-header {
-    color: #fff;
+    color: $white;
     font-size: 14px;
 }
 
 .exit-header a {
-    color: #fff;
+    color: $white;
     text-decoration: white wavy underline;
 }
 
@@ -442,7 +442,7 @@ button.compare-cat-item, button.main-product-item, button.change-main-product-it
 
 
 .background-down-header {
-    background: #fff;
+    background: $white;
     z-index: 6;
 }
 
@@ -461,7 +461,7 @@ button.compare-cat-item, button.main-product-item, button.change-main-product-it
 @media(max-width:768px) {
 
     .background-down-header {
-        background: #004d75;
+        background: $blue;
     }
 
     .site-header {
@@ -505,7 +505,7 @@ button.compare-cat-item, button.main-product-item, button.change-main-product-it
 
 
 .text-color {
-    color: #004f75;
+    color: $blue;
     font-size: 23px;
 }
 
@@ -537,8 +537,8 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #004d75;
-    fill: #004d75;
+    color: $blue;
+    fill: $blue;
 }
 
 ul {
@@ -546,7 +546,7 @@ ul {
 }
 
 .background-down-header {
-    background: #51595d;
+    background: $grey;
 }
 
 .block-geo {
@@ -570,7 +570,7 @@ ul {
 
 .adress a,
 .phone a {
-    color: #fff;
+    color: $white;
     margin: 10px;
 }
 
@@ -590,7 +590,7 @@ ul {
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    fill: #fff;
+    fill: $white;
 }
 
 .adress a {
@@ -607,12 +607,12 @@ ul {
 }
 
 .exit-header {
-    color: #fff;
+    color: $white;
     font-size: 14px;
 }
 
 .exit-header a {
-    color: #fff;
+    color: $white;
 }
 
 .no-margin {
@@ -620,13 +620,13 @@ ul {
 }
 
 .menu-sticky {
-    background: #fff;
+    background: $white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .sticky-menu {
     position: sticky;
     top: 0;
-    background: #eff2f3;
+    background: $lightgrey;
     z-index: 1000;
 }
 
@@ -662,7 +662,7 @@ ul {
 }
 
 .name_cat a {
-    color: #51595d;
+    color: $grey;
 }
 
 .img{
@@ -705,7 +705,7 @@ ul {
 }
 
 .caracter-block__item-value a {
-    color: #004d75;
+    color: $blue;
 }
 
 
@@ -717,7 +717,7 @@ ul {
 
 
 #logo {
-    fill: #004d75;
+    fill: $blue;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -776,10 +776,10 @@ margin-top: -7px;
 
 .clear-filters-link {
     background: none;
-    color: #004f75;
+    color: $blue;
     border-radius: 4px;
     border-width: 1px !important;
-    border-color: #004f75 !important;
+    border-color: $blue !important;
     border-style: solid !important;
     transition: all 0.3s ease-in-out;
 }
@@ -787,7 +787,7 @@ margin-top: -7px;
 .clear-filters-link:hover {
     transition: all 0.3s ease-in-out;
     background: #d8d8d847;
-    color: #004f75;
+    color: $blue;
 
 }
 
@@ -831,12 +831,12 @@ button.close {
     width: 25px;
     height: 25px;
     margin-left: 10px;
-    fill: #fff;
+    fill: $white;
 }
 #btnFilter {
     position: relative;
-    background:#004f75;
-    color:#fff;
+    background:$blue;
+    color:$white;
 }
 
 
@@ -948,10 +948,10 @@ h6 {
 }
 .block-title_action .title a {
     text-indent: 40px;
-    color: #004f75;
+    color: $blue;
 }
 .block-title_action .title a:hover {
-    color: #004f75;
+    color: $blue;
 }
 
 .action_up_section .marker-block {
@@ -985,7 +985,7 @@ h6 {
     max-width: 80px;
     height: 80px !important;
 
-    background: #fff;
+    background: $white;
     margin-bottom: 5px;
     overflow: hidden;
     outline: none;
@@ -1028,7 +1028,7 @@ h6 {
     font-size: 0;
     width: 100%;
     height: 40px;
-    background: #fff;
+    background: $white;
     border: none;
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -1036,7 +1036,7 @@ h6 {
 
 .custom_arrow:hover .arrow-slick-next,
 .custom_arrow:hover .arrow-slick-prev {
-    fill: #004d75;
+    fill: $blue;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1226,7 +1226,7 @@ h6 {
 }
 
 .main-detail-wrapper {
-    background: #fff;
+    background: $white;
     border: 1px solid #d8d8d8;
     border-radius: 4px;
     padding: 20px 0;
@@ -1243,7 +1243,7 @@ h6 {
     top: 1%;
     right: 2px;
     width: 3px;
-    background: #fff;
+    background: $white;
     box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
     height: 98%;
@@ -1283,7 +1283,7 @@ h6 {
 .nav-pills .nav-detail-des-or-rew__link.active {
     font: 400 25px "Roboto", sans-serif;
     background: none;
-    color: #004f75;
+    color: $blue;
 }
 
 .tooltips .tooltips-icon {
@@ -1443,7 +1443,7 @@ li.delivery-item {
 
 .custom_arrow-set-product:hover {
 
-    fill: #004f75;
+    fill: $blue;
 
 }
 .custom_arrow-set-product.prev-arrow {
@@ -1507,7 +1507,7 @@ li.delivery-item {
     align-items: center;
     flex-flow: column nowrap;
     padding: 10px;
-    background: #eff2f3;
+    background: $lightgrey;
     border-radius: 4px;
     max-width: 250px;
 }
@@ -1554,7 +1554,7 @@ li.delivery-item {
 }
 
 .set-products-title:hover a {
-    color: #004f75;
+    color: $blue;
 }
 
 .filter-box {
@@ -1687,10 +1687,10 @@ input[type='number'] {
 .product-basket-info-block a{
     font-weight: 400;
     font-size: 16px;
-    color: #004f75;
+    color: $blue;
 }
 .product-basket-info-block a:hover{
-    color: #004f75;
+    color: $blue;
 }
 
 .product-basket-info-block > .product-basket-sku {
@@ -1744,7 +1744,7 @@ button.close.close-basket-item svg{
 
 .total-sum{
     font: 400 24px "Roboto", sans-serif;
-    color:#004f75;
+    color:$blue;
 
 }
 .total-word{
@@ -1765,7 +1765,7 @@ button.close.close-basket-item svg{
 .product-basket-title {
     font-weight: 400;
     font-size: 17px;
-    color: #004f75;
+    color: $blue;
 }
 .product-basket-sku {
     font-weight: 400;
@@ -1824,7 +1824,7 @@ main {
 .user-img svg {
     width: 100px;
     height: 100px;
-    fill: #004f75;
+    fill: $blue;
 }
 
 .username {
@@ -1837,7 +1837,7 @@ main {
 .wrapper-column,
 .wrapper-content-pills {
     width: 100%;
-    background: #fff;
+    background: $white;
     border: 1px solid #d8d8d8;
     box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
     border-radius: 0 0 4px 4px;
@@ -1858,7 +1858,7 @@ main {
 
 .nav-pills-lk .nav-item-lk {
     width: 100%;
-    background: #fff;
+    background: $white;
     border-radius: 0;
     transition: all 0.3s ease-in-out;
     color: rgb(81, 89, 93);
@@ -1871,17 +1871,17 @@ main {
 .nav-pills-lk .nav-item-lk:hover {
     background: rgb(236, 237, 238);
     transition: all 0.3s ease-in-out;
-    color: #004f75;
+    color: $blue;
 }
 
 .nav-pills-lk .nav-item-lk:hover .nav-item-icon {
-    fill: #004d75;
+    fill: $blue;
     transition: all 0.3s ease-in-out;
 }
 
 .nav-link-lk.active .nav-item-icon,
 .nav-link-lk.active:hover .nav-item-icon {
-    fill: #fff;
+    fill: $white;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1898,8 +1898,8 @@ main {
 }
 
 .nav-link-lk.active {
-    background: #004f75;
-    color: #fff;
+    background: $blue;
+    color: $white;
 }
 .wrapper-content-pills {
     padding: 20px;
@@ -1983,8 +1983,8 @@ main {
 
 .nav-pills-delivery-lk .nav-link.active,
 .nav-pills-user-data .nav-link.active {
-    color: #fff;
-    background: #004d75;
+    color: $white;
+    background: $blue;
     transition: all 0.3s ease-in-out;
     font-weight: 400;
 }
@@ -2052,7 +2052,7 @@ main {
 }
 
 .nav-order-pills-item .nav-link.active {
-    color: #004d75;
+    color: $blue;
     position: relative;
     background: transparent;
     transition: all 0.3s ease-in-out;
@@ -2065,7 +2065,7 @@ main {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #004d75;
+    background: $blue;
 }
 
 .tab-content-order {
@@ -2090,7 +2090,7 @@ main {
 }
 
 .nav-enter-link.active {
-    color: #004d75;
+    color: $blue;
 }
 
 .nav-enter-link {
@@ -2118,7 +2118,7 @@ main {
 }
 
 #logoWhite {
-    fill: #fff;
+    fill: $white;
     height: 60px;
     max-width: 300px;
     padding: 12px;
@@ -2127,7 +2127,7 @@ main {
 .card-order {
     margin-top: 20px;
     padding: 20px;
-    background: #fff;
+    background: $white;
     box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
 }
 
@@ -2167,7 +2167,7 @@ main {
 .phone-order {
     font-weight: 400;
     font-size: 20px;
-    color: #FFF;
+    color: $white;
 
 }
 .total-block {
@@ -2203,7 +2203,7 @@ main {
 
 }
 .phone-order:hover {
-    color: #FFF;
+    color: $white;
 }
 
 .card-footer-basket-order {
@@ -2270,7 +2270,7 @@ main {
     border-bottom: 1px dashed #004467;
 }
 .city-way:hover {
-    color: #004f75;
+    color: $blue;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2310,7 +2310,7 @@ main {
 
 #questions h4 {
     font-weight: 400;
-    color: #004f75;
+    color: $blue;
     cursor:pointer;
     text-decoration-style: dashed;
     text-decoration: underline;
@@ -2325,7 +2325,7 @@ main {
 .question-item > h4 {
     width: auto;
     display: inline-block;
-    /* border-bottom: 1px dashed #004f75; */
+    /* border-bottom: 1px dashed $blue; */
     font-size: 18px;
 }
 
@@ -2333,14 +2333,14 @@ main {
     position: relative;
     background: none;
     border: none;
-    color: #004d75;
+    color: $blue;
     transition: all 0.3s ease-in-out;
 
 }
 
 .nav-pills-user-data .nav-link.active.custom-enter:after {
     content: '';
-    background: #004d75;
+    background: $blue;
     width: 100%;
     height: 1px;
     position: absolute;
@@ -2453,7 +2453,7 @@ main {
 
 .order-data-item-lk a {
     margin-left: 5px;
-    color: #004f75;
+    color: $blue;
     font-weight: 400;
     position: relative;
 }
@@ -2469,26 +2469,26 @@ main {
     content: '';
     display: flex;
     width: 100%;
-    border-bottom: 1px dashed #004f75;
+    border-bottom: 1px dashed $blue;
 }
 
 .order-data-item-lk a:hover {
     margin-left: 5px;
-    color: #004f75;
+    color: $blue;
 }
 
 .next-buy {
-    color: #FFF;
+    color: $white;
 }
 
 .next-buy:hover{
-    color: #FFF;
+    color: $white;
 }
 
 .social-animation-item svg {
     height: 30px;
     width: 30px;
-    fill: #004f75;
+    fill: $blue;
 }
 
 
@@ -2530,7 +2530,7 @@ button.compare-table-product-btn:focus {
     width: 18px;
     height: 18px;
     background:none;
-    border:1px solid #004f75;
+    border:1px solid $blue;
     border-radius:50%;
     left: 0;
     top: 50%;
@@ -2539,7 +2539,7 @@ button.compare-table-product-btn:focus {
 
 .add-product-compare::after {
     content: '+';
-    color:#004f75;
+    color:$blue;
     font-size: 16px;
     font-weight: 400;
     margin-right: 11px;
@@ -2567,7 +2567,7 @@ button.compare-table-product-btn:focus {
 
 .compare-table-product-btn,
 .compare-table-product-btn__close {
-    color:#004f75;
+    color:$blue;
     border: none;
     background: none;
     -webkit-appearance: none;
@@ -2575,7 +2575,7 @@ button.compare-table-product-btn:focus {
 }
 
 button.compare-cat-item {
-    color: #004f75;
+    color: $blue;
 }
 
 .compare-table__col.compare-table__col-fixed p{
@@ -2594,7 +2594,7 @@ button.compare-cat-item {
 .compare-table__col-main-item button.compare-table-product-btn {
     font-size: 18px;
     line-height: 20px;
-    color:#004f75;
+    color:$blue;
     font-weight: 400;
 }
 
@@ -2650,7 +2650,7 @@ button.compare-cat-item {
 }
 
 .compare-table__wrapper-up {
-    background: #fff;
+    background: $white;
     position: sticky;
     top: 56px;
     z-index: 2;
@@ -2659,7 +2659,7 @@ button.compare-cat-item {
     padding-bottom: 10px;
 }
 .compare-table__wrapper-up .compare-table__row {
-    background: #fff;
+    background: $white;
 }
 .compare-table__wrapper-down {
     padding-top: 10px;
@@ -2687,11 +2687,11 @@ button.compare-cat-item {
 }
 
 .compare-table__body .compare-table__row-group .compare-table__row:hover {
-    background: #eff2f3;
+    background: $lightgrey;
 }
 
 .compare-table__body .compare-table__row-group .compare-table__row:hover .compare-table__col-fixed {
-    background: #eff2f3;
+    background: $lightgrey;
 }
 
 #compare-table__scroll-left,
@@ -2856,7 +2856,7 @@ button.compare-cat-item {
     margin: 10px 0;
     padding: 5px 10px;
     font-size: 18px;
-    border:1px solid #004f75;
+    border:1px solid $blue;
     border-radius:4px;
 }
 
@@ -2867,7 +2867,7 @@ button.compare-cat-item {
     padding: 5px 3px;
     outline: none;
     font-size: 14px;
-    color: #004f75;
+    color: $blue;
     font-weight: 500;
 }
 
@@ -2875,19 +2875,19 @@ button.compare-cat-item {
 .compare-table__col-fixed {
     position: sticky;
     left: 0;
-    background: #fff;
+    background: $white;
     border-right: 1px dashed #d8d8d8;
 }
 
 .compare-table__control .compare-table__col-fixed, 
 .compare-table__control .compare-table__col-fixed.compare-table__col-main-item {
-    background:#fff;
+    background:$white;
     border: none;
 }
 
 .compare-table__cell-fixed-group {
     position: sticky;
-    color: #004f75;
+    color: $blue;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     left: 0;
@@ -2909,7 +2909,7 @@ button.compare-cat-item {
 .compare-table__col-fixed.compare-table__col-main-item {
     position: sticky;
     left: 217px;
-    background: #fff;
+    background: $white;
 }
 
 .compare-table__col {
@@ -2918,7 +2918,7 @@ button.compare-cat-item {
 }
 
 .compare-table__wrapper-down {
-    background-color: #fff;
+    background-color: $white;
     position: relative;
     z-index: 1;
 }
@@ -2929,7 +2929,7 @@ button.compare-cat-item {
 
 .compare-btn, .compare-btn-head {
     position: relative;
-    color: #004f75;
+    color: $blue;
 }
 
 
@@ -2958,7 +2958,7 @@ button.button.button-send.btn-filter-send {
 
 button.compare-cat-item {
     padding: 5px 10px !important;
-    border-color: #004f75;
+    border-color: $blue;
 }
 
 
@@ -3030,7 +3030,7 @@ button.compare-cat-item:focus {
     width: 100%;
     min-width: 150px;
     background: #d8d8d8;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
     padding: 5px 20px;
     justify-content: center;
@@ -3041,7 +3041,7 @@ button.compare-cat-item:focus {
 }
 
 a.eauth-service-link {
-    color: #004f75;
+    color: $blue;
     padding: 0;
     font-weight: 400;
     padding-left: 16px;
@@ -3081,7 +3081,7 @@ a.eauth-service-link {
 
 section.compare-section .container {
     border-radius: 4px;
-    background:#fff;
+    background:$white;
     box-shadow: 0 0 5px rgba(0,0,0, .17);
     padding: 0 5px;
 }
@@ -3102,7 +3102,7 @@ section.compare-section .container {
 .container-order .logo-new-path-3,
 .thanks-container .logo-new-path-1,
 .thanks-container .logo-new-path-3  {
-    fill: #fff;
+    fill: $white;
 }
 
 .compare-table__grid{
@@ -3145,7 +3145,7 @@ section.compare-section .container {
 }
 
 .check-product:checked + .products__item--wrapper .products__item, .check-product:checked + .products__item--wrapper .products__item:hover{
-    border-color:#004f75;
+    border-color:$blue;
 }
 
 
@@ -3172,7 +3172,7 @@ section.compare-section .container {
     top: 0;
     width: 100%;
     height: 100%;
-    color:#fff;
+    color:$white;
     font-weight: 400;
     font-size: 20px;
     z-index: 1;
@@ -3185,7 +3185,7 @@ section.compare-section .container {
     position: absolute;
     bottom: 0  ;
     left: 0;
-    background: #fff;
+    background: $white;
 }
 .modal-body-add-compare{
     padding-bottom: 70px;
@@ -3237,7 +3237,7 @@ margin-right: 10px;
 }
 
 .compare-cat-filter__item.active{
-    border: 1px solid #004f75;
+    border: 1px solid $blue;
 }
 
 .compare-cat-filter__item span{
@@ -3253,7 +3253,7 @@ margin-right: 10px;
 }
 
 .compare-cat-filter__item-title{
-    color: #004f75;
+    color: $blue;
 }
 
 #add-products-compare{
@@ -3311,7 +3311,7 @@ span.caracter-block__item-name {
     left: 0;
     position: fixed;
     z-index: 1;
-    background: #fff;
+    background: $white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
@@ -3346,21 +3346,21 @@ span.caracter-block__item-name {
     right: 0;
   }
   .autocomplete-items strong{
-      color:#004f75;
+      color:$blue;
       font-weight: 600;
   }
   .autocomplete-items div {
     padding: 10px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: $white;
     border-bottom: 1px solid #d4d4d4;
   }
   .autocomplete-items div:hover {
     background-color: #e9e9e9;
   }
   .autocomplete-active {
-    background-color: #004f75 !important;
-    color: #ffffff;
+    background-color: $blue !important;
+    color: $white;
   }
 .form-wrapper-request input, .form-wrapper-request textarea {
     font-weight: 300;
@@ -3389,13 +3389,13 @@ span.caracter-block__item-name {
     display: flex;
     justify-content: center;
     align-items:center;
-    background:#fff;
+    background:$white;
     margin-left: 10px;
 
 }
 
 .marker-filter-counter{
-    color:#004f75;
+    color:$blue;
     font-size: 12px
 }
 .sort-block-cat{
@@ -3422,7 +3422,7 @@ span.caracter-block__item-name {
   }
 
   .form-control:focus{
-      border-color: #004f75;
+      border-color: $blue;
   }
 
   .form-check-input{
@@ -3466,7 +3466,7 @@ button.close svg {
         margin: 5px;
     }
     .compare-table__wrapper-up {
-        background: #fff;
+        background: $white;
         position: sticky;
         top: 0;
     }
@@ -3477,7 +3477,7 @@ button.close svg {
     }
 
     .products__item--wrapper:hover > .products__item > .text > .block-buy > .btn_buy-catalog > .btn-icon {
-        fill: #fff;
+        fill: $white;
         transition: all 0.5s ease-in-out;
     }
 
@@ -3536,7 +3536,7 @@ button.close svg {
     }
 
     .compare-table__wrapper-up {
-        background: #fff;
+        background: $white;
         position: sticky;
         top: 0;
     }
@@ -3604,7 +3604,7 @@ button.close svg {
     }
 
     .compare-table__wrapper-up {
-        background: #fff;
+        background: $white;
         position: sticky;
         top: 0;
     }
@@ -3715,7 +3715,7 @@ button.close svg {
         width: 8px;
         height: 2px;
         border-radius:4px;
-        background:#004f75;
+        background:$blue;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -4062,7 +4062,7 @@ button.close svg {
         width: 100%;
         position: absolute;
         bottom: 0;
-        background:#fff;
+        background:$white;
     }
 
     .modal-body-add-compare .block-search {
@@ -4210,7 +4210,7 @@ button.close svg {
         width: 8px;
         height: 2px;
         border-radius:4px;
-        background:#004f75;
+        background:$blue;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -4344,7 +4344,7 @@ button.close svg {
         width: 100%;
         height: 100%;
         min-height: 100vh;
-        background: #fff;
+        background: $white;
         z-index: 1042;
         justify-content: center;
         align-items: center;
@@ -4357,7 +4357,7 @@ button.close svg {
 
     .wrapper-enter-modal {
         position: relative;
-        background: #fff;
+        background: $white;
         overflow: auto;
         width: 100%;
         max-width: 400px;
@@ -4595,13 +4595,13 @@ button.close svg {
     .nav-detail-des-or-rew__link {
         background: none;
         font: 400 18px "Roboto", sans-serif;
-        color: #51595d;
+        color: $grey;
     }
 
     .nav-pills .nav-detail-des-or-rew__link.active {
         font: 400 18px "Roboto", sans-serif;
         background: none;
-        color: #004f75;
+        color: $blue;
     }
 
     .nav-detail-des-or-rew__link:after {
@@ -4666,7 +4666,7 @@ button.close svg {
 
     .nav-link-lk.active .nav-item-icon,
     .nav-link-lk.active:hover .nav-item-icon {
-        fill: #004d75;
+        fill: $blue;
         transition: all 0.3s ease-in-out;
     }
 
@@ -4719,7 +4719,7 @@ button.close svg {
         width: 100%;
         position: absolute;
         bottom: 0;
-        background:#fff;
+        background:$white;
     }
 
 }

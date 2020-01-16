@@ -25,19 +25,19 @@
     right: 0;
   }
   .autocomplete-items strong{
-      color:#004f75;
+      color:$blue;
       font-weight: 600;
   }
   .autocomplete-items div {
     padding: 10px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: $white;
     border-bottom: 1px solid #d4d4d4;
   }
   .autocomplete-items div:hover {
     background-color: #e9e9e9;
   }
   .autocomplete-active {
-    background-color: #004f75 !important;
-    color: #ffffff;
+    background-color: $blue !important;
+    color: $white;
   }

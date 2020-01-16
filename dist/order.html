@@ -6,7 +6,7 @@
 
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="stylesheet" href="css/style.bundle.css" />
-    <title>Каталог товаров | Skalat.ua</title>
+    <title>Оформление заказа | Skalat.ua</title>
     <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
   </head>
   <body>
@@ -18,7 +18,7 @@
             <div class="row">
               <div class="col-12 col-sm-4 col-lg-3 offset-sm-1">
                 <div class="header-logo__wrapper">
-                  <a href="New_index.html" class="header-logo--white">
+                  <a href="/" class="header-logo--white">
                     <svg xmlns="http://www.w3.org/2000/svg" id="logo" viewbox="0 0 332 54.1">
                       <path
                         class="header-logo--white__path-1"
@@ -74,14 +74,13 @@
       <div class="container container-order">
         <div class="row">
           <!-- LEFT BLOCK START -->
-          <div class="col-12 col-lg-7 col-xl-8">
-            <div class="title-section-order">
-              <h3>Оформление заказа</h3>
-            </div>
+          <div class="col-12 col-lg-6 col-xl-7 order-column">
+            <h1 class="order-column-title">Оформление заказа</h1>
 
+            <!-- ORDER BLOCK USER INFO START -->
             <div class="order-block order-block__info">
-              <div class="order-block__info-title">
-                <h5>Контактные данные</h5>
+              <div class="order-block__title">
+                <h3>Контактные данные</h3>
               </div>
 
               <div class="order-block__info-body">
@@ -200,335 +199,274 @@
                 </div>
               </div>
             </div>
-
-            <div class="card card-order">
-              <div class="card-title-order">
-                <h5>Доставка</h5>
+            <!-- ORDER BLOCK USER INFO END -->
+            <!-- ORDER BLOCK DELIVERY INFO START -->
+            <div class="order-block order-block__delivery">
+              <div class="order-block__title">
+                <h3>Доставка</h3>
               </div>
+
               <form action="">
-                <div class="accordion" id="delivery-method-acard">
-                  <div class="form-group">
-                    <label for="selectCity" class="your-city">Ваш город</label>
-                    <select class="form-control" id="selectCity">
-                      <option>Киев</option>
-                      <option>Харьков</option>
-                      <option>Одесса</option>
-                      <option>...</option>
-                    </select>
-                    <div class="w-md-50">
-                      <a href="javascript:void(0)" class="m-2 city-way">Киев</a>
-                      <a href="javascript:void(0)" class="m-2 city-way">Одесса</a>
-                      <a href="javascript:void(0)" class="m-2 city-way">Харьков</a>
-                      <a href="javascript:void(0)" class="m-2 city-way">Днепр</a>
-                      <a href="javascript:void(0)" class="m-2 city-way">Львов</a>
+                <div class="accordion" id="delivery-acardion">
+                  <div class="order-block__delivery-item">
+                    <label for="selectCity" class="order-block__delivery-autocomplete-label">Ваш город</label>
+                    <div class="select-city form-group">
+                      <input type="text" class="order-block__delivery-autocomplete" id="autocompleteCity" />
+                    </div>
+
+                    <div class="order-block__delivery-way-group">
+                      <a href="javascript:void(0)" class="order-block__delivery-way">Киев</a>
+                      <a href="javascript:void(0)" class="order-block__delivery-way">Одесса</a>
+                      <a href="javascript:void(0)" class="order-block__delivery-way">Харьков</a>
+                      <a href="javascript:void(0)" class="order-block__delivery-way">Днепр</a>
+                      <a href="javascript:void(0)" class="order-block__delivery-way">Львов</a>
                     </div>
                   </div>
 
-                  <div class="row no-gutters">
-                    <div class="col-12">
-                      <div class="form-check m-2">
-                        <input
-                          class="form-check-input checkbox-filter"
-                          type="radio"
-                          name="dylivery-method"
-                          id="delivery-np-input"
-                          data-toggle="collapse"
-                          data-target="#delivery-np-branch-description"
-                          aria-expanded="true"
-                          aria-controls="delivery-np-branch-description"
-                        />
-                        <label class="form-check-label" for="delivery-np-input">
-                          Доставка в отделение, Новая Почта
-                        </label>
-                      </div>
+                  <div class="order-block__delivery-item">
+                    <div class="order-block__delivery-item-header">
+                      <input
+                        class="checkbox"
+                        type="radio"
+                        name="dylivery-method"
+                        id="order-block__delivery-item-np"
+                        data-toggle="collapse"
+                        data-target="#order-block__delivery-item-np-description"
+                        aria-expanded="true"
+                        aria-controls="order-block__delivery-item-np-description"
+                      />
+                      <label for="order-block__delivery-item-np">
+                        Доставка в отделение, Новая Почта
+                      </label>
                     </div>
-
-                    <div class="col-12">
-                      <div class="collapse" id="delivery-np-branch-description" data-parent="#delivery-method-acard">
-                        <div class="row mt-3 mb-3">
-                          <div class="col-12">
-                            <div class="form-group">
-                              <label for="selectCity">Выберите отделение</label>
-                              <select class="form-control" id="selectCity">
-                                <option>Отделение №1</option>
-                                <option>Отделение №2</option>
-                                <option>Отделение №3</option>
-                                <option>...</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <small>
-                              Стоимость доставки в отделение по тарифам перевозчика Новая Почта. Срок доставки - 1-3
-                              дня.
-                            </small>
-                          </div>
-                        </div>
+                    <div
+                      class="collapse order-block__delivery-item-description"
+                      id="order-block__delivery-item-np-description"
+                      data-parent="#delivery-acardion"
+                    >
+                      <div class="form-group">
+                        <label for="selectCity">Выберите отделение</label>
+                        <select class="form-control" id="selectPost">
+                          <option>Отделение №1</option>
+                          <option>Отделение №2</option>
+                          <option>Отделение №3</option>
+                          <option>...</option>
+                        </select>
                       </div>
+                      <small>
+                        Стоимость доставки в отделение по тарифам перевозчика Новая Почта. Срок доставки - 1-3 дня.
+                      </small>
                     </div>
                   </div>
 
-                  <div class="row no-gutters">
-                    <div class="col-12">
-                      <div class="form-check  m-2">
-                        <input
-                          class="form-check-input checkbox-filter"
-                          type="radio"
-                          name="dylivery-method"
-                          id="delivery-np-cur-input"
-                          data-toggle="collapse"
-                          data-target="#delivery-np-cur-description"
-                          aria-expanded="true"
-                          aria-controls="delivery-np-cur-description"
-                        />
-                        <label class="form-check-label" for="delivery-np-cur-input">
-                          Адресная доставка, Новая Почта
-                        </label>
-                      </div>
+                  <div class="order-block__delivery-item">
+                    <div class="order-block__delivery-item-header">
+                      <input
+                        class="checkbox"
+                        type="radio"
+                        name="dylivery-method"
+                        id="order-block__delivery-item-np-cur"
+                        data-toggle="collapse"
+                        data-target="#order-block__delivery-item-np-cur-description"
+                        aria-expanded="true"
+                        aria-controls="order-block__delivery-item-np-cur-description"
+                        disabled="disabled"
+                      />
+                      <label for="order-block__delivery-item-np-cur">
+                        Адресная доставка, Новая Почта
+                      </label>
                     </div>
 
-                    <div class="col-12">
-                      <div id="delivery-np-cur-description" class="collapse" data-parent="#delivery-method-acard">
-                        <div class="row mt-3 mb-3">
-                          <div class="col-12">
-                            <div class="form-group form-group-lk">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="InputName-delivery-street"
-                                placeholder="Введите улицу"
-                              />
-                            </div>
+                    <div
+                      id="order-block__delivery-item-np-cur-description"
+                      class="collapse order-block__delivery-item-description"
+                      data-parent="#delivery-acardion"
+                    >
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="delivery-street" placeholder="Введите улицу" />
+                      </div>
 
-                            <div class="form-group-row form-group-lk">
-                              <div class="form-group w-50 mr-1">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="InputName-delivery-hous"
-                                  placeholder="№ дома"
-                                />
-                              </div>
+                      <div class="form-group-row">
+                        <div class="form-group w-50 mr-2">
+                          <input type="text" class="form-control" id="delivery-hous" placeholder="№ дома" />
+                        </div>
 
-                              <div class="form-group w-50 ml-1">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="InputName-delivery-room"
-                                  placeholder="№ квартиры"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <small>
-                              Стоимость адресной доставки по тарифам перевозчика Новая Почта. Курьер доставит Вашу
-                              посылку в течении 1-3 дней.
-                            </small>
-                          </div>
+                        <div class="form-group w-50 ">
+                          <input type="text" class="form-control" id="delivery-room" placeholder="№ квартиры" />
                         </div>
                       </div>
+                      <small>
+                        Стоимость адресной доставки по тарифам перевозчика Новая Почта. Курьер доставит Вашу посылку в
+                        течении 1-3 дней.
+                      </small>
                     </div>
                   </div>
 
-                  <div class="row no-gutters">
-                    <div class="col-12">
-                      <div class="form-check  m-2">
-                        <input
-                          class="form-check-input checkbox-filter"
-                          type="radio"
-                          name="dylivery-method"
-                          id="delivery-skar-input"
-                          data-toggle="collapse"
-                          data-target="#delivery-skar-description"
-                          aria-expanded="true"
-                          aria-controls="delivery-skar-description"
-                        />
-                        <label class="form-check-label" for="delivery-skar-input">
-                          Курьер Skarlat
-                        </label>
-                      </div>
+                  <div class="order-block__delivery-item">
+                    <div class="order-block__delivery-item-header">
+                      <input
+                        class="checkbox"
+                        type="radio"
+                        name="dylivery-method"
+                        id="order-block__delivery-item-skarlat-cur"
+                        data-toggle="collapse"
+                        data-target="#order-block__delivery-item-skarlat-cur-description"
+                        aria-expanded="true"
+                        aria-controls="order-block__delivery-item-skarlat-cur-description"
+                      />
+                      <label for="order-block__delivery-item-skarlat-cur">
+                        Курьер Skarlat
+                      </label>
                     </div>
 
-                    <div class="col-12">
-                      <div id="delivery-skar-description" class="collapse" data-parent="#delivery-method-acard">
-                        <div class="row mt-3 mb-3">
-                          <div class="col-12">
-                            <div class="form-group form-group-lk">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="InputName-delivery-street-skar"
-                                placeholder="Введите улицу"
-                              />
-                            </div>
+                    <div
+                      id="order-block__delivery-item-skarlat-cur-description"
+                      class="collapse"
+                      data-parent="#delivery-acardion"
+                    >
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="delivery-street-skar" placeholder="Введите улицу" />
+                      </div>
 
-                            <div class="form-group-row form-group-lk">
-                              <div class="form-group w-50 mr-1">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="InputName-delivery-hous-skar"
-                                  placeholder="№ дома"
-                                />
-                              </div>
+                      <div class="form-group-row">
+                        <div class="form-group w-50 mr-1">
+                          <input type="text" class="form-control" id="delivery-hous-skar" placeholder="№ дома" />
+                        </div>
 
-                              <div class="form-group w-50 ml-1">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="InputName-delivery-room-skar"
-                                  placeholder="№ квартиры"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <small>
-                              Курьер Skarlat доставит Вашу посылку в течении 1-2 дней. Стоимость доставки - 50 грн.
-                            </small>
-                          </div>
+                        <div class="form-group w-50 ml-1">
+                          <input type="text" class="form-control" id="delivery-room-skar" placeholder="№ квартиры" />
                         </div>
                       </div>
+                      <small>
+                        Курьер Skarlat доставит Вашу посылку в течении 1-2 дней. Стоимость доставки - 50 грн.
+                      </small>
                     </div>
                   </div>
 
-                  <div class="row no-gutters">
-                    <div class="col-12">
-                      <div class="form-check  m-2">
-                        <input
-                          class="form-check-input checkbox-filter"
-                          type="radio"
-                          name="dylivery-method"
-                          id="delivery-adress-input"
-                          data-toggle="collapse"
-                          data-target="#delivery-adress-description"
-                          aria-expanded="true"
-                          aria-controls="delivery-adress-description"
-                        />
-                        <label class="form-check-label" for="delivery-adress-input">
-                          Адресная доставка за 3 часа
-                        </label>
-                      </div>
+                  <div class="order-block__delivery-item">
+                    <div class="order-block__delivery-item-header">
+                      <input
+                        class="checkbox"
+                        type="radio"
+                        name="dylivery-method"
+                        id="order-block__delivery-item-skarlat-fast"
+                        data-toggle="collapse"
+                        data-target="#order-block__delivery-item-skarlat-fast-description"
+                        aria-expanded="true"
+                        aria-controls="order-block__delivery-item-skarlat-fast-description"
+                      />
+                      <label class="form-check-label" for="order-block__delivery-item-skarlat-fast">
+                        Адресная доставка за 3 часа
+                      </label>
                     </div>
 
-                    <div class="col-12">
-                      <div id="delivery-adress-description" class="collapse" data-parent="#delivery-method-acard">
-                        <div class="row mt-3 mb-3">
-                          <div class="col-12">
-                            <div class="form-group form-group-lk">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="InputName-delivery-street-adress"
-                                placeholder="Введите улицу"
-                              />
-                            </div>
+                    <div
+                      id="order-block__delivery-item-skarlat-fast-description"
+                      class="collapse"
+                      data-parent="#delivery-acardion"
+                    >
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="delivery-street-fast" placeholder="Введите улицу" />
+                      </div>
 
-                            <div class="form-group-row form-group-lk">
-                              <div class="form-group w-50 mr-1">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="InputName-delivery-hous-adress"
-                                  placeholder="№ дома"
-                                />
-                              </div>
+                      <div class="form-group-row">
+                        <div class="form-group w-50 mr-2">
+                          <input type="text" class="form-control" id="delivery-hous-fast" placeholder="№ дома" />
+                        </div>
 
-                              <div class="form-group w-50 ml-1">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="InputName-delivery-room-adress"
-                                  placeholder="№ квартиры"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <small>
-                              Курьер доставит Вашу посылку в течении 3-х часов. Стоимость доставки - 150 грн.
-                            </small>
-                          </div>
+                        <div class="form-group w-50">
+                          <input type="text" class="form-control" id="delivery-room-fast" placeholder="№ квартиры" />
                         </div>
                       </div>
+                      <small>
+                        Курьер доставит Вашу посылку в течении 3-х часов. Стоимость доставки - 150 грн.
+                      </small>
                     </div>
                   </div>
                 </div>
               </form>
             </div>
-
-            <div class="card card-order">
-              <div class="card-title-order">
-                <h5>Оплата</h5>
+            <!-- ORDER BLOCK DELIVERY INFO END -->
+            <!-- ORDER BLOCK PAY INFO START -->
+            <div class="order-block order-block__pay">
+              <div class="order-block__title">
+                <h3>Оплата</h3>
               </div>
+
               <form action="">
-                <div class="form-check m-2">
-                  <input
-                    class="form-check-input checkbox-filter"
-                    type="radio"
-                    name="pay"
-                    id="pay-cash"
-                    value="option1"
-                    checked="checked"
-                  />
-                  <label class="form-check-label" for="pay-cash">
+                <div class="form-group">
+                  <input class="checkbox" type="radio" name="pay" id="pay-cash" value="option1" checked="checked" />
+                  <label for="pay-cash">
                     Наличными
                   </label>
                 </div>
-                <div class="form-check m-2">
-                  <input
-                    class="form-check-input checkbox-filter"
-                    type="radio"
-                    name="pay"
-                    id="pay-online"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="pay-online">
+                <div class="form-group">
+                  <input class="checkbox" type="radio" name="pay" id="pay-online" value="option2" />
+                  <label for="pay-online">
                     Оплата картой на сайте
                   </label>
                 </div>
               </form>
             </div>
-
-            <div class="card card-order">
-              <div class="card-title-order">
-                <h5>Детали заказа</h5>
+            <!-- ORDER BLOCK PAY INFO END -->
+            <!-- ORDER BLOCK DETAIL INFO START -->
+            <div class="order-block order-block__pay">
+              <div class="order-block__title">
+                <h3>Детали заказа</h3>
               </div>
+
               <form action="">
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input checkbox-filter" id="add-coment" />
-                  <label class="form-check-label" for="add-coment">Добавить комментарий к заказу</label>
+                <div class="form-group">
+                  <input type="checkbox" class="checkbox" id="add-coment" />
+                  <label for="add-coment">Добавить комментарий к заказу</label>
                 </div>
+
+                <textarea
+                  class="form-control"
+                  id="add-coment-place"
+                  rows="3"
+                  placeholder="Примечания к заказу"
+                  disabled="disabled"
+                ></textarea>
 
                 <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    id="add-coment-place"
-                    rows="3"
-                    placeholder="Примечания к заказу"
-                    disabled="disabled"
-                  ></textarea>
-                </div>
-
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input checkbox-filter" id="no-recall" />
-                  <label class="form-check-label" for="no-recall">Не звонить для подтверждения заказа</label>
+                  <input type="checkbox" class="checkbox" id="no-recall" />
+                  <label for="no-recall">Не звонить для подтверждения заказа</label>
                 </div>
               </form>
             </div>
+            <!-- ORDER BLOCK DETAIL INFO END -->
           </div>
           <!-- LEFT BLOCK END -->
           <!-- RIGHT BLOCK START -->
-          <div class="col-12 col-lg-5 col-xl-4">
-            <div class="title-section-order">
-              <h3>Ваша покупка</h3>
-            </div>
+          <div class="col-12 col-lg-6 col-xl-5 order-column">
+            <h2 class="order-column-title">Ваша покупка</h2>
 
-            <div class="card card-order card-order-sticky">
-              <div class="product-basket-wrapper product-basket-grid row no-gutters">
-                <div class="product-basket-info-block-wrapper">
-                  <div class="product-basket-img-block product-order-img-block">
+            <div class="order-block order-block-sticky">
+              <!-- BLOCK BASKET PRODUCT START -->
+              <!-- BASKET ITEM START -->
+              <div class="basket-item">
+                <button type="button" class="basket-item__close close" aria-label="Close">
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="enable-background:new 0 0 10 10;"
+                      viewBox="0 0 10 10"
+                      x="0px"
+                      y="0px"
+                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                      xml:space="preserve"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                    >
+                      <path
+                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="basket-item__info">
+                  <div class="basket-item__info-wrapper-img">
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
@@ -537,57 +475,59 @@
                     />
                   </div>
 
-                  <div class="product-basket-info-block">
-                    <div class="product-basket-title">Lorem ipsum dolor sit amet.</div>
-                    <div class="product-basket-sku">
-                      Артикул:
-                      <span class="code"> 114.0254.795</span>
-                    </div>
-                    <div class="product-basket-price">
-                      <div class="block-price">
-                        <div class="new_price ">
-                          <span class="price-text">3960</span>
-                          <div class="currency">грн</div>
-                        </div>
+                  <div class="basket-item__info-wrapper">
+                    <a href="javascript:void(0)" class="basket-item__info_title">Lorem ipsum dolor sit amet.</a>
+                    <div class="basket-item__info_sku">Артикул:<span class="code">114.0254.795</span></div>
+                    <div class="basket-item__info_price">
+                      <div class="basket-item__info_price-old">
+                        4060
+                        <div class="basket-item__info_price-old-currency">грн</div>
+                      </div>
+                      <div class="basket-item__info_price-new">
+                        3960
+                        <div class="basket-item__info_price-new-currency">грн</div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <button type="button" class="close-basket-item close" aria-label="Close">
-                  <span aria-hidden="true">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 50 50"
-                      version="1.1"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <g>
-                        <path
-                          d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                </button>
-
-                <div class="quantity-wrapper quantity-wrapper-total">
-                  <div class="wrapper-total-block">
-                    <span>123412</span>
-                    <div class="currency">грн</div>
+                <div class="basket-item__button">
+                  <div class="basket-item__total">
+                    123412
+                    <div class="basket-item__total-currency">грн</div>
                   </div>
-
-                  <div class="btn-group btn-group-basket-quantity" role="group">
-                    <button type="button" class="btn quantity-minus">-</button>
-                    <input type="number" class="backet-product-quantity" value="1" />
-                    <button type="button" class="btn quantity-add">+</button>
+                  <div class="btn-group basket-item__button-group-quantity" role="group">
+                    <button type="button" class="basket-item__button-minus">-</button>
+                    <input type="number" class="basket-item__button-quantity" value="1" />
+                    <button type="button" class="basket-item__button-add">+</button>
                   </div>
                 </div>
               </div>
-
-              <div class="product-basket-wrapper product-basket-grid row no-gutters">
-                <div class="product-basket-info-block-wrapper">
-                  <div class="product-basket-img-block product-order-img-block">
+              <!-- BASKET ITEM END -->
+              <!-- BLOCK BASKET PRODUCT END -->
+              <!-- BLOCK BASKET PRODUCT START -->
+              <!-- BASKET ITEM START -->
+              <div class="basket-item">
+                <button type="button" class="basket-item__close close" aria-label="Close">
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="enable-background:new 0 0 10 10;"
+                      viewBox="0 0 10 10"
+                      x="0px"
+                      y="0px"
+                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                      xml:space="preserve"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                    >
+                      <path
+                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="basket-item__info">
+                  <div class="basket-item__info-wrapper-img">
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
@@ -596,57 +536,59 @@
                     />
                   </div>
 
-                  <div class="product-basket-info-block">
-                    <div class="product-basket-title">Lorem ipsum dolor sit amet.</div>
-                    <div class="product-basket-sku">
-                      Артикул:
-                      <span class="code"> 114.0254.795</span>
-                    </div>
-                    <div class="product-basket-price">
-                      <div class="block-price">
-                        <div class="new_price ">
-                          <span class="price-text">3960</span>
-                          <div class="currency">грн</div>
-                        </div>
+                  <div class="basket-item__info-wrapper">
+                    <a href="javascript:void(0)" class="basket-item__info_title">Lorem ipsum dolor sit amet.</a>
+                    <div class="basket-item__info_sku">Артикул:<span class="code">114.0254.795</span></div>
+                    <div class="basket-item__info_price">
+                      <div class="basket-item__info_price-old">
+                        4060
+                        <div class="basket-item__info_price-old-currency">грн</div>
+                      </div>
+                      <div class="basket-item__info_price-new">
+                        3960
+                        <div class="basket-item__info_price-new-currency">грн</div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <button type="button" class="close-basket-item close" aria-label="Close">
-                  <span aria-hidden="true">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 50 50"
-                      version="1.1"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <g>
-                        <path
-                          d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                </button>
-
-                <div class="quantity-wrapper quantity-wrapper-total">
-                  <div class="wrapper-total-block">
-                    <span>123412</span>
-                    <div class="currency">грн</div>
+                <div class="basket-item__button">
+                  <div class="basket-item__total">
+                    123412
+                    <div class="basket-item__total-currency">грн</div>
                   </div>
-
-                  <div class="btn-group btn-group-basket-quantity" role="group">
-                    <button type="button" class="btn quantity-minus">-</button>
-                    <input type="number" class="backet-product-quantity" value="1" />
-                    <button type="button" class="btn quantity-add">+</button>
+                  <div class="btn-group basket-item__button-group-quantity" role="group">
+                    <button type="button" class="basket-item__button-minus">-</button>
+                    <input type="number" class="basket-item__button-quantity" value="1" />
+                    <button type="button" class="basket-item__button-add">+</button>
                   </div>
                 </div>
               </div>
-
-              <div class="product-basket-wrapper product-basket-grid row no-gutters">
-                <div class="product-basket-info-block-wrapper">
-                  <div class="product-basket-img-block product-order-img-block">
+              <!-- BASKET ITEM END -->
+              <!-- BLOCK BASKET PRODUCT END -->
+              <!-- BLOCK BASKET PRODUCT START -->
+              <!-- BASKET ITEM START -->
+              <div class="basket-item">
+                <button type="button" class="basket-item__close close" aria-label="Close">
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="enable-background:new 0 0 10 10;"
+                      viewBox="0 0 10 10"
+                      x="0px"
+                      y="0px"
+                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                      xml:space="preserve"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                    >
+                      <path
+                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="basket-item__info">
+                  <div class="basket-item__info-wrapper-img">
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
@@ -655,63 +597,45 @@
                     />
                   </div>
 
-                  <div class="product-basket-info-block">
-                    <div class="product-basket-title">Lorem ipsum dolor sit amet.</div>
-                    <div class="product-basket-sku">
-                      Артикул:
-                      <span class="code"> 114.0254.795</span>
-                    </div>
-                    <div class="product-basket-price">
-                      <div class="block-price">
-                        <div class="new_price ">
-                          <span class="price-text">3960</span>
-                          <div class="currency">грн</div>
-                        </div>
+                  <div class="basket-item__info-wrapper">
+                    <a href="javascript:void(0)" class="basket-item__info_title">Lorem ipsum dolor sit amet.</a>
+                    <div class="basket-item__info_sku">Артикул:<span class="code">114.0254.795</span></div>
+                    <div class="basket-item__info_price">
+                      <div class="basket-item__info_price-old">
+                        4060
+                        <div class="basket-item__info_price-old-currency">грн</div>
+                      </div>
+                      <div class="basket-item__info_price-new">
+                        3960
+                        <div class="basket-item__info_price-new-currency">грн</div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <button type="button" class="close-basket-item close" aria-label="Close">
-                  <span aria-hidden="true">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 50 50"
-                      version="1.1"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <g>
-                        <path
-                          d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                </button>
-
-                <div class="quantity-wrapper quantity-wrapper-total">
-                  <div class="wrapper-total-block">
-                    <span>123412</span>
-                    <div class="currency">грн</div>
+                <div class="basket-item__button">
+                  <div class="basket-item__total">
+                    123412
+                    <div class="basket-item__total-currency">грн</div>
                   </div>
-
-                  <div class="btn-group btn-group-basket-quantity" role="group">
-                    <button type="button" class="btn quantity-minus">-</button>
-                    <input type="number" class="backet-product-quantity" value="1" />
-                    <button type="button" class="btn quantity-add">+</button>
+                  <div class="btn-group basket-item__button-group-quantity" role="group">
+                    <button type="button" class="basket-item__button-minus">-</button>
+                    <input type="number" class="basket-item__button-quantity" value="1" />
+                    <button type="button" class="basket-item__button-add">+</button>
                   </div>
                 </div>
               </div>
+              <!-- BASKET ITEM END -->
+              <!-- BLOCK BASKET PRODUCT END -->
 
-              <div class="card-footer-basket-order">
-                <div class="total-block w-100 justify-content-between">
+              <div class="order-block-basket__footer">
+                <div class="order-block-basket__info">
                   <span>Всего к оплате</span>
-                  <div class="value-price">
-                    <span class="total-value">38431784</span>
-                    <div class="currency">грн</div>
+                  <div class="order-block-basket__total">
+                    3960
+                    <div class="order-block-basket__total-currency">грн</div>
                   </div>
                 </div>
-                <button class="btn btn-color w-100">Оформить заказ</button>
+                <button class="order-block-basket__buy">Оформить заказ</button>
               </div>
             </div>
           </div>
@@ -721,414 +645,9 @@
     </main>
     <!-- MAIN END -->
 
-    <!-- FOOTER START -->
+    <!-- FOOTER SHORT START -->
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-xl-2 offset-xl-1 col-lg-3  d-lg-flex d-none">
-            <ul class="footer-nav ">
-              <li class="footer-nav__item footer-nav__item-head">
-                Информация
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Главная</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">О нас</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Гарантии</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Оплата и доставка</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Медиа</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Контакты</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Каталоги</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-xl-2 col-lg-3 d-lg-flex d-none">
-            <ul class="footer-nav">
-              <li class="footer-nav__item footer-nav__item-head">
-                Категории
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Светильники</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Люстры</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Светильники</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Светильники для ванной</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Детские светильники</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Улечные светильники</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Настольные лампы</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Умные светильники</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Торшеры</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-xl-2  col-lg-3  d-lg-flex d-none">
-            <ul class="footer-nav ">
-              <li class="footer-nav__item footer-nav__item-head">
-                Предложение
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Aкции</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Горячие предложения</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="javascript:void(0)">Идеи интерьера</a>
-              </li>
-            </ul>
-          </div>
-          <div class="offset-xl-1 col-xl-3 col-lg-3 col ">
-            <div class="footer-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" id="logo" viewbox="0 0 332 54.1">
-                <path
-                  class="footer-logo-path-1"
-                  d="M12 11.1c-.4-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2c.8-.4 1.7-.5 2.5-.3s1.5.7 2 1.5l11.9 20.7c.4.6.6 1.4.6 2.1 0 .7-.1 1.3-.4 1.9l-12.2 20c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4l9.7-15.9H3.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1H21l-9-15.7z"
-                />
-                <path
-                  class="footer-logo-path-2"
-                  fill="#10587E"
-                  d="M29.1 40.7c-.5-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2 1.7-.5 2.5-.3 1.5.7 2 1.5l6.8 11.7c.5.8.5 1.7.3 2.5s-.7 1.5-1.5 2-1.7.5-2.5.3-1.5-.7-2-1.5l-6.8-11.7zm6.8-32.8c.5-.8 1.2-1.4 2-1.6.8-.2 1.6-.1 2.4.3l.1.1c.8.5 1.3 1.2 1.5 2 .2.8.1 1.7-.3 2.5L35.4 22c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3h-.1c-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4v-.1l6.2-10.8zm.7 25.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1h13.8c.9 0 1.7.4 2.3 1 .6.6 1 1.4 1 2.3 0 .9-.4 1.7-1 2.3-.6.6-1.4 1-2.3 1H36.6z"
-                />
-                <path
-                  class="footer-logo-path-3"
-                  fill-rule="evenodd"
-                  d="M83.8 16.3h11.1v-6c-3.5 0-10.4-.4-13.4.2-5.3 1.1-9.4 5.6-9.4 11.5 0 5.8 5 11.6 10.9 11.6h8.9c3 0 5.4 2.7 5.4 5.7 0 2.7-1.9 5-4.4 5.6-3 .7-16.4.1-20.4.1v5.8h19.9c6.4 0 11.6-5.2 11.7-11.6.1-5-3.9-11.6-9.2-11.6H83.7c-3.2.1-5.7-2.3-5.7-5.6 0-3.4 2.6-5.5 5.8-5.7zm235.2-5h-6.1V0H306v32.9c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.1 0-.3-.1-.4V17.5h6.1v-6.2zm-25 33.5c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2H294v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-41.3 16.5V10.2H231v22.7c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.2 0-.3-.1-.4zm-32.1-4.2v22.7h-6.9V28.7c1.2-12.5 11-18.5 22.7-18.5h3.2v6H221c-7.3 0-13.8 4.9-15.2 12.1.1.2.1.3 0 .4zm-19.3 16.1c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2h-5.9v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-43.2 16.3c9.6 2.6 11.7 9.1 11.7 18.4h6.8c0-11.1-1.7-20.5-14.7-23.9l11.8-16.9h-8.4l-11 16.1H117V10.2h-7.2v40.7h7.2V32.6c2 0 10.2-.3 11.5.1z"
-                />
-              </svg>
-            </div>
-            <div class="footer-contact">
-              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
-                <path
-                  d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
-                />
-              </svg>
-              <a href="tel:+380443336965">0443336965</a>
-            </div>
-            <div class="footer-contact">
-              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
-                <path
-                  d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
-                />
-              </svg>
-              <a href="tel:+380683127757">0683127757</a>
-            </div>
-            <div class="footer-contact">
-              <svg viewbox="0 0 10 10">
-                <path
-                  d="M10 2.3c0-.3-.2-.6-.5-.6h-9c-.1 0-.3.1-.4.2 0 .1-.1.2-.1.4v5c0 .1.1.3.2.4.1.1.2.1.4.1h9c.3 0 .5-.2.5-.5l-.1-5zm-1.1 0L5 5 1.1 2.3h7.8zM6.7 5.5L9 7.3H1l2.3-1.8c.1-.1.1-.2 0-.4 0-.1-.2-.1-.3 0L.5 7V2.5l4.3 3H5l4.3-3v4.6L7 5.1c-.1-.1-.3-.1-.4 0-.1.1-.1.3.1.4z"
-                />
-              </svg>
-              <a href="mailto:shop@skarlat.ua">shop@skarlat.ua</a>
-            </div>
-
-            <div class="footer-social-block__wrapper">
-              <ul class="footer-social-block__list">
-                <li class="footer-social-block__item">
-                  <a href="https://www.facebook.com/skarlat.ua/" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M5.5 10.2V5.6h1.3L7 3.7H5.5V2.4c0-.5.3-.7.6-.7H7V.1C6.9 0 6.7 0 6.6 0h-.8c-.4 0-.8.1-1.1.4-.4.4-.6.8-.7 1.4V3.7H2.7v1.8H4v4.6h1.5z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social-block__item">
-                  <a href="https://www.instagram.com/skarlat.ua/" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M6.8 10H3c-1.7 0-3-1.4-3-3V3.2c0-1.7 1.4-3 3-3h3.8c1.7 0 3 1.4 3 3V7c.1 1.6-1.3 3-3 3zm1.5-7.7c0 .4-.3.6-.6.6-.4 0-.7-.2-.7-.6s.3-.7.7-.7c.4 0 .6.3.6.7zM4.9 7.6c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm0-4.3c-1 0-1.7.8-1.7 1.7S4 6.8 4.9 6.8 6.7 6 6.7 5.1s-.8-1.8-1.8-1.8zM3 .9C1.7.9.7 1.9.7 3.2V7c0 1.3 1 2.3 2.3 2.3h3.8c1.3 0 2.3-1 2.3-2.3V3.2c0-1.3-1-2.3-2.3-2.3H3z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social-block__item">
-                  <a href="tg://resolve?domain=SkarlatStore" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M3.9 6.3l-.1 2.4c.2 0 .3-.1.5-.2l1.1-1.1 2.3 1.7c.4.2.7.1.8-.4L10 1.6c.1-.6-.3-.9-.7-.7L.5 4.3c-.6.2-.6.6-.1.7l2.3.7L8 2.4c.2-.2.5-.1.3.1L3.9 6.3z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social-block__item">
-                  <a href="viber://chat?number=+380683127757" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M9.5 2.4C9.3 1.5 8.3.5 7.3.3 5.8 0 4.2 0 2.7.3 1.8.5.7 1.5.5 2.4.2 3.7.2 5 .5 6.3c.2.9 1.2 1.9 2.1 2.1v1c0 .4.4.6.7.3l1-1.1H5c.8 0 1.5-.1 2.3-.2.9-.2 2-1.2 2.2-2.1.3-1.2.3-2.6 0-3.9zM6 4.2zm0 0zm0 0c-.1 0-.1-.1-.1-.1v-.2c0-.1-.1-.2-.2-.3l-.1-.1h-.2c-.1 0-.1-.1-.1-.2s.1-.1.1-.1c.4 0 .8.3.8.8v.1c-.1.1-.1.1-.2.1zM5 1.9zm.5.1zm0 0zm0 0zm-.4-.1zm-.1 0zm0 0zm.1 0h.1-.1zm.4.1zm0 0zm0 0zm0 0zm0 0zm0 0zm0 0H5.2c1.1 0 2.1.8 2.3 1.9 0 .2 0 .4.1.6 0 .1 0 .2-.1.2s-.1-.1-.1-.2V4c-.5-.9-1.1-1.6-2-1.7H5c-.1 0-.2 0-.2-.1s.1-.2.1-.2h.6zM5 1.9zm1 2.3zm.7 0s0 .1 0 0c0 .2-.2.2-.3.1v-.1c0-.2-.1-.5-.2-.7 0-.2-.2-.4-.4-.5-.2-.1-.3-.1-.5-.1h-.2c0-.1-.1-.1-.1-.2s.1-.1.1-.1c.3 0 .5.1.7.2.6.2.9.6.9 1.2v.2zm0 0zM5 1.9zm0 0zm0 0zM6.4 7c-.1 0-.2 0-.3-.1-.9-.4-1.7-.9-2.3-1.6-.4-.4-.7-.9-.9-1.4-.1-.2-.2-.4-.3-.7-.1-.2 0-.4.2-.6.1-.2.3-.3.5-.4.1-.1.3 0 .4.1.2.3.4.5.6.8.1.2.1.4-.1.5l-.1.1-.1.1c0 .1-.1.2 0 .2.2.6.6 1.1 1.2 1.4.1 0 .2.1.3.1.2 0 .3-.2.4-.4.1-.1.3-.1.4 0 .1.1.3.2.4.3.1.1.3.2.4.3.1.3.1.4.1.6-.2.2-.3.4-.6.6-.1 0-.2 0-.2.1zm0 0zm2.3-.8c-.2.6-.9 1.3-1.6 1.5-.8.1-1.6.2-2.4.2-.2.1-.8.8-.8.8l-.8.8c-.1.1-.2 0-.2 0V7.7v-.1c-.6-.1-1.4-.8-1.6-1.4-.2-1.2-.2-2.4 0-3.6.2-.6 1-1.3 1.6-1.5 1.4-.3 2.8-.3 4.3 0 .6.2 1.3.9 1.5 1.5.2 1.2.2 2.4 0 3.6z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social-block__item">
-                  <a href="whatsapp://send?phone=+380683127757" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M0 10c.1-.2.1-.4.2-.6.2-.6.3-1.2.5-1.8v-.3C-.8 4.4.7.8 4 .1 6.9-.6 9.6 1.4 10 4c.5 2.8-1.3 5.4-4 5.8-1.1.2-2.1 0-3.1-.5h-.3C1.1 9.7.3 10 0 10zm6.3-2.6c-1 0-2.5-.8-3.6-2.7-.3-.7-.3-1.4.3-1.9.2-.2.4-.1.6-.1.1 0 .1.1.1.2.1.3.3.6.4 1 .1.1 0 .3-.3.5-.1.1-.1.2 0 .3.4.7 1 1.2 1.7 1.5.1 0 .2 0 .3-.1.4-.5.4-.6.6-.5 1 .5 1.1.5 1.1.6.1.9-.7 1.2-1.2 1.2zM1.2 8.9c.5-.1 1-.2 1.4-.4h.3c.9.5 1.8.7 2.8.5C8 8.6 9.5 6.5 9.2 4.3 8.8 2 6.6.4 4.3.9 1.5 1.4 0 4.5 1.4 7c.2.3.2.5.1.8-.2.3-.2.7-.3 1.1z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social-block__item">
-                  <a href="javascript:void(0)" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M9.2 8.5c.2-.1.4-.3.5-.6.4-.9.4-4.5 0-5.4-.1-.4-.4-.6-.7-.8-.6-.2-5.9-.2-7.6 0-.3 0-.6.2-.8.5C0 2.9.1 6.8.4 7.8c.1.4.4.6.8.8.8.2 7.3.2 8-.1zM6.9 5l-3 1.7V3.4l3 1.6z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="pulse btn-vidget-skarlat">
-            <div class="vidget-content">
-              <ul class="vidget-list">
-                <li class="vidget-item">
-                  <a href="https://www.facebook.com/skarlat.ua/" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M5.5 10.2V5.6h1.3L7 3.7H5.5V2.4c0-.5.3-.7.6-.7H7V.1C6.9 0 6.7 0 6.6 0h-.8c-.4 0-.8.1-1.1.4-.4.4-.6.8-.7 1.4V3.7H2.7v1.8H4v4.6h1.5z"
-                      />
-                    </svg>
-                    Facebook</a
-                  >
-                </li>
-                <li class="vidget-item">
-                  <a href="https://www.instagram.com/skarlat.ua/" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M6.8 10H3c-1.7 0-3-1.4-3-3V3.2c0-1.7 1.4-3 3-3h3.8c1.7 0 3 1.4 3 3V7c.1 1.6-1.3 3-3 3zm1.5-7.7c0 .4-.3.6-.6.6-.4 0-.7-.2-.7-.6s.3-.7.7-.7c.4 0 .6.3.6.7zM4.9 7.6c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm0-4.3c-1 0-1.7.8-1.7 1.7S4 6.8 4.9 6.8 6.7 6 6.7 5.1s-.8-1.8-1.8-1.8zM3 .9C1.7.9.7 1.9.7 3.2V7c0 1.3 1 2.3 2.3 2.3h3.8c1.3 0 2.3-1 2.3-2.3V3.2c0-1.3-1-2.3-2.3-2.3H3z"
-                      />
-                    </svg>
-                    Instagram</a
-                  >
-                </li>
-                <li class="vidget-item">
-                  <a href="tg://resolve?domain=SkarlatStore" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M3.9 6.3l-.1 2.4c.2 0 .3-.1.5-.2l1.1-1.1 2.3 1.7c.4.2.7.1.8-.4L10 1.6c.1-.6-.3-.9-.7-.7L.5 4.3c-.6.2-.6.6-.1.7l2.3.7L8 2.4c.2-.2.5-.1.3.1L3.9 6.3z"
-                      />
-                    </svg>
-                    Telegram</a
-                  >
-                </li>
-                <li class="vidget-item">
-                  <a href="viber://chat?number=+380683127757" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M9.5 2.4C9.3 1.5 8.3.5 7.3.3 5.8 0 4.2 0 2.7.3 1.8.5.7 1.5.5 2.4.2 3.7.2 5 .5 6.3c.2.9 1.2 1.9 2.1 2.1v1c0 .4.4.6.7.3l1-1.1H5c.8 0 1.5-.1 2.3-.2.9-.2 2-1.2 2.2-2.1.3-1.2.3-2.6 0-3.9zM6 4.2zm0 0zm0 0c-.1 0-.1-.1-.1-.1v-.2c0-.1-.1-.2-.2-.3l-.1-.1h-.2c-.1 0-.1-.1-.1-.2s.1-.1.1-.1c.4 0 .8.3.8.8v.1c-.1.1-.1.1-.2.1zM5 1.9zm.5.1zm0 0zm0 0zm-.4-.1zm-.1 0zm0 0zm.1 0h.1-.1zm.4.1zm0 0zm0 0zm0 0zm0 0zm0 0zm0 0H5.2c1.1 0 2.1.8 2.3 1.9 0 .2 0 .4.1.6 0 .1 0 .2-.1.2s-.1-.1-.1-.2V4c-.5-.9-1.1-1.6-2-1.7H5c-.1 0-.2 0-.2-.1s.1-.2.1-.2h.6zM5 1.9zm1 2.3zm.7 0s0 .1 0 0c0 .2-.2.2-.3.1v-.1c0-.2-.1-.5-.2-.7 0-.2-.2-.4-.4-.5-.2-.1-.3-.1-.5-.1h-.2c0-.1-.1-.1-.1-.2s.1-.1.1-.1c.3 0 .5.1.7.2.6.2.9.6.9 1.2v.2zm0 0zM5 1.9zm0 0zm0 0zM6.4 7c-.1 0-.2 0-.3-.1-.9-.4-1.7-.9-2.3-1.6-.4-.4-.7-.9-.9-1.4-.1-.2-.2-.4-.3-.7-.1-.2 0-.4.2-.6.1-.2.3-.3.5-.4.1-.1.3 0 .4.1.2.3.4.5.6.8.1.2.1.4-.1.5l-.1.1-.1.1c0 .1-.1.2 0 .2.2.6.6 1.1 1.2 1.4.1 0 .2.1.3.1.2 0 .3-.2.4-.4.1-.1.3-.1.4 0 .1.1.3.2.4.3.1.1.3.2.4.3.1.3.1.4.1.6-.2.2-.3.4-.6.6-.1 0-.2 0-.2.1zm0 0zm2.3-.8c-.2.6-.9 1.3-1.6 1.5-.8.1-1.6.2-2.4.2-.2.1-.8.8-.8.8l-.8.8c-.1.1-.2 0-.2 0V7.7v-.1c-.6-.1-1.4-.8-1.6-1.4-.2-1.2-.2-2.4 0-3.6.2-.6 1-1.3 1.6-1.5 1.4-.3 2.8-.3 4.3 0 .6.2 1.3.9 1.5 1.5.2 1.2.2 2.4 0 3.6z"
-                      />
-                    </svg>
-                    Viber</a
-                  >
-                </li>
-                <li class="vidget-item">
-                  <a href="whatsapp://send?phone=+380683127757" target="blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      image-rendering="optimizeQuality"
-                      shape-rendering="geometricPrecision"
-                      text-rendering="geometricPrecision"
-                      viewbox="0 0 10 10"
-                    >
-                      <path
-                        d="M0 10c.1-.2.1-.4.2-.6.2-.6.3-1.2.5-1.8v-.3C-.8 4.4.7.8 4 .1 6.9-.6 9.6 1.4 10 4c.5 2.8-1.3 5.4-4 5.8-1.1.2-2.1 0-3.1-.5h-.3C1.1 9.7.3 10 0 10zm6.3-2.6c-1 0-2.5-.8-3.6-2.7-.3-.7-.3-1.4.3-1.9.2-.2.4-.1.6-.1.1 0 .1.1.1.2.1.3.3.6.4 1 .1.1 0 .3-.3.5-.1.1-.1.2 0 .3.4.7 1 1.2 1.7 1.5.1 0 .2 0 .3-.1.4-.5.4-.6.6-.5 1 .5 1.1.5 1.1.6.1.9-.7 1.2-1.2 1.2zM1.2 8.9c.5-.1 1-.2 1.4-.4h.3c.9.5 1.8.7 2.8.5C8 8.6 9.5 6.5 9.2 4.3 8.8 2 6.6.4 4.3.9 1.5 1.4 0 4.5 1.4 7c.2.3.2.5.1.8-.2.3-.2.7-.3 1.1z"
-                      />
-                    </svg>
-                    Whatsapp</a
-                  >
-                </li>
-                <li class="vidget-item">
-                  <a href="mailto:example.google.com">
-                    <svg viewbox="0 0 10 10">
-                      <path
-                        d="M10 2.3c0-.3-.2-.6-.5-.6h-9c-.1 0-.3.1-.4.2 0 .1-.1.2-.1.4v5c0 .1.1.3.2.4.1.1.2.1.4.1h9c.3 0 .5-.2.5-.5l-.1-5zm-1.1 0L5 5 1.1 2.3h7.8zM6.7 5.5L9 7.3H1l2.3-1.8c.1-.1.1-.2 0-.4 0-.1-.2-.1-.3 0L.5 7V2.5l4.3 3H5l4.3-3v4.6L7 5.1c-.1-.1-.3-.1-.4 0-.1.1-.1.3.1.4z"
-                      />
-                    </svg>
-                    Напишите нам</a
-                  >
-                </li>
-                <li class="vidget-item">
-                  <a href="javascript:void(0)">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
-                      <path
-                        d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
-                      />
-                    </svg>
-                    Перезвонить мне</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="btn-vidget--wrapper">
-              <ul class="social-animation">
-                <li class="social-animation-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    image-rendering="optimizeQuality"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                    viewbox="0 0 10 10"
-                  >
-                    <path
-                      d="M5.5 10.2V5.6h1.3L7 3.7H5.5V2.4c0-.5.3-.7.6-.7H7V.1C6.9 0 6.7 0 6.6 0h-.8c-.4 0-.8.1-1.1.4-.4.4-.6.8-.7 1.4V3.7H2.7v1.8H4v4.6h1.5z"
-                    />
-                  </svg>
-                </li>
-                <li class="social-animation-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    image-rendering="optimizeQuality"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                    viewbox="0 0 10 10"
-                  >
-                    <path
-                      d="M6.8 10H3c-1.7 0-3-1.4-3-3V3.2c0-1.7 1.4-3 3-3h3.8c1.7 0 3 1.4 3 3V7c.1 1.6-1.3 3-3 3zm1.5-7.7c0 .4-.3.6-.6.6-.4 0-.7-.2-.7-.6s.3-.7.7-.7c.4 0 .6.3.6.7zM4.9 7.6c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm0-4.3c-1 0-1.7.8-1.7 1.7S4 6.8 4.9 6.8 6.7 6 6.7 5.1s-.8-1.8-1.8-1.8zM3 .9C1.7.9.7 1.9.7 3.2V7c0 1.3 1 2.3 2.3 2.3h3.8c1.3 0 2.3-1 2.3-2.3V3.2c0-1.3-1-2.3-2.3-2.3H3z"
-                    />
-                  </svg>
-                </li>
-                <li class="social-animation-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    image-rendering="optimizeQuality"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                    viewbox="0 0 10 10"
-                  >
-                    <path
-                      d="M3.9 6.3l-.1 2.4c.2 0 .3-.1.5-.2l1.1-1.1 2.3 1.7c.4.2.7.1.8-.4L10 1.6c.1-.6-.3-.9-.7-.7L.5 4.3c-.6.2-.6.6-.1.7l2.3.7L8 2.4c.2-.2.5-.1.3.1L3.9 6.3z"
-                    />
-                  </svg>
-                </li>
-                <li class="social-animation-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    image-rendering="optimizeQuality"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                    viewbox="0 0 10 10"
-                  >
-                    <path
-                      d="M9.5 2.4C9.3 1.5 8.3.5 7.3.3 5.8 0 4.2 0 2.7.3 1.8.5.7 1.5.5 2.4.2 3.7.2 5 .5 6.3c.2.9 1.2 1.9 2.1 2.1v1c0 .4.4.6.7.3l1-1.1H5c.8 0 1.5-.1 2.3-.2.9-.2 2-1.2 2.2-2.1.3-1.2.3-2.6 0-3.9zM6 4.2zm0 0zm0 0c-.1 0-.1-.1-.1-.1v-.2c0-.1-.1-.2-.2-.3l-.1-.1h-.2c-.1 0-.1-.1-.1-.2s.1-.1.1-.1c.4 0 .8.3.8.8v.1c-.1.1-.1.1-.2.1zM5 1.9zm.5.1zm0 0zm0 0zm-.4-.1zm-.1 0zm0 0zm.1 0h.1-.1zm.4.1zm0 0zm0 0zm0 0zm0 0zm0 0zm0 0H5.2c1.1 0 2.1.8 2.3 1.9 0 .2 0 .4.1.6 0 .1 0 .2-.1.2s-.1-.1-.1-.2V4c-.5-.9-1.1-1.6-2-1.7H5c-.1 0-.2 0-.2-.1s.1-.2.1-.2h.6zM5 1.9zm1 2.3zm.7 0s0 .1 0 0c0 .2-.2.2-.3.1v-.1c0-.2-.1-.5-.2-.7 0-.2-.2-.4-.4-.5-.2-.1-.3-.1-.5-.1h-.2c0-.1-.1-.1-.1-.2s.1-.1.1-.1c.3 0 .5.1.7.2.6.2.9.6.9 1.2v.2zm0 0zM5 1.9zm0 0zm0 0zM6.4 7c-.1 0-.2 0-.3-.1-.9-.4-1.7-.9-2.3-1.6-.4-.4-.7-.9-.9-1.4-.1-.2-.2-.4-.3-.7-.1-.2 0-.4.2-.6.1-.2.3-.3.5-.4.1-.1.3 0 .4.1.2.3.4.5.6.8.1.2.1.4-.1.5l-.1.1-.1.1c0 .1-.1.2 0 .2.2.6.6 1.1 1.2 1.4.1 0 .2.1.3.1.2 0 .3-.2.4-.4.1-.1.3-.1.4 0 .1.1.3.2.4.3.1.1.3.2.4.3.1.3.1.4.1.6-.2.2-.3.4-.6.6-.1 0-.2 0-.2.1zm0 0zm2.3-.8c-.2.6-.9 1.3-1.6 1.5-.8.1-1.6.2-2.4.2-.2.1-.8.8-.8.8l-.8.8c-.1.1-.2 0-.2 0V7.7v-.1c-.6-.1-1.4-.8-1.6-1.4-.2-1.2-.2-2.4 0-3.6.2-.6 1-1.3 1.6-1.5 1.4-.3 2.8-.3 4.3 0 .6.2 1.3.9 1.5 1.5.2 1.2.2 2.4 0 3.6z"
-                    />
-                  </svg>
-                </li>
-                <li class="social-animation-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    image-rendering="optimizeQuality"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                    viewbox="0 0 10 10"
-                  >
-                    <path
-                      d="M0 10c.1-.2.1-.4.2-.6.2-.6.3-1.2.5-1.8v-.3C-.8 4.4.7.8 4 .1 6.9-.6 9.6 1.4 10 4c.5 2.8-1.3 5.4-4 5.8-1.1.2-2.1 0-3.1-.5h-.3C1.1 9.7.3 10 0 10zm6.3-2.6c-1 0-2.5-.8-3.6-2.7-.3-.7-.3-1.4.3-1.9.2-.2.4-.1.6-.1.1 0 .1.1.1.2.1.3.3.6.4 1 .1.1 0 .3-.3.5-.1.1-.1.2 0 .3.4.7 1 1.2 1.7 1.5.1 0 .2 0 .3-.1.4-.5.4-.6.6-.5 1 .5 1.1.5 1.1.6.1.9-.7 1.2-1.2 1.2zM1.2 8.9c.5-.1 1-.2 1.4-.4h.3c.9.5 1.8.7 2.8.5C8 8.6 9.5 6.5 9.2 4.3 8.8 2 6.6.4 4.3.9 1.5 1.4 0 4.5 1.4 7c.2.3.2.5.1.8-.2.3-.2.7-.3 1.1z"
-                    />
-                  </svg>
-                </li>
-                <li class="social-animation-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10">
-                    <path
-                      d="M9.8 7.9L8.2 6.4c-.3-.3-.8-.3-1.1 0l-.8.8s-.1-.1-.2-.1c-.4-.3-1.1-.7-1.8-1.4S3.2 4.3 2.9 3.8c0-.1-.1-.1-.1-.2l.5-.5.3-.3c.4-.2.4-.7.1-1L2.1.2c-.3-.3-.8-.3-1.1 0L.5.7l-.3.6c-.1.3-.1.5-.2.7-.2 1.7.6 3.2 2.7 5.3C5.6 10.2 7.9 10 8 10c.2 0 .4-.1.6-.2.2-.1.4-.2.6-.4l.6-.4c.3-.3.3-.8 0-1.1z"
-                    />
-                  </svg>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="btn-up" id="btn-up">
-            <a class="btn-up-icon"></a>
-          </div>
-        </div>
         <div class="row">
           <div class="col copyright d-flex justify-content-center aline-items-center">
             Copyright © 1997-2019.
@@ -1143,7 +662,7 @@
         </div>
       </div>
     </footer>
-    <!-- FOOTER END -->
+    <!-- FOOTER SHORT END -->
     <script src="./js/bundle.js"></script>
   </body>
 </html>

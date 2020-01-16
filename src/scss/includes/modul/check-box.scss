@@ -3,7 +3,7 @@
     width: 14px;
     height: 14px;
     border-radius: 2px;
-    border: 1px solid #004d75;
+    border: 1px solid $blue;
     appearance: none;
     -webkit-appearance: none;
     padding: 2px;
@@ -20,7 +20,7 @@
     }
 
     &:checked::before {
-        background: #004d75;
+        background: $blue;
     }
 
     &:disabled {
