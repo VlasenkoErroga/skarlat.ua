@@ -1,7 +1,21 @@
 
 .subcategory{
     &-section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+
+
+        & .container{
+            position: relative;
+            &:before{
+                content: '';
+                width: 100%;
+                position: absolute;
+                bottom: -30px;
+                height: 1px;
+                left: 0;
+                background:$border-color
+            }
+        }
     }
     &__item {
         display: flex;

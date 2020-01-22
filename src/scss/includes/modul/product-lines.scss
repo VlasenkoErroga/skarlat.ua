@@ -4,11 +4,12 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding-bottom: 5px;
 
-        // & h2{
-        //     font-size: 20px;
-        // }
+
+        & h2{
+            font-weight: 400;
+            margin: 0;
+        }
 
         & svg {
             fill: $blue;
@@ -30,7 +31,7 @@
         touch-action: manipulation;
         overflow: hidden;
         padding: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
 
         & .owl-stage {
             display: flex;

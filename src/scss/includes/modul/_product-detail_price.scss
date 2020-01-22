@@ -1,0 +1,30 @@
+.product{
+    &-detail{
+        &__price{
+            display: flex;
+            justify-content: flex-start;
+            
+            &-old{
+                @extend .product-item__wrapper-price_old; 
+                &-currency{
+                    @extend .product-item__wrapper-price_old-currency;;
+
+                }
+            }
+            &-new{
+                @extend .product-item__wrapper-price_new;
+                &-currency{
+                    @extend .product-item__wrapper-price_new-currency;
+
+                }
+            }
+
+        }
+    }
+}
+
+.block-price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

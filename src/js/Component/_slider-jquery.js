@@ -1,11 +1,11 @@
 //CARD FOTO PRODUCT
-$('.slider-for').slick({
+$('.product-slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     lazyLoad: 'ondemand',
-    asNavFor: '.slider-nav',
+    asNavFor: '.product-slider-nav',
     responsive: [
         {
             breakpoint: 768,
@@ -22,10 +22,10 @@ $('.slider-for').slick({
     ]
 });
 
-$('.slider-nav').slick({
+$('.product-slider-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: '.slider-for',
+    asNavFor: '.product-slider-for',
     dots: false,
     lazyLoad: 'ondemand',
     centerMode: true,
@@ -40,12 +40,13 @@ $('.slider-nav').slick({
 });
 
 //GROUP SLIDER FOR SPECIAL OFFER
-$('.slider-set-product').slick({
+$('#slider-set-product').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
     lazyLoad: 'ondemand',
     focusOnSelect: true,
+    vertical: false,
     nextArrow: `<button type = "button" class = "custom_arrow-set-product next-arrow">  <svg viewbox="0 0 6 9" class="arrow-slick-next">
                                             <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
                                         </svg>Next1 </ button>`,
@@ -56,15 +57,40 @@ $('.slider-set-product').slick({
         {
             breakpoint: 1200,
             settings: {
-
                 arrows: false
             }
-        }
+        },
+        {
+            breakpoint: 992,
+            settings: "unslick"
+          }
     ]
 });
 
 $('.slider-set-second-product').slick({
     slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    verticalSwiping: true,
+    lazyLoad: 'ondemand',
+    vertical: true,
+    nextArrow: `<button type = "button" class = "custom_arrow slider-set-second-product_arrow next-arrow">  <svg viewbox="0 0 6 9" class="arrow-slick-next">
+        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+    </svg>Next1 </ button>`,
+    prevArrow: `<button type = "button" class = "custom_arrow slider-set-second-product_arrow prev-arrow">  <svg viewbox="0 0 6 9" class="arrow-slick-prev">
+        <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
+    </svg>Prev </ button>`,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: "unslick"
+          }
+    ],
+});
+
+$('.slider-set-third-product').slick({
+    slidesToShow: 1,
+    verticalSwiping: true,
     slidesToScroll: 1,
     dots: false,
     lazyLoad: 'ondemand',
@@ -74,7 +100,13 @@ $('.slider-set-second-product').slick({
     </svg>Next1 </ button>`,
     prevArrow: `<button type = "button" class = "custom_arrow slider-set-second-product_arrow prev-arrow">  <svg viewbox="0 0 6 9" class="arrow-slick-prev">
         <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
-    </svg>Prev </ button>`
+    </svg>Prev </ button>`,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: "unslick"
+          }
+    ]
 });
 
 //SLIDER PRODUCT CARD FOR SET SERIES

@@ -2,7 +2,7 @@ import popper from "popper.js";
 import bootstrap from "bootstrap";
 import 'owl.carousel';
 
-import '@fancyapps/fancybox/dist/jquery.fancybox';
+
 import 'slick-carousel/slick/slick';
 import 'ion-rangeslider/js/ion.rangeSlider.min';
 
@@ -126,4 +126,5 @@ window.addEventListener('hashchange', function (event) {
 });
 
 //hidden filter
+
 

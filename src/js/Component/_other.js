@@ -52,18 +52,21 @@ function addProductInAction(){
     const btnFavorite = document.getElementsByClassName('product-item__wrapper-block-btn_favorite');
     const btnBalance = document.getElementsByClassName('product-item__wrapper-block-btn_balance');
     const btnBuy = document.getElementsByClassName('product-item__wrapper-block-btn_buy');    
+    const btnProdDetailFavor = document.getElementsByClassName('product-detail__btn-favorite');
+    const btnProdDetailBalance = document.getElementsByClassName('product-detail__btn-balance');
+    const btnProdDetailShare = document.getElementsByClassName('product-detail__btn-share');
 
     function activeBtn(...arr){
         for(let element of arr){
             for(let item of element){
                 item.addEventListener('click', function (e){
-                    this.classList.toggle(`${this.className}--active`);
+                    this.classList.toggle('active');
                 });
             }
         }
     }
 
-    activeBtn(btnFavorite ? btnFavorite:[] , btnBalance ? btnBalance:[], btnBuy ? btnBuy:[]);
+    activeBtn(btnFavorite ? btnFavorite:[] , btnBalance ? btnBalance:[], btnBuy ? btnBuy:[], btnProdDetailFavor ? btnProdDetailFavor : [], btnProdDetailBalance ? btnProdDetailBalance : [], btnProdDetailShare ? btnProdDetailShare : []);
 }
 addProductInAction();
 
@@ -115,4 +118,18 @@ function toggleSeo(item){
 }
 }
 
-toggleSeo(document.getElementById('seo-collapse-btn'))
+toggleSeo(document.getElementById('seo-collapse-btn'));
+
+function flipSocial(){
+    let socialBlock = document.getElementsByClassName('product-detail__btn-support')[0];
+    socialBlock.addEventListener('click', function(e){
+        console.log(e.target)
+        if(e.target.className == 'product-detail__btn-share active'){
+            socialBlock.classList.add('active');
+        } else if(e.target.className != 'product-detail__btn-share'){
+            socialBlock.classList.remove('active');
+        }
+    })
+}
+
+flipSocial();

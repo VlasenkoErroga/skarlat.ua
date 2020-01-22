@@ -229,7 +229,7 @@
                         text-transform: initial;
                     }
 
-                    &--active{
+                    &.active{
                         & .btn-icon {
                             transition: all 0.3s ease-in-out;
                             fill: $blue;
@@ -238,8 +238,8 @@
                 }
             
                 &_balance {
-                    &--active .balance,
-                    &--active .btn-icon-detail .balance,
+                    &.active .balance,
+                    &.active .btn-icon-detail .balance,
                     &:hover .balance,
                     &:hover .btn-icon-detail .balance {
                         fill: $blue;
@@ -248,7 +248,7 @@
                 }
             
                 &_favorite {
-                    &--active, &:hover {
+                    &.active, &:hover {
                         & .heart {
                             fill: $red;
                             transition: all 0.3s ease-in-out;

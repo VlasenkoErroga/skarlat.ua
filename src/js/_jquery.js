@@ -1,4 +1,5 @@
 import 'jquery-mask-plugin/dist/jquery.mask';
+import '@fancyapps/fancybox/dist/jquery.fancybox';
 $(document).ready(function () {
 
 
@@ -40,6 +41,12 @@ $(document).ready(function () {
 
     $('#btnFilter').on('click', function () {
         $("#filterModal").modal();
+    });
+
+    //FANCYBOX
+
+    $('[data-fancybox="gallery-product"]').fancybox({
+
     });
 
 

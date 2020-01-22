@@ -1,0 +1,88 @@
+.delivery {
+    &-block {
+        width: 100%;
+    }
+
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        & h4{
+            margin: 0;
+        }
+
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: 3;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30%;
+            height: 1px;
+            border-top: .5px solid $border-color;
+        }
+
+        &:after {
+            right: 0;
+        }
+
+        &:before {
+            left: 0;
+        }
+    }
+
+    &-item {
+        height: 40px;
+        position: relative;
+        padding-right: 20px;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+        &__price, &__time, &__title {
+            margin-right: 10px;
+            line-height: 20px;
+          }
+
+
+          &__title{
+            width: 250px;
+          }
+
+          &__price{
+            width: 70px;
+          }
+
+          & .tooltips {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 6px;
+            right: 0;
+            &-icon{
+                fill: $grey;
+            }
+
+          }
+      }
+}
+
+.tooltip-inner {
+    background-color: #f5f4f4;
+    color: rgb(81, 89, 93);
+    box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
+
+    & ul{
+      list-style: none;
+    }
+  }
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {
+    border-left-color: $red!important;
+  }
