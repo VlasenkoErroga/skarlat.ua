@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
     <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.bundle.css" />
     <title>Кабинет пользователя | Skalat.ua</title>
     <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
@@ -672,7 +673,7 @@
                     class="nav-lk__pills-link"
                     id="pills-order-tab"
                     data-toggle="pill"
-                    href="#pills-my-order"
+                    href="#pills-order"
                     role="tab"
                     aria-controls="pills-order"
                     aria-selected="false"
@@ -3925,57 +3926,6 @@
       </div>
     </div>
     <!-- MODAL BASKET END -->
-    <!-- SUBSCRIBE SECTION START -->
-    <div
-      class="modal fade"
-      id="subscribeModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="subscribeModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-subscribe modal-dialog-centered" role="document">
-        <div class="modal-content modal-subscribe-content justify-content-center aline-items-center d-flex">
-          <div class="modal-subscribe-header">
-            <h5 id="subscribeModalTitle">Будьте первым, кто узнает о наших лучших предложениях!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 50 50"
-                  version="1.1"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <g>
-                    <path
-                      d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"
-                    />
-                  </g>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form class="subscribe-form">
-              <input
-                type="email"
-                name="email_subscribe"
-                placeholder="Ваш email"
-                required="required"
-                aria-required="true"
-                data-msg-required="Поле не заполнено"
-                data-msg-email="Некорректный email"
-                class="subscribe-input"
-              />
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-subscribe-form">Подписаться</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- SUBSCRIBE SECTION END -->
     <!-- MODAL ENTER START -->
     <div
       class="modal fade "

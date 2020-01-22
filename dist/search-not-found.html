@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
     <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.bundle.css" />
     <title>Не найдено | Skalat.ua</title>
     <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
@@ -3521,90 +3522,170 @@
         </div>
       </section>
       <!-- SECTION PRODUCT LINE END-->
-      <!-- SUBSCRIBE SECTION START -->
-      <div
-        class="modal fade"
-        id="subscribeModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="subscribeModalTitle"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-subscribe modal-dialog-centered" role="document">
-          <div class="modal-content modal-subscribe-content justify-content-center aline-items-center d-flex">
-            <div class="modal-subscribe-header">
-              <h5 id="subscribeModalTitle">Будьте первым, кто узнает о наших лучших предложениях!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 50 50"
-                    version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <g>
-                      <path
-                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"
-                      />
-                    </g>
-                  </svg>
-                </span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form class="subscribe-form">
-                <input
-                  type="email"
-                  name="email_subscribe"
-                  placeholder="Ваш email"
-                  required="required"
-                  aria-required="true"
-                  data-msg-required="Поле не заполнено"
-                  data-msg-email="Некорректный email"
-                  class="subscribe-input"
-                />
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-subscribe-form">Подписаться</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- SUBSCRIBE SECTION END -->
       <!-- SEO SECTION START -->
-      <div class="section seo d-none d-lg-flex">
+      <div class="seo-main d-none d-lg-flex">
         <div class="container">
           <div class="row">
-            <div class="col">
+            <div class="col-12">
               <div class="seo-body">
-                <p>
-                  Суперважный сеошный текст Lorem ipsum dolor sit amet. Error sit voluptatem accusantium doloremque.
-                  Amet, consectetur, adipisci velit, sed quia non recusandae laboriosam, nisi. Optio, cumque nihil
-                  impedit, quo minus. Id est laborum et quasi architecto beatae. Officia deserunt mollitia animi, id est
-                  eligendi optio, cumque nihil impedit. Voluptatum deleniti atque corrupti, quos dolores et quas
-                  molestias. Cum soluta nobis est et molestiae non provident, similique sunt in.
-                </p>
-                <p>
-                  Delectus, ut labore et accusamus et molestiae. Ipsum, quia dolor repellendus sequi nesciunt, neque
-                  porro. Veritatis et dolore magnam aliquam quaerat. Autem quibusdam et aut rerum necessitatibus saepe
-                  eveniet, ut aut perferendis doloribus. Delectus, ut labore et harum quidem rerum hic tenetur a
-                  sapiente. Labore et dolore magnam aliquam quaerat voluptatem accusantium doloremque laudantium, totam.
-                  Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi.
-                </p>
-                <p>
-                  Quod maxime placeat, facere possimus, omnis voluptas nulla vero eos et harum. Hic tenetur a sapiente
-                  delectus, ut labore. Consectetur, adipisci velit, sed quia consequuntur. Provident, similique sunt in
-                  ea commodi autem vel illum, qui in culpa. Voluptas sit, aspernatur aut officiis debitis aut odit. Modi
-                  tempora incidunt, ut et dolore magnam aliquam. Architecto beatae vitae dicta sunt, explicabo magni
-                  dolores.
-                </p>
+                <div class="seo-content-prev">
+                  <h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima doloribus modi? Ullam, dolorem
+                    quos!
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, obcaecati iste reprehenderit
+                    repellat officiis minima earum aliquam veritatis, maxime explicabo cupiditate velit perferendis quo
+                    nulla ullam, possimus quis autem at fuga quibusdam? Voluptatem ratione debitis consectetur sit dolor
+                    aspernatur nisi, exercitationem aut accusamus, modi suscipit velit officiis est temporibus
+                    distinctio perspiciatis earum eveniet molestiae non ipsa nesciunt doloremque, eos nobis quia. Ipsa
+                    fugit aut necessitatibus, a vel optio quisquam quasi architecto quam deserunt ducimus, enim eius
+                    aperiam pariatur rem unde? Quas quae dolore, laboriosam vero cumque nisi, veniam magnam atque iusto
+                    ex corrupti quia, odit reiciendis excepturi cupiditate hic saepe?
+                  </p>
+                </div>
+                <span
+                  class="seo-collapse-btn"
+                  id="seo-collapse-btn"
+                  data-toggle="collapse"
+                  data-target="#seo-collapse"
+                  aria-expanded="false"
+                  aria-controls="seo-collapse"
+                  >Читать полностью</span
+                >
+                <div class="collapse multi-collapse seo-collapse-shadow" id="seo-collapse">
+                  <div class="seo-full-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quo facere culpa explicabo eos
+                      temporibus possimus provident fugiat velit laborum dolor enim accusantium, porro expedita
+                      repudiandae quae, minus sapiente! Quos nostrum amet est fuga suscipit optio perferendis non
+                      cupiditate quisquam veniam. Iste ducimus rerum placeat consectetur ullam architecto tempora et?
+                    </p>
+                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, voluptatem?</h3>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis laboriosam similique, molestias
+                      blanditiis tempora reprehenderit enim aperiam placeat esse rem praesentium, consequatur quae
+                      ratione voluptatibus quaerat pariatur beatae rerum mollitia saepe nostrum repudiandae at quidem
+                      earum expedita. Earum architecto ratione corporis doloribus voluptatem nam. At aliquam ducimus
+                      fugit harum iure?
+                    </p>
+                    <h3>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui suscipit quas, deleniti velit
+                      ducimus quidem voluptatum voluptatem eius atque beatae!
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum commodi blanditiis nemo
+                      impedit laudantium, libero, cupiditate modi tempora ea quisquam veniam ratione natus unde pariatur
+                      perspiciatis, facere minima suscipit! Similique eaque nam dolore exercitationem esse dolores iste
+                      itaque totam officiis quo facilis corporis labore magnam dolorem ipsum, et ut architecto optio
+                      assumenda? Nemo dolorem praesentium accusantium magni ut quas minus hic vitae voluptates ipsam,
+                      tempore consequatur obcaecati officia iusto neque quo. Quod maxime magni commodi ratione deserunt,
+                      expedita dolor quia doloribus facere. Vel alias incidunt accusamus aperiam a officiis dolorum
+                      provident qui perspiciatis nobis? Repellendus nostrum suscipit aut autem. Quam ducimus ullam
+                      eveniet doloribus vero exercitationem commodi dicta, natus, assumenda sint voluptatum impedit!
+                      Libero sequi impedit odit nesciunt necessitatibus repudiandae velit quas quia possimus? Reiciendis
+                      amet sunt, facilis, autem ullam, necessitatibus enim ex corporis beatae eligendi expedita
+                      repudiandae quam. Dolorem, placeat illum expedita optio sed molestiae tempore aperiam, illo eaque
+                      impedit alias molestias a hic voluptate. Quibusdam illum odio ipsam itaque? Repellat quo error
+                      culpa est unde nesciunt labore! Architecto unde culpa fuga modi quia aliquam laudantium nisi velit
+                      iure vel ipsa sapiente molestias reiciendis cupiditate, ratione similique quas magni harum vitae
+                      laboriosam. Aliquid repellendus corporis perferendis minima obcaecati?
+                    </p>
+                    <h3>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita animi laborum odit. Placeat
+                      omnis numquam repellendus quis iste eius asperiores!
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in repellendus enim, praesentium
+                      impedit, nostrum incidunt, aliquam soluta sunt eligendi voluptates. Nesciunt iste dignissimos
+                      vitae reprehenderit fugit rem maxime totam? Earum delectus hic nam, dolorum vitae consectetur
+                      commodi accusantium, ducimus sit esse vero quas, saepe dolores quam quae assumenda. Quis quos
+                      excepturi consequatur labore iure corporis at, sed nostrum odit itaque tempore aperiam a officiis
+                      accusantium fuga alias quibusdam facere eum quia rem, dolores et sint dolore? Quidem expedita
+                      architecto alias ipsa distinctio porro. Eius ipsam hic ad rerum tempora dicta possimus accusantium
+                      ipsum alias iste, reprehenderit atque assumenda, autem neque ea illo error. Iure obcaecati iste
+                      praesentium ad odit facilis magnam! Quibusdam non commodi accusamus consectetur a maiores sunt.
+                      Quasi delectus sunt eligendi illum, rerum quia expedita nulla tenetur cum aliquid earum vero eius.
+                      Odit distinctio quaerat soluta. Quas, consequatur. Placeat beatae cumque nihil exercitationem non
+                      tenetur mollitia dicta optio aperiam earum nostrum nam, animi explicabo dolor velit, similique
+                      quidem at debitis sapiente ut. Incidunt, necessitatibus modi at temporibus debitis consequatur
+                      voluptates? Facere eius nobis ab praesentium voluptates optio aliquam explicabo labore repellendus
+                      provident sed dolor magnam nulla quia asperiores quaerat doloribus natus numquam ipsam, repellat
+                      in. Distinctio, facilis.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- SEO SECTION END -->
+      <!-- SUBSCRIBE SECTION START -->
+      <section class="subscribe-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-7">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatem!</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestias qui explicabo earum nisi veniam
+                provident sint consequuntur tempore exercitationem. Amet dolores magnam non reiciendis sapiente in
+                accusamus illo fuga.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente nostrum dolore expedita.
+                Rem, veritatis.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laudantium fugit tempora illum
+                molestias pariatur odio esse quisquam, consequatur explicabo officiis nihil, nesciunt architecto
+                perferendis cum placeat, non natus atque deserunt obcaecati quidem fuga ratione harum autem.
+                Repudiandae, iste voluptates?
+              </p>
+            </div>
+            <div class="col-12 col-sm-5">
+              <form action="">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="main-subscribe-name" name="name" placeholder="Имя" />
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="main-subscribe-email" name="name" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                  <select
+                    type="text"
+                    class="form-control"
+                    id="main-subscribe-who"
+                    name="Who_i_am"
+                    placeholder="Кто я ....."
+                  >
+                    <option value="">Дизайнер</option>
+                    <option value="">Диллер</option>
+                    <option value="">Архитектор</option>
+                    <option value="">...</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="main-subscribe-who"
+                    name="Who_i_am"
+                    placeholder="Дополнительная информация"
+                  ></textarea>
+                </div>
+                <label for="save_inform"
+                  ><input type="checkbox" class="checkbox mr-2" id="save_inform" /><small
+                    >Мы никогда не передадим ваши данные кому-либо еще.</small
+                  ></label
+                >
+                <button class="subscribe-btn">Подписаться</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SUBSCRIBE SECTION END -->
     </main>
     <!-- MAIN END -->
     <!-- MOBILE MENU START -->
@@ -4509,57 +4590,6 @@
       </div>
     </div>
     <!-- MODAL BASKET END -->
-    <!-- SUBSCRIBE SECTION START -->
-    <div
-      class="modal fade"
-      id="subscribeModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="subscribeModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-subscribe modal-dialog-centered" role="document">
-        <div class="modal-content modal-subscribe-content justify-content-center aline-items-center d-flex">
-          <div class="modal-subscribe-header">
-            <h5 id="subscribeModalTitle">Будьте первым, кто узнает о наших лучших предложениях!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 50 50"
-                  version="1.1"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <g>
-                    <path
-                      d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"
-                    />
-                  </g>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form class="subscribe-form">
-              <input
-                type="email"
-                name="email_subscribe"
-                placeholder="Ваш email"
-                required="required"
-                aria-required="true"
-                data-msg-required="Поле не заполнено"
-                data-msg-email="Некорректный email"
-                class="subscribe-input"
-              />
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-subscribe-form">Подписаться</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- SUBSCRIBE SECTION END -->
     <!-- MODAL ENTER START -->
     <div
       class="modal fade "

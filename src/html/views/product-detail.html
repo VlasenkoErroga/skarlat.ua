@@ -1,0 +1,50 @@
+<% var data = {
+  title: "Страница товара | Skarlat.ua",
+  author: "vlasenko$",
+  titlePage: "Точечный светильник Skarlat PC0005-32Q SQ 5W 6000K"
+}; %>
+<%= _.template(require('./../includes/_header.html').default)(data) %>
+<!-- MAIN START -->
+<main>
+    <%= _.template(require('./../includes/_progres.html').default)(data) %>
+    <%= _.template(require('./../includes/_breadcrumbs.html').default)(data) %>
+    <%= _.template(require('./../includes/_title-page-product.html').default)(data) %>
+
+    <section class="product-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                  <div class="product-detail-top__wrapper">
+                    <div class="row">
+                      <div class="col-12 col-lg-6">
+                        <%= _.template(require('./../includes/_product-detail_slider.html').default)(data) %>
+                      </div>
+                      <div class="col-lg-6 col-12">
+                        <%= _.template(require('./../includes/_product-detail_info.html').default)(data) %>
+                      </div>
+                    </div>
+                </div>
+                <div class="product-detail-spesial__wrapper">
+                  <%= _.template(require('./../includes/_product-detail_special.html').default)(data) %>
+                </div>
+                <div class="product-detail-properties__wrapper">
+                  <%= _.template(require('./../includes/_product-detail_properties.html').default)(data) %>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+    <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+    <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+    <%= _.template(require('./../includes/_main-blog-section.html').default)(data) %>
+    <%= _.template(require('./../includes/_main-seo-section.html').default)(data) %>
+    <%= _.template(require('./../includes/_main-subscribe-section.html').default)(data) %>
+
+</main>
+      <!-- MAIN END -->
+<%= _.template(require('./../includes/_menu.html').default)(data) %>
+<%= _.template(require('./../includes/_basket.html').default)(data) %>
+<%= _.template(require('./../includes/_form-enter.html').default)(data) %>
+<%= _.template(require('./../includes/_footer.html').default)(data) %> 
