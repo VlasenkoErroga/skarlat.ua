@@ -2,12 +2,12 @@
 function scrollCompare() {
     const COMPARE_SCROLL_LEFT = document.getElementById('compare-table__scroll-left');
     const COMPARE_SCROLL_RIGHT = document.getElementById('compare-table__scroll-right');
-    const COMPARE_TABLE_HEADER = document.getElementById('compare-table__header');
-    const COMPARE_TABLE_BODY = document.getElementById('compare-table__body');
-    const COMPARE_TABLE_CONTROLL = document.getElementById('compare-table__control');
+    let COMPARE_TABLE_HEADER = document.getElementById('compare-table__header');
+    let COMPARE_TABLE_BODY = document.getElementById('compare-table__body');
+    let COMPARE_TABLE_CONTROLL = document.getElementById('compare-table__control');
     
     if (COMPARE_TABLE_HEADER && COMPARE_TABLE_CONTROLL && COMPARE_TABLE_BODY) {
-        COMPARE_TABLE_HEADER = COMPARE_TABLE_HEADER.children[0]
+        COMPARE_TABLE_HEADER = COMPARE_TABLE_HEADER.children[0];
         COMPARE_TABLE_CONTROLL = COMPARE_TABLE_CONTROLL.children[0];
         COMPARE_TABLE_BODY= COMPARE_TABLE_BODY.children;
         COMPARE_TABLE_HEADER.addEventListener('scroll', function (event) {

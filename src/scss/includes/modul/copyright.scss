@@ -1,8 +1,9 @@
 .copyright {
     color: $lightgrey;
-    padding: 20px;
+    padding: 10px;
     border: none;
     position: relative;
+    font-size: 14px;
 
     @media(max-width:768px) {
         font-size: 10px;
@@ -24,10 +25,11 @@
     &:before {
         content: "";
         height: 1px;
-        width: 90%;
+        width: 100%;
         background: $lightgrey;
+        opacity: .3;
         position: absolute;
         top: 0;
-        left: 5%;
+        left: 0;
     }
 }

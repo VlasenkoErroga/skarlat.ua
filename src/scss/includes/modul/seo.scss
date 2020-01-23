@@ -11,6 +11,8 @@
         }
     }
 
+ 
+
     @media (max-width: 992px) {
         padding: 47px 0 27px;
         font-size: 15px;
@@ -20,6 +22,10 @@
         padding-top: 30px;
         padding-bottom: 20px;
         margin-bottom: 30px;
+
+        & ul,ol{
+            margin-left: 20px;
+        }
     }
 
     &-content{
@@ -43,8 +49,8 @@
     &-collapse{
 
         &-btn{
-            border-bottom:1px dashed $blue;
-            color: $blue;
+            border-bottom:1px dashed $black;
+            color: $black;
             cursor:pointer;
         }
         &-shadow{

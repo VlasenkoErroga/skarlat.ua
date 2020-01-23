@@ -147,9 +147,11 @@ $(".main-carusel").owlCarousel({
     dots: true,
     dotsClass: 'main-dots',
     dotClass: 'main-dot',
-    autoplay: true,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    //autoplay: true,
     margin: 20,
-    autoplayTimeout: 5000,
+    //autoplayTimeout: 5000,
     responsive: {
         0: {
             items: 1,

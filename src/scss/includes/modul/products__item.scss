@@ -94,18 +94,18 @@
 
             &-info {
                 &-cat {
-                    color: rgb(139, 139, 139);
+                    color: $black;
                     padding: 0;
                     margin: 0;
-                    font: 400 13px Roboto, sans-serif;
+                    font: 400 13px 'Montserrat', sans-serif;
                 }
 
                 &-name {
                     display: flex;
                     text-decoration: none;
                     margin-bottom: 0;
-                    color: #414141;
-                    font: 400 16px Roboto, sans-serif;
+                    color: $black;
+                    font: 400 16px 'Montserrat', sans-serif;
                     font-size: 16px;
                     line-height: 19px;
                     width: 100%;
@@ -118,7 +118,7 @@
                     overflow: hidden;
                     &:hover{
                         text-decoration: none;
-                        color: $blue;
+                        color: $black;
                         transition: all .3s ease-in-out;
                     }
                 }
@@ -145,7 +145,7 @@
 
                 &_old {
                     color: #6f6f6f;
-                    font-family: "Roboto", sans-serif;
+                    font-family: 'Montserrat', sans-serif;
                     font-size: 16px;
                     padding-right: 0;
                     text-align: left;
@@ -169,18 +169,26 @@
 
                 &_new {
                     color: #020202;
-                    font: 400 20px Roboto, sans-serif;
+                    font: 400 20px 'Montserrat', sans-serif;
                 }
 
                 &_new,
                 &_old {
                     display: flex;
+                    align-items: flex-end;
                     &-currency {
                         display: flex;
                         align-items:flex-end;
                         margin-left: 3px;
                         font-size: 14px;
                         margin-bottom: 2px;
+                    }
+                }
+
+                &_old {
+                    display: flex;
+                    &-currency {
+                        font-size: 12px;
                     }
                 }
             }
@@ -202,7 +210,7 @@
                         height: 35px;
                         border:none;
                         background:none;
-                        fill: rgb(139, 139, 139);
+                        fill: $grey;
                         transition: all 0.3s ease-in-out;
                 }
 
@@ -210,7 +218,7 @@
                     & .btn-icon {
                         width: 35px;
                         height: 35px;
-                        fill: rgb(139, 139, 139);
+                        fill: $grey;
                         transition: all 0.5s ease-in-out;
                         margin-top: -4px;
                     }
@@ -218,7 +226,7 @@
                     &:hover {
                         & .btn-icon {
                             transition: all 0.3s ease-in-out;
-                            fill: $blue;
+                            fill: $grey;
                         }
                     }
         
@@ -232,7 +240,7 @@
                     &.active{
                         & .btn-icon {
                             transition: all 0.3s ease-in-out;
-                            fill: $blue;
+                            fill: $black;
                         }
                     }
                 }
@@ -242,7 +250,7 @@
                     &.active .btn-icon-detail .balance,
                     &:hover .balance,
                     &:hover .btn-icon-detail .balance {
-                        fill: $blue;
+                        fill: $black;
                         transition: all 0.3s ease-in-out;
                     }
                 }
@@ -299,7 +307,7 @@
 
                 &-name {
                     color: rgba(0,0,0, .875);
-                    font:400 12px "Roboto", sans-serif;
+                    font:400 12px 'Montserrat', sans-serif;
 
                     &::after {
                         content: ':';

@@ -3,6 +3,7 @@ body {
     position: relative;
     background: $BGlightgrey;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
 
     @media (max-width: 992px) {
         font-size: 14px;
@@ -36,7 +37,7 @@ a{
 
 
 html {
-    font: 300 16px "Roboto", sans-serif;
+    font: 300 16px 'Montserrat', sans-serif;
     
     ::-webkit-scrollbar-button {
         background-image: url("");
@@ -99,9 +100,11 @@ main{
     position: relative;
 }
 
-input{
+input:not([type="checkbox"]),select, textarea{
+    font-size: 14px!important;
+    border:none !important;
     &:focus{
-        border-color: $blue !important;
+        border:none !important;
     }
 }
 

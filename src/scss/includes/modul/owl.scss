@@ -2,12 +2,12 @@
     &-carousel {
         & .owl-nav {
             & button {
-                height: 50px;
-                width: 30px;
+                height: 60px;
+                width: 40px;
                 transition: all 0.3s ease-in-out;
 
                 &.owl-prev {
-                    left: -2px;
+                    left: 10px;
                     border-radius: 0 5px 5px 0;
 
                     &:before {
@@ -28,7 +28,7 @@
                 }
 
                 &.owl-next {
-                    right: -2px;
+                    right: 10px;
                     border-radius: 5px 0 0 5px;
 
                     &:before {
@@ -50,8 +50,7 @@
 
 
                 &.owl-next, &.owl-prev {
-                    position: absolute;
-                    background: rgba(255, 255, 255, .7);
+                    position: absolute; 
                     padding: 10px;
                     top: 50%;
 
@@ -62,7 +61,8 @@
                         height: 30%;
                         border-radius: 3px;
                         width: 2px;
-                        background-color: #6f706f;
+                        background-color: $lightgrey;
+                        transition: all .3s ease-in-out;
                     }
 
                     &:before {
@@ -70,10 +70,15 @@
                     }
 
                     &:hover {
-                        background: $white;
-                        height: 50px;
-                        width: 30px;
+                        height:60px;
+                        width: 40px;
                         transition: all 0.3s ease-in-out;
+
+                        &:after,
+                        &:before {
+                            background-color:$black;
+                            transition: all .3s ease-in-out;
+                    }
                     }
 
                     & span{
@@ -107,7 +112,7 @@
         margin: 0 5px;
 
         &.active {
-            background-color: $blue;
+            background-color: $black;
         }
     }
 

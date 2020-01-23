@@ -15,7 +15,7 @@
         }
 
         &__subtitle{
-            font-family: "Roboto", sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-weight: 400;
             & strong{
                 font-size: 20px;
@@ -107,7 +107,7 @@
                     justify-content:center;
                     align-items:center;
                     flex-flow: row wrap;
-                    font: 300 16px 'Roboto', sans-serif;
+                    font: 300 16px 'Montserrat', sans-serif;
                     margin-bottom: 10px;
 
                     &-price{
@@ -149,7 +149,6 @@
             &-btn{
                 &-by{
                     @extend .btn;
-                    @extend .btn-color;
                     border-radius:4px;
                     background: $blue;
                     color:$white;

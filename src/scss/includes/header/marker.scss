@@ -3,7 +3,7 @@
     &-block{
 
         &-counter {
-            color: $white;
+            color: $black;
             font-weight: 700;
             font-size: 10px;
         }
@@ -13,13 +13,13 @@
                 position: absolute;
                 left: 30px;
                 top: 5%;
-                background: #d8d8d8;
+                background: $lightgrey;
                 border-radius: 3px;
                 padding: 1px 4px;
 
                 & .marker-block-counter {
                     font-size: 8px;
-                    color: $blue;
+                    color: $black;
                 }
             }
         }

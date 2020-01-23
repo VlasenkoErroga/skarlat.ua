@@ -1,6 +1,7 @@
 #subscribeBtn {
-    background: $blue;
-    color: $white;
+    border: 1px solid $black;
+    color: $black;
+    background:$white;
     padding: 6px;
     border: none;
     border-radius: 5px;
@@ -23,16 +24,15 @@
 
     @media (min-width: 992px) {
         padding: 20px 0;  
-        padding: 20px 0;
     }
     @media (min-width: 768px) {
         text-align: center;
     }
 
     &-main{
-        background:#51595d42;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        background:$lightgrey;
+        padding-top: 60px;
+        padding-bottom: 60px;
 
         & .form-group{
             max-width: 100%;
@@ -62,21 +62,23 @@
             margin-bottom: 30px;
         }
         & h2{
-            font-size: 28px;
+            font-size: 18px;
+            text-transform: uppercase;
         }
         
     }
 
     &-btn {
         @extend .btn;
-        background: $blue;
+        background: transparent;
         border-radius: 4px;
-        border: none;
-        color: $white;
+        border: 1px solid $black;
+        color: $black;
         height: 45px;
+        text-transform: uppercase;
 
         &:hover{
-            color:$BGlightgrey;
+            color:$black;
         }
     }
 
@@ -128,7 +130,7 @@
 .btn-subscribe-form {
     background: $blue;
     color: $white;
-    font: 400 14px 'Roboto', sans-serif;
+    font: 400 14px 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin-right: 7%;
 }

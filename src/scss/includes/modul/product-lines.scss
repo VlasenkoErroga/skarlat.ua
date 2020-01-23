@@ -8,7 +8,9 @@
 
         & h2{
             font-weight: 400;
+            font-size: 18px;
             margin: 0;
+            text-transform: uppercase;
         }
 
         & svg {
@@ -46,15 +48,16 @@
         & .owl-prev {
             position: absolute;
             opacity: 0.3;
-            top: 40%;
+            top: 50%;
             transform: translateY(-50%);
             border: none;
-            background: rgba(255, 255, 255, .7);
+            background: transparent;
             height: 50px;
             width: 30px;
             font-size: 0;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            //box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease-in-out;
+            font-size: 0;
 
             &:hover {
                 opacity: 1;
@@ -68,7 +71,7 @@
                 border-radius: 5px;
                 display: flex;
                 width: 60%;
-                background: $blue;
+                background: $black;
                 height: 2px;
                 left: 20%;
             }
@@ -82,7 +85,7 @@
         }
 
         & .owl-prev {
-            left: 0;
+            left: -5px;
             border-radius: 0 5px 5px 0;
 
             &:after {
@@ -97,7 +100,7 @@
         }
 
         & .owl-next {
-            right: 0;
+            right: -5px;
             border-radius: 5px 0 0 5px;
 
             &:after {

@@ -8,6 +8,22 @@
         padding-bottom: 8px;
         margin-bottom: 10px;
 
+        &-value{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+
+        &-price{
+            @extend .product-item__wrapper-price_new-currency;
+            margin-left: 5px;
+            font-size: 20px !important;
+        }
+
+        &-currency{
+            @extend .product-item__wrapper-price_new-currency;
+        }
+
         &-close {
             margin: 0;
             width: auto;
@@ -17,7 +33,7 @@
             overflow: hidden;
             position: absolute;
                 right: 5px;
-                top:18px;
+                top:20px;
                 display: flex;
                 justify-content:center;
                 align-items:center;
@@ -29,8 +45,8 @@
             }
 
             & svg {
-                width: 15px;
-                height: 15px;
+                width: 20px;
+                height: 20px;
                 fill: #000;
             }
         }
@@ -57,89 +73,90 @@
             }
         }
 
-        &-btn-block {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            flex-flow: row wrap;
-
-            &--wrapper {
+        &-btn{
+            &-block {
+                display: flex;
                 justify-content: flex-end;
-                width: 100%;
+                align-items: center;
+                flex-flow: row wrap;
 
-                @media (max-width:768px) {
-                    justify-content: center;
-                }
-            }
+                &--wrapper {
+                    justify-content: flex-end;
+                    width: 100%;
 
-            & button {
-                margin: 5px 10px;
-                margin-right: 40px;
-
-                @media(max-width:400px){
-                    margin: 5px 10px;
-                }
-
-                &.close {
-                    margin-right: 0;
-                    margin-left: 20px;
-                    margin-right: -10px;
-
-                    @media(min-width:768px) and (max-width:992px) {
-                        margin-left: 10px;
-                    }
-
-                    @media (max-width:768px){
-                        margin-right: 0;
-                    }
-                }
-
-                &.jumbotron-basket-close {
                     @media (max-width:768px) {
-                        width: 20px;
-                        height: 20px;
-                        position: absolute;
-                        top: 14px;
-                        right: 20px;
+                        justify-content: center;
                     }
                 }
-            }
 
-            & .btn-color {
-                background: $blue;
-                color: $white;
-                text-transform: uppercase;
+                & button {
+                    margin: 5px 10px;
+                    margin-right: 40px;
 
-                &:hover {
+                    @media(max-width:400px){
+                        margin: 5px 10px;
+                    }
+
+                    &.close {
+                        margin-right: 0;
+                        margin-left: 20px;
+                        margin-right: -10px;
+
+                        @media(min-width:768px) and (max-width:992px) {
+                            margin-left: 10px;
+                        }
+
+                        @media (max-width:768px){
+                            margin-right: 0;
+                        }
+                    }
+
+                    &.jumbotron-basket-close {
+                        @media (max-width:768px) {
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            top: 14px;
+                            right: 20px;
+                        }
+                    }
+                }
+        }
+
+        &-basket {
+            color: $black;
+            margin-right: 5px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            font-weight: 400;
+        
+
+            &:hover {
+                color:$black;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    bottom: 0;
+                    border-bottom: 1px $black dashed;
                     transition: all 0.3s ease-in-out;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 }
             }
 
-            & .in-basket {
-                color: $blue;
-                margin-right: 5px;
-                transition: all 0.3s ease-in-out;
-                position: relative;
-                font-weight: 400;
-
-                &:hover {
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        width: 100%;
-                        bottom: 0;
-                        border-bottom: 1px $blue dashed;
-                        transition: all 0.3s ease-in-out;
-                    }
-                }
-
-                @media(max-width: 400px){
-                    display: none;
-                }
+            @media(max-width: 400px){
+                display: none;
             }
         }
+
+        &-pay{
+            @extend .btn;
+            background:white;
+            border: 1px solid $black;
+            text-transform: uppercase;
+        }
+    }
 
         &-btn-block,
         &-title {
@@ -159,12 +176,13 @@
 
         &-title {
             a {
-                color: $blue;
+                color: red;
+                font-size: 18px;
             }
 
             & h3 {
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 16px;
                 margin: 0;
             }
         }

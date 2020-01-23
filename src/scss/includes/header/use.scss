@@ -54,7 +54,7 @@
             align-items: center;
 
             & svg {
-                fill: $white;
+                fill: $lightgrey;
                 padding: 1px;
                 width: 100%;
             }
@@ -64,7 +64,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: $blue;
+                background: $lightgrey;
                 padding: 1px 7px;
                 border-radius: 5px;
                 right: -10px;
@@ -73,7 +73,7 @@
 
             @media(min-width:768px) and (max-width:992px) {
                 & svg {
-                    fill: $white;
+          
                     width: auto;
                     height: 100%;
                     width: 35px;
@@ -87,7 +87,7 @@
                 }
 
                 & svg {
-                    fill: $white;
+         
                     width: 35px;
                     max-height: 50px;
                 }
@@ -135,7 +135,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: $blue;
+            background: $lightgrey;
             padding: 1px 7px;
             border-radius: 5px;
             right: -10px;

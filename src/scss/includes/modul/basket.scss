@@ -18,7 +18,7 @@
         margin-left: 20px;
         margin-top: 7px;
         padding: 4px;
-        font-family: "Roboto", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 1.25rem;
     }
@@ -266,10 +266,10 @@
                     align-items: flex-end;
                     max-width: 200px;
                     margin-bottom: 10px;
-                    font: 400 20px "Roboto", sans-serif;
+                    font: 400 20px 'Montserrat', sans-serif;
 
                     &-value{
-                        font: 400 24px "Roboto", sans-serif;
+                        font: 400 24px 'Montserrat', sans-serif;
                         color: $blue;
                     }
 
@@ -308,7 +308,6 @@
         }
 
         &-accept{
-            @extend .btn-color;
             @extend .btn;
             font-size: 19px;
         }

@@ -2,9 +2,9 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: $blue;
+    background: $black;
     cursor: pointer;
-    box-shadow: 0 0 0 rgba(0, 77, 119, 0.4);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
     animation: pulse 2s infinite ease-in-out;
 
     &:hover {
@@ -13,7 +13,6 @@
 }
 
 .vidget{
-
     &-content {
     display: none;
     padding: 10px;
@@ -32,7 +31,7 @@
         right: 24px;
         bottom: -17px;
         border: 8px solid transparent;
-        border-top: 8px solid $blue;
+        border-top: 8px solid $black;
     
     }
 
@@ -60,11 +59,11 @@
                 width: 30px;
                 height: 20px;
                 margin-right: 5px;
-                fill: $blue;
+                fill: $black;
             }
 
             &:hover {
-                color: $blue;
+                color: $black;
                 transition: all 0.3s ease-in-out;
             }
         }
@@ -87,7 +86,7 @@
         & svg {
             height: 30px;
             width: 30px;
-            fill: rgb(0, 79, 117);
+            fill: $black;
           }
     }
 

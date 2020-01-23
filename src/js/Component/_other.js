@@ -122,14 +122,16 @@ toggleSeo(document.getElementById('seo-collapse-btn'));
 
 function flipSocial(){
     let socialBlock = document.getElementsByClassName('product-detail__btn-support')[0];
-    socialBlock.addEventListener('click', function(e){
-        console.log(e.target)
-        if(e.target.className == 'product-detail__btn-share active'){
-            socialBlock.classList.add('active');
-        } else if(e.target.className != 'product-detail__btn-share'){
-            socialBlock.classList.remove('active');
-        }
-    })
+    if(socialBlock){
+        socialBlock.addEventListener('click', function(e){
+            if(e.target.className == 'product-detail__btn-share active'){
+                socialBlock.classList.add('active');
+            } else if(e.target.className != 'product-detail__btn-share'){
+                socialBlock.classList.remove('active');
+            }
+        })
+    }
+    
 }
 
 flipSocial();

@@ -15,6 +15,7 @@
         list-style-type: none;
         padding: 2px 5px;
         margin: 0;
+        text-transform: uppercase;
 
         &:hover a {
             color: $blue;
@@ -22,7 +23,7 @@
         }
 
         & a {
-            font: 400 15px Roboto,sans-serif;
+            font: 400 14px 'Montserrat', sans-serif;
             color: #676a6b;
             transition: all 0.3s ease-in-out;
             padding: 5px;

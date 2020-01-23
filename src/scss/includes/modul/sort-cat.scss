@@ -20,7 +20,7 @@
             flex-flow: row nowrap;
             width: auto;
             height: 40px;
-            font: 14px 'Roboto', sans-serif;
+            font: 14px 'Montserrat', sans-serif;
             border: none;
             margin: 10px 0;
             border-radius: 4px;
@@ -38,7 +38,7 @@
         &__title {
             &-block {
                 color: $blue;
-                font: 400 14px "Roboto", sans-serif;
+                font: 400 14px 'Montserrat', sans-serif;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -47,7 +47,7 @@
                 &_label {
                     margin: 0;
                     color: $blue;
-                    font: 400 14px "Roboto", sans-serif;
+                    font: 400 14px 'Montserrat', sans-serif;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -57,7 +57,7 @@
                     max-width: 200px;
                     border: none;
                     color: #414141;
-                    font-family: "Roboto", sans-serif;
+                    font-family: 'Montserrat', sans-serif;
                     font-size: 15px;
                     line-height: 19px;
                     height: 100%;

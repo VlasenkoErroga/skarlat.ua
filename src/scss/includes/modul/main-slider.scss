@@ -35,12 +35,12 @@
         width: 30px;
         border: none;
         margin: 5px;
-        height: 3px;
-        background: #d8d8d8;
+        height: 2px;
+        background: $lightgrey;
         opacity: 0.7;
 
         &.active {
-            background: $blue;
+            background: $black;
             opacity: 0.8;
         }
     }
