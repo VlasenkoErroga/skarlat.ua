@@ -38,16 +38,8 @@
             max-width: 100%;
             margin-bottom: 0.5rem;
             & input, select{
-                background:$BGlightgrey;
-                opacity: .8;
-            }
-        }
-        & .checkbox{
-            background:$BGlightgrey;
-            opacity: .6;
+                background:$white;
 
-            &:checked{
-                opacity: 1;
             }
         }
 
@@ -60,6 +52,7 @@
         & h1,h2,h3,h4,h5,h6{
             color:$red;
             margin-bottom: 30px;
+            letter-spacing: .03rem;
         }
         & h2{
             font-size: 18px;
@@ -78,7 +71,8 @@
         text-transform: uppercase;
 
         &:hover{
-            color:$black;
+            background:$black;
+            color:$white;
         }
     }
 

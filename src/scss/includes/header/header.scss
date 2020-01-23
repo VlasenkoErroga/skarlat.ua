@@ -141,9 +141,10 @@ header {
         align-items: center;
 
         &__phone {
-            color: $grey;
+            color: $black;
             margin-right: 15px;
-            font-size: 14px;
+            font-size: 16px;
+            letter-spacing: .04rem;
 
             &:hover {
                 color: $black;

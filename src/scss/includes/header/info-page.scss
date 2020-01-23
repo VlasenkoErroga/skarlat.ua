@@ -18,13 +18,14 @@
         text-transform: uppercase;
 
         &:hover a {
-            color: $blue;
+            color: $black;
             transition: all 0.3s ease-in-out;
         }
 
         & a {
             font: 400 14px 'Montserrat', sans-serif;
-            color: #676a6b;
+            letter-spacing: .04rem;
+            color: $black;
             transition: all 0.3s ease-in-out;
             padding: 5px;
         }

@@ -128,6 +128,7 @@ footer{
             list-style: none;
             padding: 5px 10px;
             font-size: 14px;
+      
 
             &-head {
                 text-transform: uppercase;
@@ -135,14 +136,15 @@ footer{
                 font-size: 18px;
                 font-weight: 400;
                 margin-bottom: 15px;
+                letter-spacing: .03rem;
             }
 
             & a,
             & svg {
-                color: $lightgrey;
+                color: $VIPligthgrey;
                 fill: $lightgrey;
        
-                    & :hover {
+                    &:hover {
                         color: $white;
                         fill: $white;
                     }

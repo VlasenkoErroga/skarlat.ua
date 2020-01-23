@@ -66,8 +66,8 @@
 
     &-title{
         display: inline;
-        font-size: 18x;
-        font-weight: 400;
+        font-size: 18px;
+        font-weight: 500;
         color:$black;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -78,7 +78,7 @@
 
         &:hover{
 
-            color:$black;
+            color:#5e5e5e;
 
             & time{
                 color:$black;
@@ -86,7 +86,7 @@
     
         }
         & time{
-            font-size: 14px;
+            font-size: 13px;
             margin-right: 10px;
         }
     }
