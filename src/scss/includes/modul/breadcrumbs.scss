@@ -13,10 +13,10 @@
         white-space: nowrap;
 
         & a{
-            color: #636363;
+            color: $VIPgrey;
 
             &:hover{
-                color:$blue;
+                color:$black;
             }
         }
 
@@ -33,12 +33,13 @@
             top: 40%;
             left: 0;
             transform: translateY(-50%);
+            fill: $black;
         }
 
         &.active {
             & a{
 
-                color:$blue;
+                color:$black;
             }
         }
 

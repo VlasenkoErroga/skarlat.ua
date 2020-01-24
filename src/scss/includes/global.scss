@@ -95,12 +95,19 @@ html {
         margin-bottom: 4px;
     }
 }
+.grid-blog {
+    & [class*='col-']{
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-bottom: 5px;
+    }
+}
 
 main{
     position: relative;
 }
 
-input:not([type="checkbox"]),select, textarea{
+.subscribe-main input:not([type="checkbox"]),select, textarea{
     font-size: 14px!important;
     border:none !important;
     &:focus{

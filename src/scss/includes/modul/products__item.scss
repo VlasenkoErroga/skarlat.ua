@@ -210,7 +210,7 @@
                         height: 35px;
                         border:none;
                         background:none;
-                        fill: $grey;
+                        fill: $VIPligthgrey;
                         transition: all 0.3s ease-in-out;
                 }
 
@@ -218,7 +218,7 @@
                     & .btn-icon {
                         width: 35px;
                         height: 35px;
-                        fill: $grey;
+                        fill: $VIPligthgrey;
                         transition: all 0.5s ease-in-out;
                         margin-top: -4px;
                     }
@@ -226,7 +226,7 @@
                     &:hover {
                         & .btn-icon {
                             transition: all 0.3s ease-in-out;
-                            fill: $grey;
+                            fill: $black;
                         }
                     }
         
@@ -262,7 +262,7 @@
                             transition: all 0.3s ease-in-out;
             
                             &-dash {
-                                fill: #ed7161;
+                                fill: $red;
                                 transition: all 0.3s ease-in-out;
                             }
                         }
@@ -306,7 +306,7 @@
                 position: relative;
 
                 &-name {
-                    color: rgba(0,0,0, .875);
+                    color: $VIPgrey;
                     font:400 12px 'Montserrat', sans-serif;
 
                     &::after {
@@ -320,7 +320,7 @@
                     font-size:12px;
 
                     & a{
-                        color:$blue;
+                        color:$black;
                     }
                 }
 
@@ -330,7 +330,7 @@
                     width: 6px;
                     height: 6px;
                     background: transparent;
-                    border: 2px solid $blue;
+                    border: 2px solid $black;
                     top: 7px;
                     left: 0;
                     display: flex;

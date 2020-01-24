@@ -10,13 +10,11 @@
         <%= _.template(require('./../includes/_progres.html').default)(data) %>
         <%= _.template(require('./../includes/_breadcrumbs.html').default)(data) %>
         <%= _.template(require('./../includes/_title-page.html').default)(data) %>
-        <%= _.template(require('./../includes/_way.html').default)(data) %>
         <section class="product-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="search-not-found">
-                            <h1><%=data.titlePage%></h1>
                             <hr />
                             <p>К сожалению по вашему запросу "запрос" ничего не найдено :(</p>
                             <p>Предлагаем Вам посетить один из разделов и просмотреть предложения :)</p>
@@ -30,11 +28,7 @@
                 </div>
             </div>
         </section>
-        <%= _.template(require('./../includes/_product-line.html').default)(data) %>
-        <%= _.template(require('./../includes/_product-line.html').default)(data) %>
-        <%= _.template(require('./../includes/_product-line.html').default)(data) %>
-        <%= _.template(require('./../includes/_main-seo-section.html').default)(data) %>
-        <%= _.template(require('./../includes/_main-subscribe-section.html').default)(data) %>
+
     </main>
     <!-- MAIN END -->
 <%= _.template(require('./../includes/_menu.html').default)(data) %>

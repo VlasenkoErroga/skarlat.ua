@@ -5,17 +5,22 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            background: $blue;
+            background: $black;
             color: $white;
             width: 140px;
             font-size: 15px;
             margin: 10px 2px;
+            height: 40px;
 
             & svg {
                 width: 25px;
                 height: 25px;
                 margin-left: 10px;
                 fill: $white;
+            }
+
+            &:hover{
+                color:$white;
             }
         }
     }
@@ -86,4 +91,8 @@
     h1{
         padding: 0 15px;
     }
+}
+
+.info-content{
+    margin-bottom: 20px;
 }

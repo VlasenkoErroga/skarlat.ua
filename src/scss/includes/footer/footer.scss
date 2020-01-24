@@ -77,22 +77,43 @@ footer{
         &-block {
             &__wrapper{
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
                 align-items:center;
-                width: 100%;
+                position: relative;
+                max-width: 150px;
+                min-width:100px
+            
+            }
+
+            &__legend{
+                font-size: 14px;
+                letter-spacing: .04rem;
+                position: absolute;
+                right: 60px;
+                text-transform: uppercase;
+                color:$VIPligthgrey;
+                white-space: nowrap;
+
             }
 
             &__list{
+                border: 1px solid $white;
                 display: flex;
                 justify-content: center;
                 align-items:center;
                 list-style: none;
-                flex-flow: row wrap;
+                flex-flow: column wrap;
+                margin-bottom: 0;
             }
 
             &__item{
                 width: 40px;
                 padding: 6px;
+                transition: all 0.3 ease-in-out;
+                &:hover{
+                    background: $white;
+                    transition: all 0.3 ease-in-out;
+                }
 
                 & a {
                     & svg {
@@ -105,9 +126,12 @@ footer{
                 &:hover {
                     & a {
                         & svg {
-                            fill: $white;
+                            fill: $black;
                             transition: all 0.3 ease-in-out;
                         }
+                    }
+                    & span{
+                        color:$white;
                     }
                 }
             }

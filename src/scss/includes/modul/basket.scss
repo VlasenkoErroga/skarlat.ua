@@ -1,7 +1,7 @@
 #basketModal {
 
     & .modal-dialog {
-        max-width: 700px;
+        max-width: 750px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,11 +16,10 @@
 
     &Title {
         margin-left: 20px;
-        margin-top: 7px;
-        padding: 4px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 1.25rem;
+        margin-bottom: 0;
     }
     
     &Button {
@@ -61,7 +60,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 5px;
+        padding: 5px 10px;
         border-radius: 4px;
         position: relative;
 
@@ -90,7 +89,7 @@
             align-items:center;
 
             & svg{
-                height: 15px;
+                height: 18px;
                 fill: $black;
             }
 
@@ -138,7 +137,9 @@
                 color: rgb(65, 65, 65);
                 @extend .product-item__wrapper-info-name;
                 font-size: 18px!important;
+                font-weight: 500!important;
                 min-height: 20px !important;
+                margin-bottom: 5px!important;
             }
             &_sku{
                 @extend .product-item__wrapper-info-cat;
@@ -161,9 +162,12 @@
                 }
                 &-new{
                     @extend .product-item__wrapper-price_new;
+                    font-weight: 500 !important;
 
                     &-currency{
                         @extend .product-item__wrapper-price_new-currency;
+                        font-weight: 500 !important;
+                         margin-bottom: 0;
                     }
                 }
             }            
@@ -175,9 +179,12 @@
             align-items: flex-end;
             @extend .product-item__wrapper-price_new;
             margin-bottom: 5px;
+            font-weight: 500 !important;
 
             &-currency{
                 @extend .product-item__wrapper-price_new-currency;
+                font-weight: 500 !important;
+                margin-bottom: 0;
             }
         }
 
@@ -257,9 +264,15 @@
 
             &-group{
                 display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
+                flex-direction: row;
+                width: 100%;
+
+                @media(max-width:475px){
+                    flex-flow: column nowrap;
+                    align-items: center;
+                }
 
                 &-total{
                     display: flex;
@@ -267,17 +280,20 @@
                     flex-flow: row nowrap;
                     align-items: flex-end;
                     max-width: 200px;
-                    margin-bottom: 10px;
-                    font: 400 20px 'Montserrat', sans-serif;
+                    font: 500 20px 'Montserrat', sans-serif;
+
+                    @media(max-width:475px){
+                        margin-bottom: 10px;
+                    }
 
                     &-value{
-                        font: 400 24px 'Montserrat', sans-serif;
+                        font: 500 24px 'Montserrat', sans-serif;
                         color: $black;
                     }
 
                     &-text{
                         font-size: 20px;
-                        margin-right: 5px;
+                        margin-right: 10px;
                         margin-bottom: -1px;
                         padding: 2px 0 2px 0;
                     }
@@ -289,6 +305,8 @@
                         margin-top: 3px;
                         color: $black;
                         margin-bottom: 1px;
+                        font-weight: 500;
+                        margin-bottom: 0;
                     }
                 }
             }
@@ -313,7 +331,7 @@
 
         &-accept{
             @extend .btn;
-            font-size: 19px;
+            font-size: 20px;
             border: 1px solid $black;
             text-transform: uppercase;
             &:hover{

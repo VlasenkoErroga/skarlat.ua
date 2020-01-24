@@ -1,13 +1,14 @@
 .languages {
     &-block {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         align-items: center;
         flex-flow: row wrap;
         margin: 0;
         list-style-type: none;
         height: 100%;
         font: 400 15px 'Montserrat', sans-serif;
+        
     }
 
     &__item {
@@ -40,12 +41,12 @@
             width: 100%;
             height: auto;
             transition: all 0.3s ease-in-out;
-            font-size: 14px;
+            font-size: 12px;
         }
 
         &--active a,
         &:hover a {
-            color: $blue;
+            color: $black;
             transition: all 0.3s ease-in-out;
         }
 

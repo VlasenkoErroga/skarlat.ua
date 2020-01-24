@@ -71,29 +71,31 @@
 
                 &:hover{
                     transition: all .3s ease-in-out;
-                    fill: $blue;
+                    fill: $black;
                 }
                 
                 &.active{
                     transition: all .3s ease-in-out;
-                    fill: $blue;
+                    fill: $black;
                 } 
             }
 
             &-buy{
-                background:$blue;
+                background:$white;
                 width: 100%;
-                color:$lightgrey;
+                color:$black;
+                border: 1px solid $black;
 
                 &:hover{
                     color:$white;
+                    background: $black;
                 }
             }
 
             &-support{
                 background-color: transparent;
                 width: 100%;
-                height: 60px;
+                height: 50px;
                 perspective: 1000px;
 
 
@@ -116,13 +118,13 @@
 
                         &:hover{
                             & svg{
-                                fill: $blue;
+                                fill: $black;
                                 transition: all .3s ease-in-out;
                             }
                         }
 
                         & svg{
-                            fill: $grey;
+                            fill: $VIPligthgrey;
                             transition: all .3s ease-in-out;
                         }
                     }
@@ -149,7 +151,7 @@
                 }
 
                 &-front, &-back{
-                    border: $border;
+                    border: 1px solid $black;
                     border-radius: 4px;
                     position: absolute;
                     width: 100%;

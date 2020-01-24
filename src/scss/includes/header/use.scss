@@ -14,7 +14,7 @@
         }
 
         &.user {
-            width: calc(100% - 200px);
+            width: calc(100% - 120px);
             max-width: 200px;
 
             & svg {
@@ -237,5 +237,11 @@
             }
         }
 
+    }
+}
+
+#basketModalButtonHeader{
+    @media(max-width:475px){
+        margin: 0;padding: 0;
     }
 }

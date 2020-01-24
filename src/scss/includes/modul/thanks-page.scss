@@ -128,7 +128,7 @@
                     &-lk{
                        & a {
                             margin-left: 5px;
-                            color: $blue;
+                            color: $black;
                             font-weight: 400;
                             position: relative;
                             cursor: pointer;
@@ -139,7 +139,7 @@
                                 content: '';
                                 display: flex;
                                 width: 100%;
-                                border-bottom: 1px dashed $blue;
+                                border-bottom: 1px dashed $black;
                               }
                           }
                     }
@@ -150,12 +150,19 @@
                 &-by{
                     @extend .btn;
                     border-radius:4px;
-                    background: $blue;
-                    color:$white;
-
+                    background: $white;
+                
+                    border: 1px solid $black;
 
                     & a{
-                        color:$white;
+                        color:$black;
+                    }
+
+                    &:hover{
+                        background:$black;
+                        & a{
+                            color:$white;
+                        }
                     }
                 }
             }

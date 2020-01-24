@@ -29,14 +29,14 @@
                 & svg {
                     width: 100px;
                     height: 100px;
-                    fill: $blue;
+                    fill: $black;
                 }
             }
 
             &-name {
-                font-size: 20px;
+                font-size: 22px;
                 color: rgb(81, 89, 93);
-                font-weight: 400;
+                font-weight: 500;
                 padding: 5px;
             }
         }
@@ -60,7 +60,7 @@
                 width: 100%;
                 background: $white;
                 transition: all 0.3s ease-in-out;
-                color: rgb(81, 89, 93);
+                color: $black;
                 position: relative;
                 font-size: 18px;
                 font-weight: 400;
@@ -77,32 +77,32 @@
                 &:hover {
                     background: rgb(236, 237, 238);
                     transition: all 0.3s ease-in-out;
-                    color: $blue;
+                    color: $black;
 
                     @media(max-width:768px) {
                         background: none;
                     }
 
                     & .nav-lk__pills-item-icon svg {
-                        fill: $blue;
+                        fill: $black;
                         transition: all 0.3s ease-in-out;
                     }
                 }
 
                 & .active {
-                    background: $blue;
-                    color: $white;
+                    background: #dadada;
+                    color: $black;
 
                     @media (max-width:768px) {
                         background: none;
                     }
 
                     & .nav-lk__pills-item-icon svg {
-                        fill: $white;
+                        fill: $black;
                         transition: all 0.3s ease-in-out;
 
                         @media (max-width:768px) {
-                            fill: $blue;
+                            fill: $black;
                         }
                     }
                 }
@@ -169,6 +169,10 @@
                     justify-content: center;
                     min-height: 55px;
                 }
+
+                &:hover{
+                    color:$black;
+                }
             }
         }
 
@@ -214,7 +218,15 @@
 
                 &-btn {
                     @extend .btn;
-                    @extend .btn-right;
+                    text-transform: uppercase;
+                    color: $black;
+                    border: 1px solid $black;
+                    transition:  all .3s ease-in-out;
+                    &:hover{
+                        color: $white;
+                        transition:  all .3s ease-in-out;
+                        background: $black
+                    }
                 }
 
                 &-delivery {
@@ -224,6 +236,7 @@
                 }
 
                 &-group-way {
+                    margin-top: 5px;
                     display: flex;
                 }
 
@@ -232,10 +245,13 @@
                     margin-left: 0.5rem;
                     margin-right: 0.5rem;
                     font-weight: 400;
+                    font-size: 14px;
                 }
 
                 &-title {
-                    font-weight: 400;
+                    font-weight: 500;
+                    font-size: 20px;
+                    margin-bottom: 20px;
                 }
 
                 &-order{
@@ -288,7 +304,7 @@
                         justify-content: center;
                         min-width: 120px;
                         position: relative;
-                        padding: 5px;
+                        padding: 5px 8px;
 
                     }
 
@@ -296,8 +312,13 @@
                         color: rgb(81, 89, 93);
                         font-size: 16px;
                         font-weight: 400;
+
+                        &:hover{
+                            color: $black;
+                        }
+
                         &.active{
-                            color: $blue;
+                            color: $black;
                             background: transparent;
                             transition: all 0.3s ease-in-out;
 
@@ -308,7 +329,7 @@
                                 left: 0;
                                 width: 100%;
                                 height: 1px;
-                                background: $blue;
+                                background: $black;
                               }
                         }
                     }
@@ -316,6 +337,8 @@
 
             }
         }
+
+
 
         &-accordion {
             &__item {
@@ -336,11 +359,28 @@
                 margin: 10px;
                 & h4{
                     font-weight: 400;
-                    color: $blue;
+                    color: $black;
                     cursor: pointer;
                     text-decoration: underline;
                 }
             }
         }
     }
+}
+
+.delivery-save{
+    @extend .btn;
+    text-transform: uppercase;
+    color: $black;
+    border: 1px solid $black;
+    transition:  all .3s ease-in-out;
+    margin-top: 20px;
+    &:hover{
+        color: $white;
+        transition:  all .3s ease-in-out;
+        background: $black
+    }
+}
+#np-district{
+     border: 1px solid $border-color !important;
 }

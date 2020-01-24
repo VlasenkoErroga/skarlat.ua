@@ -24,9 +24,9 @@
             border: none;
             margin: 10px 0;
             border-radius: 4px;
-            background: #49505721;
-            border: 1px solid #4950572e;
-            color: #414141;
+            background: $white;
+            border: 1px solid $black;
+            color: $black;
             position: relative;
             padding: 5px;
 
@@ -37,7 +37,7 @@
 
         &__title {
             &-block {
-                color: $blue;
+                color: $black;
                 font: 400 14px 'Montserrat', sans-serif;
                 display: flex;
                 justify-content: flex-start;
@@ -46,7 +46,7 @@
 
                 &_label {
                     margin: 0;
-                    color: $blue;
+                    color: $black;
                     font: 400 14px 'Montserrat', sans-serif;
                     display: flex;
                     justify-content: center;
@@ -62,7 +62,6 @@
                     line-height: 19px;
                     height: 100%;
                     background: transparent;
-
                     -webkit-appearance: none;
                     -moz-appearance: none;
                     appearance: none; 
