@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick';
 import 'ion-rangeslider/js/ion.rangeSlider.min';
 
 import './_jquery';
+import './Component/_modal-filter';
 import './Component/_lazy';
 import './Component/_autocomplete';
 import './Component/_jumbotron-basket';

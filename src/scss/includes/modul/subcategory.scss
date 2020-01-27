@@ -58,26 +58,25 @@
     }
 
     &__title {
-        width: 100%;
+        width: 96%;
         position: absolute;
-        left: 0;bottom: 0;
+        left: 2%;
+        top: 50%;
+        transform: translateY(-50%);
         min-height: 20%;
-        padding: 7px;
+        padding: 5px;
         font: 400 1.2em 'Montserrat', sans-serif;
-        color: rgb(81, 89, 93);
         transition: all 0.3s ease-in-out;
         display: flex;
         align-items: center;
         justify-content: center;
         background: $white;
+        text-align: center;
         opacity: .8;
         z-index: 1;
-        text-align: center;
-
-
         text-transform: uppercase;
-        color: #505050;
-        background: linear-gradient(270deg,rgba(255,255,255,.45) 0,#fff 100%);
+        color: $VIPgrey;
+        background: $white;
 
         @media(max-width:575px){
             font: 400 1em 'Montserrat', sans-serif;

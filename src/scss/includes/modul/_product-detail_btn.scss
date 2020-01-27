@@ -26,7 +26,7 @@
             &-buy, &-favorite, &-balance, &-share{
                 @extend .btn;
                 font-size: 20px;
-                height: 50px;
+                height: 45px;
                 z-index: 2;
             }
 
@@ -47,6 +47,7 @@
 
                 &:hover{
                     transition: all .3s ease-in-out;
+                    fill: $black;
                 }
 
                 &--active{
@@ -59,6 +60,7 @@
 
                 &:hover{
                     transition: all .3s ease-in-out;
+                    fill: $black;
                 }
 
                 &--active{
@@ -85,6 +87,7 @@
                 width: 100%;
                 color:$black;
                 border: 1px solid $black;
+                font-size: 20px;
 
                 &:hover{
                     color:$white;
@@ -95,7 +98,7 @@
             &-support{
                 background-color: transparent;
                 width: 100%;
-                height: 50px;
+                height: 45px;
                 perspective: 1000px;
 
 

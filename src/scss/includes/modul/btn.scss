@@ -1,4 +1,50 @@
 .btn {
+    &-primary, &-main{
+        @extend .btn;
+        border:1px solid $black;
+        color: $white;
+        background: $black;
+
+        &:hover{
+            transition: all .3s ease-in-out;
+            background: $black;
+            color: $white;
+            & svg{ 
+                fill: $white;
+            }
+        }
+
+        &:focus, &:active{
+            background: $black;
+            color:$white;
+        }
+        & svg{ 
+            fill: $white;
+        }
+    }
+
+    &-main{
+        width: 100%;
+    }
+
+    &-outline{
+        @extend .btn;
+        border:1px solid $black;
+        color: $black;
+        background: transparent;
+
+        &:hover{
+            transition: all .3s ease-in-out;
+            background: $black;
+            color:$white;
+            & svg{ 
+                fill: $white;
+            }
+        }
+        & svg{ 
+            fill: $black;
+        }
+    }
 
     &-fb,
     &-g {
@@ -9,7 +55,7 @@
         min-width: 150px;
 
         & svg {
-            fill: $white;
+            fill: $black;
             width: 20px;
             max-height: 18px;
             margin-right: 5px;
@@ -230,9 +276,16 @@
 
     &-set {
         &-products {
-            background: $blue;
-            color: $white;
+            @extend .btn;
+            background:transparent;
+            border: 1px solid $black;
+            color: $black;
             text-transform: uppercase;
+
+            &:hover{
+                background: $black;
+                color: $white;
+            }
 
             @media(min-width:992px) and (max-width:1200px) {
                 font-size: 14px;

@@ -210,38 +210,19 @@
         }
 
         &__choise, &__clear{
-            border:none;
             height: 40px;
-            border-radius: 4px;
             font: 400 14px 'Montserrat', sans-serif;
             overflow: hidden;
             position: relative;
             width: 100%;
             padding:10px 5px;
-            &:hover{
-                &::after{
-                    content:'';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background:rgba(0, 0, 0, 0.1);
-                    display: flex;
-                    height: 100%;
-                    width: 100%;
-                }
-            }
         }
 
         &__choise{
-            background-color: $blue;
-            color:$white;
             margin-right: 5px;
         }
 
         &__clear{
-            background: none;
-            color: $blue;
-            border: 1px solid $blue;
             transition: all 0.3s ease-in-out;
             margin-left: 5px;
         }
@@ -323,9 +304,9 @@
     &-all {
         &--show{
             position: relative;
-            border-bottom: 1px dashed $blue;
-            color: $blue;
-            font-size: 14px;
+            border-bottom: 1px dashed $black;
+            color: $black;
+            font-size: 12px;
     
             &:before {
                 content: 'Показать все';
@@ -343,7 +324,7 @@
                     position: absolute;
                     content: '';
                     width: 6px;
-                    background: $blue;
+                    background: $black;
                     height: 1px;
                     border-radius: 2px;
                     bottom: 0;
@@ -396,11 +377,16 @@
             margin-top: 10px;
             margin-left: 8px;
 
+            @media(max-width: 992px){
+                display: none;
+            }
+
             & svg {
-                width: 27px;
+                width: 20px;
+                height: 20px;
                 fill: rgb(65, 65, 65);
                 margin-right: 5px;
-                margin-top: -7px;
+                margin-top: 2px;
               }
         }
     }

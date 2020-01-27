@@ -27,12 +27,12 @@
     }
 
     & .modal-body.modal-body-basket {
-        padding-top: 70px;
+        padding-top: 5px;
 
         @media (max-width:768px) {
             display: flex;
             flex-flow: column nowrap;
-            padding-top: 70px;
+            padding-top: 5px;
             min-height: 100%;
         }
     }

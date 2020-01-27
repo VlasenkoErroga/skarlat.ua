@@ -94,7 +94,7 @@
     &-basket {
         
         &-header {
-            position: absolute;
+            position: sticky;
             top: 0;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
             width: 100%;
@@ -149,6 +149,9 @@
 
     &-enter {
         &-header {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
             padding: 1rem;
 
             @media (max-width:768px) {
@@ -157,8 +160,8 @@
 
             & .close {
                 position: absolute;
-                right: 10px;
-                top: 10px;
+                right: 20px;
+                top: 20px;
             }
         }
 

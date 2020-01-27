@@ -1,5 +1,6 @@
 #enterModal {
 
+
     & .line{
         display: flex;
         align-items:center;
@@ -39,7 +40,7 @@
     }
 
     @media (max-width:768px) {
-        padding: 0!important !important;
+        padding: 0 !important;
     }
 
     & .modal-dialog {
@@ -65,7 +66,7 @@
         justify-content: center;
     }
 
-    & #pills-enter form {
+    & #pills-enter form, #pills-registration form {
         position: relative;
         display: flex;
         flex-direction: row;
@@ -74,6 +75,7 @@
 
         @media (max-width:768px) {
             flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -109,6 +111,12 @@
 }
 
 .nav{
+    &-pills{
+        &-enter{
+            max-width: 440px;
+            width: 100%;
+        }
+    }
     &-enter{
         &-item{
                 position: relative;
@@ -123,20 +131,20 @@
                     right: -8px;
                 }
                 &:hover{
-                    color: $blue;
+                    color: $black;
                 }
         }
 
         &-link{
             font-weight: 400;
-            color: rgb(81, 89, 93);
+            color: $VIPgrey;
 
             &.active{
-                color: $blue;
+                color: $black;
             }
 
             &:hover{
-                color: $blue;
+                color: $black;
             }
         }
     }

@@ -76,9 +76,8 @@ const config = {
                 test: /\.html$/,
                 include: path.resolve(__dirname, "src/html/includes"),
                 use: ["raw-loader"]
-            }
-            // ,
-            // { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
+            },
+            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
         ]
     },
     plugins: [

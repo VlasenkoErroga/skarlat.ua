@@ -10,8 +10,8 @@
         z-index: 20;
         &-nav {
             background: $white;
-            border-radius: 4px;
             box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
+            border-radius: 0 0 4px 4px;
 
             &--hov {
                 &-wrapper {
@@ -23,8 +23,9 @@
                     z-index: 10;
                     width: 100%;
                     box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
-                    border-radius: 4px;
                     z-index: 1001;
+                    padding-bottom: 4px;
+                    border-radius: 0 0 4px 4px;
 
                     & .category-menu-nav {
                         box-shadow: none;

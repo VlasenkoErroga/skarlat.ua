@@ -1,4 +1,65 @@
-.product-detail-properties__wrapper{
-    @extend .product-detail-top__wrapper;
-    padding: 20px;
+.product{
+    &-detail{
+        &-properties{
+            &__wrapper{
+                @extend .product-detail-top__wrapper;
+                padding: 20px;
+            }
+        }
+
+        &__properties{
+            display: flex; 
+            justify-content: flex-start;
+            flex-flow: column nowrap;
+            width: 100%;
+
+            & button{
+                border: none;
+                outline: none;
+                appearance: none;
+                background: none;
+                display: flex;
+                justify-content: flex-start;
+                color: $VIPgrey;
+                font-size: 18px;
+                padding: 5px;
+                padding-left: 30px;
+                position: relative;
+                transition: all .3s ease-in-out;
+
+                & svg{
+                    width: 18px;
+                    position: absolute;
+                    left: 0;    
+                    top: 50%;
+                    transform: translateY(-50%);
+                    fill: $VIPgrey;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+
+                &:hover{
+                    transition: all .3s ease-in-out;
+                    color: $black;
+                        
+                }
+
+                &[aria-expanded="true"]{
+                    & .vertical-line{
+                        transition: all .3s ease-in-out;
+                        fill: transparent;
+                }
+                }
+            }
+
+            .head{
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+    }
+    
 }
+

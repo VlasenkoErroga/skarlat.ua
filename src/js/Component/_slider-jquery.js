@@ -149,9 +149,9 @@ $(".main-carusel").owlCarousel({
     dotClass: 'main-dot',
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
-    //autoplay: true,
+    autoplay: true,
     margin: 20,
-    //autoplayTimeout: 5000,
+    autoplayTimeout: 5000,
     responsive: {
         0: {
             items: 1,
