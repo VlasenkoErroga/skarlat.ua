@@ -25,5 +25,18 @@
     
     &-info{
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        @media(max-width: 575px){
+            & .palette-block{
+                order:3;
+            }
+
+            & .delivery-block{
+                order:4
+            }
+
+        }
     }
 }

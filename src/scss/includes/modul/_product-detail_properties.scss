@@ -21,8 +21,10 @@
                 display: flex;
                 justify-content: flex-start;
                 color: $VIPgrey;
-                font-size: 18px;
+                font-size: 16px;
+                text-align: left;
                 padding: 5px;
+                padding-right: 20px;
                 position: relative;
                 transition: all .3s ease-in-out;
                 text-transform: uppercase;
@@ -32,7 +34,7 @@
                     content:'';
                     width: 100%;
                     height: 1px;
-                    background: $VIPgrey;
+                    background: $VIPligthgrey;
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -60,6 +62,10 @@
                     & svg{
                         transition: all .3s ease-in-out;
                         fill: $black;
+                    }
+
+                    &:before{
+                        background: $black;
                     }
                         
                 }
@@ -97,9 +103,8 @@
         & td.value{
             color:$VIPgrey;
             font-weight: 400;   
-            font-size: 18px
+            font-size: 16px
         }
-
 
         & td.property{
             display: flex;
@@ -113,13 +118,11 @@
             & span{
                 display: inline-block;
                 background: $white;
-                font-size: 18px;
-                font-weight: 500;
+                font-size: 16px;
+                font-weight: 400;
                 line-height: 24px;
                 margin-bottom: -2px;
             }
         }
     }
-
-    
 }

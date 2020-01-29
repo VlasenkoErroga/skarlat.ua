@@ -11,42 +11,27 @@
         align-items:center;
         justify-content:center;
         position: relative;
+        width: 100%;
 
         &::before, &::after {
             position: absolute;
             display: flex;
             content: "";
-            width: 1px;
-            height: 40%;
+            height: 1px;
+            width: 40%;
             background: rgb(216, 216, 216);
 
-            @media(max-width:768px){
-                height: 1px;
-                width: 40%;
-            }
         }
 
         &::after {
-            bottom: 0px;
-
-            @media(max-width:768px){
-                right: 0;
+            right: 0;
                 bottom: 50%;
-            }
           }
           &::before {
-            top: 0px;
-            @media(max-width:768px){
-                top: 50%;
-                left: 0;
-            }
-          }
+            top: 50%;
+            left: 0;
 
-          @media(max-width: 768px){
-              width: 100%;
-          }
-
-          
+          }         
     }
 
     @media (max-width:768px) {
@@ -79,7 +64,7 @@
     & #pills-enter form, #pills-registration form {
         position: relative;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
         
 
@@ -133,7 +118,7 @@
                 &:first-child::after {
                     position: absolute;
                     content: "/";
-                    font-weight: 600;
+                    font-weight: 400;
                     top: 0px;
                     right: -8px;
                 }

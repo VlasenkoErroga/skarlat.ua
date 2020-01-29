@@ -3,6 +3,9 @@
         &__price{
             display: flex;
             justify-content: flex-start;
+            @media (max-width:420px){
+                order: 2;
+            }
             
             &-old{
                 @extend .product-item__wrapper-price_old; 
@@ -23,6 +26,12 @@
             }
 
         }
+
+        &__availability{
+            @media (max-width:420px){
+                order: 1;
+            }
+        }
     }
 }
 
@@ -30,4 +39,9 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    padding: 0 15px;
+
+    @media (max-width:420px){
+        flex-direction: column;
+    }
 }

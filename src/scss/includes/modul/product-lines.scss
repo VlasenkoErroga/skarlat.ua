@@ -56,7 +56,8 @@
             width: 30px;
             font-size: 0!important;
             color: transparent;
-            //box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            background: $BGlightgrey;
             transition: all 0.3s ease-in-out;
             font-size: 0;
 
