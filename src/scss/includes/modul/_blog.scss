@@ -10,9 +10,11 @@
         background:$white;
     }
     
-
     &-item{
         margin-bottom: 30px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 5px;
 
         & small{
             margin-left: 10px;

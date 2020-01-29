@@ -23,17 +23,30 @@
                 color: $VIPgrey;
                 font-size: 18px;
                 padding: 5px;
-                padding-left: 30px;
                 position: relative;
                 transition: all .3s ease-in-out;
+                text-transform: uppercase;
+                position: relative;
 
+                &:before{
+                    content:'';
+                    width: 100%;
+                    height: 1px;
+                    background: $VIPgrey;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                
                 & svg{
                     width: 18px;
                     position: absolute;
-                    left: 0;    
+                    right: 0;    
                     top: 50%;
                     transform: translateY(-50%);
                     fill: $VIPgrey;
+                    transition: all .3s ease-in-out;
                 }
 
                 &:focus{
@@ -43,6 +56,11 @@
                 &:hover{
                     transition: all .3s ease-in-out;
                     color: $black;
+
+                    & svg{
+                        transition: all .3s ease-in-out;
+                        fill: $black;
+                    }
                         
                 }
 
@@ -63,3 +81,45 @@
     
 }
 
+
+#properties {
+
+    & table{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        & tr{
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        & td.value{
+            color:$VIPgrey;
+            font-weight: 400;   
+            font-size: 18px
+        }
+
+
+        & td.property{
+            display: flex;
+            justify-content: space-between;
+            zoom: 1;
+            width: 100%;
+            background: url('../../../img/dot.svg') 0 bottom  repeat-x;
+            background-size: 4px;
+            margin-bottom: 2px;
+    
+            & span{
+                display: inline-block;
+                background: $white;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                margin-bottom: -2px;
+            }
+        }
+    }
+
+    
+}

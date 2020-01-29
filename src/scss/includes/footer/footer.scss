@@ -1,5 +1,4 @@
-footer{
-    // padding: 20px 0 0;
+footer {
     background: $black;
     color: $lightgrey;
 }
@@ -7,12 +6,11 @@ footer{
     &-logo {
         margin-top: 30px;
         display: flex;
-        justify-content: center;
-        align-items:center;
+        justify-content: flex-end;
+        align-items: center;
         margin-bottom: 40px;
-     
 
-        & svg{
+        & svg {
             fill: $lightgrey;
             width: 100%;
             max-height: 40px;
@@ -24,124 +22,163 @@ footer{
             margin-bottom: 30px;
         }
 
+        &-path {
 
-        &-path{
-            
-            &-1, &-3 {
-            fill: $white;
+            &-1,
+            &-3 {
+                fill: $white;
             }
 
             &-2 {
-                fill: rgb(238, 56, 64);
+                fill: $red;
             }
-  
+
         }
     }
 
     &-contact {
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         width: 100%;
         flex-flow: row wrap;
         margin-bottom: 23px;
         margin-bottom: 5px;
-       
-    
+
         & a {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             font-size: 18px;
         }
-    
+
         & svg {
             width: 20px;
             height: 34px;
             margin-right: 10px;
         }
 
-        & a, & svg {
+        & a,
+        & svg {
             color: $lightgrey;
             fill: $lightgrey;
-    
-                &:hover {
-                    color: $white;
-                    fill: $white;
-                }
-            
+
+            &:hover {
+                color: $white;
+                fill: $white;
+            }
+
         }
     }
-    
+
     &-social {
-        &-block {
-            &__wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        list-style: none;
+
+        &-wrapper{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+            flex-direction: row;
+
+            @media(max-width:470px){
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+
+        &__item {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            &:first-child {
+                .footer-social__item-icon {
+                    border-top: 1px solid white;
+                }
+            }
+            &:last-child {
+                .footer-social__item-icon {
+                    border-bottom: 1px solid white;
+                }
+            }
+
+            & a {
                 display: flex;
                 justify-content: flex-end;
-                align-items:center;
-                position: relative;
-                max-width: 150px;
-                min-width:100px
-            
-            }
+                align-items: center;
 
-            &__legend{
-                font-size: 14px;
-                letter-spacing: .04rem;
-                position: absolute;
-                right: 60px;
-                text-transform: uppercase;
-                color:$VIPligthgrey;
-                white-space: nowrap;
+                &:hover {
+                    & .footer-social__item-icon {
+                        background: $white;
 
-            }
-
-            &__list{
-                border: 1px solid $white;
-                display: flex;
-                justify-content: center;
-                align-items:center;
-                list-style: none;
-                flex-flow: column wrap;
-                margin-bottom: 0;
-            }
-
-            &__item{
-                width: 40px;
-                padding: 6px;
-                transition: all 0.3 ease-in-out;
-                &:hover{
-                    background: $white;
-                    transition: all 0.3 ease-in-out;
-                }
-
-                & a {
-                    & svg {
-                        fill: $lightgrey;
-                        transition: all 0.3 ease-in-out;
+                        & svg {
+                            fill: $black;
+                        }
                     }
-   
+                }
+            }
+
+            &--chat {
+                cursor: pointer;
+                padding-top: 2em;
+                padding-bottom: 2em;
+                width: 200px;
+                margin-left: auto;
+            }
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-right: 3em;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #cfcfcf;
+
+                & span {
+                    font-size: 14px;
+                    font-weight: 300;
                 }
 
                 &:hover {
-                    & a {
-                        & svg {
-                            fill: $black;
-                            transition: all 0.3 ease-in-out;
-                        }
-                    }
-                    & span{
-                        color:$white;
-                    }
+                    color:$white;
+
                 }
             }
 
-            & svg {
-                width: 100%;
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                border: 1px solid #fff;
+                background-color: #000;
+                background-position: center center;
+                background-repeat: no-repeat;
+                transition: 0.4s ease-in-out;
+                filter: grayscale(0);
+                border-top: none;
+                border-bottom: none;
+
+                & svg {
+                    fill: $white;
+                    width: 25px;
+                    height: 25px;
+                }
             }
+
         }
+
     }
-    
+
+
     &-nav {
         width: 100%;
         position: relative;
@@ -152,30 +189,27 @@ footer{
             list-style: none;
             padding: 5px 10px;
             font-size: 14px;
-      
 
             &-head {
                 text-transform: uppercase;
-                color:$white;
+                color: $white;
                 font-size: 18px;
                 font-weight: 400;
                 margin-bottom: 15px;
-                letter-spacing: .03rem;
+                letter-spacing: 0.03rem;
             }
 
             & a,
             & svg {
                 color: $VIPligthgrey;
                 fill: $lightgrey;
-       
-                    &:hover {
-                        color: $white;
-                        fill: $white;
-                    }
-                
+
+                &:hover {
+                    color: $white;
+                    fill: $white;
+                }
+
             }
         }
     }
 }
-
-

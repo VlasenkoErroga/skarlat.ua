@@ -1,11 +1,17 @@
 #enterModal {
 
+    .form-group, .form-block{
+        max-width: 100%;
+        width: 100%;
+    }
+
 
     & .line{
         display: flex;
         align-items:center;
         justify-content:center;
         position: relative;
+
         &::before, &::after {
             position: absolute;
             display: flex;
@@ -34,6 +40,10 @@
                 top: 50%;
                 left: 0;
             }
+          }
+
+          @media(max-width: 768px){
+              width: 100%;
           }
 
           
@@ -95,16 +105,14 @@
     }
 
     & .modal-enter-content {
-
         @media (max-width:768px) {
             min-height: 100vh;
-            padding: 20px;
         }
     }
 
-    & .modal-body {
+    & .modal-body, & .modal-enter-header {
         @media (max-width:768px) {
-            padding: 0;
+            padding: 20px;
         }
     }
 
@@ -113,7 +121,6 @@
 .nav{
     &-pills{
         &-enter{
-            max-width: 440px;
             width: 100%;
         }
     }

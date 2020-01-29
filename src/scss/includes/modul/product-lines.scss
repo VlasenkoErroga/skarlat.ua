@@ -54,7 +54,8 @@
             background: transparent;
             height: 50px;
             width: 30px;
-            font-size: 0;
+            font-size: 0!important;
+            color: transparent;
             //box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease-in-out;
             font-size: 0;

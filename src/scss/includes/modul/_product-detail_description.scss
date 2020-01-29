@@ -1,0 +1,57 @@
+.nav{
+    &-pills{
+        &-des-or-rew{
+
+            &__description{
+                padding: 20px;
+
+                p{
+                    margin-bottom: 10px;
+                }
+
+                ul, ol{
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+            &__item{
+               padding: 5px 10px;
+               margin-right: 5px;
+               position: relative;
+
+               &:after{
+                content: '/';
+                position: absolute;
+                top: 52%;
+                transform: translateY(-50%);
+                right: -6px;
+                font-weight: 500;
+                font-size: 24px;
+               }
+
+               &:last-child{
+                &:after{
+                    content: none;
+                }
+            }
+
+            }
+
+            &__link{
+                color: $VIPgrey;
+                background-color: none;
+                //text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 500;
+
+                &:hover{
+                    color: $black;
+                }
+
+                &.active{
+                    color: $black
+                }
+            }
+        }
+    }
+}

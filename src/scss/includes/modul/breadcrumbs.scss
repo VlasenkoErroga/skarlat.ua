@@ -5,12 +5,17 @@
     padding: 10px;
     overflow: auto;
 
+    
+
+
     &-item {
         font: 400 14px 'Montserrat', sans-serif;
         position: relative;
         display: flex;
         flex-flow: row nowrap;
         white-space: nowrap;
+        padding: 0!important;
+        margin-right: 15px;
 
         & a{
             color: $VIPgrey;
@@ -38,14 +43,31 @@
 
         &.active {
             & a{
-
                 color:$black;
             }
+            &::after {
+                content:none;
+            }
+
         }
 
-        &::before {
-            content: '>' !important;
+        &::after {
+            content: '>';
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            transform: translateY(-50%);
+
         }
+       
+
+        &::before{
+            content:none!important;
+            font-size: 0;
+            display: none;
+        }
+
+        
     }
 
     &::-webkit{

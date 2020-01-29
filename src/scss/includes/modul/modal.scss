@@ -149,9 +149,11 @@
 
     &-enter {
         &-header {
+            position: sticky;
+            top: 0px;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 5px;
             display: flex;
             justify-content: center;
-            margin-bottom: 30px;
             padding: 1rem;
 
             @media (max-width:768px) {
@@ -161,7 +163,8 @@
             & .close {
                 position: absolute;
                 right: 20px;
-                top: 20px;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
 
