@@ -2,12 +2,12 @@
     &-carousel {
         & .owl-nav {
             & button {
-                height: 60px;
-                width: 40px;
+                height: 40px;
+                width: 25px;
                 transition: all 0.3s ease-in-out;
 
                 &.owl-prev {
-                    left: 10px;
+                    left: 0;
                     border-radius: 0 5px 5px 0;
 
                     &:before {
@@ -28,7 +28,7 @@
                 }
 
                 &.owl-next {
-                    right: 10px;
+                    right: 0;
                     border-radius: 5px 0 0 5px;
 
                     &:before {
@@ -53,6 +53,9 @@
                     position: absolute; 
                     padding: 10px;
                     top: 50%;
+                    background:$white;
+                    opacity: .5;
+
 
                     
 
@@ -63,7 +66,7 @@
                         height: 30%;
                         border-radius: 3px;
                         width: 2px;
-                        background-color: $lightgrey;
+                        background-color: $black;
                         transition: all .3s ease-in-out;
                     }
 
@@ -72,16 +75,8 @@
                     }
 
                     &:hover {
-                        height:60px;
-                        width: 40px;
+                        opacity: 1;
                         transition: all 0.3s ease-in-out;
-                        transform: scale(1.5);
-
-                        &:after,
-                        &:before {
-                            background-color:$black;
-                            transition: all .3s ease-in-out;
-                    }
                     }
 
                     & span{

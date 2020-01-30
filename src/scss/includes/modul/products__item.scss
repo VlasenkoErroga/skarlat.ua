@@ -10,9 +10,9 @@
         padding-right: 8px;
         box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
         border-radius: 4px;
+        transition: all .4s ease-in-out;
 
         @media (max-width: 768px) {
-            margin: 0 auto 10px;
             width: 350px;
             max-width: 100%;
         }
@@ -196,6 +196,8 @@
                 font-size: 0;
                 margin-bottom: 5px;
 
+               
+
                 &_balance,
                 &_buy,
                 &_favorite {
@@ -204,7 +206,7 @@
                         height: 35px;
                         border:none;
                         background:none;
-                        fill: $VIPligthgrey;
+                        fill: $VIPlightgrey;
                         transition: all 0.3s ease-in-out;
                 }
 
@@ -212,7 +214,7 @@
                     & .btn-icon {
                         width: 35px;
                         height: 35px;
-                        fill: $VIPligthgrey;
+                        fill: $VIPlightgrey;
                         transition: all 0.5s ease-in-out;
                         margin-top: -4px;
                     }
@@ -274,9 +276,10 @@
             left: 0;
             top: calc(100% - 10px);
             background: $white;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
             box-shadow: rgba(0, 0, 0, 0.3) 0 10px 10px;
             border-radius: 0 0 4px 4px;
+            transition: all .4s ease-in-out;
 
             @media(max-width:768px) {
                 top: calc(100% - 10px);

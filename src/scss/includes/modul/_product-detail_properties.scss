@@ -29,12 +29,13 @@
                 transition: all .3s ease-in-out;
                 text-transform: uppercase;
                 position: relative;
+                margin-bottom: 5px;
 
                 &:before{
                     content:'';
                     width: 100%;
                     height: 1px;
-                    background: $VIPligthgrey;
+                    background: $VIPlightgrey;
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -78,9 +79,10 @@
                 }
             }
 
-            .head{
-                font-size: 22px;
-                font-weight: 500;
+            & .head{
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 30px;
             }
         }
     }
