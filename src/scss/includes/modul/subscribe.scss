@@ -34,6 +34,11 @@
         padding-top: 60px;
         padding-bottom: 60px;
 
+        @media(max-width:768px){
+            padding-top: 40px;
+        padding-bottom: 40px;
+        }
+
         & .form-group{
             max-width: 100%;
             margin-bottom: 0.5rem;
@@ -41,6 +46,10 @@
                 background:$white;
 
             }
+        }
+
+        & textarea{
+            height: 100px;
         }
 
         & form{
@@ -139,3 +148,5 @@
     color: $grey;
     font-weight: 600;
 }
+
+
