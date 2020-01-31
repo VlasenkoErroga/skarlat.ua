@@ -17,10 +17,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
+    <!-- <link rel="manifest" href="favicon/manifest.json"> -->
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.bundle.css" />
     <title>Оплата | Skalat.ua</title>
@@ -61,7 +59,7 @@
                   <a href="tel:+380683127757" class="header-adress-block__phone"> (068) 312 77 57</a>
                 </div>
 
-                <ul class="info-page-block">
+                <ul class="info-page-block d-none d-lg-flex">
                   <li class="info-page__item ">
                     <a href="https://vlasenkoerroga.github.io/skarlat.ua/garanted.html">Гарантии</a>
                   </li>
@@ -473,7 +471,7 @@
                 </div>
               </div>
 
-              <div class="col-xl-7 col-lg-7 col-md-8 col-10">
+              <div class="col-xl-7 col-lg-9 col-md-10 col-10">
                 <div class="search-block">
                   <form action="#" class="search-form">
                     <input type="search" class="search-place" placeholder="Поиск" />
@@ -488,9 +486,9 @@
                 </div>
               </div>
 
-              <div class="col-xl-3 col-lg-4 col-md-3 col-1">
+              <div class="col-xl-3 col-lg-2 col-md-1 col-1">
                 <div class="use-block-wrapper">
-                  <div class="use__item user d-none d-lg-flex">
+                  <div class="use__item user d-none d-xl-flex">
                     <div class="wrapper-button-lk" id="enterModalButton">
                       <svg
                         image-rendering="optimizeQuality"
@@ -565,7 +563,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="use__item d-none d-md-flex">
+                  <div class="use__item d-none d-lg-flex">
                     <a href="/compare.html" class="use__link">
                       <div class="marker-block-header">
                         <div class="marker-block-counter">15</div>
@@ -601,7 +599,7 @@
                       </svg>
                     </a>
                   </div>
-                  <div class="use__item d-none d-md-flex">
+                  <div class="use__item d-none d-lg-flex">
                     <a href="https://vlasenkoerroga.github.io/skarlat.ua/favorite.html" class="use__link">
                       <div class="marker-block-header">
                         <div class="marker-block-counter">137</div>
@@ -2576,16 +2574,20 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col copyright d-flex justify-content-center aline-items-center">
-            Copyright © 1997-2019.
-            <a href="javascript:void(0)">skarlat.ua</a>
-            Все права защищены
-            <svg viewbox="0 0 10 10">
-              <path
-                d="M6.3 1.9C6.3.9 7.1 0 8.2 0c1 0 1.9.9 1.9 1.9 0 .3-.2.5-.5.5s-.7-.2-.7-.5c0-.4-.4-.8-.8-.8s-.8.4-.8.8c0 .3-.2.5-.5.5-.3.1-.5-.2-.5-.5zm-6 0C.3.9 1.1 0 2.2 0 3.2 0 4 .9 4 1.9c0 .3-.2.5-.5.5S3 2.2 3 1.9c0-.4-.4-.8-.8-.8s-.8.4-.8.8c0 .3-.2.5-.5.5s-.6-.2-.6-.5zM0 6.8c-.1-.3 0-.7.3-.9.1 0 .2-.1.2-.1.3 0 .5.2.6.4.7 1.5 2.2 2.5 3.9 2.5 1.7 0 3.1-.9 3.7-2.4.2-.3.6-.5.9-.4.3.1.5.5.3.9C9.1 8.7 7.2 10 5 10S.8 8.7 0 6.8z"
-              />
-            </svg>
+        <div class="row no-gutters copyright-sepatator">
+          <div class="col-12">
+            <div class="copyright">
+              Copyright © 1997-2019.
+              <a href="javascript:void(0)">skarlat.ua</a>
+              Все права защищены
+              <div class="copyright-svg">
+                <svg viewbox="0 0 10 10">
+                  <path
+                    d="M6.3 1.9C6.3.9 7.1 0 8.2 0c1 0 1.9.9 1.9 1.9 0 .3-.2.5-.5.5s-.7-.2-.7-.5c0-.4-.4-.8-.8-.8s-.8.4-.8.8c0 .3-.2.5-.5.5-.3.1-.5-.2-.5-.5zm-6 0C.3.9 1.1 0 2.2 0 3.2 0 4 .9 4 1.9c0 .3-.2.5-.5.5S3 2.2 3 1.9c0-.4-.4-.8-.8-.8s-.8.4-.8.8c0 .3-.2.5-.5.5s-.6-.2-.6-.5zM0 6.8c-.1-.3 0-.7.3-.9.1 0 .2-.1.2-.1.3 0 .5.2.6.4.7 1.5 2.2 2.5 3.9 2.5 1.7 0 3.1-.9 3.7-2.4.2-.3.6-.5.9-.4.3.1.5.5.3.9C9.1 8.7 7.2 10 5 10S.8 8.7 0 6.8z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
