@@ -4,9 +4,23 @@
     border: none;
     position: relative;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    @media(max-width:400px) {
+        flex-flow: row wrap;
+        padding-right: 60px;
+        justify-content: flex-start;
+    }
 
     @media(max-width:768px) {
         font-size: 10px;
+    }
+
+    @media(min-width: 768px) and (max-width:992px) {
+        font-size: 12px;
     }
 
     & a {
@@ -15,13 +29,30 @@
         color: $VIPlightgrey;
     }
 
-    & svg {
-        width: 20px;
-        height: 20px;
+    &-svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         margin-left: 30px;
-        fill: rgb(238, 56, 64);
+
+        @media( max-width: 400px){
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);    
+            right: 20px;
+        }
+
+        & svg{
+            width: 20px;
+            height: 20px;
+            fill: rgb(238, 56, 64);
+        }
     }
 
+    &-sepatator{
+        position: relative;
+        
     &:before {
         content: "";
         height: 1px;
@@ -32,4 +63,6 @@
         top: 0;
         left: 0;
     }
+    }
+
 }

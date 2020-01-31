@@ -69,7 +69,7 @@
                     }
 
                     & .mob-menu-icon {
-                        top: 50%;
+                        top: 48%;
                     }
                 }
 
@@ -83,16 +83,16 @@
                     align-items: center;
                     position: absolute;
                     right: 0;
-                    bottom: 8px;
+                    bottom: 5px;
 
                     &.active &-icon {
                         &::after {
-                            top: 3px;
+                            top: 2px;
                             transform: rotate(45deg);
                             transition: all 0.3s ease-in-out;
                         }
                         &::before {
-                            bottom: 3px;
+                            bottom: 2px;
                             transform: rotate(-45deg);
                             transition: all 0.3s ease-in-out;
                         }
@@ -240,10 +240,11 @@
             &-back {
                 background: $lightgrey;
 
-                & svg {
-                    transform: rotate(180deg);
+                    & .arrow{
+                        transform: translateY(-50%) scale(-1) !important;
                     top: 20%;
-                }
+                    }
+
             }
         }
     }
