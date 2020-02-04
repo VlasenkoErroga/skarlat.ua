@@ -5,12 +5,17 @@ $('.product-slider-for').slick({
     arrows: false,
     fade: true,
     lazyLoad: 'ondemand',
-    asNavFor: '.product-slider-nav',
+    asNavFor: false,
+    dots: false,
+    
     responsive: [
         {
             breakpoint: 768,
             settings: {
-                arrows: true,
+                asNavFor: '.product-slider-nav',
+                dots: true,
+                dotsClass: 'product-slider-for-dots',
+                arrows: false,
                 nextArrow: `<button type = "button" class = "custom_arrow custom_arrow-for">  <svg class="arrow-slick-next" viewBox="0 0 10 10">
                 <path d="M7.7 5L3.8 8.6c-.2.2-.2.6 0 .8l.5.4c.2.2.6.2.8 0l4.7-4.4c.1-.1.2-.3.2-.4 0-.1-.1-.3-.2-.4L5.1.2c-.2-.2-.6-.2-.8 0l-.5.4c-.2.2-.2.6 0 .8L7.7 5z"/>
                 </svg>Next1 </ button>`,
@@ -21,6 +26,7 @@ $('.product-slider-for').slick({
         }
     ]
 });
+
 
 $('.product-slider-nav').slick({
     slidesToShow: 3,
@@ -36,8 +42,26 @@ $('.product-slider-nav').slick({
                                         </svg>Next1 </ button>`,
     prevArrow: `<button type = "button" class = "custom_arrow">  <svg viewbox="0 0 6 9" class="arrow-slick-prev">
                                             <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
-                                        </svg>Prev </ button>`
+                                        </svg>Prev </ button>`,
+                                        responsive: [
+                                            {
+                                              breakpoint: 768,
+                                              settings: 'slick'
+                                            },
+                                            {
+                                                breakpoint:0,
+                                                settings: 'unslick'
+                                            }
+                                                                                      
+                                          ]
 });
+
+
+
+
+
+
+
 
 //GROUP SLIDER FOR SPECIAL OFFER
 $('#slider-set-product').slick({

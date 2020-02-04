@@ -14,6 +14,10 @@
     margin-bottom: 15px;
     z-index: auto;
 
+    @media (max-width:1199px) {
+        margin-top: 15px;
+    }
+
     &__slide {
         background-image: url("data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7");
         overflow: hidden;

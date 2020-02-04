@@ -7,6 +7,11 @@
         padding-top: 8px;
         padding-bottom: 8px;
         margin-bottom: 10px;
+            position: relative;
+            @media (max-width:1199px) {
+                margin: 15px;
+                margin-bottom: 0;
+            }
 
         &-value{
             display: flex;
@@ -48,6 +53,11 @@
                 width: 20px;
                 height: 20px;
                 fill: #000;
+
+                @media(max-width:767px){
+                    width: 15px;
+                    height: 15px;
+                }
             }
         }
 
@@ -145,7 +155,7 @@
                 }
             }
 
-            @media(max-width: 550px){
+            @media(max-width: 575px){
                 display: none;
             }
         }
@@ -163,8 +173,9 @@
                 transition: all .2s ease-in-out;
             }
 
-            @media(max-width: 550px){
-                margin: 5px;
+            @media(max-width: 575px){
+                width: 100%;
+                margin: 0 !important;
             }
         }
     }
@@ -174,6 +185,14 @@
             min-width: 200px;
             height: 100%;
             padding: 5px;
+        }
+
+        &-btn-block{
+            @media (max-width:575px) {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
         }
 
         &-list,
@@ -220,14 +239,6 @@
             }
         }
 
-    }
-
-}
-
-#jumbotronBasket {
-    position: relative;
-    @media (max-width:1199px) {
-        margin: 15px;
     }
 
 }

@@ -55,6 +55,11 @@
             line-height: 20px;
           }
 
+          &__title {
+            @media(max-width: 575px){
+              display: none;
+            }
+          }
 
           &__title{
             width: 250px;
@@ -79,9 +84,10 @@
 }
 
 .tooltip-inner {
-    background-color: #f5f4f4;
+    background-color: $white;
     color: rgb(81, 89, 93);
     box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
+    border: 1px solid $black;
 
     & ul{
       list-style: none;

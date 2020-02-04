@@ -253,7 +253,8 @@
         &-info,
         &-lk,
         &-main,
-        &-user {
+        &-user,
+        &-contacts {
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -287,6 +288,15 @@
                     & span {
                         height: 100%;
                         font-size: 15px;
+                    }
+                    
+                    & p {
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform:translateY(-50%);
+                        font-size: 12px;
+                        color: $VIPlightgrey;
                     }
 
                     & svg {

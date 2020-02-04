@@ -97,6 +97,9 @@
 .title-page {
     h1 {
         padding: 0 15px;
+        @media(max-width: 575px){
+            font-size: 21px;
+        }
     }
 }
 
@@ -106,4 +109,12 @@
 
 .form-control.cooperation{
     border: $border !important;
+}
+
+.fancybox-thumbs__list a:before{
+    border: 1px solid $red!important;
+}
+
+.fancybox-progress{
+    background:$red !important;
 }

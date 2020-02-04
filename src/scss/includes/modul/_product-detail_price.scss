@@ -4,11 +4,13 @@
             display: flex;
             justify-content: flex-start;
             @media (max-width:420px){
-                order: 2;
+                flex-direction: column;
+                
             }
             
             &-old{
                 @extend .product-item__wrapper-price_old; 
+                position: relative;
                 &-currency{
                     @extend .product-item__wrapper-price_old-currency;;
 
@@ -16,7 +18,7 @@
             }
             &-new{
                 @extend .product-item__wrapper-price_new;
-                font-size: 24px !important;
+                font-size: 30px !important;
                 font-weight: 500 !important;
                 &-currency{
                     @extend .product-item__wrapper-price_new-currency;
@@ -38,10 +40,11 @@
 .block-price{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 20px;
     padding: 0 15px;
 
     @media (max-width:420px){
-        flex-direction: column;
+        flex-direction: row;
     }
 }

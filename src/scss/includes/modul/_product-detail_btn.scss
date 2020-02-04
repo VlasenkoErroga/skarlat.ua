@@ -27,7 +27,7 @@
             &-buy, &-favorite, &-balance, &-share{
                 @extend .btn;
                 font-size: 20px;
-                height: 45px;
+                height: 50px;
                 z-index: 2;
             }
 
@@ -84,26 +84,18 @@
             }
 
             &-buy{
-                background:$white;
-                width: 100%;
-                color:$black;
-                border: 1px solid $black;
+                width: 100%; 
                 font-size: 20px;
 
                 @media(max-width: 575px){
                     margin-bottom: 15px;
-                }
-
-                &:hover{
-                    color:$white;
-                    background: $black;
                 }
             }
 
             &-support{
                 background-color: transparent;
                 width: 100%;
-                height: 45px;
+                height: 50px;
                 perspective: 1000px;
 
 

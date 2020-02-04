@@ -1,3 +1,10 @@
+import { updateProductInBasket } from './_jumbotron-basket';
+const sliderNav = document.getElementById('product-slider-nav');
+//RESIZE WINDOW
+window.addEventListener('resize', (e) => {
+    updateProductInBasket(window.innerWidth);
+});
+
 //COMMENT TO ORDER
 function AddComent(){
     const toggleComment = document.getElementById('add-coment');
