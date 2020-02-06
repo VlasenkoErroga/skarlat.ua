@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1 shrink-to-fit=no"
+    />
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png" />
@@ -541,7 +544,7 @@
                         </li>
                         <li class="use-block-menu__item">
                           <a href="javascript:void(0)">
-                            Избраное
+                            Избранное
                             <svg class="use-block-menu__icon" viewbox="0 0 6 9">
                               <path d="M0 0.7L3.5 4.4L0 8.4L0.8 9L5 4.4L0.8 0L0 0.7Z"></path>
                             </svg>
@@ -725,49 +728,43 @@
                     <!-- SECTION PRUDUCT SLIDER START-->
                     <div class="product-slider__wrapper">
                       <div class="product-slider-nav d-none d-md-flex" id="product-slider-nav">
-                        <div class="product-slider-nav__item"><img data-lazy="img/15.jpg" /></div>
-                        <div class="product-slider-nav__item"><img data-lazy="img/16.jpg" /></div>
-                        <div class="product-slider-nav__item"><img data-lazy="img/17.jpg" /></div>
-                        <div class="product-slider-nav__item"><img data-lazy="img/14.jpg" /></div>
-                        <div class="product-slider-nav__item"><img data-lazy="img/prod2.png" /></div>
-                        <div class="product-slider-nav__item"><img data-lazy="img/prod3.png" /></div>
-                        <div class="product-slider-nav__item"><img data-lazy="img/prod4.png" /></div>
+                        <div class="product-slider-nav__item"><img data-lazy="img/product/1.jpg" /></div>
+                        <div class="product-slider-nav__item"><img data-lazy="img/product/2.jpg" /></div>
+                        <div class="product-slider-nav__item"><img data-lazy="img/product/3.jpg" /></div>
+                        <div class="product-slider-nav__item"><img data-lazy="img/product/4.jpg" /></div>
+                        <div class="product-slider-nav__item"><img data-lazy="img/product/5.jpg" /></div>
+                        <div class="product-slider-nav__item"><img data-lazy="img/product/6.jpg" /></div>
                       </div>
 
                       <div class="product-slider-for" id="product-slider-for">
                         <div class="product-slider-for__item">
-                          <a data-fancybox="gallery-product" href="img/15.jpg">
-                            <img data-lazy="img/15.jpg" />
+                          <a data-fancybox="gallery-product" href="img/product/1.jpg">
+                            <img data-lazy="img/product/1.jpg" />
                           </a>
                         </div>
                         <div class="product-slider-for__item">
-                          <a data-fancybox="gallery-product" href="img/16.jpg">
-                            <img data-lazy="img/16.jpg" />
+                          <a data-fancybox="gallery-product" href="img/product/2.jpg">
+                            <img data-lazy="img/product/2.jpg" />
                           </a>
                         </div>
                         <div class="product-slider-for__item">
-                          <a data-fancybox="gallery-product" href="img/17.jpg">
-                            <img data-lazy="img/17.jpg" />
+                          <a data-fancybox="gallery-product" href="img/product/3.jpg">
+                            <img data-lazy="img/product/3.jpg" />
                           </a>
                         </div>
                         <div class="product-slider-for__item">
-                          <a data-fancybox="gallery-product" href="img/14.jpg">
-                            <img data-lazy="img/14.jpg" />
+                          <a data-fancybox="gallery-product" href="img/product/4.jpg">
+                            <img data-lazy="img/product/4.jpg" />
                           </a>
                         </div>
                         <div class="product-slider-for__item">
-                          <a data-fancybox="gallery-product" href="img/prod2.png">
-                            <img data-lazy="img/prod2.png" />
+                          <a data-fancybox="gallery-product" href="img/product/5.jpg">
+                            <img data-lazy="img/product/5.jpg" />
                           </a>
                         </div>
                         <div class="product-slider-for__item">
-                          <a data-fancybox="gallery-product" href="img/prod3.png">
-                            <img data-lazy="img/prod3.png" />
-                          </a>
-                        </div>
-                        <div class="product-slider-for__item">
-                          <a data-fancybox="gallery-product" href="img/prod4.png">
-                            <img data-lazy="img/prod4.png" />
+                          <a data-fancybox="gallery-product" href="img/product/6.jpg">
+                            <img data-lazy="img/product/6.jpg" />
                           </a>
                         </div>
                       </div>
@@ -1042,12 +1039,21 @@
                                         </ul>
                                         </div>"
                             >
-                              <svg viewbox="0 0 10 10" class="tooltips-icon">
+                              <svg
+                                class="tooltips-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1"
+                                viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve"
+                              >
+                                <circle cx="256" cy="378.5" r="25" />
                                 <path
-                                  d="M5 0C2.2 0 0 2.2 0 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 9.1C2.7 9.1.9 7.3.9 5S2.7.9 5 .9 9.1 2.7 9.1 5 7.3 9.1 5 9.1z"
+                                  d="M256,0C114.516,0,0,114.497,0,256c0,141.484,114.497,256,256,256c141.484,0,256-114.497,256-256     C512,114.516,397.503,0,256,0z M256,472c-119.377,0-216-96.607-216-216c0-119.377,96.607-216,216-216     c119.377,0,216,96.607,216,216C472,375.377,375.393,472,256,472z"
                                 />
                                 <path
-                                  d="M5 2.1c-.3 0-.6.3-.6.6s.3.6.6.6.6-.3.6-.6-.3-.6-.6-.6zM5 4.2c-.3 0-.5.2-.5.5v2.7c0 .3.2.5.5.5s.5-.2.5-.5V4.7c0-.3-.2-.5-.5-.5z"
+                                  d="M256,128.5c-44.112,0-80,35.888-80,80c0,11.046,8.954,20,20,20s20-8.954,20-20c0-22.056,17.944-40,40-40     c22.056,0,40,17.944,40,40c0,22.056-17.944,40-40,40c-11.046,0-20,8.954-20,20v50c0,11.046,8.954,20,20,20     c11.046,0,20-8.954,20-20v-32.531c34.466-8.903,60-40.26,60-77.469C336,164.388,300.112,128.5,256,128.5z"
                                 />
                               </svg>
                             </div>
@@ -1070,12 +1076,21 @@
                                             </ul>
                                             </div>"
                             >
-                              <svg viewbox="0 0 10 10" class="tooltips-icon">
+                              <svg
+                                class="tooltips-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1"
+                                viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve"
+                              >
+                                <circle cx="256" cy="378.5" r="25" />
                                 <path
-                                  d="M5 0C2.2 0 0 2.2 0 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 9.1C2.7 9.1.9 7.3.9 5S2.7.9 5 .9 9.1 2.7 9.1 5 7.3 9.1 5 9.1z"
+                                  d="M256,0C114.516,0,0,114.497,0,256c0,141.484,114.497,256,256,256c141.484,0,256-114.497,256-256     C512,114.516,397.503,0,256,0z M256,472c-119.377,0-216-96.607-216-216c0-119.377,96.607-216,216-216     c119.377,0,216,96.607,216,216C472,375.377,375.393,472,256,472z"
                                 />
                                 <path
-                                  d="M5 2.1c-.3 0-.6.3-.6.6s.3.6.6.6.6-.3.6-.6-.3-.6-.6-.6zM5 4.2c-.3 0-.5.2-.5.5v2.7c0 .3.2.5.5.5s.5-.2.5-.5V4.7c0-.3-.2-.5-.5-.5z"
+                                  d="M256,128.5c-44.112,0-80,35.888-80,80c0,11.046,8.954,20,20,20s20-8.954,20-20c0-22.056,17.944-40,40-40     c22.056,0,40,17.944,40,40c0,22.056-17.944,40-40,40c-11.046,0-20,8.954-20,20v50c0,11.046,8.954,20,20,20     c11.046,0,20-8.954,20-20v-32.531c34.466-8.903,60-40.26,60-77.469C336,164.388,300.112,128.5,256,128.5z"
                                 />
                               </svg>
                             </div>
@@ -1097,12 +1112,21 @@
                                                 </ul>
                                                 </div>"
                             >
-                              <svg viewbox="0 0 10 10" class="tooltips-icon">
+                              <svg
+                                class="tooltips-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1"
+                                viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve"
+                              >
+                                <circle cx="256" cy="378.5" r="25" />
                                 <path
-                                  d="M5 0C2.2 0 0 2.2 0 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 9.1C2.7 9.1.9 7.3.9 5S2.7.9 5 .9 9.1 2.7 9.1 5 7.3 9.1 5 9.1z"
+                                  d="M256,0C114.516,0,0,114.497,0,256c0,141.484,114.497,256,256,256c141.484,0,256-114.497,256-256     C512,114.516,397.503,0,256,0z M256,472c-119.377,0-216-96.607-216-216c0-119.377,96.607-216,216-216     c119.377,0,216,96.607,216,216C472,375.377,375.393,472,256,472z"
                                 />
                                 <path
-                                  d="M5 2.1c-.3 0-.6.3-.6.6s.3.6.6.6.6-.3.6-.6-.3-.6-.6-.6zM5 4.2c-.3 0-.5.2-.5.5v2.7c0 .3.2.5.5.5s.5-.2.5-.5V4.7c0-.3-.2-.5-.5-.5z"
+                                  d="M256,128.5c-44.112,0-80,35.888-80,80c0,11.046,8.954,20,20,20s20-8.954,20-20c0-22.056,17.944-40,40-40     c22.056,0,40,17.944,40,40c0,22.056-17.944,40-40,40c-11.046,0-20,8.954-20,20v50c0,11.046,8.954,20,20,20     c11.046,0,20-8.954,20-20v-32.531c34.466-8.903,60-40.26,60-77.469C336,164.388,300.112,128.5,256,128.5z"
                                 />
                               </svg>
                             </div>
@@ -1124,12 +1148,21 @@
                                                     </ul>
                                                     </div>"
                             >
-                              <svg viewbox="0 0 10 10" class="tooltips-icon">
+                              <svg
+                                class="tooltips-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1"
+                                viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve"
+                              >
+                                <circle cx="256" cy="378.5" r="25" />
                                 <path
-                                  d="M5 0C2.2 0 0 2.2 0 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 9.1C2.7 9.1.9 7.3.9 5S2.7.9 5 .9 9.1 2.7 9.1 5 7.3 9.1 5 9.1z"
+                                  d="M256,0C114.516,0,0,114.497,0,256c0,141.484,114.497,256,256,256c141.484,0,256-114.497,256-256     C512,114.516,397.503,0,256,0z M256,472c-119.377,0-216-96.607-216-216c0-119.377,96.607-216,216-216     c119.377,0,216,96.607,216,216C472,375.377,375.393,472,256,472z"
                                 />
                                 <path
-                                  d="M5 2.1c-.3 0-.6.3-.6.6s.3.6.6.6.6-.3.6-.6-.3-.6-.6-.6zM5 4.2c-.3 0-.5.2-.5.5v2.7c0 .3.2.5.5.5s.5-.2.5-.5V4.7c0-.3-.2-.5-.5-.5z"
+                                  d="M256,128.5c-44.112,0-80,35.888-80,80c0,11.046,8.954,20,20,20s20-8.954,20-20c0-22.056,17.944-40,40-40     c22.056,0,40,17.944,40,40c0,22.056-17.944,40-40,40c-11.046,0-20,8.954-20,20v50c0,11.046,8.954,20,20,20     c11.046,0,20-8.954,20-20v-32.531c34.466-8.903,60-40.26,60-77.469C336,164.388,300.112,128.5,256,128.5z"
                                 />
                               </svg>
                             </div>
@@ -6811,7 +6844,7 @@
               </p>
             </div>
             <div class="col-12 col-md-6 col-lg-5">
-              <form action="">
+              <form>
                 <div class="form-group">
                   <input type="text" class="form-control" id="main-subscribe-name" name="name" placeholder="Имя" />
                 </div>
@@ -7199,7 +7232,7 @@
                   <div class="marker-block-header marker-block-mob-menu">
                     <div class="marker-block-counter">78</div>
                   </div>
-                  <span>Избраное</span>
+                  <span>Избранное</span>
                 </a>
               </li>
               <li>
