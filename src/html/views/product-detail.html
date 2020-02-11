@@ -24,9 +24,6 @@
                       </div>
                     </div>
                 </div>
-                <div class="product-detail-spesial__wrapper">
-                  <%= _.template(require('./../includes/_product-detail_special.html').default)(data) %>
-                </div>
                 <div class="product-detail-properties__wrapper">
                   <%= _.template(require('./../includes/_product-detail_properties.html').default)(data) %>
                 </div>
@@ -44,6 +41,8 @@
 
 </main>
       <!-- MAIN END -->
+<%= _.template(require('./../includes/_madal-review.html').default)(data) %>
+<%= _.template(require('./../includes/_madal-coment.html').default)(data) %>
 <%= _.template(require('./../includes/_menu.html').default)(data) %>
 <%= _.template(require('./../includes/_basket.html').default)(data) %>
 <%= _.template(require('./../includes/_form-enter.html').default)(data) %>

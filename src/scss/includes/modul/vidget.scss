@@ -1,11 +1,12 @@
 .pulse {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    background: $black;
+    background: $white;
     cursor: pointer;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
-    animation: pulse 2s infinite ease-in-out;
+    box-shadow: rgba(0,0,0, .3) 2px 3px 5px 0;
+
+    //animation: pulse 2s infinite ease-in-out;
 
     &:hover {
         animation: none;
@@ -20,8 +21,8 @@
     bottom: 120%;
     right: 0;
     width: 210px;
-    border: 1px solid #d8d8d8;
-    background: rgb(245, 244, 244);
+    border: 1px solid $black;
+    background: $white;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
 
@@ -77,16 +78,16 @@
     left: 0;
     display: flex;
     flex-flow: row nowrap;
-    animation: shift 5s infinite ease-in-out;
+    animation: shift 6s infinite ease-in-out;
 
     &-item{
         list-style: none;
         padding: 5px 10px;
 
         & svg {
-            height: 30px;
-            width: 30px;
-            fill: $black;
+            height: 32px;
+            width: 32px;
+            fill: $white;
           }
     }
 

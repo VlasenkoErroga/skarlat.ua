@@ -196,10 +196,13 @@
                 box-shadow: rgba(0, 0, 0, 0.17) 0 0 5px;
                 border-radius: 4px;
 
-                & label {
+                &-label {
                     display: flex;
                     align-items: center;
+                    margin-bottom: .2rem;
                 }
+
+
 
                 &-input {
                     &-icon {
@@ -222,6 +225,7 @@
                     color: $black;
                     border: 1px solid $black;
                     transition:  all .3s ease-in-out;
+                    margin-bottom: 20px;
                     &:hover{
                         color: $white;
                         transition:  all .3s ease-in-out;

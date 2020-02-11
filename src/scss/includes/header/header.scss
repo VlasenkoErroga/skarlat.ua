@@ -155,4 +155,13 @@ header {
             }
         }
     }
+
+    &-title-hide{
+        position: absolute;
+        left: 0;top: 0;
+        height: 1px;
+        width: 1px;
+        font-size: 0;
+        z-index: -1;
+    }
 }

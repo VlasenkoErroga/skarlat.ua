@@ -13,17 +13,17 @@
                     &:before {
                         left: 30%;
                         top: 0;
-                        -webkit-transform: skew(145deg, 0deg);
-                        -ms-transform: skew(145deg, 0deg);
-                        transform: skew(145deg, 0deg);
+                        -webkit-transform: skew(135deg, 0deg);
+                        -ms-transform: skew(135deg, 0deg);
+                        transform: skew(135deg, 0deg);
                     }
 
                     &:after {
                         left: 30%;
                         top: 50%;
-                        -webkit-transform: skew(-145deg, 0deg);
-                        -ms-transform: skew(-145deg, 0deg);
-                        transform: skew(-145deg, 0deg);
+                        -webkit-transform: skew(-135deg, 0deg);
+                        -ms-transform: skew(-135deg, 0deg);
+                        transform: skew(-135deg, 0deg);
                     }
                 }
 
@@ -34,17 +34,17 @@
                     &:before {
                         right: 30%;
                         top: 0;
-                        -webkit-transform: skew(35deg, 0deg);
-                        -ms-transform: skew(35deg, 0deg);
-                        transform: skew(35deg, 0deg);
+                        -webkit-transform: skew(45deg, 0deg);
+                        -ms-transform: skew(45deg, 0deg);
+                        transform: skew(45deg, 0deg);
                     }
 
                     &:after {
                         right: 30%;
                         top: 50%;
-                        -webkit-transform: skew(-35deg, 0deg);
-                        -ms-transform: skew(-35deg, 0deg);
-                        transform: skew(-35deg, 0deg);
+                        -webkit-transform: skew(-45deg, 0deg);
+                        -ms-transform: skew(-45deg, 0deg);
+                        transform: skew(-45deg, 0deg);
                     }
                 }
 

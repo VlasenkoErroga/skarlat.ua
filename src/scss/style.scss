@@ -2,8 +2,18 @@
 @import './includes/fonts';
 
 /*include diferent libr*/
-@import "~bootstrap/scss/bootstrap";
-@import "~bootstrap/scss/bootstrap-reboot";
+//  @import "./../../node_modules/bootstrap/";
+// @import "./../../node_modules/bootstrap/scss/grid";
+// @import "./../../node_modules/bootstrap/scss/tooltip";
+// @import "./../../node_modules/bootstrap/scss/pagination";
+// @import "./../../node_modules/bootstrap/scss/modal";
+// @import "./../../node_modules/bootstrap/scss/jumbotron";
+// @import "./../../node_modules/bootstrap/scss/input-group";
+// @import "./../../node_modules/bootstrap/scss/close";
+// @import "./../../node_modules/bootstrap/scss/buttons";
+// @import "./../../node_modules/bootstrap/scss/breadcrumb";
+//@import "~bootstrap/scss/bootstrap-reboot";
+@import './includes/bootstrap';
 @import 'owl.carousel/src/scss/owl.carousel';
 @import 'ion-rangeslider/css/ion.rangeSlider.min';
 
@@ -74,6 +84,7 @@
 @import './includes/modul/_product-detail_properties';
 @import './includes/modul/_product-detail_description';
 @import './includes/modul/_product-detail_review';
+@import './includes/modul/_product-review';
 
 //lk
 @import './includes/lk/_nav';

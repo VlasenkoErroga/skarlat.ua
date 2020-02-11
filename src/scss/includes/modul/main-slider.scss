@@ -24,9 +24,45 @@
         max-height: 500px;
         border-radius: 4px;
     }
+
+    & button.owl-prev, & button.owl-next{
+        width: 30px;
+        height: 50px;
+
+        &:before, &:after{
+            width: 3px !important;
+            height: 20% !important;
+            right: 35% !important;
+            border-radius: 5px;
+        }
+
+        &:before{
+            top: 30% !important;
+        }
+
+        &:after{
+            bottom: 60%!important;
+        }
+    }
+
+    & button.owl-prev{
+
+        &:before, &:after{
+
+            left: 35% !important;
+        }
+    }
+
+    & button.owl-next{
+
+        &:before, &:after{
+            right: 35% !important;
+        }
+    }
+
+
     }
     
-
     &-dots {
         position: absolute;
         bottom: -15px;
@@ -37,7 +73,7 @@
     }
 
     &-dot {
-        width: 30px;
+        width: 50px;
         border: none;
         margin: 5px;
         height: 2px;
@@ -49,4 +85,6 @@
             opacity: 0.8;
         }
     }
+
+    
 }

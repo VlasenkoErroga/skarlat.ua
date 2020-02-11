@@ -45,6 +45,7 @@
 
             &-favorite{
                 @extend .product-item__wrapper-block-btn_favorite;
+                fill:$black;
 
                 &:hover{
                     transition: all .3s ease-in-out;
@@ -58,6 +59,7 @@
 
             &-balance{
                 @extend .product-item__wrapper-block-btn_balance;
+                fill:$black;
 
                 &:hover{
                     transition: all .3s ease-in-out;
@@ -66,12 +68,14 @@
 
                 &--active{
                     @extend .product-item__wrapper-block-btn_balance.active;
+                    fill:$black;
                 }
             }
 
             &-share{
                 @extend .product-item__wrapper-block-btn_balance;
-
+                fill:$black;
+                
                 &:hover{
                     transition: all .3s ease-in-out;
                     fill: $black;
@@ -125,7 +129,7 @@
                         }
 
                         & svg{
-                            fill: $VIPlightgrey;
+                            fill: $black;
                             transition: all .3s ease-in-out;
                         }
                     }

@@ -383,11 +383,11 @@
             justify-content: center;
             align-items: center;
             flex-flow: row nowrap;
-            background: $white;
+            background: $black;
             padding: 2px;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             position: relative;
             overflow: hidden;
 
@@ -425,7 +425,7 @@
             &:hover {
 
                 & .btn-vidget--wrapper {
-                    background: $blue;
+                    background: $black;
 
                     &:before {
                         display: flex;

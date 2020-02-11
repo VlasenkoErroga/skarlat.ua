@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1 shrink-to-fit=no"
+    />
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png" />
@@ -209,7 +212,7 @@
                 <h3>Доставка</h3>
               </div>
 
-              <form action="">
+              <form>
                 <div class="accordion" id="delivery-acardion">
                   <div class="order-block__delivery-item">
                     <label for="selectCity" class="order-block__delivery-autocomplete-label">Ваш город</label>
@@ -396,7 +399,7 @@
                 <h3>Оплата</h3>
               </div>
 
-              <form action="">
+              <form>
                 <div class="form-group">
                   <input class="checkbox" type="radio" name="pay" id="pay-cash" value="option1" checked="checked" />
                   <label for="pay-cash">
@@ -418,7 +421,7 @@
                 <h3>Детали заказа</h3>
               </div>
 
-              <form action="">
+              <form>
                 <div class="form-group">
                   <input type="checkbox" class="checkbox" id="add-coment" />
                   <label for="add-coment">Добавить комментарий к заказу</label>
@@ -451,20 +454,11 @@
               <div class="basket-item">
                 <button type="button" class="basket-item__close close" aria-label="Close">
                   <span aria-hidden="true">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="enable-background:new 0 0 10 10;"
-                      viewBox="0 0 10 10"
-                      x="0px"
-                      y="0px"
-                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-                      xml:space="preserve"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      version="1.1"
-                    >
+                    <svg viewBox="0 0 10 10">
+                      <defs />
                       <path
-                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
-                      ></path>
+                        d="M6.9 1.3v-1c0-.2-.2-.3-.3-.3H3.4c-.1 0-.3.1-.3.3v.9H.6v.6h.6v7.5c0 .3.3.6.6.6h6.3c.3 0 .6-.3.6-.6V1.9h.6v-.6H6.9zM3.8.6h2.5v.6H3.8V.6zm3 6.3l-.5.6-1.4-1.6-1.4 1.6-.5-.6 1.4-1.4L3 4l.5-.5L4.9 5l1.4-1.4.5.5-1.4 1.4 1.4 1.4z"
+                      />
                     </svg>
                   </span>
                 </button>
@@ -473,8 +467,8 @@
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
-                      data-src="img/11.jpg"
-                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                      data-src="img/product/1.jpg"
+                      data-srcset="img/product/1.jpg 1x, img/product/1.jpg 2x"
                     />
                   </div>
 
@@ -512,20 +506,11 @@
               <div class="basket-item">
                 <button type="button" class="basket-item__close close" aria-label="Close">
                   <span aria-hidden="true">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="enable-background:new 0 0 10 10;"
-                      viewBox="0 0 10 10"
-                      x="0px"
-                      y="0px"
-                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-                      xml:space="preserve"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      version="1.1"
-                    >
+                    <svg viewBox="0 0 10 10">
+                      <defs />
                       <path
-                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
-                      ></path>
+                        d="M6.9 1.3v-1c0-.2-.2-.3-.3-.3H3.4c-.1 0-.3.1-.3.3v.9H.6v.6h.6v7.5c0 .3.3.6.6.6h6.3c.3 0 .6-.3.6-.6V1.9h.6v-.6H6.9zM3.8.6h2.5v.6H3.8V.6zm3 6.3l-.5.6-1.4-1.6-1.4 1.6-.5-.6 1.4-1.4L3 4l.5-.5L4.9 5l1.4-1.4.5.5-1.4 1.4 1.4 1.4z"
+                      />
                     </svg>
                   </span>
                 </button>
@@ -534,8 +519,8 @@
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
-                      data-src="img/11.jpg"
-                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                      data-src="img/product/1.jpg"
+                      data-srcset="img/product/1.jpg 1x, img/product/1.jpg 2x"
                     />
                   </div>
 
@@ -573,20 +558,11 @@
               <div class="basket-item">
                 <button type="button" class="basket-item__close close" aria-label="Close">
                   <span aria-hidden="true">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="enable-background:new 0 0 10 10;"
-                      viewBox="0 0 10 10"
-                      x="0px"
-                      y="0px"
-                      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-                      xml:space="preserve"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      version="1.1"
-                    >
+                    <svg viewBox="0 0 10 10">
+                      <defs />
                       <path
-                        d="M 6.9 1.3 v -1 C 6.9 0.1 6.7 0 6.6 0 H 3.4 C 3.3 0 3.1 0.1 3.1 0.3 v 0.9 H 0.6 v 0.6 h 0.6 v 7.5 c 0 0.3 0.3 0.6 0.6 0.6 h 6.3 c 0.3 0 0.6 -0.3 0.6 -0.6 V 1.9 h 0.6 V 1.3 H 6.9 Z M 3.8 0.6 h 2.5 v 0.6 H 3.8 V 0.6 Z M 6.8 6.9 L 6.3 7.5 L 4.9 5.9 L 3.5 7.5 L 3 6.9 l 1.4 -1.4 L 3 4 l 0.5 -0.5 L 4.9 5 l 1.4 -1.4 l 0.5 0.5 L 5.4 5.5 L 6.8 6.9 Z"
-                      ></path>
+                        d="M6.9 1.3v-1c0-.2-.2-.3-.3-.3H3.4c-.1 0-.3.1-.3.3v.9H.6v.6h.6v7.5c0 .3.3.6.6.6h6.3c.3 0 .6-.3.6-.6V1.9h.6v-.6H6.9zM3.8.6h2.5v.6H3.8V.6zm3 6.3l-.5.6-1.4-1.6-1.4 1.6-.5-.6 1.4-1.4L3 4l.5-.5L4.9 5l1.4-1.4.5.5-1.4 1.4 1.4 1.4z"
+                      />
                     </svg>
                   </span>
                 </button>
@@ -595,8 +571,8 @@
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
-                      data-src="img/11.jpg"
-                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                      data-src="img/product/1.jpg"
+                      data-srcset="img/product/1.jpg 1x, img/product/1.jpg 2x"
                     />
                   </div>
 
@@ -653,8 +629,9 @@
       <div class="container">
         <div class="row">
           <div class="col copyright d-flex justify-content-center aline-items-center">
-            Copyright © 1997-2019.
-            <a href="javascript:void(0)">skarlat.ua</a>
+            <p>Copyright © 1997-</p>
+            <p id="time-now"></p>
+            <a href="/">skarlat.ua</a>
             Все права защищены
             <svg viewbox="0 0 10 10">
               <path

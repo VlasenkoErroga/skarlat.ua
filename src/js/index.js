@@ -1,5 +1,9 @@
 import popper from "popper.js";
-import bootstrap from "bootstrap";
+import until from "bootstrap/js/src/util";
+import modal from "bootstrap/js/src/modal";
+import tooltip from "bootstrap/js/src/tooltip";
+import collapse from "bootstrap/js/src/collapse";
+import tab from "bootstrap/js/src/tab";
 import 'owl.carousel';
 
 
@@ -15,8 +19,8 @@ import './Component/_scroll-compare';
 import './Component/_hover-catalog';
 import './Component/_filter-hide';
 import './Component/_slider-jquery';
+import './Component/_raiting';
 import './Component/_other';
-
 
 //pills lk
 
@@ -127,5 +131,7 @@ window.addEventListener('hashchange', function (event) {
 });
 
 //hidden filter
+
+
 
 

@@ -44,12 +44,12 @@
 
         & svg {
             width: 100%;
-            fill: $grey;
+            fill: $black;
             transition: all 0.3s ease-in-out;
         }
 
         &:hover svg {
-            fill: $blue;
+            fill: $black;
             transition: all 0.3s ease-in-out;
         }
     }

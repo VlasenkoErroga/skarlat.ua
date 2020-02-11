@@ -13,6 +13,14 @@
             flex-flow: column nowrap;
             width: 100%;
 
+            @media(max-width:767px){
+                margin-bottom: 20px;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+
             & button{
                 border: none;
                 outline: none;
@@ -27,7 +35,6 @@
                 padding-right: 20px;
                 position: relative;
                 transition: all .3s ease-in-out;
-                text-transform: uppercase;
                 position: relative;
                 margin-bottom: 5px;
 
@@ -43,13 +50,14 @@
 
                 
                 & svg{
-                    width: 18px;
                     position: absolute;
                     right: 0;    
                     top: 50%;
                     transform: translateY(-50%);
                     fill: $VIPgrey;
                     transition: all .3s ease-in-out;
+                    width: 16px;
+                        height: 16px;
                 }
 
                 &:focus{
@@ -62,6 +70,7 @@
 
                     & svg{
                         transition: all .3s ease-in-out;
+                        
                         fill: $black;
                     }
 
@@ -81,8 +90,11 @@
 
             & .head{
                 font-size: 18px;
-                font-weight: 400;
+                font-weight: 500;
                 margin-bottom: 30px;
+                @media(max-width:767px){
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -104,8 +116,8 @@
 
         & td.value{
             color:$VIPgrey;
-            font-weight: 400;   
-            font-size: 16px
+            font-weight: 500;   
+            font-size: 14px
         }
 
         & td.property{
@@ -113,15 +125,15 @@
             justify-content: space-between;
             zoom: 1;
             width: 100%;
-            background: url('../../../img/dot.svg') 0 bottom  repeat-x;
-            background-size: 4px;
+            background: url('./../img/dot.svg') 0 bottom  repeat-x;
+            background-size: 2px;
             margin-bottom: 2px;
     
             & span{
                 display: inline-block;
                 background: $white;
-                font-size: 16px;
-                font-weight: 400;
+                font-size: 14px;
+                font-weight: 500;
                 line-height: 24px;
                 margin-bottom: -2px;
             }

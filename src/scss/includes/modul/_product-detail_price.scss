@@ -3,6 +3,7 @@
         &__price{
             display: flex;
             justify-content: flex-start;
+            align-items:flex-end;
             @media (max-width:420px){
                 flex-direction: column;
                 
@@ -10,6 +11,7 @@
             
             &-old{
                 @extend .product-item__wrapper-price_old; 
+                height: 20px;
                 position: relative;
                 &-currency{
                     @extend .product-item__wrapper-price_old-currency;;

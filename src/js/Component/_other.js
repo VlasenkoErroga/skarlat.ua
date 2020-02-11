@@ -17,6 +17,7 @@ function AddComent(){
     }
     
 }
+
 AddComent();
 
 //BASKET REMOVE PRODUCT ITEM IN ORDER PAGE
@@ -126,19 +127,30 @@ function toggleSeo(item){
 }
 
 toggleSeo(document.getElementById('seo-collapse-btn'));
-
+ 
 function flipSocial(){
-    let socialBlock = document.getElementsByClassName('product-detail__btn-support')[0];
+    let socialBlock = document.getElementsByClassName('product-detail__btn-support')[0]; 
     if(socialBlock){
-        socialBlock.addEventListener('click', function(e){
-            if(e.target.className == 'product-detail__btn-share active'){
+    document.addEventListener('click', function(e){
+        if(e.target.className == 'product-detail__btn-share active'){
                 socialBlock.classList.add('active');
-            } else if(e.target.className != 'product-detail__btn-share'){
+            }else {
+                document.getElementsByClassName('product-detail__btn-share')[0].classList.remove('active');
                 socialBlock.classList.remove('active');
             }
-        })
-    }
+    });
+}   
     
 }
 
 flipSocial();
+
+function copyrightTime(elem){
+    if(elem){
+        let nowYear = new Date().getFullYear();
+        return elem.textContent = `${nowYear}`;
+    }      
+}
+let TagtimeNow = document.getElementById('time-now');
+
+copyrightTime(TagtimeNow);
