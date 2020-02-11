@@ -16,12 +16,17 @@
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <!-- <link rel="manifest" href="favicon/manifest.json"> -->
+    <link rel="manifest" href="favicon/manifest.json" />
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Skarlat.ua" />
+    <meta name="apple-mobile-web-app-title" content="Skarlat.ua" />
+    <meta name="msapplication-starturl" content="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.bundle.css" />
     <title>Сравнение товара | Skalat.ua</title>
@@ -4233,7 +4238,7 @@
                   </div>
                 </div>
 
-                <div class="row grid-margin">
+                <div class="row grid-padding">
                   <div class="col-6 col-sm-4">
                     <label for="addProductCompareChecked_1" class="check-product-label">
                       <input id="addProductCompareChecked_1" type="checkbox" class="check-product" />
@@ -4605,8 +4610,8 @@
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
-                      data-src="img/11.jpg"
-                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                      data-src="img/product/1.jpg"
+                      data-srcset="img/product/1.jpg 1x, img/product/1.jpg 2x"
                     />
                   </div>
 
@@ -4656,8 +4661,8 @@
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
-                      data-src="img/11.jpg"
-                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                      data-src="img/product/1.jpg"
+                      data-srcset="img/product/1.jpg 1x, img/product/1.jpg 2x"
                     />
                   </div>
 
@@ -4707,8 +4712,8 @@
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
-                      data-src="img/11.jpg"
-                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                      data-src="img/product/1.jpg"
+                      data-srcset="img/product/1.jpg 1x, img/product/1.jpg 2x"
                     />
                   </div>
 
@@ -4758,8 +4763,8 @@
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
-                      data-src="img/11.jpg"
-                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                      data-src="img/product/1.jpg"
+                      data-srcset="img/product/1.jpg 1x, img/product/1.jpg 2x"
                     />
                   </div>
 
@@ -4809,8 +4814,8 @@
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
-                      data-src="img/11.jpg"
-                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                      data-src="img/product/1.jpg"
+                      data-srcset="img/product/1.jpg 1x, img/product/1.jpg 2x"
                     />
                   </div>
 
@@ -4860,8 +4865,8 @@
                     <img
                       class="lazy"
                       src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
-                      data-src="img/11.jpg"
-                      data-srcset="img/11.jpg 1x, img/11.jpg 2x"
+                      data-src="img/product/1.jpg"
+                      data-srcset="img/product/1.jpg 1x, img/product/1.jpg 2x"
                     />
                   </div>
 
@@ -5606,8 +5611,9 @@
         <div class="row no-gutters copyright-sepatator">
           <div class="col-12">
             <div class="copyright">
-              <p>Copyright © 1997-2020.</p>
-              <a href="javascript:void(0)">skarlat.ua</a>
+              <p>Copyright © 1997-</p>
+              <p id="time-now"></p>
+              <a href="/">skarlat.ua</a>
               <p>Все права защищены</p>
               <div class="copyright-svg">
                 <svg viewbox="0 0 10 10">
