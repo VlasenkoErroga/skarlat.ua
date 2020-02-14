@@ -1,4 +1,4 @@
-.product{
+.product {
 
     &-detail {
         &-top {
@@ -13,39 +13,232 @@
             }
         }
 
-        &__description{
-            @media(max-width: 767px){
+        &__description {
+            @media(max-width: 767px) {
                 margin-top: 20px;
+            }
+        }
+
+        &-container {
+            background: #fff;
+            border: 1px solid #d8d8d8;
+            border-radius: 8px;
+            &-nav {
+                margin-top: 20px;
+                background: #fff;
+                border: 1px solid #d8d8d8;
+                border-radius: 8px 8px 0 0;
+            }
+            &-content {
+                background: #fff;
+                border: 1px solid #d8d8d8;
+                border-top: 0;
+                padding: 20px;
+                border-radius: 0 0 8px 8px;
+                margin-bottom: 20px;
+            }
+
+            &-description {
+                background: #fff;
+                border: 1px solid #d8d8d8;
+                padding: 20px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+
+                & ul {
+                    padding-left: 20px;
+                }
+            }
+
+            &-main {
+                background: #fff;
+                border: 1px solid #d8d8d8;
+                border-top: 0;
+                border-radius: 0 0 8px 8px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__gallery {
+            & ul {
+                list-style: none;
+            }
+
+            & img {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 80vh;
+            }
+
+            & li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+        }
+        &__column {
+            position: relative;
+            height: auto;
+        }
+
+        &_mini-card {
+            @extend .product-detail-container-description;
+            width: 400px;
+            &-sticky {
+                top: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                position: sticky;
+            }
+
+            &-fixed{
+                position: fixed;
+                display: none;
+                align-items:center;
+                justify-content:space-around;
+                flex-flow: row nowrap;
+                width: 100%;
+                background: #fff;
+                bottom: 0;
+                left: 0;
+                padding: 5px;
+                z-index: 5;
+                box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 5px;
+
+                @media(max-width: 992px){
+                    display: flex;
+                }
+
+                & .btn-main{
+                    max-width:250px;
+                }
+
+
+                & .product-detail__price{
+                    margin-right: 20px;
+                }
+                
+            }
+
+            &__footer {
+                @extend .order-block-basket__footer;
+                & .btn-main{
+                    margin-top: 10px;
+                }
+            }
+
+            &__basket-info {
+                @extend .order-block-basket__info;
+
+                
+            }
+
+            &__total {
+                @extend .order-block-basket__total;
+
+                &-currency {
+                    @extend .order-block-basket__total-currency;
+                }
+            }
+
+            &__block-btn {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;   
+                width: 100%;
+                & button{
+                    width: 100%;    
+                    &:first-child{
+                        margin-right: 5px;
+                    }
+                    &:last-child{
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+        }
+
+        &-pills {
+            &-tab {
+                flex-wrap: nowrap;
+                overflow: auto;
+                &::-webkit{
+                    &-scrollbar{
+                        height: 3px;
+            
+                        &-button {
+                            background-image: url("");
+                            background-repeat: no-repeat;
+                            height: 3px;
+                        }
+            
+                        &-track {
+                            background-color: #ecedee;
+                        }
+            
+                        &-thumb {
+                            -webkit-border-radius: 20px;
+                            border-radius: 20px;
+                            background-color: #c5c5c557;
+            
+                            &:hover {
+                                background-color: #c5c5c557;
+                                -webkit-border-radius: 20px;
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+            
+                    &-resizer {
+                        background-image: url("");
+                        background-repeat: no-repeat;
+                        height: 3px;
+                    }
+                }
+                & .nav-link {
+                    text-transform: uppercase;
+                    color: $black;
+                    white-space: nowrap;
+                    &.active {
+                        background: none;
+                        font-weight: 500;
+                        color: $black;
+                    }
+                }
             }
         }
     }
 
-    &-sku{
+    &-sku {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 0px 15px;
-        &-code{
-        margin-left: 5px;
+        padding: 0 15px;
+        &-code {
+            margin-left: 5px;
         }
 
-        @media(max-width: 992px){
+        @media(max-width: 992px) {
             justify-content: flex-start;
         }
     }
-    
-    &-info{
+
+    &-info {
         padding: 20px;
         display: flex;
         flex-direction: column;
 
-        @media(max-width: 575px){
-            & .palette-block{
-                order:3;
+        @media(max-width: 575px) {
+            & .palette-block {
+                order: 3;
             }
 
-            & .delivery-block{
-                order:4
+            & .delivery-block {
+                order: 4;
             }
 
         }

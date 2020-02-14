@@ -41,7 +41,6 @@ function scrollPageUp(){
 
     if(arrowTop){
         arrowTop.addEventListener('click', function(e){
-            console.log(e)
             window.scrollTo({
                 top: 0,
                 left: pageXOffset,
@@ -145,12 +144,37 @@ function flipSocial(){
 
 flipSocial();
 
-function copyrightTime(elem){
-    if(elem){
+function copyrightTime(){
+    const TAGTIMENOW = document.getElementById('time-now');
+    let content = TAGTIMENOW.textContent;
+    if(TAGTIMENOW){
         let nowYear = new Date().getFullYear();
-        return elem.textContent = `${nowYear}`;
+        return TAGTIMENOW.textContent = `${content}${nowYear}`;
     }      
 }
-let TagtimeNow = document.getElementById('time-now');
 
-copyrightTime(TagtimeNow);
+copyrightTime();
+
+function scrollChangeColorViget(){
+    const bvs = document.getElementById('bvs');
+
+    if(bvs){
+        let scrollHeight = Math.max(
+            document.body.scrollHeight, document.documentElement.scrollHeight,
+            document.body.offsetHeight, document.documentElement.offsetHeight,
+            document.body.clientHeight, document.documentElement.clientHeight
+          );
+
+          
+          window.addEventListener('scroll', function(e){
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if(scrollHeight - 1400 >= scrollTop){
+                bvs.classList.add('btn-vidget-skarlat-black')
+            } else{
+                bvs.classList.remove('btn-vidget-skarlat-black')
+            }
+        })
+    }
+}
+scrollChangeColorViget();
+

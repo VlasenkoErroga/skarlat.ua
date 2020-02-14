@@ -13,13 +13,14 @@
     }
 
 
+
     @media(max-width:420px) {
         flex-flow: row wrap;
         padding-right:60px;
         justify-content: flex-start;
 
         & p:first-child{
-            margin-right: 50%;
+            margin-right: 45%;
         }
 
         & a{
