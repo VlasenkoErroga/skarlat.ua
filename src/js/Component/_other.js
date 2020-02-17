@@ -1,8 +1,12 @@
 import { updateProductInBasket } from './_jumbotron-basket';
+import { productPills } from './_product-detail-pills';
 const sliderNav = document.getElementById('product-slider-nav');
 //RESIZE WINDOW
+
+
 window.addEventListener('resize', (e) => {
-    updateProductInBasket(window.innerWidth);
+    updateProductInBasket();
+    productPills();
 });
 
 //COMMENT TO ORDER
@@ -15,7 +19,6 @@ function AddComent(){
             toggleComment.checked ? placeComment.disabled = false: placeComment.disabled = true;
         });
     }
-    
 }
 
 AddComent();

@@ -1,5 +1,11 @@
 .product {
 
+    &-section{
+        & .tab-content{
+            margin-bottom: 40px;
+        }
+    }
+
     &-detail {
         &-top {
             &__wrapper {
@@ -21,17 +27,21 @@
 
         &-container {
             background: #fff;
-            border: 1px solid #d8d8d8;
+            box-shadow: 0 1px 2px rgba(0,0,0,.25);
             border-radius: 8px;
+
             &-nav {
-                margin-top: 20px;
+                width: 100%;
+                margin-top: 10px;
                 background: #fff;
-                border: 1px solid #d8d8d8;
+                box-shadow: 0 1px 2px rgba(0,0,0,.25);
                 border-radius: 8px 8px 0 0;
+                border-bottom: 1px solid #d8d8d8;
             }
+
             &-content {
                 background: #fff;
-                border: 1px solid #d8d8d8;
+                box-shadow: 0 1px 2px rgba(0,0,0,.25);
                 border-top: 0;
                 padding: 20px;
                 border-radius: 0 0 8px 8px;
@@ -40,7 +50,7 @@
 
             &-description {
                 background: #fff;
-                border: 1px solid #d8d8d8;
+                box-shadow: 0 1px 2px rgba(0,0,0,.25);
                 padding: 20px;
                 border-radius: 8px;
                 margin-bottom: 20px;
@@ -52,7 +62,7 @@
 
             &-main {
                 background: #fff;
-                border: 1px solid #d8d8d8;
+                box-shadow: 0 1px 2px rgba(0,0,0,.25);
                 border-top: 0;
                 border-radius: 0 0 8px 8px;
                 margin-bottom: 20px;
@@ -78,19 +88,14 @@
                 margin-bottom: 20px;
             }
         }
-        &__column {
-            position: relative;
-            height: auto;
-        }
 
         &_mini-card {
             @extend .product-detail-container-description;
-            width: 400px;
+            width: 100%;
             &-sticky {
                 top: 20px;
-                margin-top: 20px;
+                margin-top: 10px;
                 margin-bottom: 20px;
-                margin-left: 20px;
                 position: sticky;
             }
 
@@ -183,10 +188,10 @@
                         &-thumb {
                             -webkit-border-radius: 20px;
                             border-radius: 20px;
-                            background-color: #c5c5c557;
+                            background-color: $red;
             
                             &:hover {
-                                background-color: #c5c5c557;
+                                background-color: #bb0303;
                                 -webkit-border-radius: 20px;
                                 border-radius: 20px;
                             }
@@ -203,9 +208,11 @@
                     text-transform: uppercase;
                     color: $black;
                     white-space: nowrap;
+                    padding: 15px 30px;
+                    font-size: 13px;
                     &.active {
                         background: none;
-                        font-weight: 500;
+                        font-weight: 600;
                         color: $black;
                     }
                 }
@@ -216,9 +223,12 @@
     &-sku {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-end;
+        height: 100%;
         padding: 0 15px;
+        font-size: 13px;
         &-code {
+            font-size: 13px;
             margin-left: 5px;
         }
 

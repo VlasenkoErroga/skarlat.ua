@@ -1,65 +1,64 @@
-export function updateProductInBasket(viewPort) {
-    if(viewPort){
+export function updateProductInBasket() {
         let jumbotronBasketItem = document.querySelectorAll('.jumbotron-basket-item');
         let jumbotronBasketList = document.querySelector('.jumbotron-basket-list');
     
         for (let i = 0; i < jumbotronBasketItem.length - 1; i++) {
             jumbotronBasketList.style.display = 'flex';
-            if (viewPort >= 1420) {
+            if (window.matchMedia('(min-width: 1420px)').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 4) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort < 1420 && viewPort >= 1232) {
+            } else if (window.matchMedia('(min-width: 1232px) and (max-width: 1419px').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 2) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort <= 1232 && viewPort >= 934) {
+            } else if (window.matchMedia('(min-width: 934px) and (max-width: 1231px').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 1) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort <= 934 && viewPort >= 768) {
+            } else if (window.matchMedia('(min-width: 768px) and (max-width: 933px').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 0) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort <= 768 && viewPort >= 700) {
+            } else if (window.matchMedia('(min-width: 700px) and (max-width: 767px').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 6) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort <= 764 && viewPort >= 620) {
+            } else if (window.matchMedia('(min-width: 620px) and (max-width: 699px').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 4) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort <= 620 && viewPort >= 570) {
+            } else if (window.matchMedia('(min-width: 570px) and (max-width: 619px').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 3) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort <= 570 && viewPort >= 530) {
+            } else if (window.matchMedia('(min-width: 530px) and (max-width: 569px').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 2) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort <= 530 && viewPort >= 490) {
+            } else if (window.matchMedia('(min-width: 490px) and (max-width: 529px').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 1) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort <= 490 && viewPort >= 430) {
+            } else if (window.matchMedia('(min-width: 430px) and (max-width: 489px').matches) {
                 jumbotronBasketItem[i].style.display = "flex";
                 if (i > 0) {
                     jumbotronBasketItem[i].style.display = "none";
                 }
-            } else if (viewPort <= 430) {
+            } else if (window.matchMedia('(max-width: 329px').matches) {
                 jumbotronBasketList.style.display = 'none';
     
             }
         }
-    }
+    
 }
-updateProductInBasket(window.innerWidth);
+updateProductInBasket();

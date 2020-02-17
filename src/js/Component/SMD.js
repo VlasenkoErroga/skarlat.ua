@@ -8,6 +8,10 @@ export class SMD{
         return document.createElement(element);
     }
 
+    append(parent, element) {
+        return parent.appendChild(element);
+    }
+
     collapse(element){
 
        return element.classList.contains('show') ? element.classList.remove('show') : element.classList.add('show');
@@ -18,10 +22,8 @@ export class SMD{
         return element.classList.contains('show') ? element.classList.remove('show') : element.classList.add('show');
     }
 
-    append(parent, element) {
-        return parent.appendChild(element);
-    }
+    
 }
 
 
-new SMD().createNode('button').append('body', 'div');
+//new SMD().createNode('button').append('body', 'div');
