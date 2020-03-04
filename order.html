@@ -31,14 +31,14 @@
   <body>
     <!-- HEADER START -->
     <header>
-      <section class="header-wrapper">
+      <div class="header-wrapper">
         <div class="background-down-header header-thanks-page">
           <div class="container">
             <div class="row">
               <div class="col-12 col-sm-4 col-lg-3 offset-sm-1">
                 <div class="header-logo__wrapper">
                   <a href="/" class="header-logo--white">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="logo" viewbox="0 0 332 54.1">
+                    <svg id="logo" viewbox="0 0 332 54.1">
                       <path
                         class="header-logo--white__path-1"
                         d="M12 11.1c-.4-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2c.8-.4 1.7-.5 2.5-.3s1.5.7 2 1.5l11.9 20.7c.4.6.6 1.4.6 2.1 0 .7-.1 1.3-.4 1.9l-12.2 20c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4l9.7-15.9H3.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1H21l-9-15.7z"
@@ -60,7 +60,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </header>
     <!-- HEADER END -->
     <!-- MAIN START -->
@@ -139,10 +139,9 @@
                           type="email"
                           class="form-control"
                           id="InputEmail-reg-order"
-                          aria-describedby="emailHelp"
                           placeholder="Введите email"
                         />
-                        <small id="emailHelp" class="form-text text-muted"
+                        <small class="form-text text-muted"
                           >Мы никогда не передадим вашу электронную почту кому-либо еще.</small
                         >
                       </div>
@@ -179,10 +178,9 @@
                           type="email"
                           class="form-control"
                           id="InputEmail-enter-order-reg"
-                          aria-describedby="emailHelp"
                           placeholder="Введите email"
                         />
-                        <small id="emailHelp" class="form-text text-muted"
+                        <small class="form-text text-muted"
                           >Мы никогда не передадим вашу электронную почту кому-либо еще.</small
                         >
                       </div>
@@ -215,7 +213,7 @@
               <form>
                 <div class="accordion" id="delivery-acardion">
                   <div class="order-block__delivery-item">
-                    <label for="selectCity" class="order-block__delivery-autocomplete-label">Ваш город</label>
+                    <label for="autocompleteCity" class="order-block__delivery-autocomplete-label">Ваш город</label>
                     <div class="select-city form-group">
                       <input type="text" class="order-block__delivery-autocomplete" id="autocompleteCity" />
                     </div>
@@ -238,7 +236,6 @@
                         id="order-block__delivery-item-np"
                         data-toggle="collapse"
                         data-target="#order-block__delivery-item-np-description"
-                        aria-expanded="true"
                         aria-controls="order-block__delivery-item-np-description"
                       />
                       <label for="order-block__delivery-item-np">
@@ -251,7 +248,7 @@
                       data-parent="#delivery-acardion"
                     >
                       <div class="form-group">
-                        <label for="selectCity">Выберите отделение</label>
+                        <label for="selectPost">Выберите отделение</label>
                         <select class="form-control" id="selectPost">
                           <option>Отделение №1</option>
                           <option>Отделение №2</option>
@@ -274,7 +271,6 @@
                         id="order-block__delivery-item-np-cur"
                         data-toggle="collapse"
                         data-target="#order-block__delivery-item-np-cur-description"
-                        aria-expanded="true"
                         aria-controls="order-block__delivery-item-np-cur-description"
                         disabled="disabled"
                       />
@@ -317,7 +313,6 @@
                         id="order-block__delivery-item-skarlat-cur"
                         data-toggle="collapse"
                         data-target="#order-block__delivery-item-skarlat-cur-description"
-                        aria-expanded="true"
                         aria-controls="order-block__delivery-item-skarlat-cur-description"
                       />
                       <label for="order-block__delivery-item-skarlat-cur">
@@ -358,7 +353,6 @@
                         id="order-block__delivery-item-skarlat-fast"
                         data-toggle="collapse"
                         data-target="#order-block__delivery-item-skarlat-fast-description"
-                        aria-expanded="true"
                         aria-controls="order-block__delivery-item-skarlat-fast-description"
                       />
                       <label class="form-check-label" for="order-block__delivery-item-skarlat-fast">
