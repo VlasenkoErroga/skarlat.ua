@@ -1,8 +1,8 @@
 .btn {
     &-up {
         position: relative;
-        width: 40px;
-        height: 40px;
+        width: 39px;
+        height: 39px;
         border-radius: 50%;
         background: $white;
         position: fixed;
@@ -26,21 +26,21 @@
                 content: "";
                 display: flex;
                 border-radius: 10px;
-                width: 23%;
+                width: 10px;
                 height: 1px;
                 background: $red;
                 z-index: 1;
                 position: absolute;
-                top: 48%;
+                top: 50%;
             }
 
             &::before {
                 transform: rotate(45deg);
-                right: 30%;
+                right: 11px;
             }
 
             &::after {
-                left: 30%;
+                left: 11px;
                 transform: rotate(-45deg);
             }
         }

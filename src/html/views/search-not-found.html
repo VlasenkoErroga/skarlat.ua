@@ -10,13 +10,13 @@
         <%= _.template(require('./../includes/_progres.html').default)(data) %>
         <%= _.template(require('./../includes/_breadcrumbs.html').default)(data) %>
         <%= _.template(require('./../includes/_title-page.html').default)(data) %>
-        <section class="product-section">
+        <div class="product-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="search-not-found">
                             <hr />
-                            <p>К сожалению по вашему запросу "запрос" ничего не найдено :(</p>
+                            <h2>К сожалению по вашему запросу "запрос" ничего не найдено :(</h2>
                             <p>Предлагаем Вам посетить один из разделов и просмотреть предложения :)</p>
                             
                             <div class="d-flex align-items-center justify-content-around">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
     </main>
     <!-- MAIN END -->

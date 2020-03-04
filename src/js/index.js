@@ -21,6 +21,7 @@ import './Component/_filter-hide';
 import './Component/_slider-jquery';
 import './Component/_raiting';
 import './Component/_product-detail-pills';
+import './Component/_select-product-compare';
 import './Component/_other';
 
 //pills lk

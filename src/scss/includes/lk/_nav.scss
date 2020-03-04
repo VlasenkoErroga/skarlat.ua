@@ -29,7 +29,7 @@
                 & svg {
                     width: 100px;
                     height: 100px;
-                    fill: $black;
+                    fill: $VIPgrey;
                 }
             }
 
@@ -47,8 +47,8 @@
             justify-content: center;
 
             @media (max-width: 992px) {
-                margin-top: 20px;
-                margin-bottom: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -131,10 +131,12 @@
                     transform: translateY(-50%);
                     top: 50%;
                     @media (min-width:768px) and (max-width: 992px) {
-                        width: 18px;
-                        height: 18px;
+                        // width: 18px;
+                        // height: 18px;
+                        display: none;
                     }
                     @media (max-width: 768px) {
+                        display: flex;
                         width: 30px;
                         height: 30px;
                         position: initial;
@@ -160,6 +162,7 @@
                     justify-content: center;
                     align-items: center;
                     transition: all 0.3s ease-in-out;
+                    padding: 10px;
                 }
 
                 @media (max-width:768px) {
@@ -187,6 +190,10 @@
             @media (max-width:992px){
                 padding-left: 0;
             }
+            
+            & form {
+                margin-bottom: 20px;
+            }
 
             &__pills {
                 padding: 20px;
@@ -200,6 +207,7 @@
                     display: flex;
                     align-items: center;
                     margin-bottom: .2rem;
+                    font-size: 14px;
                 }
 
 
@@ -235,7 +243,7 @@
 
                 &-delivery {
                     @media (min-width: 992px) {
-                        width: 50%;
+                        width: calc(50% - 15px);
                     }
                 }
 
@@ -359,14 +367,16 @@
                 }
             }
 
-            &__question-item{
-                margin: 10px;
+            &__question{
+                &-item{
+                margin: 10px 0px;
                 & h4{
                     font-weight: 400;
                     color: $black;
                     cursor: pointer;
                     text-decoration: underline;
                 }
+            }
             }
         }
     }

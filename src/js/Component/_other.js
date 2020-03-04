@@ -1,6 +1,10 @@
 import { updateProductInBasket } from './_jumbotron-basket';
 import { productPills } from './_product-detail-pills';
 const sliderNav = document.getElementById('product-slider-nav');
+import smoothscroll from 'smoothscroll-polyfill';
+
+// kick off the polyfill!
+smoothscroll.polyfill();
 //RESIZE WINDOW
 
 
@@ -44,10 +48,7 @@ function scrollPageUp(){
 
     if(arrowTop){
         arrowTop.addEventListener('click', function(e){
-            window.scrollTo({
-                top: 0,
-                left: pageXOffset,
-                behavior: 'smooth'});
+                 window.scroll({ top: 0, left: 0, behavior: 'smooth' });
         })
         
           window.addEventListener('scroll', function(e) {

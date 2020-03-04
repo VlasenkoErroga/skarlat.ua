@@ -17,6 +17,12 @@
             padding-top: 5px;
             min-height: auto;
         }
+
+        & .basket-item{
+            @media(max-width: 768px){
+                min-height: 180px;
+            }
+        }
     }
 
     & .modal-content {

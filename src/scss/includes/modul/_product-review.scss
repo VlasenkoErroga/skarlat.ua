@@ -169,11 +169,18 @@
 
             &-title {
                 max-width: calc(100% - 200px);
+                @media( max-width: 400px){
+                display: flex;
+                flex-direction: column;
+                }
             }
 
             & .btn-main {
                 margin: 5px;
                 max-width: 200px;
+                @media( max-width: 575px){
+                    font-size: 14px;
+                }
             }
         }
     }

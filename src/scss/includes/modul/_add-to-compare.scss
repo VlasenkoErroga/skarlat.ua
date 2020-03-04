@@ -1,30 +1,11 @@
-.check-product{
-    display: none;
-    &-label{
-        z-index: 2;
-        margin: 0;
-        width: 100%;
-    }
 
-    &+ .product-item__wrapper{
-        pointer-events: none;
-        & .product-item{
-            
-            transition: all .3s ease-in-out;
-            z-index: 0;
-            margin: 0;
-            border-width:1px;
-            border-bottom: 1px solid #d8d8d8;
-        }
-    }
 
-    &:checked{
-        &+ .product-item__wrapper{
+    .product-item__wrapper.checked{
             & .product-item{
-                border-color:$blue;
+                border-color:$red;
 
                 &:hover{
-                    border-color:$blue;
+                    border-color:$red;
                 }
 
                 &:after{
@@ -34,7 +15,7 @@
                     top: 0;
                     width: 100%;
                     height: 100%;
-                    background-color:#00507594;
+                    background-color:#ff000094;
                     background-image:url('../img/check.svg');
                     background-size:20%;
                     background-position:center 30%;
@@ -58,6 +39,6 @@
                     align-items:center;
                 }
             }
-        }
+        
     }
-}
+

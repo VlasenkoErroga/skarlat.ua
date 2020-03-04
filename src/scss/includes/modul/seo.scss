@@ -49,9 +49,11 @@
     &-collapse{
 
         &-btn{
-            border-bottom:1px dashed $black;
             color: $black;
             cursor:pointer;
+            background:none;
+            border:none;
+            border-bottom:1px dashed $black;
         }
         &-shadow{
             box-shadow: rgba(250,250,250,1) 10px 0 0.3;

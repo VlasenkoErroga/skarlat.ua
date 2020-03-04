@@ -4,7 +4,6 @@
     id="enterModal"
     tabindex="-1"
     role="dialog"
-    aria-labelledby="enterModalTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-md modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -36,14 +35,9 @@
                     <button type="button" class="close modal-enter-close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">
                             <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 50 50"
-                                version="1.1"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g>
+                                viewBox="0 0 50 50">
                                     <path
                                         d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z M 7.71875 6.28125"/>
-                                </g>
                             </svg>
                         </span>
                     </button>
@@ -62,9 +56,9 @@
                                         type="email"
                                         class="form-control"
                                         id="InputEmail-modal"
-                                        aria-describedby="emailHelp"
+                                        aria-describedby="emailHelp-modal"
                                         placeholder="Введите email">
-                                        <small id="emailHelp" class="form-text text-muted">Мы никогда не передадим вашу электронную почту кому-либо еще.</small>
+                                        <small id="emailHelp-modal" class="form-text text-muted">Мы никогда не передадим вашу электронную почту кому-либо еще.</small>
                                     </div>
                                     <div class="form-group">
                                         <label for="InputPassword-modal">Пароль</label>
@@ -89,10 +83,6 @@
                                             <div class="form-group form-group-center">
                                                 <button class="btn-outline btn-fb">
                                                     <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        image-rendering="optimizeQuality"
-                                                        shape-rendering="geometricPrecision"
-                                                        text-rendering="geometricPrecision"
                                                         viewbox="0 0 10 10">
                                                         <path
                                                             d="M5.5 10.2V5.6h1.3L7 3.7H5.5V2.4c0-.5.3-.7.6-.7H7V.1C6.9 0 6.7 0 6.6 0h-.8c-.4 0-.8.1-1.1.4-.4.4-.6.8-.7 1.4V3.7H2.7v1.8H4v4.6h1.5z"/>
@@ -101,7 +91,7 @@
                                             </div>
                                             <div class="form-group form-group-center">
                                                 <button class="btn-outline btn-g">
-                                                    <svg baseProfile="tiny" version="1.2" viewBox="0 0 10 10">
+                                                    <svg viewBox="0 0 10 10">
                                                         <path
                                                             fill="#FBBB00"
                                                             d="M2.2 6l-.3 1.3H.6C.2 6.7 0 5.9 0 5c0-.8.2-1.6.6-2.3l1.1.2.5 1.1c-.1.3-.2.7-.2 1 0 .4.1.7.2 1z"/>
@@ -143,9 +133,8 @@
                                                         type="email"
                                                         class="form-control"
                                                         id="InputEmail"
-                                                        aria-describedby="emailHelp"
                                                         placeholder="Введите email">
-                                                        <small id="emailHelp" class="form-text text-muted">Мы никогда не передадим вашу электронную почту кому-либо еще.</small>
+                                                        <small id="emailHelp-forms" class="form-text text-muted">Мы никогда не передадим вашу электронную почту кому-либо еще.</small>
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="InputPassword-modal-new">Пароль</label>

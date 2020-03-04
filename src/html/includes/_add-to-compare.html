@@ -22,10 +22,10 @@
                         <div class="row ">
                             <div class="col-12">
                                 <div class="search-block">
-                                    <form action="#" class="search-form">
+                                    <form action="#" class="search-form" id="findProducts">
                                         <input type="search" class="search-place" placeholder="Поиск">
                                         <button type="button" class="search-btn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50">
+                                            <svg viewbox="0 0 50 50">
                                                 <path
                                                     d="M37.5 18.7C37.5 8.4 29.1 0 18.8 0 8.4 0 0 8.4 0 18.7s8.4 18.7 18.8 18.7c10.3.1 18.7-8.3 18.7-18.7zM18.8 32.8c-7.8 0-14.1-6.3-14.1-14.1s6.3-14 14.1-14S32.9 11 32.9 18.8s-6.4 14-14.1 14zM48.6 42L37.2 30.5c-1.7 2.7-4 4.9-6.6 6.6L42 48.6c1.8 1.8 4.8 1.8 6.6 0 1.9-1.8 1.9-4.8 0-6.6z"/>
                                             </svg>
@@ -36,32 +36,28 @@
     
                             </div>
     
-                            <div class="row grid-padding">
-                                <div class="col-6 col-sm-4">
-                                    <label for="addProductCompareChecked_1" class="check-product-label">
-                                        <input id="addProductCompareChecked_1" type="checkbox" class="check-product">
+                            <div class="row grid-padding" id="product-array">
+                                <div class="col-6 col-sm-4">                                  
                                             <!-- FULL PRODUCT CARD CATEGORY START -->
-                                            <div class="product-item__wrapper">
+                                            <div class="product-item__wrapper checked">
                                                 <!-- PRODUCT CARD TOP START -->
                                                 <div class="product-item">
                                                     <!-- PRODUCT CARD IMAGE BLOCK START -->
-                                                    <a href="javascript:void(0)" class=" product-item__wrapper-link">
                                                         <div class="product-item__wrapper-img">
                                                             <div class="product-item__wrapper-assistant-img">
-                                                                <img
+                                                                <img alt="image"
                                                                     class="lazy"
                                                                     src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
                                                                     data-src="./img/18.jpg"
                                                                     data-srcset="./img/18.jpg 1x, ./img/18.jpg 2x"></div>
                                                             </div>
-                                                        </a>
                                                         <!-- PRODUCT CARD IMAGE BLOCK END -->
                                                         <!-- PRODUCT CARD INFORMATION BLOCK START -->
                                                         <div class="product-item__wrapper-info">
                                                             <p class="product-item__wrapper-info-cat">Точечный светильник</p>
-                                                            <a href="javascript:void(0)" class="product-item__wrapper-info-name">
+                                                            <span class="product-item__wrapper-info-name">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.
-                                                            </a>
+                                                            </span>
                                                             <div class="product-item__wrapper-price">
                                                                 <div class="product-item__wrapper-price_old">96812
                                                                     <div class="product-item__wrapper-price_old-currency">грн</div>
@@ -76,35 +72,29 @@
                                                     <!-- PRODUCT CARD TOP END -->
                                                 </div>
                                                 <!-- FULL PRODUCT CARD CATEGORY END -->
-    
-                                    </label>
                                 </div>
     
                                 <div class="col-6 col-sm-4">
-                                    <label for="addProductCompareChecked_2" class="check-product-label">
-                                        <input id="addProductCompareChecked_2" type="checkbox" class="check-product">
                                             <!-- FULL PRODUCT CARD CATEGORY START -->
-                                            <div class="product-item__wrapper">
+                                            <div class="product-item__wrapper checked">
                                                 <!-- PRODUCT CARD TOP START -->
                                                 <div class="product-item">
                                                     <!-- PRODUCT CARD IMAGE BLOCK START -->
-                                                    <a href="javascript:void(0)" class=" product-item__wrapper-link">
                                                         <div class="product-item__wrapper-img">
                                                             <div class="product-item__wrapper-assistant-img">
-                                                                <img
+                                                                <img alt="image"
                                                                     class="lazy"
                                                                     src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
                                                                     data-src="./img/18.jpg"
                                                                     data-srcset="./img/18.jpg 1x, ./img/18.jpg 2x"></div>
                                                             </div>
-                                                        </a>
                                                         <!-- PRODUCT CARD IMAGE BLOCK END -->
                                                         <!-- PRODUCT CARD INFORMATION BLOCK START -->
                                                         <div class="product-item__wrapper-info">
                                                             <p class="product-item__wrapper-info-cat">Точечный светильник</p>
-                                                            <a href="javascript:void(0)" class="product-item__wrapper-info-name">
+                                                            <span class="product-item__wrapper-info-name">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.
-                                                            </a>
+                                                            </span>
                                                             <div class="product-item__wrapper-price">
                                                                 <div class="product-item__wrapper-price_old">96812
                                                                     <div class="product-item__wrapper-price_old-currency">грн</div>
@@ -119,35 +109,29 @@
                                                     <!-- PRODUCT CARD TOP END -->
                                                 </div>
                                                 <!-- FULL PRODUCT CARD CATEGORY END -->
-    
-                                    </label>
                                 </div>
     
                                 <div class="col-6 col-sm-4">
-                                    <label for="addProductCompareChecked_3" class="check-product-label">
-                                        <input id="addProductCompareChecked_3" type="checkbox" class="check-product">
                                             <!-- FULL PRODUCT CARD CATEGORY START -->
-                                            <div class="product-item__wrapper">
+                                            <div class="product-item__wrapper checked">
                                                 <!-- PRODUCT CARD TOP START -->
                                                 <div class="product-item">
                                                     <!-- PRODUCT CARD IMAGE BLOCK START -->
-                                                    <a href="javascript:void(0)" class=" product-item__wrapper-link">
                                                         <div class="product-item__wrapper-img">
                                                             <div class="product-item__wrapper-assistant-img">
-                                                                <img
+                                                                <img alt="image"
                                                                     class="lazy"
                                                                     src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
                                                                     data-src="./img/18.jpg"
                                                                     data-srcset="./img/18.jpg 1x, ./img/18.jpg 2x"></div>
                                                             </div>
-                                                        </a>
                                                         <!-- PRODUCT CARD IMAGE BLOCK END -->
                                                         <!-- PRODUCT CARD INFORMATION BLOCK START -->
                                                         <div class="product-item__wrapper-info">
                                                             <p class="product-item__wrapper-info-cat">Точечный светильник</p>
-                                                            <a href="javascript:void(0)" class="product-item__wrapper-info-name">
+                                                            <span class="product-item__wrapper-info-name">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.
-                                                            </a>
+                                                            </span>
                                                             <div class="product-item__wrapper-price">
                                                                 <div class="product-item__wrapper-price_old">96812
                                                                     <div class="product-item__wrapper-price_old-currency">грн</div>
@@ -162,35 +146,29 @@
                                                     <!-- PRODUCT CARD TOP END -->
                                                 </div>
                                                 <!-- FULL PRODUCT CARD CATEGORY END -->
-    
-                                    </label>
                                 </div>
     
                                 <div class="col-6 col-sm-4">
-                                    <label for="addProductCompareChecked_4" class="check-product-label">
-                                        <input id="addProductCompareChecked_4" type="checkbox" class="check-product">
                                             <!-- FULL PRODUCT CARD CATEGORY START -->
-                                            <div class="product-item__wrapper">
+                                            <div class="product-item__wrapper checked">
                                                 <!-- PRODUCT CARD TOP START -->
                                                 <div class="product-item">
                                                     <!-- PRODUCT CARD IMAGE BLOCK START -->
-                                                    <a href="javascript:void(0)" class=" product-item__wrapper-link">
                                                         <div class="product-item__wrapper-img">
                                                             <div class="product-item__wrapper-assistant-img">
-                                                                <img
+                                                                <img alt="image"
                                                                     class="lazy"
                                                                     src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
                                                                     data-src="./img/18.jpg"
                                                                     data-srcset="./img/18.jpg 1x, ./img/18.jpg 2x"></div>
                                                             </div>
-                                                        </a>
                                                         <!-- PRODUCT CARD IMAGE BLOCK END -->
                                                         <!-- PRODUCT CARD INFORMATION BLOCK START -->
                                                         <div class="product-item__wrapper-info">
                                                             <p class="product-item__wrapper-info-cat">Точечный светильник</p>
-                                                            <a href="javascript:void(0)" class="product-item__wrapper-info-name">
+                                                            <span class="product-item__wrapper-info-name">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.
-                                                            </a>
+                                                            </span>
                                                             <div class="product-item__wrapper-price">
                                                                 <div class="product-item__wrapper-price_old">96812
                                                                     <div class="product-item__wrapper-price_old-currency">грн</div>
@@ -205,35 +183,29 @@
                                                     <!-- PRODUCT CARD TOP END -->
                                                 </div>
                                                 <!-- FULL PRODUCT CARD CATEGORY END -->
-    
-                                    </label>
                                 </div>
     
                                 <div class="col-6 col-sm-4">
-                                    <label for="addProductCompareChecked_5" class="check-product-label">
-                                        <input id="addProductCompareChecked_5" type="checkbox" class="check-product">
                                             <!-- FULL PRODUCT CARD CATEGORY START -->
-                                            <div class="product-item__wrapper">
+                                            <div class="product-item__wrapper checked">
                                                 <!-- PRODUCT CARD TOP START -->
                                                 <div class="product-item">
                                                     <!-- PRODUCT CARD IMAGE BLOCK START -->
-                                                    <a href="javascript:void(0)" class=" product-item__wrapper-link">
                                                         <div class="product-item__wrapper-img">
                                                             <div class="product-item__wrapper-assistant-img">
-                                                                <img
+                                                                <img alt="image"
                                                                     class="lazy"
                                                                     src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
                                                                     data-src="./img/18.jpg"
                                                                     data-srcset="./img/18.jpg 1x, ./img/18.jpg 2x"></div>
                                                             </div>
-                                                        </a>
                                                         <!-- PRODUCT CARD IMAGE BLOCK END -->
                                                         <!-- PRODUCT CARD INFORMATION BLOCK START -->
                                                         <div class="product-item__wrapper-info">
                                                             <p class="product-item__wrapper-info-cat">Точечный светильник</p>
-                                                            <a href="javascript:void(0)" class="product-item__wrapper-info-name">
+                                                            <span class="product-item__wrapper-info-name">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.
-                                                            </a>
+                                                            </span>
                                                             <div class="product-item__wrapper-price">
                                                                 <div class="product-item__wrapper-price_old">96812
                                                                     <div class="product-item__wrapper-price_old-currency">грн</div>
@@ -248,35 +220,29 @@
                                                     <!-- PRODUCT CARD TOP END -->
                                                 </div>
                                                 <!-- FULL PRODUCT CARD CATEGORY END -->
-    
-                                    </label>
                                 </div>
     
                                 <div class="col-6 col-sm-4">
-                                    <label for="addProductCompareChecked_6" class="check-product-label">
-                                        <input id="addProductCompareChecked_6" type="checkbox" class="check-product">
                                             <!-- FULL PRODUCT CARD CATEGORY START -->
-                                            <div class="product-item__wrapper">
+                                            <div class="product-item__wrapper checked">
                                                 <!-- PRODUCT CARD TOP START -->
                                                 <div class="product-item">
                                                     <!-- PRODUCT CARD IMAGE BLOCK START -->
-                                                    <a href="javascript:void(0)" class=" product-item__wrapper-link">
                                                         <div class="product-item__wrapper-img">
                                                             <div class="product-item__wrapper-assistant-img">
-                                                                <img
+                                                                <img alt="image"
                                                                     class="lazy"
                                                                     src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
                                                                     data-src="./img/18.jpg"
                                                                     data-srcset="./img/18.jpg 1x, ./img/18.jpg 2x"></div>
                                                             </div>
-                                                        </a>
                                                         <!-- PRODUCT CARD IMAGE BLOCK END -->
                                                         <!-- PRODUCT CARD INFORMATION BLOCK START -->
                                                         <div class="product-item__wrapper-info">
                                                             <p class="product-item__wrapper-info-cat">Точечный светильник</p>
-                                                            <a href="javascript:void(0)" class="product-item__wrapper-info-name">
+                                                            <span class="product-item__wrapper-info-name">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.
-                                                            </a>
+                                                            </span>
                                                             <div class="product-item__wrapper-price">
                                                                 <div class="product-item__wrapper-price_old">96812
                                                                     <div class="product-item__wrapper-price_old-currency">грн</div>
@@ -291,35 +257,29 @@
                                                     <!-- PRODUCT CARD TOP END -->
                                                 </div>
                                                 <!-- FULL PRODUCT CARD CATEGORY END -->
-    
-                                    </label>
                                 </div>
     
                                 <div class="col-6 col-sm-4">
-                                    <label for="addProductCompareChecked_7" class="check-product-label">
-                                        <input id="addProductCompareChecked_7" type="checkbox" class="check-product">
                                             <!-- FULL PRODUCT CARD CATEGORY START -->
-                                            <div class="product-item__wrapper">
+                                            <div class="product-item__wrapper checked">
                                                 <!-- PRODUCT CARD TOP START -->
                                                 <div class="product-item">
                                                     <!-- PRODUCT CARD IMAGE BLOCK START -->
-                                                    <a href="javascript:void(0)" class=" product-item__wrapper-link">
                                                         <div class="product-item__wrapper-img">
                                                             <div class="product-item__wrapper-assistant-img">
-                                                                <img
+                                                                <img alt="image"
                                                                     class="lazy"
                                                                     src="data:image/gif;base64,R0lGODlhFAAHAIAAAP///wAAACH5BAEAAAEALAAAAAAUAAcAAAIKjI+py+0Po5wUFQA7"
                                                                     data-src="./img/18.jpg"
                                                                     data-srcset="./img/18.jpg 1x, ./img/18.jpg 2x"></div>
                                                             </div>
-                                                        </a>
                                                         <!-- PRODUCT CARD IMAGE BLOCK END -->
                                                         <!-- PRODUCT CARD INFORMATION BLOCK START -->
                                                         <div class="product-item__wrapper-info">
                                                             <p class="product-item__wrapper-info-cat">Точечный светильник</p>
-                                                            <a href="javascript:void(0)" class="product-item__wrapper-info-name">
+                                                            <span class="product-item__wrapper-info-name">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.
-                                                            </a>
+                                                            </span>
                                                             <div class="product-item__wrapper-price">
                                                                 <div class="product-item__wrapper-price_old">96812
                                                                     <div class="product-item__wrapper-price_old-currency">грн</div>
@@ -334,8 +294,6 @@
                                                     <!-- PRODUCT CARD TOP END -->
                                                 </div>
                                                 <!-- FULL PRODUCT CARD CATEGORY END -->
-    
-                                    </label>
                                 </div>
     
                                     </div>

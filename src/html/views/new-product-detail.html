@@ -10,7 +10,7 @@
     <%= _.template(require('./../includes/_breadcrumbs.html').default)(data) %>
     <%= _.template(require('./../includes/_title-page-product.html').default)(data) %>
 
-    <section class="product-section">
+    <div class="product-section">
         <div class="container">
           <div class="row">
           <div class="col-lg-7 col-xl-8">
@@ -20,34 +20,29 @@
                       <div class="tab-pane fade show active" id="product-detail-pills-allInform" role="tabpanel" aria-labelledby="product-detail-pills-allInform-tab">
                         
                         <div class="product-detail-container-main">
-                            <div class="row">
-                            <div class="col-12 col-lg-6">
+                        
                               <%= _.template(require('./../includes/_product-detail_slider.html').default)(data) %>
-                            </div>
-                            <div class="col-lg-6 col-12">
+                           
                               <%= _.template(require('./../includes/_product-detail_info.html').default)(data) %>
-                            </div>
+
                         </div>
-                      </div>
+                      
                         <div class="product-detail-container-description">
-                          <div class="row">
-                            <div class="col-12">
+
                               <%= _.template(require('./../includes/_new-product-detail_description.html').default)(data) %>
-                            </div>
-                          </div>
-                        </div>
+                            </div> 
                       </div>
                       <div class="tab-pane fade" id="product-detail-pills-properties" role="tabpanel" aria-labelledby="product-detail-pills-properties-tab">
-                        <div class="row">
-                          <div class="col-12">
-                            <%= _.template(require('./../includes/_new-product-detail_properties.html').default)(data) %>
-                          </div>
-                               
-                        </div>
+                              <%= _.template(require('./../includes/_new-product-detail_properties.html').default)(data) %>
                       </div>
                       <div class="tab-pane fade" id="product-detail-pills-foto" role="tabpanel" aria-labelledby="product-detail-pills-foto-tab">
                         <div class="product-detail-container-content">
                           <%= _.template(require('./../includes/_new-product-detail_gallery.html').default)(data) %>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="product-detail-pills-video" role="tabpanel" aria-labelledby="product-detail-pills-video-tab">
+                        <div class="product-detail-container-content">
+                          <%= _.template(require('./../includes/_new-product-detail_video.html').default)(data) %>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="product-detail-pills-review" role="tabpanel" aria-labelledby="product-detail-pills-review-tab">
@@ -102,9 +97,7 @@
                    </div>
                 </div>
               </div>
-                
-       
-    </section>
+    </div>
 
     <%= _.template(require('./../includes/_product-line.html').default)(data) %>
     <%= _.template(require('./../includes/_product-line.html').default)(data) %>

@@ -9,12 +9,12 @@
 
 
 header {
-    z-index: 1041;
+    z-index: 1040;
 
     @media (max-width:992px) {
         position: sticky;
         top: 0;
-        z-index: 19;
+       // z-index: 19;
     }
 }
 

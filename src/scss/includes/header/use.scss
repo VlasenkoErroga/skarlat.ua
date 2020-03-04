@@ -65,10 +65,10 @@
                 justify-content: center;
                 align-items: center;
                 background: $lightgrey;
-                padding: 1px 7px;
+                padding: 0px 5px;
                 border-radius: 5px;
                 right: -10px;
-                top: -5px;
+                top: -2px;
             }
 
             @media(min-width:768px) and (max-width:992px) {
@@ -83,7 +83,6 @@
             @media(min-width:768px) {
                 & .marker-block-header {
                     right: -5px;
-                    padding: 1px 3px;
                 }
 
                 & svg {
@@ -136,10 +135,10 @@
             justify-content: center;
             align-items: center;
             background: $lightgrey;
-            padding: 0 5px;
+            padding: 0px 5px;
             border-radius: 3px;
             right: -10px;
-            top: -5px;
+            top: -2px;
 
             @media (max-width: 768px) {
               right: -5px;

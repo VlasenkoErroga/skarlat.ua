@@ -22,6 +22,8 @@
         bottom: 0;
     }
 
+    
+
     @media (min-width: 992px) {
         padding: 20px 0;  
     }
@@ -64,11 +66,41 @@
             letter-spacing: .03rem;
         }
         & h2{
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 500;
             text-transform: uppercase;
         }
         
+        & ul{
+            list-style: none;
+
+            & li{
+                position: relative;
+                margin-bottom: 10px;
+                 & p{margin: 0;}
+            }
+        }
+
+        
+    }
+
+    &-icon{
+        background: url('./../img/svg/tick.svg') center center no-repeat;
+        fill: $black;
+        width: 17px;
+        height: 17px;
+        margin-right: 10px;
+        margin-top: -3px;
+
+    }
+
+    &-title{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 3px;
+
     }
 
     &-btn {

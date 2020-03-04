@@ -9,7 +9,7 @@
 
 
     &-item {
-        font: 400 14px 'Montserrat', sans-serif;
+        font: 400 13px 'Montserrat', sans-serif;
         position: relative;
         display: flex;
         flex-flow: row nowrap;
@@ -72,12 +72,12 @@
 
     &::-webkit{
         &-scrollbar{
-            height: 3px;
+            height: 2px;
 
             &-button {
                 background-image: url("");
                 background-repeat: no-repeat;
-                height: 3px;
+                height: 2px;
             }
 
             &-track {
@@ -100,7 +100,7 @@
         &-resizer {
             background-image: url("");
             background-repeat: no-repeat;
-            height: 3px;
+            height: 2px;
         }
     }
 }

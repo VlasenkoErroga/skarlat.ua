@@ -7,7 +7,7 @@
     <!-- MAIN START -->
     <main>
         <%= _.template(require('./../includes/_progres.html').default)(data) %>
-        <section class="thanks-section">
+        <div class="thanks-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
@@ -20,7 +20,7 @@
                                 <div class="thanks-page__order_item">
                                     <div class="thanks-page__order_img">
                                         <div class="thanks-page__order_img-wrapper">
-                                            <img
+                                            <img alt="image"
                                                 class="lazy"
                                                 src="img/18.jpg"
                                                 data-src="img/18.jpg"
@@ -38,7 +38,7 @@
                                 <div class="thanks-page__order_item">
                                     <div class="thanks-page__order_img">
                                         <div class="thanks-page__order_img-wrapper">
-                                            <img
+                                            <img alt="image"
                                                 class="lazy"
                                                 src="img/18.jpg"
                                                 data-src="img/18.jpg"
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <%= _.template(require('./../includes/_product-line.html').default)(data) %>
         <%= _.template(require('./../includes/_product-line.html').default)(data) %>
         <%= _.template(require('./../includes/_product-line.html').default)(data) %>

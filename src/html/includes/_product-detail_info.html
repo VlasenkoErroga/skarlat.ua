@@ -1,199 +1,156 @@
 <!-- PRODUCCT DETAIL INFO START -->
 <div class="product-info">
-    <!-- ACTION BLOCK START -->
-    <!-- <div class="action-block">
-        <div class="action-header">
-            <div class="marker-block">
-                <div class="marker-block__item marker-block__item--action">
-                    <div class="marker-block__item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50">
-                            <path
-                                class="heart"
-                                d="M24.85 10.126c2.018-4.783 6.628-8.125 11.99-8.125 7.223 0 12.425 6.179 13.079 13.543 0 0 .353 1.828-.424 5.119-1.058 4.482-3.545 8.464-6.898 11.503L24.85 48 7.402 32.165c-3.353-3.038-5.84-7.021-6.898-11.503-.777-3.291-.424-5.119-.424-5.119C.734 8.179 5.936 2 13.159 2c5.363 0 9.673 3.343 11.691 8.126z"></path>
-                            <path
-                                class="heart-dash"
-                                d="M6 18.078c-.553 0-1-.447-1-1 0-5.514 4.486-10 10-10 .553 0 1 .447 1 1s-.447 1-1 1c-4.411 0-8 3.589-8 8 0 .553-.447 1-1 1z"></path>
-                        </svg>
-                    </div>Акция</div>
+    <!-- PALLET BLOCK START -->
+    <div class="palette-block">
+        <span>Доступно 6 цветов</span>
+        <ul class="product-palette">
+            <li class="product-color__item">
+                <a href="javascript:void(0)"></a>
+                <div class="product-color__view"></div>
+            </li>
+            <li class="product-color__item">
+                <a href="javascript:void(0)"></a>
+                <div class="product-color__view"></div>
+            </li>
+            <li class="product-color__item">
+                <a href="javascript:void(0)"></a>
+                <div class="product-color__view"></div>
+            </li>
+            <li class="product-color__item">
+                <a href="javascript:void(0)"></a>
+                <div class="product-color__view"></div>
+            </li>
+            <li class="product-color__item">
+                <a href="javascript:void(0)"></a>
+                <div class="product-color__view"></div>
+            </li>
+            <li class="product-color__item">
+                <a href="javascript:void(0)"></a>
+                <div class="product-color__view"></div>
+            </li>
+        </ul>
+    </div>
+    <!-- PALLET BLOCK END -->
+
+    <div class="block-price">
+        <div class="product-detail__price">
+            <div class="product-detail__price-old">4060
+                <div class="product-detail__price-old-currency">грн</div>
             </div>
-            <div class="action-title">
-                <a href="javascript:void(0)">При покупке суперлюстры - еще одна суперлюстра в подарок!
-                </a>
+            <div class="product-detail__price-new">3960
+                <div class="product-detail__price-new-currency">грн</div>
             </div>
         </div>
 
-        <div class="action-gift-product">
-            <a href="javascript:void(0)">
-                <img src="./img/13.jpg" alt=""></a>
-                <div class="action-gift-product__info">
-                    <a href="javascript:void(0)" class="action-gift-product__title">Люстра Skarlat LS 0522-6</a>
-                    <div class="action-gift-product__price">
-                        <div class="action-gift-product__price-old">4060
-                            <div class="action-gift-product__price-old-currency">грн</div>
-                        </div>
-                        <div class="action-gift-product__price-new">БЕСПЛАТНО
-                        </div>
+        <div class="product-detail__availability">
+            <div class="product-detail__availability-icon">
+                <svg height='24' width='24' viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                <span>В наличии</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="block-btn">
+        <div class="col-12 col-sm-6">
+            <button class="product-detail__btn-buy btn-main">Купить</button>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="product-detail__btn-support">
+                <div class="product-detail__btn-support-inner">
+                    <div class="product-detail__btn-support-front">
+                        <button class="product-detail__btn-favorite">
+                                <svg class="heart" viewBox="0 0 20 20">
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M18.5 2.9c-.9-1.1-2.3-1.7-3.8-1.7-2.1 0-3.5 1.3-4.2 2.3-.2.3-.4.5-.5.8-.1-.3-.3-.5-.5-.8-.7-1-2.1-2.3-4.2-2.3-1.5 0-2.9.6-3.9 1.7C.5 4 0 5.4 0 7c0 1.6.6 3.2 2.1 4.9 1.2 1.5 3 3 5.1 4.8.8.6 1.6 1.3 2.4 2.1h.1c.1.1.2.1.4.1s.3 0 .4-.1h.1c.9-.8 1.6-1.4 2.4-2.1 2.1-1.8 3.9-3.3 5.1-4.8C19.4 10.2 20 8.6 20 7c0-1.6-.5-3-1.5-4.1zm-6.4 12.8c-.6.6-1.4 1.1-2.1 1.8l-2.1-1.8C3.9 12.3 1.1 10 1.1 7c0-1.3.4-2.4 1.2-3.3.7-.9 1.8-1.4 2.9-1.4 1.6 0 2.6 1 3.3 1.9.6.7.9 1.5.9 1.8.1.2.3.3.6.3.2 0 .5-.1.6-.4.1-.3.4-1.1.9-1.8.6-.9 1.6-1.9 3.3-1.9 1.1 0 2.2.5 2.9 1.4.8.9 1.1 2 1.1 3.3 0 3.1-2.7 5.4-6.7 8.8z"/>
+                                </svg>
+                        </button>
+
+                        <button class="product-detail__btn-balance">
+                                <svg class="balnce" viewBox="0 0 20 20">
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M9.5 4.3H11v12.4c2.9.1 5.4 1 7.2 2.4H2.4c1.7-1.4 4.2-2.3 7.1-2.4V4.3zm6.4-.1l-2.7 5.4h5.7l-3-5.4zm-3.2 5.4l3.1-6 .1-.3.2.3 3.2 6c.4.1.6.4.6.8s-.4.8-.8.8h-6.4c-.4 0-.8-.4-.8-.8.1-.3.4-.7.8-.8zM4.3 6.2l-2.8 5.4h5.7L4.3 6.2zm-3.2 5.5l3-6 .2-.4.1.4 3.3 6c.4 0 .6.4.6.7 0 .4-.4.8-.8.8H1.2c-.4 0-.8-.4-.8-.8 0-.3.3-.6.7-.7zM0 3.8l9.4-1.4c.1-.4.3-.7.8-.7.4 0 .6.2.7.5L19.7.9l.2 1.5L.2 5.3 0 3.8z"/>
+                                </svg>
+                        </button>
+
+                        <button class="product-detail__btn-share">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path
+                                    d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+                        </button>
                     </div>
-                </div>
-            </div>
-
-        </div> -->
-        <!-- ACTION BLOCK END -->
-
-                <!-- PALLET BLOCK START -->
-                <div class="palette-block">
-                    <span>Доступно 6 цветов</span>
-                    <ul class="product-palette">
-                        <li class="product-color__item">
-                            <a href="javascript:void(0)"></a>
-                            <div class="product-color__view">
-                                </div>
-                            </li>
-                            <li class="product-color__item">
-                                <a href="javascript:void(0)"></a>
-                                <div class="product-color__view">
-                                    </div>
-                                </li>
-                                <li class="product-color__item">
-                                    <a href="javascript:void(0)"></a>
-                                    <div class="product-color__view">
-                                        </div>
-                                    </li>
-                                    <li class="product-color__item">
-                                        <a href="javascript:void(0)"></a>
-                                        <div class="product-color__view">
-                                            </div>
-                                        </li>
-                                        <li class="product-color__item">
-                                            <a href="javascript:void(0)"></a>
-                                            <div class="product-color__view">
-                                                </div>
-                                            </li>
-                                            <li class="product-color__item">
-                                                <a href="javascript:void(0)"></a>
-                                                <div class="product-color__view">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- PALLET BLOCK END -->
-
-        <div class="block-price">
-            <div class="product-detail__price">
-                <div class="product-detail__price-old">4060
-                    <div class="product-detail__price-old-currency">грн</div>
-                </div>
-                <div class="product-detail__price-new">3960
-                    <div class="product-detail__price-new-currency">грн</div>
-                </div>
-            </div>
-
-            <div class="product-detail__availability">
-                <div class="product-detail__availability-icon">
-                    <svg height='24' width='24' viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
-                    <span>В наличии</span>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="block-btn">
-            <div class="col-12 col-sm-6">
-                <button class="product-detail__btn-buy btn-main">Купить</button>
-            </div>
-            <div class="col-12 col-sm-6">
-                <div class="product-detail__btn-support">
-                    <div class="product-detail__btn-support-inner">
-                        <div class="product-detail__btn-support-front">
-                            <button class="product-detail__btn-favorite">
-                                <div class="product-detail__btn-icon">
-                                    <svg class="heart" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M18.5 2.9c-.9-1.1-2.3-1.7-3.8-1.7-2.1 0-3.5 1.3-4.2 2.3-.2.3-.4.5-.5.8-.1-.3-.3-.5-.5-.8-.7-1-2.1-2.3-4.2-2.3-1.5 0-2.9.6-3.9 1.7C.5 4 0 5.4 0 7c0 1.6.6 3.2 2.1 4.9 1.2 1.5 3 3 5.1 4.8.8.6 1.6 1.3 2.4 2.1h.1c.1.1.2.1.4.1s.3 0 .4-.1h.1c.9-.8 1.6-1.4 2.4-2.1 2.1-1.8 3.9-3.3 5.1-4.8C19.4 10.2 20 8.6 20 7c0-1.6-.5-3-1.5-4.1zm-6.4 12.8c-.6.6-1.4 1.1-2.1 1.8l-2.1-1.8C3.9 12.3 1.1 10 1.1 7c0-1.3.4-2.4 1.2-3.3.7-.9 1.8-1.4 2.9-1.4 1.6 0 2.6 1 3.3 1.9.6.7.9 1.5.9 1.8.1.2.3.3.6.3.2 0 .5-.1.6-.4.1-.3.4-1.1.9-1.8.6-.9 1.6-1.9 3.3-1.9 1.1 0 2.2.5 2.9 1.4.8.9 1.1 2 1.1 3.3 0 3.1-2.7 5.4-6.7 8.8z"/>
-                                        </svg></div>
-        
-                            </button>
-        
-                            <button class="product-detail__btn-balance">
-                                <div class="product-detail__btn-icon">
-                                    <svg class="balnce" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M9.5 4.3H11v12.4c2.9.1 5.4 1 7.2 2.4H2.4c1.7-1.4 4.2-2.3 7.1-2.4V4.3zm6.4-.1l-2.7 5.4h5.7l-3-5.4zm-3.2 5.4l3.1-6 .1-.3.2.3 3.2 6c.4.1.6.4.6.8s-.4.8-.8.8h-6.4c-.4 0-.8-.4-.8-.8.1-.3.4-.7.8-.8zM4.3 6.2l-2.8 5.4h5.7L4.3 6.2zm-3.2 5.5l3-6 .2-.4.1.4 3.3 6c.4 0 .6.4.6.7 0 .4-.4.8-.8.8H1.2c-.4 0-.8-.4-.8-.8 0-.3.3-.6.7-.7zM0 3.8l9.4-1.4c.1-.4.3-.7.8-.7.4 0 .6.2.7.5L19.7.9l.2 1.5L.2 5.3 0 3.8z"/>
-                                        </svg>
-                                </div>
-                            </button>
-        
-                            <button class="product-detail__btn-share">
-                                <div class="product-detail__btn-icon">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path
-                                        d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
-                                </div>
-                            </button>          
-                        </div>
-                      <div class="product-detail__btn-support-back">
+                    <div class="product-detail__btn-support-back">
                         <ul class="product-detail__btn-support-social-list">
                             <li class="product-detail__btn-support-social_item">
                                 <a href="https://www.facebook.com/skarlat.ua/" target="blank">
                                     <svg viewBox="0 0 20 20">
-                                        <path d="M11.6 20v-9h3.1l.5-3.6h-3.5V4.8c0-1.1.6-1.4 1.5-1.4H15.4V.1c-.3 0-.7-.1-1-.1h-1.9c-1 0-1.9.3-2.7.9-1.2.6-1.6 1.5-1.8 2.6-.1.5-.1.9-.1 1.4v2.5H4.8V11h3.1v9h3.7z"/>
-                                        </svg>
+                                        <path
+                                            d="M11.6 20v-9h3.1l.5-3.6h-3.5V4.8c0-1.1.6-1.4 1.5-1.4H15.4V.1c-.3 0-.7-.1-1-.1h-1.9c-1 0-1.9.3-2.7.9-1.2.6-1.6 1.5-1.8 2.6-.1.5-.1.9-.1 1.4v2.5H4.8V11h3.1v9h3.7z"/>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="product-detail__btn-support-social_item">
                                 <a href="https://www.instagram.com/skarlat.ua/" target="blank">
                                     <svg viewBox="0 0 20 20">
-                                        <path d="M10 6.4C8 6.4 6.4 8 6.4 10S8 13.5 10 13.5s3.5-1.6 3.5-3.5-1.6-3.6-3.5-3.6z"/>
-                                        <path d="M13.9 0H6.1C2.7 0 0 2.7 0 6.1v7.8C0 17.2 2.7 20 6.1 20h7.8c3.3 0 6.1-2.8 6.1-6.1V6.1C20 2.7 17.2 0 13.9 0zM10 15c-2.8 0-5.1-2.3-5.1-5.1S7.2 4.8 10 4.8s5.1 2.3 5.1 5.1C15 12.8 12.8 15 10 15zm5.6-9.4c-.7 0-1.3-.6-1.3-1.3S14.9 3 15.6 3c.7 0 1.3.6 1.3 1.3s-.6 1.3-1.3 1.3z"/>
-                                        </svg>
+                                        <path
+                                            d="M10 6.4C8 6.4 6.4 8 6.4 10S8 13.5 10 13.5s3.5-1.6 3.5-3.5-1.6-3.6-3.5-3.6z"/>
+                                        <path
+                                            d="M13.9 0H6.1C2.7 0 0 2.7 0 6.1v7.8C0 17.2 2.7 20 6.1 20h7.8c3.3 0 6.1-2.8 6.1-6.1V6.1C20 2.7 17.2 0 13.9 0zM10 15c-2.8 0-5.1-2.3-5.1-5.1S7.2 4.8 10 4.8s5.1 2.3 5.1 5.1C15 12.8 12.8 15 10 15zm5.6-9.4c-.7 0-1.3-.6-1.3-1.3S14.9 3 15.6 3c.7 0 1.3.6 1.3 1.3s-.6 1.3-1.3 1.3z"/>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="product-detail__btn-support-social_item">
                                 <a href="tg://resolve?domain=SkarlatStore" target="blank">
                                     <svg viewBox="0 0 20 20">
-                                        <path  d="M7.9 12.6l-.3 4.6c.5 0 .7-.2.9-.5l2.2-2.1 4.6 3.3c.8.5 1.4.2 1.7-.8L20 3c.3-1.2-.4-1.7-1.3-1.4L1 8.5C-.2 9-.2 9.6.8 9.9l4.5 1.4 10.5-6.6c.5-.3.9-.1.6.2l-8.5 7.7z"/>
-                                        </svg>
+                                        <path
+                                            d="M7.9 12.6l-.3 4.6c.5 0 .7-.2.9-.5l2.2-2.1 4.6 3.3c.8.5 1.4.2 1.7-.8L20 3c.3-1.2-.4-1.7-1.3-1.4L1 8.5C-.2 9-.2 9.6.8 9.9l4.5 1.4 10.5-6.6c.5-.3.9-.1.6.2l-8.5 7.7z"/>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="product-detail__btn-support-social_item">
                                 <a href="viber://chat?number=+380683127757" target="blank">
                                     <svg viewBox="0 0 20 20">
-                                        <path d="M19.1 4.8C18.6 2.9 16.6.9 14.6.5c-3.1-.6-6.2-.6-9.3 0-1.9.4-4 2.4-4.5 4.3-.6 2.6-.6 5.3 0 7.9.4 1.8 2.4 3.7 4.2 4.2V19c0 .7.9 1.1 1.4.6l2.1-2.2h1.4c1.6 0 3.1-.2 4.7-.5 1.9-.4 4-2.4 4.5-4.3.5-2.6.5-5.2 0-7.8zm-7.3 3.5c-.2 0-.3-.1-.3-.3v-.4c0-.2-.2-.5-.4-.6-.1 0-.2-.1-.4-.1-.1 0-.3 0-.4-.1-.1 0-.2-.1-.2-.3s.2-.2.3-.2c.9.1 1.5.5 1.6 1.6v.2c0 .1-.1.2-.2.2zm0 0zm0 0zm0 0s-.1 0 0 0zm1.5.1v.1c0 .2-.4.3-.5 0v-.2c0-.5-.1-1-.3-1.4-.3-.4-.7-.8-1.1-1l-.9-.3h-.4c-.1 0-.2-.1-.2-.3-.1-.2 0-.3.1-.3.5 0 1 .1 1.5.4 1 .5 1.5 1.3 1.7 2.4v.1c0 .2.1.3.1.5zM9.7 3.8c2.3 0 4.2 1.6 4.6 3.9.1.4.1.8.1 1.2 0 .2-.1.3-.3.3 0 0-.1-.2-.1-.3 0-.3 0-.7-.1-1-.2-1.7-1.6-3.1-3.3-3.5-.3 0-.5-.1-.8-.1-.1 0-.4 0-.4-.2s.1-.3.3-.3zm1 0zm0 0zm0 0zm0 0zm0 0zm0 0zm-.9 0zm2.7 10c-.2-.1-.4-.1-.5-.2-1.8-.7-3.4-1.7-4.7-3.1-.8-.8-1.4-1.7-1.9-2.7-.2-.5-.4-1-.6-1.4-.2-.5.1-.9.4-1.3.3-.3.6-.6 1-.7.3-.1.6-.1.8.2.5.5.9 1.1 1.2 1.7.2.4.1.8-.2 1.1-.1 0-.2.1-.3.2-.1 0-.2.1-.3.2-.1.1-.1.3 0 .5.5 1.3 1.3 2.3 2.5 2.8.2.1.4.2.6.1.4 0 .5-.5.8-.7.3-.2.6-.2.9 0 .3.2.6.4.8.6.3.2.6.4.8.6.2.2.3.5.2.8-.2.5-.6 1-1.1 1.3h-.4z"/>
-                                        </svg>
+                                        <path
+                                            d="M19.1 4.8C18.6 2.9 16.6.9 14.6.5c-3.1-.6-6.2-.6-9.3 0-1.9.4-4 2.4-4.5 4.3-.6 2.6-.6 5.3 0 7.9.4 1.8 2.4 3.7 4.2 4.2V19c0 .7.9 1.1 1.4.6l2.1-2.2h1.4c1.6 0 3.1-.2 4.7-.5 1.9-.4 4-2.4 4.5-4.3.5-2.6.5-5.2 0-7.8zm-7.3 3.5c-.2 0-.3-.1-.3-.3v-.4c0-.2-.2-.5-.4-.6-.1 0-.2-.1-.4-.1-.1 0-.3 0-.4-.1-.1 0-.2-.1-.2-.3s.2-.2.3-.2c.9.1 1.5.5 1.6 1.6v.2c0 .1-.1.2-.2.2zm0 0zm0 0zm0 0s-.1 0 0 0zm1.5.1v.1c0 .2-.4.3-.5 0v-.2c0-.5-.1-1-.3-1.4-.3-.4-.7-.8-1.1-1l-.9-.3h-.4c-.1 0-.2-.1-.2-.3-.1-.2 0-.3.1-.3.5 0 1 .1 1.5.4 1 .5 1.5 1.3 1.7 2.4v.1c0 .2.1.3.1.5zM9.7 3.8c2.3 0 4.2 1.6 4.6 3.9.1.4.1.8.1 1.2 0 .2-.1.3-.3.3 0 0-.1-.2-.1-.3 0-.3 0-.7-.1-1-.2-1.7-1.6-3.1-3.3-3.5-.3 0-.5-.1-.8-.1-.1 0-.4 0-.4-.2s.1-.3.3-.3zm1 0zm0 0zm0 0zm0 0zm0 0zm0 0zm-.9 0zm2.7 10c-.2-.1-.4-.1-.5-.2-1.8-.7-3.4-1.7-4.7-3.1-.8-.8-1.4-1.7-1.9-2.7-.2-.5-.4-1-.6-1.4-.2-.5.1-.9.4-1.3.3-.3.6-.6 1-.7.3-.1.6-.1.8.2.5.5.9 1.1 1.2 1.7.2.4.1.8-.2 1.1-.1 0-.2.1-.3.2-.1 0-.2.1-.3.2-.1.1-.1.3 0 .5.5 1.3 1.3 2.3 2.5 2.8.2.1.4.2.6.1.4 0 .5-.5.8-.7.3-.2.6-.2.9 0 .3.2.6.4.8.6.3.2.6.4.8.6.2.2.3.5.2.8-.2.5-.6 1-1.1 1.3h-.4z"/>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="product-detail__btn-support-social_item">
                                 <a href="whatsapp://send?phone=+380683127757" target="blank">
                                     <svg viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M0 20.1l.3-1.2c.3-1.2.7-2.4 1-3.6v-.6c-3.1-5.9 0-13 6.5-14.5 5.8-1.4 11.1 2.6 12.1 7.9 1 5.5-2.6 10.7-8.1 11.7-2.2.4-4.2.1-6.2-.9-.2-.1-.4-.1-.6-.1-2.7.7-4.5 1.2-5 1.3zm12.6-5.4c-1.9-.1-5-1.6-7.2-5.3-.7-1.3-.6-2.8.5-3.8.4-.4.8-.3 1.3-.2.1 0 .2.2.3.3.2.6.5 1.3.8 1.9.1.4-.1.7-.6 1.3-.2.2-.2.3-.1.5.8 1.4 2 2.4 3.5 3 .2.1.4 0 .5-.2.8-1 .9-1.2 1.3-1.1 2 1 2.2 1 2.2 1.2 0 1.9-1.5 2.5-2.5 2.4z"/>
-                                        </svg>
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M0 20.1l.3-1.2c.3-1.2.7-2.4 1-3.6v-.6c-3.1-5.9 0-13 6.5-14.5 5.8-1.4 11.1 2.6 12.1 7.9 1 5.5-2.6 10.7-8.1 11.7-2.2.4-4.2.1-6.2-.9-.2-.1-.4-.1-.6-.1-2.7.7-4.5 1.2-5 1.3zm12.6-5.4c-1.9-.1-5-1.6-7.2-5.3-.7-1.3-.6-2.8.5-3.8.4-.4.8-.3 1.3-.2.1 0 .2.2.3.3.2.6.5 1.3.8 1.9.1.4-.1.7-.6 1.3-.2.2-.2.3-.1.5.8 1.4 2 2.4 3.5 3 .2.1.4 0 .5-.2.8-1 .9-1.2 1.3-1.1 2 1 2.2 1 2.2 1.2 0 1.9-1.5 2.5-2.5 2.4z"/>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
-
         </div>
 
+    </div>
 
-                                <!-- DELIVERY BLOCK START -->
-                                <div class="delivery-block">
-                                    <div class="delivery-header">
-                                        <h4>Способы доставки</h4>
-                                    </div>
-                                    <ul class="delivery-list">
-                                        <li class="delivery-item">
-                                            <div class="delivery-item__title">В отделение, Новая Почта</div>
-                                            <div class="delivery-item__time">1-3 дня</div>
-                                            <div
-                                                class="tooltips"
-                                                data-toggle="tooltip"
-                                                data-placement="left"
-                                                data-html="true"
-                                                title="<div>
+    <!-- DELIVERY BLOCK START -->
+    <div class="delivery-block">
+        <div class="delivery-header">
+            <h4>Способы доставки</h4>
+        </div>
+        <ul class="delivery-list">
+            <li class="delivery-item">
+                <div class="delivery-item__title">В отделение, Новая Почта</div>
+                <div class="delivery-item__time">1-3 дня</div>
+                <div
+                    class="tooltips"
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    data-html="true"
+                    title="<div>
                                                 <h4>Доставка в отделение, Новая Почта</h4>
                                         </hr>
                                         <ul>
@@ -201,21 +158,23 @@
                                             <li>Стоимость доставки в отделение по тарифам перевозчика Новая Почта.</li>
                                         </ul>
                                         </div>">
-                                        <svg viewBox="0 0 20 20">
-                                            <path d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zM10 .8C4.9.8.8 4.9.8 10s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2S15.1.8 10 .8z"/>
-                                            <path d="M9.1 12v-.4c-.1-.7.2-1.5.8-2.3.6-.7.9-1.2.9-1.8 0-.7-.4-1.1-1.3-1.2-.5 0-1 .2-1.4.4l-.2-.8c.4-.3 1.2-.5 1.9-.5 1.5 0 2.2 1 2.2 2 0 .9-.5 1.6-1.2 2.3-.6.7-.8 1.3-.8 2v.4l-.9-.1zm-.3 1.9c0-.5.3-.8.8-.8s.8.3.8.8-.3.8-.8.8c-.4 0-.8-.4-.8-.8z"/>
-                                            </svg>
-                                            </div>
-                                        </li>
-                                        <li class="delivery-item">
-                                            <div class="delivery-item__title">Адресная доставка, Новая Почта</div>
-                                            <div class="delivery-item__time">1-3 дня</div>
-                                            <div
-                                                class="tooltips"
-                                                data-toggle="tooltip"
-                                                data-placement="left"
-                                                data-html="true"
-                                                title="<div>
+                    <svg viewBox="0 0 20 20">
+                        <path
+                            d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zM10 .8C4.9.8.8 4.9.8 10s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2S15.1.8 10 .8z"/>
+                        <path
+                            d="M9.1 12v-.4c-.1-.7.2-1.5.8-2.3.6-.7.9-1.2.9-1.8 0-.7-.4-1.1-1.3-1.2-.5 0-1 .2-1.4.4l-.2-.8c.4-.3 1.2-.5 1.9-.5 1.5 0 2.2 1 2.2 2 0 .9-.5 1.6-1.2 2.3-.6.7-.8 1.3-.8 2v.4l-.9-.1zm-.3 1.9c0-.5.3-.8.8-.8s.8.3.8.8-.3.8-.8.8c-.4 0-.8-.4-.8-.8z"/>
+                    </svg>
+                </div>
+            </li>
+            <li class="delivery-item">
+                <div class="delivery-item__title">Адресная доставка, Новая Почта</div>
+                <div class="delivery-item__time">1-3 дня</div>
+                <div
+                    class="tooltips"
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    data-html="true"
+                    title="<div>
                                                     <h4>Адресная доставка, Новая Почта</h4>
                                             </hr>
                                             <ul>
@@ -224,21 +183,23 @@
                                                 <li>Стоимость адресной доставки по тарифам перевозчика Новая Почта.</li>
                                             </ul>
                                             </div>">
-                                            <svg viewBox="0 0 20 20">
-                                                <path d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zM10 .8C4.9.8.8 4.9.8 10s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2S15.1.8 10 .8z"/>
-                                                <path d="M9.1 12v-.4c-.1-.7.2-1.5.8-2.3.6-.7.9-1.2.9-1.8 0-.7-.4-1.1-1.3-1.2-.5 0-1 .2-1.4.4l-.2-.8c.4-.3 1.2-.5 1.9-.5 1.5 0 2.2 1 2.2 2 0 .9-.5 1.6-1.2 2.3-.6.7-.8 1.3-.8 2v.4l-.9-.1zm-.3 1.9c0-.5.3-.8.8-.8s.8.3.8.8-.3.8-.8.8c-.4 0-.8-.4-.8-.8z"/>
-                                                </svg>
-                                            </div>
-                                        </li>
-                                        <li class="delivery-item">
-                                            <div class="delivery-item__title">Курьер Skarlat</div>
-                                            <div class="delivery-item__time">1-2 дня</div>
-                                            <div
-                                                class="tooltips"
-                                                data-toggle="tooltip"
-                                                data-placement="left"
-                                                data-html="true"
-                                                title="<div>
+                    <svg viewBox="0 0 20 20">
+                        <path
+                            d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zM10 .8C4.9.8.8 4.9.8 10s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2S15.1.8 10 .8z"/>
+                        <path
+                            d="M9.1 12v-.4c-.1-.7.2-1.5.8-2.3.6-.7.9-1.2.9-1.8 0-.7-.4-1.1-1.3-1.2-.5 0-1 .2-1.4.4l-.2-.8c.4-.3 1.2-.5 1.9-.5 1.5 0 2.2 1 2.2 2 0 .9-.5 1.6-1.2 2.3-.6.7-.8 1.3-.8 2v.4l-.9-.1zm-.3 1.9c0-.5.3-.8.8-.8s.8.3.8.8-.3.8-.8.8c-.4 0-.8-.4-.8-.8z"/>
+                    </svg>
+                </div>
+            </li>
+            <li class="delivery-item">
+                <div class="delivery-item__title">Курьер Skarlat</div>
+                <div class="delivery-item__time">1-2 дня</div>
+                <div
+                    class="tooltips"
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    data-html="true"
+                    title="<div>
                                                         <h4>Курьер Skarlat</h4>
                                                 </hr>
                                                 <ul>
@@ -246,21 +207,23 @@
                                                     <li>Курьер Skarlat доставит Вашу посылку в течении 1-2 дней.</li>
                                                 </ul>
                                                 </div>">
-                                                <svg viewBox="0 0 20 20">
-                                                    <path d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zM10 .8C4.9.8.8 4.9.8 10s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2S15.1.8 10 .8z"/>
-                                                    <path d="M9.1 12v-.4c-.1-.7.2-1.5.8-2.3.6-.7.9-1.2.9-1.8 0-.7-.4-1.1-1.3-1.2-.5 0-1 .2-1.4.4l-.2-.8c.4-.3 1.2-.5 1.9-.5 1.5 0 2.2 1 2.2 2 0 .9-.5 1.6-1.2 2.3-.6.7-.8 1.3-.8 2v.4l-.9-.1zm-.3 1.9c0-.5.3-.8.8-.8s.8.3.8.8-.3.8-.8.8c-.4 0-.8-.4-.8-.8z"/>
-                                                    </svg>
-                                            </div>
-                                        </li>
-                                        <li class="delivery-item">
-                                            <div class="delivery-item__title">Адресная доставка за 3 часа</div>
-                                            <div class="delivery-item__time">3 часа</div>
-                                            <div
-                                                class="tooltips"
-                                                data-toggle="tooltip"
-                                                data-placement="left"
-                                                data-html="true"
-                                                title="<div>
+                    <svg viewBox="0 0 20 20">
+                        <path
+                            d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zM10 .8C4.9.8.8 4.9.8 10s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2S15.1.8 10 .8z"/>
+                        <path
+                            d="M9.1 12v-.4c-.1-.7.2-1.5.8-2.3.6-.7.9-1.2.9-1.8 0-.7-.4-1.1-1.3-1.2-.5 0-1 .2-1.4.4l-.2-.8c.4-.3 1.2-.5 1.9-.5 1.5 0 2.2 1 2.2 2 0 .9-.5 1.6-1.2 2.3-.6.7-.8 1.3-.8 2v.4l-.9-.1zm-.3 1.9c0-.5.3-.8.8-.8s.8.3.8.8-.3.8-.8.8c-.4 0-.8-.4-.8-.8z"/>
+                    </svg>
+                </div>
+            </li>
+            <li class="delivery-item">
+                <div class="delivery-item__title">Адресная доставка за 3 часа</div>
+                <div class="delivery-item__time">3 часа</div>
+                <div
+                    class="tooltips"
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    data-html="true"
+                    title="<div>
                                                             <h4>Курьер Skarlat</h4>
                                                     </hr>
                                                     <ul>
@@ -268,15 +231,17 @@
                                                         <li>Курьер доставит Вашу посылку в течении 3-х часов. </li>
                                                     </ul>
                                                     </div>">
-                                                    <svg viewBox="0 0 20 20">
-                                                        <path d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zM10 .8C4.9.8.8 4.9.8 10s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2S15.1.8 10 .8z"/>
-                                                        <path d="M9.1 12v-.4c-.1-.7.2-1.5.8-2.3.6-.7.9-1.2.9-1.8 0-.7-.4-1.1-1.3-1.2-.5 0-1 .2-1.4.4l-.2-.8c.4-.3 1.2-.5 1.9-.5 1.5 0 2.2 1 2.2 2 0 .9-.5 1.6-1.2 2.3-.6.7-.8 1.3-.8 2v.4l-.9-.1zm-.3 1.9c0-.5.3-.8.8-.8s.8.3.8.8-.3.8-.8.8c-.4 0-.8-.4-.8-.8z"/>
-                                                        </svg>
-                                            </div>
-                                        </li>
-                                    </ul>
+                    <svg viewBox="0 0 20 20">
+                        <path
+                            d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zM10 .8C4.9.8.8 4.9.8 10s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2S15.1.8 10 .8z"/>
+                        <path
+                            d="M9.1 12v-.4c-.1-.7.2-1.5.8-2.3.6-.7.9-1.2.9-1.8 0-.7-.4-1.1-1.3-1.2-.5 0-1 .2-1.4.4l-.2-.8c.4-.3 1.2-.5 1.9-.5 1.5 0 2.2 1 2.2 2 0 .9-.5 1.6-1.2 2.3-.6.7-.8 1.3-.8 2v.4l-.9-.1zm-.3 1.9c0-.5.3-.8.8-.8s.8.3.8.8-.3.8-.8.8c-.4 0-.8-.4-.8-.8z"/>
+                    </svg>
+                </div>
+            </li>
+        </ul>
 
-                                </div>
-                                <!-- DELIVERY BLOCK END -->
-                            </div>
-                            <!-- PRODUCT DETAIL INFO END -->
+    </div>
+    <!-- DELIVERY BLOCK END -->
+</div>
+<!-- PRODUCT DETAIL INFO END -->

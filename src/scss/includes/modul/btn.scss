@@ -150,11 +150,11 @@
             transition: all 0.2s ease-in-out;
             background: none;
 
-            &:hover {
-                & .btn-icon {
-                    fill: $blue;
-                }
-            }
+            // &:hover {
+            //     & .btn-icon {
+            //         fill: $blue;
+            //     }
+            // }
 
             & span {
                 font-size: 20px;
@@ -163,15 +163,21 @@
                 text-transform: initial;
             }
 
-            & .btn-icon {
-                @media(min-width:1470px) {
-                    padding-right: 0;
-                }
-            }
+            // & .btn-icon {
+            //     @media(min-width:1470px) {
+            //         padding-right: 0;
+            //     }
+            // }
 
         }
 
-        & .btn-icon {
+        // & .btn-icon {
+        //     width: 35px;
+        //     height: 35px;
+        //     fill: rgb(139, 139, 139);
+        //     transition: all 0.5s ease-in-out;
+        // }
+        & svg {
             width: 35px;
             height: 35px;
             fill: rgb(139, 139, 139);

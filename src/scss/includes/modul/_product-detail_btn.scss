@@ -141,18 +141,24 @@
                     text-align: center;
                     transition: transform 0.8s;
                     transform-style: preserve-3d;
+         
                   }
 
                   &.active &-inner {
                     transform: rotateX(180deg);
+                    
                   }
 
                   &.active &-front{
                       pointer-events: none;
+
                   }
 
                   &.active &-back{
                     pointer-events: initial;
+                    -webkit-backface-visibility:hidden;
+                    background-color: $white;
+                    
                 }
 
                 &-front, &-back{
@@ -167,17 +173,18 @@
                     align-items: center;
                     opacity: 1;
                     transition: all .4s ease-in-out;
+                    backface-visibility: hidden;
+                    -webkit-backface-visibility:hidden;
+                    background-color: $white;
                 }
 
                 &-front {
                     pointer-events: initial;
-                    background-color: $white;
                     color: $white;
                   }
 
                 &-back{
                    pointer-events: none;
-                    background-color: $white;
                     transform: rotateX(180deg);
                 }
             }

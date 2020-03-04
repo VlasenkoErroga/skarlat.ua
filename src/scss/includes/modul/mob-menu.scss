@@ -10,7 +10,11 @@
         height: 100vh;
         border-right: 1px solid #e8e8e8;
         transition: all 0.5s ease-in-out;
-        max-width: 300px;
+        max-width: 330px;
+
+        @media (max-width: 575px){
+            max-width: 300px;
+        }
 
         &--active {
             left: 0;
