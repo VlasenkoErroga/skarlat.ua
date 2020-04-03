@@ -948,7 +948,7 @@
                               </div>
 
                               <div class="form-group form-group-row">
-                                <div class="form-group w-50 mr-1">
+                                <div class=" w-50 mr-1">
                                   <input
                                     type="text"
                                     class="form-control"
@@ -957,7 +957,7 @@
                                   />
                                 </div>
 
-                                <div class="form-group w-50 ml-1">
+                                <div class=" w-50 ml-1">
                                   <input
                                     type="text"
                                     class="form-control"
@@ -1010,7 +1010,7 @@
                               </div>
 
                               <div class="form-group-row form-group">
-                                <div class="form-group w-50 mr-1">
+                                <div class=" w-50 mr-1">
                                   <input
                                     type="text"
                                     class="form-control"
@@ -1019,7 +1019,7 @@
                                   />
                                 </div>
 
-                                <div class="form-group w-50 ml-1">
+                                <div class=" w-50 ml-1">
                                   <input
                                     type="text"
                                     class="form-control"
@@ -1071,7 +1071,7 @@
                               </div>
 
                               <div class="form-group-row form-group">
-                                <div class="form-group w-50 mr-1">
+                                <div class="w-50 mr-1">
                                   <input
                                     type="text"
                                     class="form-control"
@@ -1080,7 +1080,7 @@
                                   />
                                 </div>
 
-                                <div class="form-group w-50 ml-1">
+                                <div class="w-50 ml-1">
                                   <input
                                     type="text"
                                     class="form-control"
@@ -2643,10 +2643,21 @@
                       </div>
                     </div>
                     <div class="tab-pane fade" id="pills-done" role="tabpanel" aria-labelledby="pills-done-tab">
-                      ...3
+                      <div class="pills-content-empty">
+                        <h3>На данный момент у вас пока нет завершенных заказов.</h3>
+                        <span>Что бы это исправить посетите один из разделов и совершите покупку на сайте.</span>
+                        <a href="javascript:void(0)">Каталог</a>
+                      </div>
                     </div>
                     <div class="tab-pane fade" id="pills-canseled" role="tabpanel" aria-labelledby="pills-canseled-tab">
-                      ...4
+                      <div class="pills-content-empty">
+                        <h3>На данный момент у вас пока нет отменненых заказов.</h3>
+                        <span
+                          >Что бы это исправить посетите один из разделов и совершите покупку на сайте. Надеемся что вам
+                          все понравится.</span
+                        >
+                        <a href="javascript:void(0)">Каталог</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2659,7 +2670,7 @@
                     <div class="col-12">
                       <h4 class="nav-content-tab__pills-title">Товары которые Вам понравились</h4>
 
-                      <div class="row grid-padding">
+                      <div class="row grid-padding" id="row-favotrite-product">
                         <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6 mb-1">
                           <!-- FULL PRODUCT CARD CATEGORY START -->
                           <div class="product-item__wrapper">
