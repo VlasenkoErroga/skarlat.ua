@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="125.957mm" height="79.5814mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1449 915"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#69C400}
+    .fil2 {fill:#FEFEFE;fill-rule:nonzero}
+    .fil1 {fill:#2F2E2E;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path id="Card_Shape" class="fil0" d="M1400 915l-1351 0c-27,0 -49,-22 -49,-49l0 -817c0,-27 22,-49 49,-49l1351 0c27,0 49,22 49,49l0 817c0,27 -22,49 -49,49z"/>
+  <g id="_2056442143568">
+   <polygon class="fil1" points="518,664 679,664 679,503 518,503 "/>
+   <path class="fil2" d="M845 337l0 0 0 242 -33 0c-14,-120 -89,-195 -209,-209l0 -33 242 0zm-327 -86l0 201 43 0c112,0 169,57 169,169l0 43 201 0 0 -413 -413 0z"/>
+  </g>
+ </g>
+</svg>

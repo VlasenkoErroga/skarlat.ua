@@ -1702,6 +1702,7 @@
                         type="email"
                         class="form-control"
                         id="InputEmail-modal"
+                        autocomplete="username"
                         aria-describedby="emailHelp-modal"
                         placeholder="Введите email"
                       />
@@ -1715,6 +1716,7 @@
                         type="password"
                         class="form-control"
                         id="InputPassword-modal"
+                        autocomplete="current-password"
                         placeholder="Введите пароль"
                       />
                     </div>
@@ -1788,7 +1790,13 @@
 
                     <div class="form-group">
                       <label for="InputEmail">Email</label>
-                      <input type="email" class="form-control" id="InputEmail" placeholder="Введите email" />
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="InputEmail"
+                        autocomplete="username"
+                        placeholder="Введите email"
+                      />
                       <small id="emailHelp-forms" class="form-text text-muted"
                         >Мы никогда не передадим вашу электронную почту кому-либо еще.</small
                       >
@@ -1799,6 +1807,7 @@
                         type="password"
                         class="form-control"
                         id="InputPassword-modal-new"
+                        autocomplete="new-password"
                         placeholder="Введите пароль"
                       />
                     </div>
@@ -1809,6 +1818,7 @@
                         type="password"
                         class="form-control"
                         id="InputPassword-repeat"
+                        autocomplete="new-password"
                         placeholder="Введите пароль"
                       />
                     </div>
